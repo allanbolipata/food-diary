@@ -173,7 +173,7 @@
                 "dv": 0.17
             },
 	    "cholesterol": { "total": 0.045, "dv": 0.15},
-            "sodium": {"total": 0.790, "dv": 0.34,
+            "sodium": {"total": 0.790, "dv": 0.34},
             "carbs": {
                 "total": 44,
                 "dv": 0.16,
@@ -182,7 +182,6 @@
                 "sugars": {"total": 8, "added_sugars": {"total": 4, "dv": 0.08}}
             }
         }
-    }
     },
     {
         "name": "Quaker Oats Organic: Quick 1-Minute",
@@ -199,7 +198,7 @@
                 "dv": 0.4
             },
 	    "cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0, "dv": 0,
+            "sodium": {"total": 0, "dv": 0},
             "carbs": {
                 "total": 30,
                 "dv": 0.11,
@@ -207,7 +206,6 @@
                 "soluble_fiber": 2,
                 "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
             }
-        }
-    }
+        } 
     }
 ]
