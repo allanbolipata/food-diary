@@ -167,7 +167,7 @@
             "fat": {
                 "total": 13,
                 "trans_fat": 0,
-		"saturated_fat": { "total": 0, "dv": 0.2},
+		"saturated_fat": { "total": 4, "dv": 0.2},
                 "polyunsaturated_fat": 3,
                 "monounsaturated_fat": 4,
                 "dv": 0.17
@@ -180,6 +180,32 @@
                 "dietary_fiber": {"total": 4, "dv": 0.14},
                 "soluble_fiber": 0,
                 "sugars": {"total": 8, "added_sugars": {"total": 4, "dv": 0.08}}
+            }
+        }
+    }
+    },
+    {
+        "name": "Quaker Oats Organic: Quick 1-Minute",
+        "serving_size": 44,
+        "nutritional_data": {
+            "calories": 150,
+            "protein": 5,
+            "fat": {
+                "total": 3,
+                "trans_fat": 0,
+		"saturated_fat": { "total": 0.5, "dv": 0.03},
+                "polyunsaturated_fat": 1,
+                "monounsaturated_fat": 1,
+                "dv": 0.4
+            },
+	    "cholesterol": { "total": 0, "dv": 0},
+            "sodium": {"total": 0, "dv": 0,
+            "carbs": {
+                "total": 30,
+                "dv": 0.11,
+                "dietary_fiber": {"total": 4, "dv": 0.16},
+                "soluble_fiber": 2,
+                "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
             }
         }
     }
