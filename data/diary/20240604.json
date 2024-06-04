@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Peanut Butter and Jelly Sandwich",
+        "foods": [
+            {
+                "food": "Nature's Own 100% Whole Wheat Bread",
+                "weight": 110.6
+            },
+            {
+                "food": "Smucker's Seedless Strawberry Jam",
+                "weight": 45.9
+            },
+            {
+                "food": "Wegmans Creamy Reduced Fat Peanut Spread",
+                "weight": 31.4
+            }
+        ]
+    },
+    {
+        "name": "Greek Yogurt Parfait",
+        "foods": [
+            {
+                "food": "Chobani Greek Yogurt Nonfat Plain",
+                "weight": 113.333
+            },
+            {
+                "food": "Bob's Red Mill Gluten Free Honey Oat Granola",
+                "weight": 25
+            },
+            {
+                "food": "Dole Mixed Berries",
+                "weight": 35
+            }
+        ]
+    },
+    {
+        "name": "Slop",
+        "foods": [
+            {
+                "food": "Naked PB",
+                "weight": 60
+            },
+            {
+                "food": "Sugar Cube",
+                "weight": 7
+            },
+            {
+                "food": "Quaker Oats Organic: Quick 1-Minute",
+                "weight": 70
+            }
+        ]
+    },
+    {
+        "name": "Miscellaneous",
+        "foods": [
+            {
+                "food": "Naked PB",
+                "weight": 60
+            },
+            {
+                "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
+                "weight": 226
+            },
+            {
+                "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
+                "weight": 283
+            }
+        ]
+    }
+]
