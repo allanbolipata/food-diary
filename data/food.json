@@ -4,12 +4,13 @@
         "serving_size": 37,
         "nutritional_data": {
             "calories": 140,
+            "protein": 3,
             "fat": {
                 "total": 2,
                 "trans_fat": 0,
                 "polyunsaturated_fat": 0.5,
                 "monounsaturated_fat": 0.5,
-                "dv": 0.03,
+                "dv": 0.03
             },
             "sodium": {"total": 0.21, "dv": 0.09},
             "carbs": {
@@ -17,22 +18,22 @@
                 "dv": 0.11,
                 "dietary_fiber": {"total": 3, "dv": 10},
                 "soluble_fiber": 1,
-                "sugars": {"total": 12, "added_sugars": {"total": 12, "dv": 0.24}},
-            },
-            "protein": 3,
-        },
+                "sugars": {"total": 12, "added_sugars": {"total": 12, "dv": 0.24}}
+            }
+        }
     },
     {
-	"name": "Planet Oat Oatmilk Original",
+        "name": "Planet Oat Oatmilk Original",
         "serving_size": 240,
         "nutritional_data": {
             "calories": 90,
+            "protein": 2,
             "fat": {
                 "total": 1.5,
                 "trans_fat": 0,
                 "polyunsaturated_fat": 0,
                 "monounsaturated_fat": 0,
-                "dv": 0.02,
+                "dv": 0.02
             },
             "sodium": {"total": 0.120, "dv": 0.05},
             "carbs": {
@@ -40,9 +41,8 @@
                 "dv": 0.07,
                 "dietary_fiber": {"total": 2, "dv": 0.08},
                 "soluble_fiber": 2,
-                "sugars": {"total": 4, "added_sugars": {"total": 4, "dv": 0.07}},
-            },
-            "protein": 2,
-        },
+                "sugars": {"total": 4, "added_sugars": {"total": 4, "dv": 0.07}}
+            }
+        }
     }
 ]
