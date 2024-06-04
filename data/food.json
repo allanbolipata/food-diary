@@ -31,8 +31,7 @@
             "fat": {
                 "total": 1.5,
                 "trans_fat": 0,
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
+		"saturated_fat": { "total": 0, "dv": 0},
                 "dv": 0.02
             },
             "sodium": {"total": 0.120, "dv": 0.05},
@@ -44,5 +43,144 @@
                 "sugars": {"total": 4, "added_sugars": {"total": 4, "dv": 0.07}}
             }
         }
-    }
+    },
+    {
+        "name": "Naked PB",
+        "serving_size": 12,
+        "nutritional_data": {
+            "calories": 50,
+            "protein": 7,
+            "fat": {
+                "total": 1,
+                "trans_fat": 0,
+		"saturated_fat": { "total": 0, "dv": 0},
+                "dv": 0.01
+            },
+            "sodium": {"total": 0, "dv": 0},
+            "carbs": {
+                "total": 3,
+                "dv": 0.01,
+                "dietary_fiber": {"total": 2, "dv": 0.07},
+                "soluble_fiber": 0,
+                "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
+            }
+        }
+    },
+    {
+        "name": "Chobani Greek Yogurt Nonfat Plain",
+        "serving_size": 170,
+        "nutritional_data": {
+            "calories": 90,
+            "protein": 16,
+            "fat": {
+                "total": 0,
+                "trans_fat": 0,
+		"saturated_fat": { "total": 0, "dv": 0},
+                "dv": 0
+            },
+	    "cholesterol": { "total": 0.01, "dv": 0.03},
+            "sodium": {"total": 0.065, "dv": 0.02},
+            "carbs": {
+                "total": 6,
+                "dv": 0,
+                "dietary_fiber": {"total": 0, "dv": 0},
+                "soluble_fiber": 0,
+                "sugars": {"total": 6, "added_sugars": {"total": 0, "dv": 0}}
+            }
+        }
+    },
+    {
+        "name": "Bob's Red Mill Gluten Free Honey Oat Granola",
+        "serving_size": 50,
+        "nutritional_data": {
+            "calories": 200,
+            "protein": 5,
+            "fat": {
+                "total": 3.5,
+                "trans_fat": 0,
+		"saturated_fat": { "total": 0.5, "dv": 0.03},
+                "dv": 0.04
+            },
+	    "cholesterol": { "total": 0, "dv": 0},
+            "sodium": {"total": 0.065, "dv": 0.03},
+            "carbs": {
+                "total": 38,
+                "dv": 0.14,
+                "dietary_fiber": {"total": 4, "dv": 0.14},
+                "soluble_fiber": 0,
+                "sugars": {"total": 10, "added_sugars": {"total": 10, "dv": 0.2}}
+            }
+        }
+    },
+    {
+        "name": "Dole Mixed Berries",
+        "serving_size": 140,
+        "nutritional_data": {
+            "calories": 80,
+            "protein": 1,
+            "fat": {
+                "total": 0.5,
+                "trans_fat": 0,
+		"saturated_fat": { "total": 0, "dv": 0},
+                "dv": 0.01
+            },
+	    "cholesterol": { "total": 0, "dv": 0},
+            "sodium": {"total": 0, "dv": 0},
+            "carbs": {
+                "total": 17,
+                "dv": 0.06,
+                "dietary_fiber": {"total": 5, "dv": 0.18},
+                "soluble_fiber": 0,
+                "sugars": {"total": 10, "added_sugars": {"total": 0, "dv": 0}}
+            }
+        }
+    }, 
+    {
+        "name": "Sugar Cube",
+        "serving_size": 7,
+        "nutritional_data": {
+            "calories": 30,
+            "protein": 0,
+            "fat": {
+                "total": 0,
+                "trans_fat": 0,
+		"saturated_fat": { "total": 0, "dv": 0},
+                "dv": 0
+            },
+	    "cholesterol": { "total": 0, "dv": 0},
+            "sodium": {"total": 0, "dv": 0},
+            "carbs": {
+                "total": 7,
+                "dv": 0.03,
+                "dietary_fiber": {"total": 0, "dv": 0},
+                "soluble_fiber": 0,
+                "sugars": {"total": 7, "added_sugars": {"total": 0, "dv": 0.14}}
+            }
+        }
+    },
+    {
+        "name": "Lean Cuisine: Chicken Parmesan",
+        "serving_size": 308,
+        "nutritional_data": {
+            "calories": 380,
+            "protein": 21,
+            "fat": {
+                "total": 13,
+                "trans_fat": 0,
+		"saturated_fat": { "total": 0, "dv": 0.2},
+                "polyunsaturated_fat": 3,
+                "monounsaturated_fat": 4,
+                "dv": 0.17
+            },
+	    "cholesterol": { "total": 0.045, "dv": 0.15},
+            "sodium": {"total": 0.790, "dv": 0.34,
+            "carbs": {
+                "total": 44,
+                "dv": 0.16,
+                "dietary_fiber": {"total": 4, "dv": 0.14},
+                "soluble_fiber": 0,
+                "sugars": {"total": 8, "added_sugars": {"total": 4, "dv": 0.08}}
+            }
+        }
+    },
 ]
