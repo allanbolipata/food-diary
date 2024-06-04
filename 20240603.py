@@ -20,6 +20,10 @@ eaten["Planet Oat Oatmilk Original"] = 153.4 * 2
 
 eaten["Lean Cuisine: Chicken Parmesan"] = 308
 
+eaten["Naked PB"] = 55
+eaten["Sugar Cube"] = 7
+eaten["Quaker Oats Organic: Quick 1-Minute"] = 89
+
 # Greek Yogurt Parfait
 eaten["Chobani Greek Yogurt Nonfat Plain"] = 113.333
 eaten["Bob's Red Mill Gluten Free Honey Oat Granola"] = 25
@@ -37,5 +41,6 @@ for k in eaten:
     running["fat"] += prop_food["fat"]
     running["carbs"] += prop_food["carbs"]
     running["calories"] += prop_food["calories"]
+    running["sodium"] += prop_food["sodium"]
 
 pprint(running)
