@@ -1,4 +1,5 @@
 import json
+from pprint import pprint
 
 from bin.food_obj import Food
 from bin.helpers import calc_food
@@ -37,4 +38,4 @@ for k in eaten:
     running["carbs"] += prop_food["carbs"]
     running["calories"] += prop_food["calories"]
 
-print(running)
+pprint(running)
