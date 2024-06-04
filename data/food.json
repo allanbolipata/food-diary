@@ -207,5 +207,79 @@
                 "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
             }
         } 
+    },
+    {
+        "name": "Smucker's Seedless Strawberry Jam",
+        "serving_size": 20,
+        "nutritional_data": {
+            "calories": 50,
+            "protein": 0,
+            "fat": {
+                "total": 0,
+                "trans_fat": 0,
+          		"saturated_fat": { "total": 0, "dv": 0},
+                "polyunsaturated_fat": 0,
+                "monounsaturated_fat": 0,
+                "dv": 0
+            },
+            "sodium": {"total": 0, "dv": 0},
+            "carbs": {
+                "total": 13,
+                "dv": 0.05,
+                "dietary_fiber": {"total": 0, "dv": 0},
+                "soluble_fiber": 0,
+                "sugars": {"total": 12, "added_sugars": {"total": 9, "dv": 0.19}}
+            }
+        } 
+    },
+    {
+        "name": "Wegmans Creamy Reduced Fat Peanut Spread",
+        "serving_size": 32,
+        "nutritional_data": {
+            "calories": 160,
+            "protein": 7,
+            "fat": {
+                "total": 11,
+                "trans_fat": 0,
+        		"saturated_fat": { "total": 2, "dv": 0.1},
+                "polyunsaturated_fat": 2,
+                "monounsaturated_fat": 5,
+                "dv": 0.14
+            },
+        	"cholesterol": { "total": 0, "dv": 0},
+            "sodium": {"total": 0.19, "dv": 0.08},
+            "carbs": {
+                "total": 12,
+                "dv": 0.04,
+                "dietary_fiber": {"total": 2, "dv": 0.07},
+                "soluble_fiber": 0,
+                "sugars": {"total": 5, "added_sugars": {"total": 4, "dv": 0.08}}
+            }
+        } 
+    },
+    {
+        "name": "Nature's Own 100% Whole Wheat Bread",
+        "serving_size": 26,
+        "nutritional_data": {
+            "calories": 60,
+            "protein": 3,
+            "fat": {
+                "total": 0.5,
+                "trans_fat": 0,
+        		"saturated_fat": { "total": 0, "dv": 0},
+                "polyunsaturated_fat": 0,
+                "monounsaturated_fat": 0,
+                "dv": 0.01
+            },
+        	"cholesterol": { "total": 0, "dv": 0},
+            "sodium": {"total": 0.12, "dv": 0.05},
+            "carbs": {
+                "total": 12,
+                "dv": 0.04,
+                "dietary_fiber": {"total": 2, "dv": 0.06},
+                "soluble_fiber": 0,
+                "sugars": {"total": 1, "added_sugars": {"total": 1, "dv": 0.02}}
+            }
+        } 
     }
 ]
