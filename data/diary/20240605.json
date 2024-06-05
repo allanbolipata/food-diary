@@ -1,6 +1,6 @@
 [
     {
-        "name": "Peanut Butter and Jelly Sandwich",
+        "name": "Uneaten Peanut Butter and Jelly Sandwich",
         "foods": [
             {
                 "food": "Nature's Own 100% Whole Wheat Bread",
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "name": "Greek Yogurt Parfait",
+        "name": "Uneaten Greek Yogurt Parfait",
         "foods": [
             {
                 "food": "Chobani Greek Yogurt Nonfat Plain",
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "name": "Slop",
+        "name": "Uneaten Slop",
         "foods": [
             {
                 "food": "Naked PB",
@@ -51,7 +51,16 @@
         ]
     },
     {
-        "name": "Miscellaneous Eaten",
+        "name": "Uneaten Miscellaneous",
+        "foods": [
+            {
+                "food": "Naked PB",
+                "weight": 60
+            }
+        ]
+    },
+    {
+        "name": "Miscellaneous",
         "foods": [
             {
                 "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
@@ -59,11 +68,7 @@
             },
             {
                 "food": "Naked PB",
-                "weight": 60
-            },
-            {
-                "food": "Naked PB",
-                "weight": 60
+                "weight": 66.4
             }
         ]
     }
