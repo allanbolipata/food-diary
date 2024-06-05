@@ -38,7 +38,7 @@
         "foods": [
             {
                 "food": "Naked PB",
-                "weight": 60
+                "weight": 60.2
             },
             {
                 "food": "Sugar Cube",
@@ -46,24 +46,24 @@
             },
             {
                 "food": "Quaker Oats Organic: Quick 1-Minute",
-                "weight": 70
+                "weight": 70.4
             }
         ]
     },
     {
-        "name": "Miscellaneous",
+        "name": "Miscellaneous Eaten",
         "foods": [
             {
-                "food": "Naked PB",
-                "weight": 60
+                "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
+                "weight": 283
             },
             {
                 "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
                 "weight": 226
             },
             {
-                "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
-                "weight": 283
+                "food": "Naked PB",
+                "weight": 60
             }
         ]
     }
