@@ -4,15 +4,15 @@
         "foods": [
             {
                 "food": "Nature's Own 100% Whole Wheat Bread",
-                "weight": 110.6
+                "weight": 107.8
             },
             {
                 "food": "Smucker's Seedless Strawberry Jam",
-                "weight": 45.9
+                "weight": 38.1
             },
             {
                 "food": "Wegmans Creamy Reduced Fat Peanut Spread",
-                "weight": 31.4
+                "weight": 26.4
             }
         ]
     },
