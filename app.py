@@ -30,7 +30,8 @@ if __name__ == '__main__':
     recipes = load_recipes(data_recipe)
    
     for recipe in recipes:
-        for key in recipe.prop_food:
-            running[key] += recipe.prop_food[key]
+        if recipe.prop_food:
+            for key in recipe.prop_food:
+                running[key] += recipe.prop_food[key]
     
     pprint(running)
