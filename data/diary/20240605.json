@@ -1,6 +1,6 @@
 [
     {
-        "name": "Uneaten Peanut Butter and Jelly Sandwich",
+        "name": "Peanut Butter and Jelly Sandwich",
         "foods": [
             {
                 "food": "Nature's Own 100% Whole Wheat Bread",
@@ -17,6 +17,28 @@
         ]
     },
     {
+        "name": "Slop",
+        "foods": [
+            {
+                "food": "Naked PB",
+                "weight": 61.3
+            },
+            {
+                "food": "Sugar Cube",
+                "weight": 7.2
+            },
+            {
+                "food": "Quaker Oats Organic: Quick 1-Minute",
+                "weight": 70.3
+            }
+        ]
+    },
+    {
+        "name": "Uneaten Miscellaneous",
+        "foods": [
+        ]
+    },
+    {
         "name": "Uneaten Greek Yogurt Parfait",
         "foods": [
             {
@@ -30,32 +52,6 @@
             {
                 "food": "Dole Mixed Berries",
                 "weight": 35
-            }
-        ]
-    },
-    {
-        "name": "Uneaten Slop",
-        "foods": [
-            {
-                "food": "Naked PB",
-                "weight": 60.2
-            },
-            {
-                "food": "Sugar Cube",
-                "weight": 7
-            },
-            {
-                "food": "Quaker Oats Organic: Quick 1-Minute",
-                "weight": 70.4
-            }
-        ]
-    },
-    {
-        "name": "Uneaten Miscellaneous",
-        "foods": [
-            {
-                "food": "Naked PB",
-                "weight": 60
             }
         ]
     },
