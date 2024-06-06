@@ -1,23 +1,40 @@
 [
     {
-        "name": "Uneaten Peanut Butter and Jelly Sandwich",
+        "name": "Makeshift Breakfast Sandwich",
         "foods": [
             {
-                "food": "Nature's Own 100% Whole Wheat Bread",
-                "weight": 0
+                "food": "Boar's Head Uncured Turkey Bacon",
+                "weight": 51
             },
             {
-                "food": "Smucker's Seedless Strawberry Jam",
-                "weight": 0
+                "food": "Extra Virgin Olive Oil",
+                "weight": 15.1
+            },
+            {
+                "food": "Nature's Own 100% Whole Wheat Bread",
+                "weight": 38.7
             },
             {
                 "food": "Wegmans Creamy Reduced Fat Peanut Spread",
-                "weight": 0
+                "weight": 26.2
+            }
+        ]
+    },    
+    {
+        "name": "Cereal",
+        "foods": [
+            {
+                "food": "Planet Oat Oatmilk Original",
+                "weight": 119.6
+            },
+            {
+                "food": "Honey Nut Cheerios",
+		"weight": 71
             }
         ]
     },
     {
-        "name": "Uneaten Slop",
+        "name": "Slop",
         "foods": [
             {
                 "food": "Naked PB",
@@ -39,20 +56,16 @@
             {
                 "food": "Naked PB",
                 "weight": 61
-            },
-            {
-                "food": "Naked PB",
-                "weight": 0
-            },
-            {
-                "food": "Boar's Head Uncured Turkey Bacon",
-                "weight": 51
             }
         ]
     },
     {
         "name": "Miscellaneous",
         "foods": [
+            {
+                "food": "Naked PB",
+                "weight": 61
+            }
         ]
     }
 ]
