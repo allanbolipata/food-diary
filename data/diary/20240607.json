@@ -18,10 +18,10 @@
 				"food": "Wegmans Creamy Reduced Fat Peanut Spread",
 				"weight": 17.6
 			},
-      {
-        "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 57
-      }
+                        {
+                                "food": "Amazon Fresh, Cage Free, Brown Eggs",
+                                 "weight": 57
+                        }
 		]
 	},    
 	{
@@ -64,7 +64,7 @@
 		"foods": [
 			{
 				"food": "Naked PB",
-				"weight": 0
+				"weight": 60.9
 			},
 			{
 				"food": "Chobani Greek Yogurt Nonfat Plain",
