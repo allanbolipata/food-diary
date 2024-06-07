@@ -1,11 +1,11 @@
 [
-    {
-        "name": "Name of recipe",
-        "foods": [
-            {
-                "food": "name of food",
-                "weight": 0
-            }
-        ]
-    }
+  {
+    "name": "Name of recipe",
+    "foods": [
+      {
+        "food": "name of food",
+        "weight": 0
+      }
+    ]
+  }
 ]

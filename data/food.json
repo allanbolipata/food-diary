@@ -1,511 +1,960 @@
 [
-    {
-        "name": "Honey Nut Cheerios",
-        "serving_size": 37,
-        "nutritional_data": {
-            "calories": 140,
-            "protein": 3,
-            "fat": {
-                "total": 2,
-                "trans_fat": 0,
-                "polyunsaturated_fat": 0.5,
-                "monounsaturated_fat": 0.5,
-                "dv": 0.03
-            },
-            "sodium": {"total": 0.21, "dv": 0.09},
-            "carbs": {
-                "total": 30,
-                "dv": 0.11,
-                "dietary_fiber": {"total": 3, "dv": 10},
-                "soluble_fiber": 1,
-                "sugars": {"total": 12, "added_sugars": {"total": 12, "dv": 0.24}}
-            }
+  {
+    "name": "Honey Nut Cheerios",
+    "serving_size": 37,
+    "nutritional_data": {
+      "calories": 140,
+      "protein": 3,
+      "fat": {
+        "total": 2,
+        "trans_fat": 0,
+        "polyunsaturated_fat": 0.5,
+        "monounsaturated_fat": 0.5,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.21,
+        "dv": 0.09
+      },
+      "carbs": {
+        "total": 30,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 10
+        },
+        "soluble_fiber": 1,
+        "sugars": {
+          "total": 12,
+          "added_sugars": {
+            "total": 12,
+            "dv": 0.24
+          }
         }
-    },
-    {
-        "name": "Planet Oat Oatmilk Original",
-        "serving_size": 240,
-        "nutritional_data": {
-            "calories": 90,
-            "protein": 2,
-            "fat": {
-                "total": 1.5,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 0, "dv": 0},
-                "dv": 0.02
-            },
-            "sodium": {"total": 0.120, "dv": 0.05},
-            "carbs": {
-                "total": 19,
-                "dv": 0.07,
-                "dietary_fiber": {"total": 2, "dv": 0.08},
-                "soluble_fiber": 2,
-                "sugars": {"total": 4, "added_sugars": {"total": 4, "dv": 0.07}}
-            }
-        }
-    },
-    {
-        "name": "Naked PB",
-        "serving_size": 12,
-        "nutritional_data": {
-            "calories": 50,
-            "protein": 7,
-            "fat": {
-                "total": 1,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 0, "dv": 0},
-                "dv": 0.01
-            },
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 3,
-                "dv": 0.01,
-                "dietary_fiber": {"total": 2, "dv": 0.07},
-                "soluble_fiber": 0,
-                "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        }
-    },
-    {
-        "name": "Chobani Greek Yogurt Nonfat Plain",
-        "serving_size": 170,
-        "nutritional_data": {
-            "calories": 90,
-            "protein": 16,
-            "fat": {
-                "total": 0,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 0, "dv": 0},
-                "dv": 0
-            },
-	    "cholesterol": { "total": 0.01, "dv": 0.03},
-            "sodium": {"total": 0.065, "dv": 0.02},
-            "carbs": {
-                "total": 6,
-                "dv": 0,
-                "dietary_fiber": {"total": 0, "dv": 0},
-                "soluble_fiber": 0,
-                "sugars": {"total": 6, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        }
-    },
-    {
-        "name": "Bob's Red Mill Gluten Free Honey Oat Granola",
-        "serving_size": 50,
-        "nutritional_data": {
-            "calories": 200,
-            "protein": 5,
-            "fat": {
-                "total": 3.5,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 0.5, "dv": 0.03},
-                "dv": 0.04
-            },
-	    "cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0.065, "dv": 0.03},
-            "carbs": {
-                "total": 38,
-                "dv": 0.14,
-                "dietary_fiber": {"total": 4, "dv": 0.14},
-                "soluble_fiber": 0,
-                "sugars": {"total": 10, "added_sugars": {"total": 10, "dv": 0.2}}
-            }
-        }
-    },
-    {
-        "name": "Dole Mixed Berries",
-        "serving_size": 140,
-        "nutritional_data": {
-            "calories": 80,
-            "protein": 1,
-            "fat": {
-                "total": 0.5,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 0, "dv": 0},
-                "dv": 0.01
-            },
-	    "cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 17,
-                "dv": 0.06,
-                "dietary_fiber": {"total": 5, "dv": 0.18},
-                "soluble_fiber": 0,
-                "sugars": {"total": 10, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        }
-    }, 
-    {
-        "name": "Sugar Cube",
-        "serving_size": 7,
-        "description": "2 cubes",
-        "nutritional_data": {
-            "calories": 30,
-            "protein": 0,
-            "fat": {
-                "total": 0,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 0, "dv": 0},
-                "dv": 0
-            },
-	    "cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 7,
-                "dv": 0.03,
-                "dietary_fiber": {"total": 0, "dv": 0},
-                "soluble_fiber": 0,
-                "sugars": {"total": 7, "added_sugars": {"total": 0, "dv": 0.14}}
-            }
-        }
-    },
-    {
-        "name": "Lean Cuisine: Chicken Parmesan",
-        "serving_size": 308,
-        "nutritional_data": {
-            "calories": 380,
-            "protein": 21,
-            "fat": {
-                "total": 13,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 4, "dv": 0.2},
-                "polyunsaturated_fat": 3,
-                "monounsaturated_fat": 4,
-                "dv": 0.17
-            },
-	    "cholesterol": { "total": 0.045, "dv": 0.15},
-            "sodium": {"total": 0.790, "dv": 0.34},
-            "carbs": {
-                "total": 44,
-                "dv": 0.16,
-                "dietary_fiber": {"total": 4, "dv": 0.14},
-                "soluble_fiber": 0,
-                "sugars": {"total": 8, "added_sugars": {"total": 4, "dv": 0.08}}
-            }
-        }
-    },
-    {
-        "name": "Quaker Oats Organic: Quick 1-Minute",
-        "serving_size": 44,
-        "nutritional_data": {
-            "calories": 150,
-            "protein": 5,
-            "fat": {
-                "total": 3,
-                "trans_fat": 0,
-		"saturated_fat": { "total": 0.5, "dv": 0.03},
-                "polyunsaturated_fat": 1,
-                "monounsaturated_fat": 1,
-                "dv": 0.4
-            },
-	    "cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 30,
-                "dv": 0.11,
-                "dietary_fiber": {"total": 4, "dv": 0.16},
-                "soluble_fiber": 2,
-                "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Smucker's Seedless Strawberry Jam",
-        "serving_size": 20,
-        "nutritional_data": {
-            "calories": 50,
-            "protein": 0,
-            "fat": {
-                "total": 0,
-                "trans_fat": 0,
-          		"saturated_fat": { "total": 0, "dv": 0},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0
-            },
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 13,
-                "dv": 0.05,
-                "dietary_fiber": {"total": 0, "dv": 0},
-                "soluble_fiber": 0,
-                "sugars": {"total": 12, "added_sugars": {"total": 9, "dv": 0.19}}
-            }
-        } 
-    },
-    {
-        "name": "Wegmans Creamy Reduced Fat Peanut Spread",
-        "serving_size": 32,
-        "nutritional_data": {
-            "calories": 160,
-            "protein": 7,
-            "fat": {
-                "total": 11,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 2, "dv": 0.1},
-                "polyunsaturated_fat": 2,
-                "monounsaturated_fat": 5,
-                "dv": 0.14
-            },
-        	"cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0.19, "dv": 0.08},
-            "carbs": {
-                "total": 12,
-                "dv": 0.04,
-                "dietary_fiber": {"total": 2, "dv": 0.07},
-                "soluble_fiber": 0,
-                "sugars": {"total": 5, "added_sugars": {"total": 4, "dv": 0.08}}
-            }
-        } 
-    },
-    {
-        "name": "Nature's Own 100% Whole Wheat Bread",
-        "serving_size": 26,
-        "nutritional_data": {
-            "calories": 60,
-            "protein": 3,
-            "fat": {
-                "total": 0.5,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 0, "dv": 0},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0.01
-            },
-        	"cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0.12, "dv": 0.05},
-            "carbs": {
-                "total": 12,
-                "dv": 0.04,
-                "dietary_fiber": {"total": 2, "dv": 0.06},
-                "soluble_fiber": 0,
-                "sugars": {"total": 1, "added_sugars": {"total": 1, "dv": 0.02}}
-            }
-        } 
-    },
-    {
-        "name": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
-        "serving_size": 283,
-        "nutritional_data": {
-            "calories": 280,
-            "protein": 20,
-            "fat": {
-                "total": 5,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 2, "dv": 0.1},
-                "polyunsaturated_fat": 0.5,
-                "monounsaturated_fat": 1.5,
-                "dv": 0.06
-            },
-        	"cholesterol": { "total": 0.03, "dv": 0.1},
-            "sodium": {"total": 0.8, "dv": 0.35},
-            "carbs": {
-                "total": 39,
-                "dv": 0.14,
-                "dietary_fiber": {"total": 3, "dv": 0.11},
-                "soluble_fiber": 0,
-                "sugars": {"total": 4, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
-        "serving_size": 226,
-        "nutritional_data": {
-            "calories": 270,
-            "protein": 17,
-            "fat": {
-                "total": 7,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 4.5, "dv": 0.23},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0.09
-            },
-        	"cholesterol": { "total": 0.02, "dv": 0.07},
-            "sodium": {"total": 0.79, "dv": 0.34},
-            "carbs": {
-                "total": 35,
-                "dv": 0.13,
-                "dietary_fiber": {"total": 1, "dv": 0.04},
-                "soluble_fiber": 0,
-                "sugars": {"total": 4, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Barilla Classic Linguine",
-        "serving_size": 56,
-        "nutritional_data": {
-            "calories": 200,
-            "protein": 7,
-            "fat": {
-                "total": 1,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 0, "dv": 0},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0.01
-            },
-        	"cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 42,
-                "dv": 0.15,
-                "dietary_fiber": {"total": 3, "dv": 0.11},
-                "soluble_fiber": 2,
-                "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Boar's Head Uncured Turkey Bacon",
-        "serving_size": 17,
-        "nutritional_data": {
-            "calories": 35,
-            "protein": 4,
-            "fat": {
-                "total": 2,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 0, "dv": 0},
-                "polyunsaturated_fat": 1,
-                "monounsaturated_fat": 0.5,
-                "dv": 0.03
-            },
-        	"cholesterol": { "total": 0.02, "dv": 0.07},
-            "sodium": {"total": 0.15, "dv": 0.06},
-            "carbs": {
-                "total": 0,
-                "dv": 0,
-                "dietary_fiber": {"total": 0, "dv": 0},
-                "soluble_fiber": 0,
-                "sugars": {"total": 0, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Earthbound Farm Organic Baby Spinach",
-        "serving_size": 85,
-        "nutritional_data": {
-            "calories": 25,
-            "protein": 2,
-            "fat": {
-                "total": 0,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 0, "dv": 0},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0
-            },
-        	"cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0.065, "dv": 0.03},
-            "carbs": {
-                "total": 3,
-                "dv": 0.01,
-                "dietary_fiber": {"total": 2, "dv": 0.07},
-                "soluble_fiber": 0,
-                "sugars": {"total": 1, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "President Feta Crumbles",
-        "serving_size": 28,
-        "nutritional_data": {
-            "calories": 70,
-            "protein": 4,
-            "fat": {
-                "total": 5,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 3.5, "dv": 0.17},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0.07
-            },
-        	"cholesterol": { "total": 0.02, "dv": 0.07},
-            "sodium": {"total": 0.22, "dv": 0.1},
-            "carbs": {
-                "total": 1,
-                "dv": 0,
-                "dietary_fiber": {"total": 0, "dv": 0},
-                "soluble_fiber": 0,
-                "sugars": {"total": 0, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Naturally Seedless Lemons",
-        "serving_size": 65,
-        "nutritional_data": {
-            "calories": 20,
-            "protein": 1,
-            "fat": {
-                "total": 0,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 0, "dv": 0},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0
-            },
-        	"cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 6,
-                "dv": 0.02,
-                "dietary_fiber": {"total": 2, "dv": 0.07},
-                "soluble_fiber": 0,
-                "sugars": {"total": 2, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Garlic",
-        "serving_size": 3,
-        "nutritional_data": {
-            "calories": 4.5,
-            "protein": 0.2,
-            "fat": {
-                "total": 0,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 0, "dv": 0},
-                "polyunsaturated_fat": 0,
-                "monounsaturated_fat": 0,
-                "dv": 0
-            },
-        	"cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0.0005, "dv": 0},
-            "carbs": {
-                "total": 1,
-                "dv": 0,
-                "dietary_fiber": {"total": 0, "dv": 0},
-                "soluble_fiber": 0,
-                "sugars": {"total": 0, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
-    },
-    {
-        "name": "Extra Virgin Olive Oil",
-        "serving_size": 15,
-        "nutritional_data": {
-            "calories": 120,
-            "protein": 0,
-            "fat": {
-                "total": 14,
-                "trans_fat": 0,
-        		"saturated_fat": { "total": 2, "dv": 0.1},
-                "polyunsaturated_fat": 2,
-                "monounsaturated_fat": 10,
-                "dv": 0.18
-            },
-        	"cholesterol": { "total": 0, "dv": 0},
-            "sodium": {"total": 0, "dv": 0},
-            "carbs": {
-                "total": 0,
-                "dv": 0,
-                "dietary_fiber": {"total": 0, "dv": 0},
-                "soluble_fiber": 0,
-                "sugars": {"total": 0, "added_sugars": {"total": 0, "dv": 0}}
-            }
-        } 
+      }
     }
+  },
+  {
+    "name": "Planet Oat Oatmilk Original",
+    "serving_size": 240,
+    "nutritional_data": {
+      "calories": 90,
+      "protein": 2,
+      "fat": {
+        "total": 1.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "dv": 0.02
+      },
+      "sodium": {
+        "total": 0.12,
+        "dv": 0.05
+      },
+      "carbs": {
+        "total": 19,
+        "dv": 0.07,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.08
+        },
+        "soluble_fiber": 2,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.07
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Naked PB",
+    "serving_size": 12,
+    "nutritional_data": {
+      "calories": 50,
+      "protein": 7,
+      "fat": {
+        "total": 1,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "dv": 0.01
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 3,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Chobani Greek Yogurt Nonfat Plain",
+    "serving_size": 170,
+    "nutritional_data": {
+      "calories": 90,
+      "protein": 16,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.065,
+        "dv": 0.02
+      },
+      "carbs": {
+        "total": 6,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Bob's Red Mill Gluten Free Honey Oat Granola",
+    "serving_size": 50,
+    "nutritional_data": {
+      "calories": 200,
+      "protein": 5,
+      "fat": {
+        "total": 3.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.5,
+          "dv": 0.03
+        },
+        "dv": 0.04
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.065,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 38,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 10,
+          "added_sugars": {
+            "total": 10,
+            "dv": 0.2
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Dole Mixed Berries",
+    "serving_size": 140,
+    "nutritional_data": {
+      "calories": 80,
+      "protein": 1,
+      "fat": {
+        "total": 0.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "dv": 0.01
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 17,
+        "dv": 0.06,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 10,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Sugar Cube",
+    "serving_size": 7,
+    "description": "2 cubes",
+    "nutritional_data": {
+      "calories": 30,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 7,
+        "dv": 0.03,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0.14
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Lean Cuisine: Chicken Parmesan",
+    "serving_size": 308,
+    "nutritional_data": {
+      "calories": 380,
+      "protein": 21,
+      "fat": {
+        "total": 13,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4,
+          "dv": 0.2
+        },
+        "polyunsaturated_fat": 3,
+        "monounsaturated_fat": 4,
+        "dv": 0.17
+      },
+      "cholesterol": {
+        "total": 0.045,
+        "dv": 0.15
+      },
+      "sodium": {
+        "total": 0.79,
+        "dv": 0.34
+      },
+      "carbs": {
+        "total": 44,
+        "dv": 0.16,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Quaker Oats Organic: Quick 1-Minute",
+    "serving_size": 44,
+    "nutritional_data": {
+      "calories": 150,
+      "protein": 5,
+      "fat": {
+        "total": 3,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.5,
+          "dv": 0.03
+        },
+        "polyunsaturated_fat": 1,
+        "monounsaturated_fat": 1,
+        "dv": 0.4
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 30,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.16
+        },
+        "soluble_fiber": 2,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Smucker's Seedless Strawberry Jam",
+    "serving_size": 20,
+    "nutritional_data": {
+      "calories": 50,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 13,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 12,
+          "added_sugars": {
+            "total": 9,
+            "dv": 0.19
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Wegmans Creamy Reduced Fat Peanut Spread",
+    "serving_size": 32,
+    "nutritional_data": {
+      "calories": 160,
+      "protein": 7,
+      "fat": {
+        "total": 11,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 2,
+        "monounsaturated_fat": 5,
+        "dv": 0.14
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.19,
+        "dv": 0.08
+      },
+      "carbs": {
+        "total": 12,
+        "dv": 0.04,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 5,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Nature's Own 100% Whole Wheat Bread",
+    "serving_size": 26,
+    "nutritional_data": {
+      "calories": 60,
+      "protein": 3,
+      "fat": {
+        "total": 0.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.01
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.12,
+        "dv": 0.05
+      },
+      "carbs": {
+        "total": 12,
+        "dv": 0.04,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.06
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 1,
+            "dv": 0.02
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
+    "serving_size": 283,
+    "nutritional_data": {
+      "calories": 280,
+      "protein": 20,
+      "fat": {
+        "total": 5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 0.5,
+        "monounsaturated_fat": 1.5,
+        "dv": 0.06
+      },
+      "cholesterol": {
+        "total": 0.03,
+        "dv": 0.1
+      },
+      "sodium": {
+        "total": 0.8,
+        "dv": 0.35
+      },
+      "carbs": {
+        "total": 39,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
+    "serving_size": 226,
+    "nutritional_data": {
+      "calories": 270,
+      "protein": 17,
+      "fat": {
+        "total": 7,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.23
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.09
+      },
+      "cholesterol": {
+        "total": 0.02,
+        "dv": 0.07
+      },
+      "sodium": {
+        "total": 0.79,
+        "dv": 0.34
+      },
+      "carbs": {
+        "total": 35,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.04
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Barilla Classic Linguine",
+    "serving_size": 56,
+    "nutritional_data": {
+      "calories": 200,
+      "protein": 7,
+      "fat": {
+        "total": 1,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.01
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 42,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 2,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Boar's Head Uncured Turkey Bacon",
+    "serving_size": 17,
+    "nutritional_data": {
+      "calories": 35,
+      "protein": 4,
+      "fat": {
+        "total": 2,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 1,
+        "monounsaturated_fat": 0.5,
+        "dv": 0.03
+      },
+      "cholesterol": {
+        "total": 0.02,
+        "dv": 0.07
+      },
+      "sodium": {
+        "total": 0.15,
+        "dv": 0.06
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Earthbound Farm Organic Baby Spinach",
+    "serving_size": 85,
+    "nutritional_data": {
+      "calories": 25,
+      "protein": 2,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.065,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 3,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "President Feta Crumbles",
+    "serving_size": 28,
+    "nutritional_data": {
+      "calories": 70,
+      "protein": 4,
+      "fat": {
+        "total": 5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3.5,
+          "dv": 0.17
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.07
+      },
+      "cholesterol": {
+        "total": 0.02,
+        "dv": 0.07
+      },
+      "sodium": {
+        "total": 0.22,
+        "dv": 0.1
+      },
+      "carbs": {
+        "total": 1,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Naturally Seedless Lemons",
+    "serving_size": 65,
+    "nutritional_data": {
+      "calories": 20,
+      "protein": 1,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 6,
+        "dv": 0.02,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 2,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Garlic",
+    "serving_size": 3,
+    "nutritional_data": {
+      "calories": 4.5,
+      "protein": 0.2,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.0005,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 1,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Extra Virgin Olive Oil",
+    "serving_size": 15,
+    "nutritional_data": {
+      "calories": 120,
+      "protein": 0,
+      "fat": {
+        "total": 14,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 2,
+        "monounsaturated_fat": 10,
+        "dv": 0.18
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Lundberg Brown Rice, Organic Long Grain",
+    "serving_size": 45,
+    "nutritional_data": {
+      "calories": 170,
+      "protein": 3,
+      "fat": {
+        "total": 1.5,
+        "dv": 0.02,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 34,
+        "dv": 0.12,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Amazon Fresh, Cage Free, Brown Eggs",
+    "serving_size": 50,
+    "nutritional_data": {
+      "calories": 70,
+      "protein": 6,
+      "fat": {
+        "total": 5,
+        "dv": 0.06,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.185,
+        "dv": 0.62
+      },
+      "sodium": {
+        "total": 0.07,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  }
 ]
