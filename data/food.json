@@ -956,5 +956,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Lean Cuisine: Salisbury Steak with Macaroni & Cheese",
+    "serving_size": 269,
+    "nutritional_data": {
+      "calories": 250,
+      "protein": 23,
+      "fat": {
+        "total": 4.5,
+        "dv": 0.06,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 2.5,
+          "dv": 0.13
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.035,
+        "dv": 0.12
+      },
+      "sodium": {
+        "total": 0.76,
+        "dv": 0.33
+      },
+      "carbs": {
+        "total": 28,
+        "dv": 0.1,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 3,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

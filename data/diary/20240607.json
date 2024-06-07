@@ -4,7 +4,7 @@
 		"foods": [
 			{
 				"food": "Boar's Head Uncured Turkey Bacon",
-				"weight": 51
+				"weight": 49.5
 			},
 			{
 				"food": "Extra Virgin Olive Oil",
@@ -12,11 +12,11 @@
 			},
 			{
 				"food": "Nature's Own 100% Whole Wheat Bread",
-				"weight": 38.7
+				"weight": 45.9
 			},
 			{
 				"food": "Wegmans Creamy Reduced Fat Peanut Spread",
-				"weight": 26.2
+				"weight": 17.6
 			},
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
@@ -77,6 +77,10 @@
 			{
 				"food": "Dole Mixed Berries",
 				"weight": 0
+			},
+			{
+				"food": "Lean Cuisine: Salisbury Steak with Macaroni & Cheese",
+				"weight": 269
 			}
 		]
 	}
