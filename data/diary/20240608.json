@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Makeshift Breakfast Sandwich",
+    "foods": [
+      {
+        "food": "Boar's Head Uncured Turkey Bacon",
+        "weight": 54
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 13.5
+      },
+      {
+        "food": "Nature's Own 100% Whole Wheat Bread",
+        "weight": 52.7
+      },
+      {
+        "food": "Wegmans Creamy Reduced Fat Peanut Spread",
+        "weight": 17.3
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 57.1
+      }
+    ]
+  },
+  {
+    "name": "Cereal",
+    "foods": [
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 0
+      },
+      {
+        "food": "Honey Nut Cheerios",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Slop",
+    "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Sugar Cube",
+        "weight": 0
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Salisbury Steak with Macaroni & Cheese",
+        "weight": 0
+      }
+    ]
+  }
+]
