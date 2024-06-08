@@ -25,15 +25,23 @@
     ]
   },
   {
-    "name": "Cereal",
+    "name": "Protein Powder, Banana and Spinach Smoothie",
     "foods": [
       {
         "food": "Planet Oat Oatmilk Original",
-        "weight": 0
+        "weight": 112.43
       },
       {
-        "food": "Honey Nut Cheerios",
-        "weight": 0
+        "food": "Frozen Banana, Generic",
+        "weight": 50.255
+      },
+      {
+        "food": "Earthbound Farm Organic Baby Spinach",
+        "weight": 14.978
+      },
+      {
+        "food": "Naked PB",
+        "weight": 18.06
       }
     ]
   },
@@ -64,15 +72,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 61
       },
       {
         "food": "Naked PB",
         "weight": 0
       },
       {
-        "food": "Lean Cuisine: Salisbury Steak with Macaroni & Cheese",
-        "weight": 0
+        "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
+        "weight": 226
       }
     ]
   }
