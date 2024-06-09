@@ -877,6 +877,10 @@
   {
     "name": "Lundberg Brown Rice, Organic Long Grain",
     "serving_size": 45,
+    "serving_size_conversion": {
+      "dry": 1,
+      "wet": 0.25
+    },
     "nutritional_data": {
       "calories": 170,
       "protein": 3,
@@ -1395,6 +1399,186 @@
         "soluble_fiber": 0,
         "sugars": {
           "total": 0.54,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Creole Bitters",
+    "serving_size": 2.5,
+    "serving_size_conversion":
+    {
+      "num_dash": 1
+    },
+    "nutritional_data": {
+      "calories": 7,
+      "protein": 0.025,
+      "fat": {
+        "total": 0.025,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.125,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 2.35,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 2.35,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Basil Hayden's Kentucky Straight Bourbon Whiskey",
+    "serving_size": 56,
+    "serving_size_conversion":
+    {
+      "num_oz": 2
+    },
+    "nutritional_data": {
+      "calories": 129.4,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.0006,
+        "dv": 0.01
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Maraschino Cherries, Generic",
+    "serving_size": 5,
+    "nutritional_data": {
+      "calories": 8,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.0002,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 2,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 0.2,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 2,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "High Noon Vodka & Soda: Black Cherry",
+    "serving_size": 355,
+    "nutritional_data": {
+      "calories": 100,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 5.3,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
           "added_sugars": {
             "total": 0,
             "dv": 0

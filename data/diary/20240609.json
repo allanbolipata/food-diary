@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Makeshift Breakfast Sandwich",
+    "foods": [
+      {
+        "food": "Boar's Head Uncured Turkey Bacon",
+        "weight": 43.1
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 23.1
+      },
+      {
+        "food": "Nature's Own 100% Whole Wheat Bread",
+        "weight": 54.6
+      },
+      {
+        "food": "Wegmans Creamy Reduced Fat Peanut Spread",
+        "weight": 30.9
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 50
+      }
+    ]
+  },
+  {
+    "name": "Protein Powder, Banana and Spinach Smoothie",
+    "foods": [
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 113.9236
+      },
+      {
+        "food": "Frozen Banana, Generic",
+        "weight": 50.923
+      },
+      {
+        "food": "Earthbound Farm Organic Baby Spinach",
+        "weight": 15.1768
+      },
+      {
+        "food": "Naked PB",
+        "weight": 18.3
+      }
+    ]
+  },
+  {
+    "name": "Old Fashioned with Basil Hayden",
+    "foods": [
+      {
+        "food": "Maraschino Cherries, Generic",
+        "weight": 5
+      },
+      {
+        "food": "Creole Bitters",
+        "weight": 15
+      },
+      {
+        "food": "Basil Hayden's Kentucky Straight Bourbon Whiskey",
+        "weight": 56
+      },
+      {
+        "food": "Sugar Cube",
+        "weight": 3.5
+      }
+    ]
+  },
+  {
+    "name": "Slop",
+    "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 120
+      },
+      {
+        "food": "Sugar Cube",
+        "weight": 7
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 132.597
+      },
+      {
+        "food": "High Noon Vodka & Soda: Black Cherry",
+        "weight": 355
+      },
+      {
+        "food": "Fried Calamari, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Chicken or Turkey Parmigiana, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Spaghetti/Marinara Pasta Sauce, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Fresh Mozzarella, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Prosciutto, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Chicken Piccata, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Meatball, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Green Olives, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Salisbury Steak with Macaroni & Cheese",
+        "weight": 250
+      }
+    ]
+  }
+]

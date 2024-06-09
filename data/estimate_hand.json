@@ -1,0 +1,24 @@
+[
+  {
+    "name": "The Palm: 3 oz",
+    "weight": 85.086,
+    "weight_oz": 3
+  },
+  {
+    "name": "Fist: 1 Cup",
+    "num_cup": 1
+  },
+  {
+    "name": "Tip of the Thumb: 1 Tablespoon",
+    "num_tbsp": 1
+  },
+  {
+    "name": "A Cupped Hand: 1/2 Cup",
+    "num_cup": 0.5
+  },
+  {
+    "name": "The Thumbnail: 1 Teaspoon",
+    "num_tsp": 1
+  }
+  ]
+]
