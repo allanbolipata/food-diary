@@ -1093,7 +1093,7 @@
     }
   },
   {
-    "name": "Chicken or Turkey Pargmigiana, Generic",
+    "name": "Chicken or Turkey Parmigiana, Generic",
     "serving_size": 28.0899,
     "serving_size_conversion":{
       "num_oz": 1
@@ -1142,7 +1142,7 @@
     "name": "Spaghetti/Marinara Pasta Sauce, Generic",
     "serving_size": 100,
     "serving_size_conversion": {
-      "num_cups": 0.4
+      "num_cups": 0.4,
       "num_tbsp": 6.4
     },
     "nutritional_data": {

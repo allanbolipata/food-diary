@@ -71,12 +71,36 @@
     "name": "Miscellaneous",
     "foods": [
       {
-        "food": "Naked PB",
-        "weight": 0
+        "food": "Fried Calamari, Generic",
+        "weight": 74.8
       },
       {
-        "food": "Naked PB",
-        "weight": 0
+        "food": "Chicken or Turkey Parmigiana, Generic",
+        "weight": 168.5394
+      },
+      {
+        "food": "Spaghetti/Marinara Pasta Sauce, Generic",
+        "weight": 27.344
+      },
+      {
+        "food": "Fresh Mozzarella, Generic",
+        "weight": 22.1801
+      },
+      {
+        "food": "Prosciutto, Generic",
+        "weight": 10
+      },
+      {
+        "food": "Chicken Piccata, Generic",
+        "weight": 85.185
+      },
+      {
+        "food": "Meatball, Generic",
+        "weight": 140.099
+      },
+      {
+        "food": "Green Olives, Generic",
+        "weight": 10
       },
       {
         "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
