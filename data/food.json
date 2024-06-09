@@ -37,6 +37,9 @@
   {
     "name": "Planet Oat Oatmilk Original",
     "serving_size": 240,
+    "serving_size_conversion": {
+      "num_cups": 1
+    },
     "nutritional_data": {
       "calories": 90,
       "protein": 2,
@@ -1042,6 +1045,362 @@
         }
       }
     }
+  },
+  {
+    "name": "Fried Calamari, Generic",
+    "serving_size": 100,
+    "serving_size_conversion": {
+      "num_cups": 0.66845
+    },
+    "nutritional_data": {
+      "calories": 125,
+      "protein": 15.13,
+      "fat": {
+        "total": 2.17,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.569,
+          "dv": 0.03
+        },
+        "polyunsaturated_fat": 0.715,
+        "monounsaturated_fat": 0.372
+      },
+      "cholesterol": {
+        "total": 0.217,
+        "dv": 0.72
+      },
+      "sodium": {
+        "total": 0.335,
+        "dv": 0.15
+      },
+      "carbs": {
+        "total": 9.9,
+        "dv": 0.04,
+        "dietary_fiber": {
+          "total": 0.5,
+          "dv": 0.02
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0.66,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Chicken or Turkey Pargmigiana, Generic",
+    "serving_size": 28.0899,
+    "serving_size_conversion":{
+      "num_oz": 1
+    },
+    "nutritional_data": {
+      "calories": 50,
+      "protein": 4.52,
+      "fat": {
+        "total": 2.45,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.821,
+          "dv": 0.04
+        },
+        "polyunsaturated_fat": 0.616,
+        "monounsaturated_fat": 0.762
+      },
+      "cholesterol": {
+        "total": 0.021,
+        "dv": 0.07
+      },
+      "sodium": {
+        "total": 0.122,
+        "dv": 0.05
+      },
+      "carbs": {
+        "total": 2.41,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 0.2,
+          "dv": 0.01
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0.52,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Spaghetti/Marinara Pasta Sauce, Generic",
+    "serving_size": 100,
+    "serving_size_conversion": {
+      "num_cups": 0.4
+      "num_tbsp": 6.4
+    },
+    "nutritional_data": {
+      "calories": 74,
+      "protein": 1.95,
+      "fat": {
+        "total": 2.38,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.325,
+          "dv": 0.02
+        },
+        "polyunsaturated_fat": 0.948,
+        "monounsaturated_fat": 0.763
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.481,
+        "dv": 0.21
+      },
+      "carbs": {
+        "total": 11.27,
+        "dv": 0.04,
+        "dietary_fiber": {
+          "total": 0.4,
+          "dv": 0.01
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8.88,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Fresh Mozzarella, Generic",
+    "serving_size": 28,
+    "nutritional_data": {
+      "calories": 60,
+      "protein": 6,
+      "fat": {
+        "total": 4.5,
+        "dv": 0.06,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2.5,
+          "dv": 0.13
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.015,
+        "dv": 0.05
+      },
+      "sodium": {
+        "total": 0.025,
+        "dv": 0.01
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Prosciutto, Generic",
+    "serving_size": 100,
+    "nutritional_data": {
+      "calories": 195,
+      "protein": 27.8,
+      "fat": {
+        "total": 8.32,
+        "dv": 0.11,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.97,
+          "dv": 0.14
+        },
+        "polyunsaturated_fat": 0.97,
+        "monounsaturated_fat": 3.821
+      },
+      "cholesterol": {
+        "total": 0.07,
+        "dv": 0.23
+      },
+      "sodium": {
+        "total": 2.695,
+        "dv": 1.17
+      },
+      "carbs": {
+        "total": 0.3,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Chicken Piccata, Generic",
+    "serving_size": 28.395,
+    "serving_size_conversion": {
+      "num_oz": 1
+    },
+    "nutritional_data": {
+      "calories": 46,
+      "protein": 3.32,
+      "fat": {
+        "total": 3.05,
+        "dv": 0.04,
+        "trans_fat": 0.003,
+        "saturated_fat": {
+          "total": 1.077,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0.265,
+        "monounsaturated_fat": 1.523
+      },
+      "cholesterol": {
+        "total": 0.011,
+        "dv": 0.04
+      },
+      "sodium": {
+        "total": 0.110,
+        "dv": 0.05
+      },
+      "carbs": {
+        "total": 1.36,
+        "dv": 0.0,
+        "dietary_fiber": {
+          "total": 0.1,
+          "dv": 0.01
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0.09,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Meatball, Generic",
+    "serving_size": 100,
+    "nutritional_data": {
+      "calories": 202,
+      "protein": 12.41,
+      "fat": {
+        "total": 13.16,
+        "dv": 0.17,
+        "trans_fat": 0.731,
+        "saturated_fat": {
+          "total": 4.978,
+          "dv": 0.25
+        },
+        "polyunsaturated_fat": 0.582,
+        "monounsaturated_fat": 5.607
+      },
+      "cholesterol": {
+        "total": 0.074,
+        "dv": 0.25
+      },
+      "sodium": {
+        "total": 0.478,
+        "dv": 0.21
+      },
+      "carbs": {
+        "total": 7.58,
+        "dv": 0.03,
+        "dietary_fiber": {
+          "total": 0.5,
+          "dv": 0.02
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1.51,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Green Olives, Generic",
+    "serving_size": 100,
+    "nutritional_data": {
+      "calories": 145,
+      "protein": 1.03,
+      "fat": {
+        "total": 15.32,
+        "dv": 0.2,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2.029,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 1.307,
+        "monounsaturated_fat": 11.314
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 1.556,
+        "dv": 0.68
+      },
+      "carbs": {
+        "total": 3.84,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 3.3,
+          "dv": 0.12
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0.54,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
-
 ]
