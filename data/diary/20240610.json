@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Makeshift Breakfast Sandwich",
+    "foods": [
+      {
+        "food": "Applegate Naturals Hickory Smoked Uncured Turkey Bacon",
+        "weight": 45
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 8
+      },
+      {
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 113
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 50
+      }
+    ]
+  },
+  {
+    "name": "Protein Powder, Banana and Spinach Smoothie",
+    "foods": [
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 0
+      },
+      {
+        "food": "Frozen Banana, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Earthbound Farm Organic Baby Spinach",
+        "weight": 0
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Slop",
+    "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Sugar Cube",
+        "weight": 0
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Chicken or Turkey Parmigiana, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Salisbury Steak with Macaroni & Cheese",
+        "weight": 0
+      }
+    ]
+  }
+]
