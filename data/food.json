@@ -1629,5 +1629,49 @@
         }
       }
     }
+  },
+  {
+    "name": "Brownie Sundae, Generic",
+    "serving_size": 294,
+    "nutritional_data": {
+      "calories": 914,
+      "protein": 11,
+      "fat": {
+        "total": 54,
+        "dv": 0.69,
+        "trans_fat": 0.4,
+        "saturated_fat": {
+          "total": 30,
+          "dv": 1.5
+        },
+        "polyunsaturated_fat": 3,
+        "monounsaturated_fat": 18
+      },
+      "cholesterol": {
+        "total": 0.11,
+        "dv": 0.37
+      },
+      "sodium": {
+        "total": 0.295,
+        "dv": 0.13
+      },
+      "carbs": {
+        "total": 109,
+        "dv": 0.40,
+        "dietary_fiber": {
+          "total": 5.6,
+          "dv": 0.2
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 84,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
+
 ]
