@@ -46,15 +46,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 60
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 7
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 40
       }
     ]
   },
@@ -89,7 +89,7 @@
       },
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 63.6
       },
       {
         "food": "Lean Cuisine: Salisbury Steak with Macaroni & Cheese",
@@ -98,6 +98,39 @@
       {
         "food": "Brownie Sundae, Generic",
         "weight": 170
+      }
+    ]
+  },
+  {
+    "name": "PJ Clarke's: The Cadillac, half",
+    "foods": [
+      {
+        "food": "Fries, Generic",
+        "weight": 49.3
+      },
+      {
+        "food": "Lettuce, Generic",
+        "weight": 3
+      },
+      {
+        "food": "Tomato, Generic",
+        "weight": 9.6
+      },
+      {
+        "food": "Bacon, Generic",
+        "weight": 17
+      },
+      {
+        "food": "American Cheese, Generic",
+        "weight": 10.5
+      },
+      {
+        "food": "Burger, Generic",
+        "weight": 96
+      },
+      {
+        "food": "Burger Bun, Generic",
+        "weight": 40.5
       }
     ]
   }

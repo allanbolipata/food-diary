@@ -1930,7 +1930,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Burger Bun, Generic",
+    "serving_size": 46,
+    "nutritional_data": {
+      "calories": 128,
+      "protein": 4.5,
+      "fat": {
+        "total": 1.7,
+        "dv": 0.02,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.4,
+          "dv": 0.02
+        },
+        "polyunsaturated_fat": 0.7,
+        "monounsaturated_fat": 0.4
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.230,
+        "dv": 0.08
+      },
+      "carbs": {
+        "total": 23,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.03
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 2.9,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
-
-
 ]
