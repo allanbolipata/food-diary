@@ -1973,5 +1973,91 @@
         }
       }
     }
+  },
+  {
+    "name": "Lean Cuisine: Meatloaf with Mashed Potatoes",
+    "serving_size": 265,
+    "nutritional_data": {
+      "calories": 250,
+      "protein": 21,
+      "fat": {
+        "total": 7,
+        "dv": 0.09,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4,
+          "dv": 0.2
+        },
+        "polyunsaturated_fat": 0.9,
+        "monounsaturated_fat": 1.5
+      },
+      "cholesterol": {
+        "total": 0.05,
+        "dv": 0.17
+      },
+      "sodium": {
+        "total": 0.8,
+        "dv": 0.35
+      },
+      "carbs": {
+        "total": 25,
+        "dv": 0.09,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 1,
+            "dv": 0.02
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Jif Reduced Fat Creamy Peanut Butter",
+    "serving_size": 36,
+    "nutritional_data": {
+      "calories": 190,
+      "protein": 7,
+      "fat": {
+        "total": 12,
+        "dv": 0.16,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2.5,
+          "dv": 0.13
+        },
+        "polyunsaturated_fat": 2.5,
+        "monounsaturated_fat": 6
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.19,
+        "dv": 0.08
+      },
+      "carbs": {
+        "total": 15,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 3,
+            "dv": 0.05
+          }
+        }
+      }
+    }
   }
 ]
