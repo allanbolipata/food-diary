@@ -29,28 +29,28 @@
     "foods": [
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
-        "weight": 0
+        "weight": 132.5
       },
       {
         "food": "Broccoli, Generic",
-        "weight": 0
+        "weight": 47.1
       },
       {
         "food": "Carrots, Generic",
-        "weight": 0
+        "weight": 80.3
       },
       {
         "food": "Tyson: Chicken Breast Strips, Fully Cooked",
-        "weight": 0
+        "weight": 86.3
       }
     ]
   },
   {
-    "name": "Slop",
+    "name": "Uneaten Slop",
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 60
+        "weight": 75
       },
       {
         "food": "Sugar Cube",
@@ -92,8 +92,8 @@
         "weight": 0
       },
       {
-        "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
-        "weight": 0
+        "food": "Lean Cuisine: Herb Roasted Chicken",
+        "weight": 226
       },
       {
         "food": "Kind: Dark Chocolate & Sea Salt",
