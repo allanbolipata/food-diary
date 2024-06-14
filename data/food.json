@@ -2059,5 +2059,220 @@
         }
       }
     }
+  },
+  {
+    "name": "Kind: Almost & Coconut",
+    "serving_size": 40,
+    "nutritional_data": {
+      "calories": 190,
+      "protein": 3,
+      "fat": {
+        "total": 14,
+        "dv": 0.18,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 7,
+          "dv": 0.35
+        },
+        "polyunsaturated_fat": 1.5,
+        "monounsaturated_fat": 4
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.02,
+        "dv": 0.01
+      },
+      "carbs": {
+        "total": 19,
+        "dv": 0.07,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 9,
+          "added_sugars": {
+            "total": 8,
+            "dv": 0.16
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Kind: Dark Chocolate & Sea Salt",
+    "serving_size": 40,
+    "nutritional_data": {
+      "calories": 180,
+      "protein": 6,
+      "fat": {
+        "total": 15,
+        "dv": 0.19,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3,
+          "dv": 0.15
+        },
+        "polyunsaturated_fat": 3.5,
+        "monounsaturated_fat": 7
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.14,
+        "dv": 0.06
+      },
+      "carbs": {
+        "total": 16,
+        "dv": 0.06,
+        "dietary_fiber": {
+          "total": 7,
+          "dv": 0.25
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 5,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Broccoli, Generic",
+    "serving_size": 148,
+    "nutritional_data": {
+      "calories": 50,
+      "protein": 4.2,
+      "fat": {
+        "total": 0.5,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.1,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.049,
+        "dv": 0.02
+      },
+      "carbs": {
+        "total": 10,
+        "dv": 0.03,
+        "dietary_fiber": {
+          "total": 3.8,
+          "dv": 0.15
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 2.5,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Carrots, Generic",
+    "serving_size": 46,
+    "nutritional_data": {
+      "calories": 16,
+      "protein": 0.4,
+      "fat": {
+        "total": 0.1,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.027,
+        "dv": 0.01
+      },
+      "carbs": {
+        "total": 3.8,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 1.4,
+          "dv": 0.05
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1.6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Tyson: Chicken Breast Strips, Fully Cooked",
+    "serving_size": 84,
+    "nutritional_data": {
+      "calories": 110,
+      "protein": 21,
+      "fat": {
+        "total": 2.5,
+        "dv": 0.04,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0.5,
+        "monounsaturated_fat": 1
+      },
+      "cholesterol": {
+        "total": 0.075,
+        "dv": 0.25
+      },
+      "sodium": {
+        "total": 0.54,
+        "dv": 0.23
+      },
+      "carbs": {
+        "total": 2,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
