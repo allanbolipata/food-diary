@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Makeshift Breakfast Sandwich",
+    "foods": [
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 0
+      },
+      {
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 0
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Meal Prep Rice",
+    "foods": [
+      {
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 0
+      },
+      {
+        "food": "Broccoli, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Carrots, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Tyson: Chicken Breast Strips, Fully Cooked",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Slop",
+    "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 75.1
+      },
+      {
+        "food": "Sugar Cube",
+        "weight": 7
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 30
+      }
+    ]
+  },
+  {
+    "name": "Food at Sugar Monk; estimate",
+    "foods": [
+            {
+                "food": "Steamed Chicken Dumplings, Generic",
+                "weight": 150
+            },
+            {
+                "food": "Chicken Empanadas, Generic",
+                "weight": 222
+            },
+            {
+                "food": "Spinach Empanadas, Generic",
+                "weight": 225
+            },
+            {
+                "food": "Popcorn, Generic",
+                "weight": 16
+            },
+            {
+                "food": "Sea Salt and Vinegar Chips, Generic",
+                "weight": 28
+            }
+    ]
+  },
+    {
+        "name": "Cocktail at Sugar Monk; estimate",
+        "foods": [
+            {
+                "food": "Basil Hayden's Kentucky Straight Bourbon Whiskey",
+                "weight": 56
+            }
+        ]
+    },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Naked PB",
+        "weight": 82.6
+      },
+      {
+        "food": "Lean Cuisine: Herb Roasted Chicken",
+        "weight": 226
+      }
+    ]
+  }
+]
