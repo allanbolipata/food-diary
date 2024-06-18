@@ -2539,5 +2539,91 @@
         }
       }
     }
+  },
+  {
+    "name": "Jennie-O Turkey Bacon",
+    "serving_size": 15,
+    "nutritional_data": {
+      "calories": 30,
+      "protein": 2,
+      "fat": {
+        "total": 1.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.5,
+          "dv": 0.03
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.14,
+        "dv": 0.06
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Banana, Generic",
+    "serving_size": 125,
+    "nutritional_data": {
+      "calories": 162,
+      "protein": 1.3,
+      "fat": {
+        "total": 0,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 40,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
