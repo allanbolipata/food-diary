@@ -4,15 +4,15 @@
     "foods": [
       {
         "food": "Nature's Own 100% Whole Wheat Bread",
-        "weight": 51.7
+        "weight": 0
       },
       {
         "food": "Jif Reduced Fat Creamy Peanut Butter",
-        "weight": 20.8
+        "weight": 0
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 8.7
+        "weight": 0
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -20,11 +20,11 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 52
+        "weight": 0
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 50
+        "weight": 0
       }
     ]
   },
@@ -50,19 +50,19 @@
     "foods": [
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
-        "weight": 142
+        "weight": 0
       },
       {
         "food": "Broccoli, Generic",
-        "weight": 47.5
+        "weight": 0
       },
       {
         "food": "Carrots, Generic",
-        "weight": 80.9
+        "weight": 0
       },
       {
         "food": "Tyson: Chicken Breast Strips, Fully Cooked",
-        "weight": 78.2
+        "weight": 0
       }
     ]
   },
@@ -71,23 +71,23 @@
     "foods": [
       {
         "food": "Banana, Generic",
-        "weight": 59.7447
+        "weight": 0
       },
       {
         "food": "Broccoli, Generic",
-        "weight": 21.97
+        "weight": 0
       },
       {
         "food": "Earthbound Farm Organic Baby Spinach",
-        "weight": 10.6697
+        "weight": 0
       },
       {
         "food": "Planet Oat Oatmilk Original",
-        "weight": 45.3083
+        "weight": 0
       },
       {
         "food": "Naked PB",
-        "weight": 22.21
+        "weight": 0
       }
     ]
   },
@@ -96,15 +96,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 76.5
+        "weight": 0
       },
       {
         "food": "Sugar Cube",
-        "weight": 7
+        "weight": 0
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 42.4
+        "weight": 0
       }
     ]
   },
@@ -135,11 +135,15 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 50.8
+        "weight": 0
       },
       {
         "food": "Lean Cuisine: Herb Roasted Chicken",
         "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Meatloaf with Mashed Potatoes",
+        "weight": 265
       }
     ]
   }
