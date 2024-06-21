@@ -75,6 +75,46 @@
     }
   },
   {
+    "name": "Planet Oat Oatmilk Original, Unsweetened",
+    "serving_size": 240,
+    "serving_size_conversion": {
+      "num_cups": 1
+    },
+    "nutritional_data": {
+      "calories": 45,
+      "protein": 1,
+      "fat": {
+        "total": 0.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "dv": 0.01
+      },
+      "sodium": {
+        "total": 0.10,
+        "dv": 0.04
+      },
+      "carbs": {
+        "total": 8,
+        "dv": 0.03,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.04
+        },
+        "soluble_fiber": 1,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0.00
+          }
+        }
+      }
+    }
+  },
+  {
     "name": "Naked PB",
     "serving_size": 12,
     "nutritional_data": {

@@ -29,7 +29,7 @@
     ]
   },
   {
-    "name": "Makeshift Sanwich",
+    "name": "Makeshift Sandwich",
     "foods": [
       {
         "food": "Nature's Own 100% Whole Wheat Bread",
@@ -71,7 +71,7 @@
     "foods": [
       {
         "food": "Banana, Generic",
-        "weight": 0
+        "weight": 19.8934
       },
       {
         "food": "Broccoli, Generic",
@@ -79,15 +79,15 @@
       },
       {
         "food": "Earthbound Farm Organic Baby Spinach",
-        "weight": 0
+        "weight": 11.8233
       },
       {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 0
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 51.4516
       },
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 18.819
       }
     ]
   },
