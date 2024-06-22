@@ -33,15 +33,15 @@
     "foods": [
       {
         "food": "Nature's Own 100% Whole Wheat Bread",
-        "weight": 0
+        "weight": 42.5
       },
       {
         "food": "Jif Reduced Fat Creamy Peanut Butter",
-        "weight": 0
+        "weight": 26.3
       },
       {
         "food": "Smucker's Seedless Strawberry Jam",
-        "weight": 0
+        "weight": 38.5
       }
     ]
   },
@@ -96,15 +96,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 75
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 7
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 40
       }
     ]
   },
@@ -135,7 +135,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 69.9
       },
       {
         "food": "Lean Cuisine: Herb Roasted Chicken",
@@ -143,7 +143,7 @@
       },
       {
         "food": "Lean Cuisine: Meatloaf with Mashed Potatoes",
-        "weight": 1
+        "weight": 0
       }
     ]
   }
