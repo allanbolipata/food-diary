@@ -2665,5 +2665,134 @@
         }
       }
     }
+  },
+  {
+    "name": "Hormel Roast Beef Hash",
+    "serving_size": 236,
+    "nutritional_data": {
+      "calories": 350,
+      "protein": 16,
+      "fat": {
+        "total": 21,
+        "dv": 0.32,
+        "trans_fat": 1,
+        "saturated_fat": {
+          "total": 9,
+          "dv": 0.45
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.05,
+        "dv": 0.17
+      },
+      "sodium": {
+        "total": 0.99,
+        "dv": 0.41
+      },
+      "carbs": {
+        "total": 24,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.12
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Ramen, Generic",
+    "serving_size": 707,
+    "nutritional_data": {
+      "calories": 954,
+      "protein": 48,
+      "fat": {
+        "total": 35,
+        "dv": 0.45,
+        "trans_fat": 0.1,
+        "saturated_fat": {
+          "total": 12,
+          "dv": 0.6
+        },
+        "polyunsaturated_fat": 6.3,
+        "monounsaturated_fat": 13
+      },
+      "cholesterol": {
+        "total": 0.227,
+        "dv": 0.76
+      },
+      "sodium": {
+        "total": 2.681,
+        "dv": 1.17
+      },
+      "carbs": {
+        "total": 111,
+        "dv": 0.4,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6.7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Arnold Whole Grains Healthy Multi-Grain Bread",
+    "serving_size": 43,
+    "nutritional_data": {
+      "calories": 120,
+      "protein": 5,
+      "fat": {
+        "total": 2.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 1.5,
+        "monounsaturated_fat": 0.5,
+        "dv": 0.03
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.18,
+        "dv": 0.08
+      },
+      "carbs": {
+        "total": 20,
+        "dv": 0.07,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 3,
+            "dv": 0.06
+          }
+        }
+      }
+    }
   }
 ]
