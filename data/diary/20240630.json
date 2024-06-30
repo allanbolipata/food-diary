@@ -62,7 +62,7 @@
     "foods": [
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
-        "weight": 0
+        "weight": 120.9
       },
       {
         "food": "Broccoli, Generic",
@@ -78,15 +78,15 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 35.1
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
+        "weight": 100
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 0
+        "weight": 6.3
       }
     ]
   },
