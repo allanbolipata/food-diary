@@ -8,11 +8,11 @@
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 87.1
       },
       {
         "food": "Jif Reduced Fat Creamy Peanut Butter",
-        "weight": 0
+        "weight": 20
       },
       {
         "food": "Extra Virgin Olive Oil",
@@ -28,7 +28,7 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 47.4
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
@@ -159,7 +159,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 70.7
       },
       {
         "food": "Lean Cuisine: Herb Roasted Chicken",
