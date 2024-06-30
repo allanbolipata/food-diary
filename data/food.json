@@ -2880,5 +2880,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Quest Protein Bar White Chocolate Raspberry",
+    "serving_size": 60,
+    "nutritional_data": {
+      "calories": 190,
+      "protein": 20,
+      "fat": {
+        "total": 8,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3,
+          "dv": 0.15
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.1
+      },
+      "cholesterol": {
+        "total": 0.005,
+        "dv": 0.02
+      },
+      "sodium": {
+        "total": 0.240,
+        "dv": 0.1
+      },
+      "carbs": {
+        "total": 22,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 13,
+          "dv": 0.48
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0.00
+          }
+        }
+      }
+    }
   }
 ]
