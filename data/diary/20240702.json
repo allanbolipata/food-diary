@@ -16,11 +16,11 @@
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 0
+        "weight": 8.8
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
-        "weight": 0
+        "weight": 119.2
       },
       {
         "food": "Hormel Roast Beef Hash",
@@ -28,11 +28,11 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 49.8
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
+        "weight": 100
       }
     ]
   },
@@ -120,15 +120,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 80.5
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 3.5
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 35.2
       }
     ]
   },
@@ -159,7 +159,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 70.2
       },
       {
         "food": "Lean Cuisine: Herb Roasted Chicken",
@@ -190,13 +190,14 @@
         "weight": 0
       },
       {
-        "food": "Life Cuisine: Cauliflower Crust Pepperoni Pizza",
+        "food": "Caulipower Uncured Pepperoni Pizza",
         "weight": 0
       },
       {
-        "food": "Caulipower Uncured Pepperoni Pizza",
-        "weight": 0
+        "food": "Life Cuisine: Cauliflower Crust Pepperoni Pizza",
+        "weight": 170
       }
+  
     ]
   }
 ]

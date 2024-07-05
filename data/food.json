@@ -403,6 +403,45 @@
     }
   },
   {
+    "name": "Smucker's Seedless Red Raspberry Jam",
+    "serving_size": 20,
+    "nutritional_data": {
+      "calories": 50,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 13,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 12,
+          "added_sugars": {
+            "total": 9,
+            "dv": 0.19
+          }
+        }
+      }
+    }
+  },
+  {
     "name": "Smucker's Seedless Strawberry Jam",
     "serving_size": 20,
     "nutritional_data": {
@@ -2919,6 +2958,92 @@
           "added_sugars": {
             "total": 0,
             "dv": 0.00
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Life Cuisine: Cauliflower Crust Pepperoni Pizza",
+    "serving_size": 170,
+    "nutritional_data": {
+      "calories": 390,
+      "protein": 18,
+      "fat": {
+        "total": 17,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 8,
+          "dv": 0.22
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.1
+      },
+      "cholesterol": {
+        "total": 0.045,
+        "dv": 0.15
+      },
+      "sodium": {
+        "total": 0.89,
+        "dv": 0.39
+      },
+      "carbs": {
+        "total": 41,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 2,
+            "dv": 0.04
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Skippy Reduced Fat Creamy Peanut Butter",
+    "serving_size": 34,
+    "nutritional_data": {
+      "calories": 190,
+      "protein": 7,
+      "fat": {
+        "total": 12,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.15
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.17,
+        "dv": 0.07
+      },
+      "carbs": {
+        "total": 14,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.04
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
           }
         }
       }

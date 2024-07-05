@@ -8,15 +8,15 @@
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 83.3
       },
       {
         "food": "Jif Reduced Fat Creamy Peanut Butter",
-        "weight": 0
+        "weight": 20
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 0
+        "weight": 7.2
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -28,11 +28,11 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 53.4
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
+        "weight": 50
       }
     ]
   },
@@ -45,15 +45,15 @@
       },
       {
         "food": "Jif Reduced Fat Creamy Peanut Butter",
-        "weight": 0
+        "weight": 32.2
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 84.2
       },
       {
         "food": "Smucker's Seedless Strawberry Jam",
-        "weight": 0
+        "weight": 30.6
       }
     ]
   },
@@ -120,15 +120,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 82.3
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 3.5
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 40
       }
     ]
   },
@@ -159,7 +159,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 71.1
       },
       {
         "food": "Lean Cuisine: Herb Roasted Chicken",
@@ -187,10 +187,6 @@
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
-      },
-      {
-        "food": "Life Cuisine: Cauliflower Crust Pepperoni Pizza",
         "weight": 0
       },
       {
