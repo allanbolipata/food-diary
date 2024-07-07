@@ -11,7 +11,7 @@
         "weight": 0
       },
       {
-        "food": "Jif Reduced Fat Creamy Peanut Butter",
+        "food": "Skippy Reduced Fat Creamy Peanut Butter",
         "weight": 0
       },
       {
@@ -162,6 +162,10 @@
         "weight": 0
       },
       {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
         "food": "Lean Cuisine: Herb Roasted Chicken",
         "weight": 0
       },
@@ -195,6 +199,10 @@
       },
       {
         "food": "Caulipower Uncured Pepperoni Pizza",
+        "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
         "weight": 0
       }
     ]

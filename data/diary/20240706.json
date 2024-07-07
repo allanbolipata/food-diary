@@ -4,7 +4,7 @@
     "foods": [
       {
         "food": "Nature's Own 100% Whole Wheat Bread",
-        "weight": 54.5
+        "weight": 53.1
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
@@ -16,7 +16,15 @@
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 7.6
+        "weight": 7.5
+      },
+      {
+        "food": "Honey Nut Cheerios",
+        "weight": 41.3
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 100
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -28,7 +36,7 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 47.7
+        "weight": 51.7
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
@@ -41,11 +49,11 @@
     "foods": [
       {
         "food": "Nature's Own 100% Whole Wheat Bread",
-        "weight": 55
+        "weight": 51.5
       },
       {
         "food": "Jif Reduced Fat Creamy Peanut Butter",
-        "weight": 27
+        "weight": 39.4
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
@@ -53,7 +61,7 @@
       },
       {
         "food": "Smucker's Seedless Strawberry Jam",
-        "weight": 42.6
+        "weight": 36.8
       }
     ]
   },
@@ -120,7 +128,7 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 70
+        "weight": 93
       },
       {
         "food": "Sugar Cube",
@@ -128,7 +136,7 @@
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 30
+        "weight": 30.5
       }
     ]
   },
@@ -159,11 +167,11 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 70.9
+        "weight": 70.5
       },
       {
         "food": "Naked PB",
-        "weight": 50
+        "weight": 0
       },
       {
         "food": "Lean Cuisine: Herb Roasted Chicken",
@@ -203,7 +211,7 @@
       },
       {
         "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
-        "weight": 283
+        "weight": 0
       }
     ]
   }
