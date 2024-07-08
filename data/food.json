@@ -3048,5 +3048,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Pork Soup Dumpling",
+    "serving_size": 22.5,
+    "nutritional_data": {
+      "calories": 47.5,
+      "protein": 1.8,
+      "fat": {
+        "total": 1.8,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.8,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.15
+      },
+      "cholesterol": {
+        "total": 0.0037,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.0075,
+        "dv": 0.04
+      },
+      "carbs": {
+        "total": 4.5,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0.5,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
