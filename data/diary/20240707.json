@@ -120,7 +120,7 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 80
+        "weight": 82
       },
       {
         "food": "Sugar Cube",
@@ -128,7 +128,7 @@
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 40
+        "weight": 42.6
       }
     ]
   },
