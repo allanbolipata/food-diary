@@ -3090,6 +3090,49 @@
           }
         }
       }
+    } 
+  },
+  {
+    "name": "Birds Eye: Mixed Vegetables",
+    "serving_size": 88,
+    "nutritional_data": {
+      "calories": 60,
+      "protein": 2,
+      "fat": {
+        "total": 1,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.01
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.03,
+        "dv": 0.01
+      },
+      "carbs": {
+        "total": 11,
+        "dv": 0.04,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 5,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
     }
   }
 ]
