@@ -3134,5 +3134,177 @@
         }
       }
     }
+  },
+  {
+    "name": "Orange Chicken, Pf Chang's",
+    "serving_size": 201.5,
+    "nutritional_data": {
+      "calories": 300.8,
+      "protein": 13.5,
+      "fat": {
+        "total": 9.8,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.1,
+          "dv": 0.06
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.15
+      },
+      "cholesterol": {
+        "total": 0.0301,
+        "dv": 0.1
+      },
+      "sodium": {
+        "total": 0.6015,
+        "dv": 0.25
+      },
+      "carbs": {
+        "total": 40.6,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.12
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 24.1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Avocado Oil, Generic",
+    "serving_size": 15,
+    "nutritional_data": {
+      "calories": 120,
+      "protein": 0,
+      "fat": {
+        "total": 14,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.18
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "White Rice, Generic",
+    "serving_size": 158, 
+    "nutritional_data": {
+      "calories": 205,
+      "protein": 4.3,
+      "fat": {
+        "total": 0.4,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.1,
+          "dv": 0.01
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.0016,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 45,
+        "dv": 0.16,
+        "dietary_fiber": {
+          "total": 0.6,
+          "dv": 0.02
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0.1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Extra calories",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 1,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

@@ -32,7 +32,23 @@
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      },
+      {
+        "food": "Jennie-O Turkey Bacon",
         "weight": 0
+      },
+      {
+        "food": "Avocado Oil, Generic",
+	"weight": 8.3
+      },
+      {
+        "food": "White Rice, Generic",
+        "weight": 85.1
+      },
+      {
+        "food": "Orange Chicken, Pf Chang's",
+	"weight": 88.9
       }
     ]
   },
@@ -62,7 +78,7 @@
     "foods": [
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
-        "weight": 85
+        "weight": 0
       },
       {
         "food": "Broccoli, Generic",
@@ -74,7 +90,7 @@
       },
       {
         "food": "Tyson: Chicken Breast Strips, Fully Cooked",
-        "weight": 84.8
+        "weight": 0
       },
       {
         "food": "Jennie-O Turkey Bacon",
@@ -82,11 +98,11 @@
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 50
+        "weight": 0
       },
       {
         "food": "Birds Eye: Mixed Vegetables",
-        "weight": 81.6
+        "weight": 0
       },
       {
         "food": "Extra Virgin Olive Oil",
@@ -163,11 +179,11 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 71
+        "weight": 52.3
       },
       {
         "food": "Naked PB",
-        "weight": 65.8
+        "weight": 0
       },
       {
         "food": "Lean Cuisine: Herb Roasted Chicken",
@@ -183,7 +199,7 @@
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
-        "weight": 86.2
+        "weight": 0
       },
       {
         "food": "Jennie-O Turkey Bacon",
@@ -207,15 +223,7 @@
       },
       {
         "food": "Birds Eye: Mixed Vegetables",
-        "weight": 80.3
-      },
-      {
-	"food": "Extra calories",
-	"weight": 400
-      },
-      {
-	"food": "Orange Chicken, Pf Chang's",
-	"weight": 76.8
+        "weight": 0
       },
       {
         "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
