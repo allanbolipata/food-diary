@@ -3306,5 +3306,91 @@
         }
       }
     }
+  },
+  {
+    "name": "7-Eleven: Buffalo Chicken Taquito",
+    "serving_size": 85.0486,
+    "nutritional_data": {
+      "calories": 180,
+      "protein": 6,
+      "fat": {
+        "total": 8,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.12
+      },
+      "cholesterol": {
+        "total": 0.015,
+        "dv": 0.05
+      },
+      "sodium": {
+        "total": 0.47,
+        "dv": 0.2
+      },
+      "carbs": {
+        "total": 22,
+        "dv": 0.07,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.04
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "7-Eleven: PB&J Pocket, Peanut Butter and Grape Jelly Sandwich",
+    "serving_size": 79,
+    "nutritional_data": {
+      "calories": 300,
+      "protein": 10,
+      "fat": {
+        "total": 15,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3,
+          "dv": 0.15
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.19
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.32,
+        "dv": 0.14
+      },
+      "carbs": {
+        "total": 35,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 12,
+          "added_sugars": {
+            "total": 9,
+            "dv": 0.18
+          }
+        }
+      }
+    }
   }
 ]

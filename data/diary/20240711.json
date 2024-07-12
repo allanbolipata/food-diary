@@ -228,6 +228,14 @@
       {
         "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
         "weight": 0
+      },
+      {
+        "food": "7-Eleven: PB&J Pocket, Peanut Butter and Grape Jelly Sandwich",
+        "weight": 79
+      },
+      {
+        "food": "7-Eleven: Buffalo Chicken Taquito",
+        "weight": 255.1458
       }
     ]
   }
