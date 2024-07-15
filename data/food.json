@@ -3435,5 +3435,91 @@
         }
       }
     }
+  },
+  {
+    "name": "Wendy's Chili",
+    "serving_size": 307.5,
+    "nutritional_data": {
+      "calories": 340,
+      "protein": 21,
+      "fat": {
+        "total": 14.5,
+        "trans_fat": 0.7,
+        "saturated_fat": {
+          "total": 6.5,
+          "dv": 0.33
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.22
+      },
+      "cholesterol": {
+        "total": 0.0796,
+        "dv": 0.27
+      },
+      "sodium": {
+        "total": 1.2444,
+        "dv": 0.52
+      },
+      "carbs": {
+        "total": 31.8,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 8.7,
+          "dv": 0.35
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Kind Bar: Unknown",
+    "serving_size": 62,
+    "nutritional_data": {
+      "calories": 240,
+      "protein": 20,
+      "fat": {
+        "total": 13,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.23
+        },
+        "polyunsaturated_fat": 2.5,
+        "monounsaturated_fat": 5,
+        "dv": 0.17
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.19,
+        "dv": 0.08
+      },
+      "carbs": {
+        "total": 24,
+        "dv": 0.09,
+        "dietary_fiber": {
+          "total": 10,
+          "dv": 0.36
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
