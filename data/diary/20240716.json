@@ -8,15 +8,15 @@
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 87.1
       },
       {
         "food": "Skippy Reduced Fat Creamy Peanut Butter",
-        "weight": 0
+        "weight": 16.2
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 0
+        "weight": 8
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -28,19 +28,11 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
-      },
-      {
-        "food": "Avocado Oil",
-	"weight": 8.3
-      },
-      {
-        "food": "White Rice, Generic",
-        "weight": 85.1
+        "weight": 49.8
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 150
+        "weight": 100
       }
     ]
   },
@@ -56,12 +48,16 @@
         "weight": 0
       },
       {
+        "food": "Skippy Reduced Fat Creamy Peanut Butter",
+        "weight": 36.7
+      },
+      {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 89.7
       },
       {
         "food": "Smucker's Seedless Strawberry Jam",
-        "weight": 0
+        "weight": 27.1
       }
     ]
   },
@@ -90,10 +86,6 @@
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
-      },
-      {
-        "food": "Birds Eye: Mixed Vegetables",
         "weight": 0
       },
       {
@@ -171,6 +163,10 @@
     "foods": [ 
       {
         "food": "Naked PB",
+        "weight": 61.2
+      },
+      {
+        "food": "Naked PB",
         "weight": 0
       },
       {
@@ -214,11 +210,11 @@
         "weight": 0
       },
       {
-        "food": "Birds Eye: Mixed Vegetables",
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
         "weight": 0
       },
       {
-        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
+        "food": "Wendy's Chili",
         "weight": 0
       }
     ]

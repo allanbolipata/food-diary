@@ -48,6 +48,10 @@
         "weight": 0
       },
       {
+        "food": "Skippy Reduced Fat Creamy Peanut Butter",
+        "weight": 0
+      },
+      {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
         "weight": 0
       },
@@ -166,6 +170,10 @@
         "weight": 0
       },
       {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
         "food": "Lean Cuisine: Herb Roasted Chicken",
         "weight": 0
       },
@@ -203,6 +211,10 @@
       },
       {
         "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
+        "weight": 0
+      },
+      {
+        "food": "Wendy's Chili",
         "weight": 0
       }
     ]
