@@ -57,15 +57,15 @@
       },
       {
         "food": "Skippy Reduced Fat Creamy Peanut Butter",
-        "weight": 0
+        "weight": 29.8
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 88.1
       },
       {
         "food": "Smucker's Seedless Strawberry Jam",
-        "weight": 0
+        "weight": 31.6
       }
     ]
   },
@@ -132,15 +132,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 91.6
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 7
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 36
       }
     ]
   },
@@ -171,7 +171,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 36
       },
       {
         "food": "Naked PB",
@@ -223,7 +223,7 @@
       },
       {
         "food": "Wendy's Chili",
-        "weight": 0
+        "weight": 307.5
       }
     ]
   }
