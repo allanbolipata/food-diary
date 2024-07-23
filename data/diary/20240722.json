@@ -16,7 +16,11 @@
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 0
+        "weight": 8.3
+      },
+      {
+        "food": "Goya Brown Rice",
+        "weight": 40.17
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -28,11 +32,11 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 31.6
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
+        "weight": 100
       }
     ]
   },
@@ -124,15 +128,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 70
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 7
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 30.1
       }
     ]
   },
@@ -163,7 +167,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 56.1
       },
       {
         "food": "Naked PB",
@@ -215,7 +219,11 @@
       },
       {
         "food": "Wendy's Chili",
-        "weight": 0
+        "weight": 615
+      },
+      {
+        "food": "Best Yet: Mixed Vegetables",
+        "weight": 68
       },
       {
         "food": "protein",

@@ -8,15 +8,19 @@
       },
       {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 87.6
       },
       {
         "food": "Skippy Reduced Fat Creamy Peanut Butter",
         "weight": 0
       },
       {
+        "food": "Skippy Creamy Peanut Butter",
+        "weight": 28
+      },
+      {
         "food": "Extra Virgin Olive Oil",
-        "weight": 0
+        "weight": 6.8
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -28,7 +32,7 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 54.9
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
@@ -52,12 +56,16 @@
         "weight": 0
       },
       {
+        "food": "Skippy Creamy Peanut Butter",
+        "weight": 21.3
+      },
+      {
         "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "weight": 85.6
       },
       {
         "food": "Smucker's Seedless Strawberry Jam",
-        "weight": 0
+        "weight": 35
       }
     ]
   },
@@ -124,15 +132,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 101.6
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 7
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 40
       }
     ]
   },
@@ -163,7 +171,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 60
       },
       {
         "food": "Naked PB",

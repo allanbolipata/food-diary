@@ -16,7 +16,7 @@
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 0
+        "weight": 8
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -27,12 +27,20 @@
         "weight": 0
       },
       {
+        "food": "Goya Brown Rice",
+        "weight": 44.27
+      },
+      {
+        "food": "Best Yet: Mixed Vegetables",
+        "weight": 73.6
+      },
+      {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 36
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
+        "weight": 150
       }
     ]
   },
@@ -163,7 +171,7 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 50
       },
       {
         "food": "Naked PB",
@@ -215,19 +223,7 @@
       },
       {
         "food": "Wendy's Chili",
-        "weight": 0
-      },
-      {
-        "food": "protein",
-        "weight": 0
-      },
-      {
-        "food": "fat",
-        "weight": 0
-      },
-      {
-        "food": "carbs",
-        "weight": 0
+        "weight": 307.5
       }
     ]
   }
