@@ -124,15 +124,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 80
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 7
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 30
       }
     ]
   },
@@ -228,6 +228,18 @@
       {
         "food": "carbs",
         "weight": 0
+      },
+      {
+        "food": "Beef and Broccoli, Generic",
+        "weight": 960
+      },
+      {
+        "food": "Pork and Shrimp Dumpling",
+        "weight": 1
+      },
+      {
+        "food": "Shrimp Dumpling",
+        "weight": 1
       }
     ]
   }
