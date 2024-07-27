@@ -3779,5 +3779,136 @@
         }
       }
     }
+  },
+  {
+    "name": "Beef and Broccoli, Generic",
+    "serving_size": 240,
+    "nutritional_data": {
+      "calories": 232,
+      "protein": 14.78,
+      "fat": {
+        "total": 8.76,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.482,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 2.587,
+        "monounsaturated_fat": 3.826,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.032,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.731,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 21.04,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 4.7,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8.4,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Pork and Shrimp Dumpling",
+    "serving_size": 1,
+    "doc": "serving size is amount of dumplings",
+    "nutritional_data": {
+      "calories": 49,
+      "protein": 2.7,
+      "fat": {
+        "total": 2.3,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.8,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.021,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.082,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 3.3,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0.1,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Shrimp Dumpling",
+    "serving_size": 3,
+    "doc": "serving size is amount of dumplings",
+    "nutritional_data": {
+      "calories": 213,
+      "protein": 8,
+      "fat": {
+        "total": 6,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.098,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.424,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 30,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
