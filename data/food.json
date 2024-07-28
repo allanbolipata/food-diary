@@ -3910,5 +3910,136 @@
         }
       }
     }
+  },
+  {
+    "name": "Welch's Fruit Snacks",
+    "serving_size": 30,
+    "nutritional_data": {
+      "calories": 90,
+      "protein": 1,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.015,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 22,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 13,
+          "added_sugars": {
+            "total": 11,
+            "dv": 22
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Bacon Cheeseburger Sliders",
+    "serving_size": 2,
+    "doc": "serving size based on number of sliders",
+    "nutritional_data": {
+      "calories": 580,
+      "protein": 24,
+      "fat": {
+        "total": 37,
+        "trans_fat": 1,
+        "saturated_fat": {
+          "total": 15,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.115,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 1.09,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 38,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 15,
+          "added_sugars": {
+            "total": 12,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Boneless Beef Ribeye",
+    "serving_size": 448,
+    "doc": "https://www.nutritionix.com/i/ledbetter/boneless-beef-ribeye-steak/55c945886b649b2159847ef5; 16 oz.",
+    "nutritional_data": {
+      "calories": 720,
+      "protein": 92,
+      "fat": {
+        "total": 36,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 20,
+          "dv": 100
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 55
+      },
+      "cholesterol": {
+        "total": 0.26,
+        "dv": 87
+      },
+      "sodium": {
+        "total": 0.46,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
