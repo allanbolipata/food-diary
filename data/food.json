@@ -4041,5 +4041,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Pork Skewer",
+    "serving_size": 154,
+    "nutritional_data": {
+      "calories": 207,
+      "protein": 29,
+      "fat": {
+        "total": 8.3,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 10
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 11
+      },
+      "cholesterol": {
+        "total": 0.078,
+        "dv": 26
+      },
+      "sodium": {
+        "total": 0.32,
+        "dv": 14
+      },
+      "carbs": {
+        "total": 3.2,
+        "dv": 1,
+        "dietary_fiber": {
+          "total": 0.7,
+          "dv": 2
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1.3,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

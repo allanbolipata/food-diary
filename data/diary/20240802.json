@@ -3,20 +3,28 @@
     "name": "Makeshift Breakfast",
     "foods": [
       {
-        "food": "Nature's Own 100% Whole Wheat Bread",
-        "weight": 0
+        "food": "White Rice, Generic",
+        "weight": 47.3
       },
       {
-        "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "food": "Pork Skewer",
+        "weight": 138
       },
       {
         "food": "Skippy Reduced Fat Creamy Peanut Butter",
         "weight": 0
       },
       {
-        "food": "Avocado Oil, Generic",
-        "weight": 11.5
+        "food": "White Rice, Generic",
+        "weight": 51.3
+      },
+      {
+        "food": "Pork Skewer",
+        "weight": 123.9
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 0
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
@@ -27,12 +35,12 @@
         "weight": 0
       },
       {
-        "food": "White Rice, Generic",
-        "weight": 50
+        "food": "Jennie-O Turkey Bacon",
+        "weight": 0
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 150
+        "weight": 0
       }
     ]
   },
@@ -163,11 +171,11 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 50
+        "weight": 0
       },
       {
         "food": "Naked PB",
-        "weight": 50.5
+        "weight": 0
       },
       {
         "food": "Naked PB",
