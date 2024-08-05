@@ -4213,5 +4213,49 @@
         }
       }
     }
+  },
+  {
+    "name": "Short Rib",
+    "serving_size": 3,
+    "doc": "In oz; 85g in an oz",
+    "nutritional_data": {
+      "calories": 259,
+      "protein": 22,
+      "fat": {
+        "total": 19,
+        "trans_fat": 1.2,
+        "saturated_fat": {
+          "total": 8.5,
+          "dv": 0.43
+        },
+        "polyunsaturated_fat": 0.8,
+        "monounsaturated_fat": 9.7,
+        "dv": 0.24
+      },
+      "cholesterol": {
+        "total": 0.085,
+        "dv": 0.28
+      },
+      "sodium": {
+        "total": 0.06,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

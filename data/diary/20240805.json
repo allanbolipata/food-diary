@@ -3,16 +3,32 @@
     "name": "Makeshift Breakfast",
     "foods": [
       {
-        "food": "Nature's Own Honey Wheat Bread",
-        "weight": 52.7
+        "food": "Nature's Own 100% Whole Wheat Bread",
+        "weight": 45
       },
       {
-        "food": "Food Lion Creamy Peanut Butter",
-        "weight": 20
+        "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
+        "weight": 0
+      },
+      {
+        "food": "Skippy Reduced Fat Creamy Peanut Butter",
+        "weight": 26.6
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 10
+        "weight": 7
+      },
+      {
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 0
+      },
+      {
+        "food": "Hormel Roast Beef Hash",
+        "weight": 0
+      },
+      {
+        "food": "Jennie-O Turkey Bacon",
+        "weight": 0
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
@@ -23,21 +39,25 @@
   {
     "name": "Makeshift Sandwich",
     "foods": [
-     {
-        "food": "Nature's Own Honey Wheat Bread",
-        "weight": 52.7
+      {
+        "food": "Nature's Own 100% Whole Wheat Bread",
+        "weight": 0
       },
       {
-        "food": "Food Lion Creamy Peanut Butter",
-        "weight": 22.2
+        "food": "Jif Reduced Fat Creamy Peanut Butter",
+        "weight": 0
       },
       {
-        "food": "Extra Virgin Olive Oil",
-        "weight": 7
+        "food": "Skippy Reduced Fat Creamy Peanut Butter",
+        "weight": 0
       },
       {
-        "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 150
+        "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
+        "weight": 0
+      },
+      {
+        "food": "Smucker's Seedless Strawberry Jam",
+        "weight": 0
       }
     ]
   },
@@ -45,12 +65,12 @@
     "name": "Meal Prep Rice",
     "foods": [
       {
-        "food": "Short Rib",
-        "weight": 12
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 0
       },
       {
-        "food": "White Rice, Generic",
-        "weight": 100
+        "food": "Broccoli, Generic",
+        "weight": 0
       },
       {
         "food": "Carrots, Generic",
@@ -208,10 +228,6 @@
       {
         "food": "carbs",
         "weight": 0
-      },
-      {
-        "food": "Calories",
-        "weight": 222
       }
     ]
   }
