@@ -215,7 +215,7 @@
       },
       {
         "food": "Wendy's Chili",
-        "weight": 0
+        "weight": 615
       },
       {
         "food": "protein",
@@ -228,6 +228,14 @@
       {
         "food": "carbs",
         "weight": 0
+      },
+      {
+        "food": "American Cheese, Generic",
+        "weight": 21
+      },
+      {
+        "food": "Burger, Generic",
+        "weight": 85
       }
     ]
   }
