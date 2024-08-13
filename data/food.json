@@ -4300,5 +4300,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Filet Mignon",
+    "serving_size": 100,
+    "nutritional_data": {
+      "calories": 267,
+      "protein": 26,
+      "fat": {
+        "total": 17,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 6.7,
+          "dv": 0.34
+        },
+        "polyunsaturated_fat": 0.7,
+        "monounsaturated_fat": 7.1,
+        "dv": 0.07
+      },
+      "cholesterol": {
+        "total": 0.097,
+        "dv": 0.32
+      },
+      "sodium": {
+        "total": 0.054,
+        "dv": 0.02
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

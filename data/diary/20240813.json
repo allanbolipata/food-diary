@@ -228,6 +228,10 @@
       {
         "food": "carbs",
         "weight": 0
+      },
+      {
+        "food": "Filet Mignon",
+        "weight": 161
       }
     ]
   }
