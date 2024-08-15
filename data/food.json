@@ -2792,6 +2792,49 @@
     }
   },
   {
+    "name": "Arnold Whole Grains 100% Whole Wheat Bread",
+    "serving_size": 43,
+    "nutritional_data": {
+      "calories": 110,
+      "protein": 4,
+      "fat": {
+        "total": 2,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 1,
+        "monounsaturated_fat": 0,
+        "dv": 0.03
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.17,
+        "dv": 0.07
+      },
+      "carbs": {
+        "total": 21,
+        "dv": 0.03,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 3,
+          "added_sugars": {
+            "total": 2,
+            "dv": 0.04
+          }
+        }
+      }
+    }
+  },
+  {
     "name": "Arnold Whole Grains Healthy Multi-Grain Bread",
     "serving_size": 43,
     "nutritional_data": {

@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Makeshift Breakfast",
+    "foods": [
+      {
+        "food": "Nature's Own 100% Whole Wheat Bread",
+        "weight": 0
+      },
+      {
+        "food": "Arnold Whole Grains 100% Whole Wheat Bread",
+        "weight": 87
+      },
+      {
+        "food": "Skippy Creamy Peanut Butter",
+        "weight": 20.5
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 7
+      },
+      {
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 0
+      },
+      {
+        "food": "Hormel Roast Beef Hash",
+        "weight": 0
+      },
+      {
+        "food": "Jennie-O Turkey Bacon",
+        "weight": 30
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "name": "Makeshift Sandwich",
+    "foods": [
+      {
+        "food": "Nature's Own 100% Whole Wheat Bread",
+        "weight": 0
+      },
+      {
+        "food": "Jif Reduced Fat Creamy Peanut Butter",
+        "weight": 0
+      },
+      {
+        "food": "Skippy Reduced Fat Creamy Peanut Butter",
+        "weight": 0
+      },
+      {
+        "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
+        "weight": 0
+      },
+      {
+        "food": "Smucker's Seedless Strawberry Jam",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Meal Prep Rice",
+    "foods": [
+      {
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 0
+      },
+      {
+        "food": "Broccoli, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Carrots, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Tyson: Chicken Breast Strips, Fully Cooked",
+        "weight": 0
+      },
+      {
+        "food": "Jennie-O Turkey Bacon",
+        "weight": 0
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 0
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Spinach and Peanut Butter Smoothie",
+    "foods": [
+      {
+        "food": "Banana, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Broccoli, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Earthbound Farm Organic Baby Spinach",
+        "weight": 0
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 0
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Slop",
+    "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 80
+      },
+      {
+        "food": "Sugar Cube",
+        "weight": 7
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+    {
+        "name": "Greek Yogurt Parfait",
+        "foods": [
+            {
+                "food": "Chobani Greek Yogurt Nonfat Plain",
+                "weight": 0
+            },
+            {
+                "food": "Bob's Red Mill Gluten Free Honey Oat Granola",
+                "weight": 0
+            },
+            {
+                "food": "Dole Mixed Berries",
+                "weight": 0
+            }
+        ]
+    },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Naked PB",
+        "weight": 51
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Herb Roasted Chicken",
+        "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Meatloaf with Mashed Potatoes",
+        "weight": 0
+      },
+      {
+        "food": "Ramen, Generic",
+        "weight": 0
+      },
+      {
+        "food": "Lundberg Brown Rice, Organic Long Grain",
+        "weight": 0
+      },
+      {
+        "food": "Jennie-O Turkey Bacon",
+        "weight": 0
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 0
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 0
+      },
+      {
+        "food": "Life Cuisine: Cauliflower Crust Pepperoni Pizza",
+        "weight": 0
+      },
+      {
+        "food": "Caulipower Uncured Pepperoni Pizza",
+        "weight": 0
+      },
+      {
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
+        "weight": 0
+      },
+      {
+        "food": "Wendy's Chili",
+        "weight": 0
+      },
+      {
+        "food": "Birds Eye: Mixed Vegetables",
+        "weight": 149.6
+      },
+      {
+        "food": "Goya Brown Rice",
+        "weight": 54
+      },
+      {
+        "food": "Filet Mignon",
+        "weight": 91.2
+      }
+    ]
+  }
+]
