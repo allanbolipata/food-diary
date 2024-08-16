@@ -7,12 +7,12 @@
         "weight": 0
       },
       {
-        "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "food": "Arnold Whole Grains 100% Whole Wheat Bread",
+        "weight": 84.5
       },
       {
-        "food": "Skippy Reduced Fat Creamy Peanut Butter",
-        "weight": 0
+        "food": "Skippy Creamy Peanut Butter",
+        "weight": 21
       },
       {
         "food": "Extra Virgin Olive Oil",
@@ -28,11 +28,11 @@
       },
       {
         "food": "Jennie-O Turkey Bacon",
-        "weight": 0
+        "weight": 30
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
+        "weight": 100
       }
     ]
   },
@@ -170,10 +170,6 @@
         "weight": 0
       },
       {
-        "food": "Naked PB",
-        "weight": 0
-      },
-      {
         "food": "Lean Cuisine: Herb Roasted Chicken",
         "weight": 0
       },
@@ -215,15 +211,19 @@
       },
       {
         "food": "Wendy's Chili",
-        "weight": 0
+        "weight": 615
       },
       {
-        "food": "protein",
-        "weight": 0
+        "food": "Filet Mignon",
+        "weight": 67
       },
       {
-        "food": "fat",
-        "weight": 0
+        "food": "Goya Brown Rice",
+        "weight": 52.3
+      },
+      {
+        "food": "Naked PB",
+        "weight": 80.4
       },
       {
         "food": "carbs",
