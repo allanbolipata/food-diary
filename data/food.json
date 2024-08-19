@@ -4386,5 +4386,177 @@
         }
       }
     }
+  },
+  {
+    "name": "Butterball Turkey Bacon",
+    "serving_size": 14,
+    "nutritional_data": {
+      "calories": 30,
+      "protein": 2,
+      "fat": {
+        "total": 2.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.04
+      },
+      "cholesterol": {
+        "total": 0.015,
+        "dv": 0.05
+      },
+      "sodium": {
+        "total": 0.08,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 1,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Butter Chicken",
+    "serving_size": 240,
+    "nutritional_data": {
+      "calories": 355,
+      "protein": 23,
+      "fat": {
+        "total": 23,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 10,
+          "dv": 0.5
+        },
+        "polyunsaturated_fat": 3.8,
+        "monounsaturated_fat": 8.3,
+        "dv": 0.29
+      },
+      "cholesterol": {
+        "total": 0.092,
+        "dv": 0.31
+      },
+      "sodium": {
+        "total": 0.251,
+        "dv": 0.11
+      },
+      "carbs": {
+        "total": 14,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6.7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Plain Naan",
+    "serving_size": 90,
+    "nutritional_data": {
+      "calories": 262,
+      "protein": 8.7,
+      "fat": {
+        "total": 5.1,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.3,
+          "dv": 0.07
+        },
+        "polyunsaturated_fat": 1.9,
+        "monounsaturated_fat": 1.6,
+        "dv": 0.07
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.419,
+        "dv": 0.18
+      },
+      "carbs": {
+        "total": 45,
+        "dv": 0.16,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 3.2,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Basmati Rice",
+    "serving_size": 158,
+    "nutritional_data": {
+      "calories": 205,
+      "protein": 4.3,
+      "fat": {
+        "total": 0.4,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.1,
+          "dv": 0.01
+        },
+        "polyunsaturated_fat": 0.1,
+        "monounsaturated_fat": 0.1,
+        "dv": 0.01
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.0016,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 45,
+        "dv": 0.16,
+        "dietary_fiber": {
+          "total": 0.6,
+          "dv": 0.02
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0.1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
