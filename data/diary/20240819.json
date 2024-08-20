@@ -3,12 +3,12 @@
     "name": "Makeshift Breakfast",
     "foods": [
       {
-        "food": "Nature's Own 100% Whole Wheat Bread",
-        "weight": 0
+        "food": "Honey Nut Cheerios",
+        "weight": 46.2
       },
       {
-        "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
-        "weight": 0
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 114.7
       },
       {
         "food": "Skippy Reduced Fat Creamy Peanut Butter",
@@ -163,11 +163,11 @@
     "foods": [ 
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 65.8
       },
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 67.2
       },
       {
         "food": "Naked PB",
@@ -218,16 +218,16 @@
         "weight": 0
       },
       {
-        "food": "protein",
-        "weight": 0
+        "food": "Plain Naan",
+        "weight": 183
       },
       {
-        "food": "fat",
-        "weight": 0
+        "food": "Butter Chicken",
+        "weight": 400
       },
       {
-        "food": "carbs",
-        "weight": 0
+        "food": "Basmati Rice",
+        "weight": 38
       }
     ]
   }
