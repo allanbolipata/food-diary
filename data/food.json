@@ -4558,5 +4558,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Pepperoni Pizza, Generic",
+    "serving_size": 111,
+    "nutritional_data": {
+      "calories": 313,
+      "protein": 13,
+      "fat": {
+        "total": 13,
+        "trans_fat": 0.3,
+        "saturated_fat": {
+          "total": 5.7,
+          "dv": 0.29
+        },
+        "polyunsaturated_fat": 2.3,
+        "monounsaturated_fat": 4.3,
+        "dv": 0.17
+      },
+      "cholesterol": {
+        "total": 0.028,
+        "dv": 0.09
+      },
+      "sodium": {
+        "total": 0.76,
+        "dv": 0.33
+      },
+      "carbs": {
+        "total": 35,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 2.6,
+          "dv": 0.09
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 3.6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
