@@ -4732,5 +4732,137 @@
         }
       }
     }
+  },
+  {
+    "name": "Wendy's: Breakfast Burrito, Bacon",
+    "serving_size": 1,
+    "doc": "Number of burritos",
+    "nutritional_data": {
+      "calories": 720,
+      "protein": 32,
+      "fat": {
+        "total": 41,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 16,
+          "dv": 0.8
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.11
+      },
+      "cholesterol": {
+        "total": 0.42,
+        "dv": 1.4
+      },
+      "sodium": {
+        "total": 2.22,
+        "dv": 0.97
+      },
+      "carbs": {
+        "total": 54,
+        "dv": 0.2,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Wendy's: Small Breakfast Potatoes",
+    "serving_size": 1,
+    "doc": "Number of orders",
+    "nutritional_data": {
+      "calories": 230,
+      "protein": 3,
+      "fat": {
+        "total": 10,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.1282
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.63,
+        "dv": 0.274
+      },
+      "carbs": {
+        "total": 32,
+        "dv": 0.1164,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.1
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Clif Bar: Chocolate Chip",
+    "serving_size": 1,
+    "doc": "Number of bars",
+    "nutritional_data": {
+      "calories": 250,
+      "protein": 10,
+      "fat": {
+        "total": 6,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.9
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.1282
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.13,
+        "dv": 0.06
+      },
+      "carbs": {
+        "total": 43,
+        "dv": 0.16,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.19
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 17,
+          "added_sugars": {
+            "total": 16,
+            "dv": 0.32
+          }
+        }
+      }
+    }
   }
 ]
