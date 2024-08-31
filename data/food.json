@@ -4864,5 +4864,93 @@
         }
       }
     }
+  },
+  {
+    "name": "Steak and Wake",
+    "serving_size": 1,
+    "doc": "Number of sandwiches",
+    "nutritional_data": {
+      "calories": 510,
+      "protein": 33,
+      "fat": {
+        "total": 24,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 10,
+          "dv": 0.5
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.1282
+      },
+      "cholesterol": {
+        "total": 0.33,
+        "dv": 1.1
+      },
+      "sodium": {
+        "total": 0.9,
+        "dv": 0.39
+      },
+      "carbs": {
+        "total": 41,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Taco Bell Steak Quesadilla",
+    "serving_size": 1,
+    "doc": "Number of quesadillas",
+    "nutritional_data": {
+      "calories": 520,
+      "protein": 26,
+      "fat": {
+        "total": 27,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 14,
+          "dv": 0.7
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.1282
+      },
+      "cholesterol": {
+        "total": 0.07,
+        "dv": 0.23
+      },
+      "sodium": {
+        "total": 1.27,
+        "dv": 0.55
+      },
+      "carbs": {
+        "total": 42,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
