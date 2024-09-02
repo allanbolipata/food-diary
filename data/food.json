@@ -4952,5 +4952,93 @@
         }
       }
     }
+  },
+  {
+    "name": "Taco Bell Beefy 5-Layer Burrito",
+    "serving_size": 1,
+    "doc": "Number of burritos",
+    "nutritional_data": {
+      "calories": 500,
+      "protein": 18,
+      "fat": {
+        "total": 19,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 8,
+          "dv": 0.4
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.24
+      },
+      "cholesterol": {
+        "total": 0.03,
+        "dv": 0.1
+      },
+      "sodium": {
+        "total": 1.28,
+        "dv": 0.56
+      },
+      "carbs": {
+        "total": 65,
+        "dv": 0.24,
+        "dietary_fiber": {
+          "total": 7,
+          "dv": 0.25
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 5,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Taco Bell Crunchy Taco",
+    "serving_size": 1,
+    "doc": "Number of tacos",
+    "nutritional_data": {
+      "calories": 170,
+      "protein": 8,
+      "fat": {
+        "total": 10,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4,
+          "dv": 0.2
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.13
+      },
+      "cholesterol": {
+        "total": 0.025,
+        "dv": 0.08
+      },
+      "sodium": {
+        "total": 0.3,
+        "dv": 0.13
+      },
+      "carbs": {
+        "total": 13,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
