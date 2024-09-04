@@ -3310,6 +3310,7 @@
   {
     "name": "White Rice, Generic",
     "serving_size": 158, 
+    "doc": "Cooked",
     "nutritional_data": {
       "calories": 205,
       "protein": 4.3,
