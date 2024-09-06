@@ -5041,5 +5041,49 @@
         }
       }
     }
+  },
+  {
+    "name": "Andy Capp's Fire Fries",
+    "serving_size": 84,
+    "doc": "Number of tacos",
+    "nutritional_data": {
+      "calories": 420,
+      "protein": 6,
+      "fat": {
+        "total": 21,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 9,
+          "dv": 0.45
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.32
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.84,
+        "dv": 0.35
+      },
+      "carbs": {
+        "total": 54,
+        "dv": 0.18,
+        "dietary_fiber": {
+          "total": 1.5,
+          "dv": 0.06
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1.5,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
