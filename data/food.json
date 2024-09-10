@@ -5085,5 +5085,49 @@
         }
       }
     }
+  },
+  {
+    "name": "Sweetgreen Harvest Bowl",
+    "serving_size": 1,
+    "doc": "Number of bowls",
+    "nutritional_data": {
+      "calories": 765,
+      "protein": 38,
+      "fat": {
+        "total": 41,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 63,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
