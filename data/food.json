@@ -5129,5 +5129,49 @@
         }
       }
     }
+  },
+  {
+    "name": "Lean Cuisine: Swedish Meatballs",
+    "serving_size": 1,
+    "doc": "In number of packages",
+    "nutritional_data": {
+      "calories": 300,
+      "protein": 18,
+      "fat": {
+        "total": 5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 1,
+        "monounsaturated_fat": 1.5,
+        "dv": 0.08
+      },
+      "cholesterol": {
+        "total": 0.02,
+        "dv": 0.07
+      },
+      "sodium": {
+        "total": 0.69,
+        "dv": 0.29
+      },
+      "carbs": {
+        "total": 45,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.08
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 3,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
