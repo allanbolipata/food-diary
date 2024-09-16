@@ -5129,5 +5129,49 @@
         }
       }
     }
+  },
+  {
+    "name": "ShakeShack Single SmokeShack",
+    "serving_size": 1,
+    "doc": "Number of burgers",
+    "nutritional_data": {
+      "calories": 570,
+      "protein": 36,
+      "fat": {
+        "total": 35,
+        "trans_fat": 1,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0.65
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.45
+      },
+      "cholesterol": {
+        "total": 0.12,
+        "dv": 0.4
+      },
+      "sodium": {
+        "total": 2.01,
+        "dv": 0.87
+      },
+      "carbs": {
+        "total": 28,
+        "dv": 0.1,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
