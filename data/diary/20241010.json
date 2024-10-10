@@ -3,12 +3,12 @@
     "name": "Makeshift Breakfast",
     "foods": [
       {
-        "food": "Honey Nut Cheerios",
-        "weight": 55.7
+        "food": "Nature's Own 100% Whole Wheat Bread",
+        "weight": 0
       },
       {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 91.7
+        "food": "Arnold Whole Grains Healthy Multi-Grain Bread",
+        "weight": 0
       },
       {
         "food": "Skippy Reduced Fat Creamy Peanut Butter",
@@ -20,7 +20,7 @@
       },
       {
         "food": "Lundberg Brown Rice, Organic Long Grain",
-        "weight": 135
+        "weight": 0
       },
       {
         "food": "Hormel Roast Beef Hash",
@@ -77,20 +77,20 @@
         "weight": 0
       },
       {
-        "food": "Birds Eye: Mixed Vegetables",
-        "weight": 159
+        "food": "Tyson: Chicken Breast Strips, Fully Cooked",
+        "weight": 0
       },
       {
-        "food": "Butterball Turkey Bacon",
-        "weight": 56
+        "food": "Jennie-O Turkey Bacon",
+        "weight": 0
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 150
+        "weight": 0
       },
       {
         "food": "Extra Virgin Olive Oil",
-        "weight": 7.5
+        "weight": 0
       }
     ]
   },
@@ -167,15 +167,15 @@
       },
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 80
       },
       {
         "food": "Naked PB",
         "weight": 0
       },
       {
-        "food": "Lean Cuisine: Herb Roasted Chicken",
-        "weight": 0
+        "food": "Lean Cuisine: Chicken Parmesan",
+        "weight": 308
       },
       {
         "food": "Lean Cuisine: Meatloaf with Mashed Potatoes",
@@ -210,8 +210,8 @@
         "weight": 0
       },
       {
-        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli",
-        "weight": 0
+        "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
+        "weight": 226
       },
       {
         "food": "Wendy's Chili",
@@ -219,15 +219,16 @@
       },
       {
         "food": "protein",
-        "weight": 0
+        "weight": 3,
+        "doc": "four pumpkin spice donuts"
       },
       {
         "food": "fat",
-        "weight": 0
+        "weight": 10
       },
       {
         "food": "carbs",
-        "weight": 0
+        "weight": 30
       }
     ]
   }
