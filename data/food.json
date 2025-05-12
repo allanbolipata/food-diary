@@ -319,6 +319,9 @@
   {
     "name": "Lean Cuisine: Chicken Parmesan",
     "serving_size": 308,
+    "serving_size_conversion": {
+      "num_packages": 1
+    },
     "nutritional_data": {
       "calories": 380,
       "protein": 21,
@@ -1178,7 +1181,7 @@
   {
     "name": "Chicken or Turkey Parmigiana, Generic",
     "serving_size": 28.0899,
-    "serving_size_conversion":{
+    "serving_size_conversion": {
       "num_oz": 1
     },
     "nutritional_data": {
@@ -1489,8 +1492,7 @@
   {
     "name": "Creole Bitters",
     "serving_size": 2.5,
-    "serving_size_conversion":
-    {
+    "serving_size_conversion": {
       "num_dash": 1
     },
     "nutritional_data": {
@@ -1536,8 +1538,7 @@
   {
     "name": "Basil Hayden's Kentucky Straight Bourbon Whiskey",
     "serving_size": 56,
-    "serving_size_conversion":
-    {
+    "serving_size_conversion": {
       "num_oz": 2
     },
     "nutritional_data": {
@@ -2529,8 +2530,7 @@
   {
     "name": "Popcorn, Generic",
     "serving_size": 7.9,
-    "serving_size_conversion":
-    {
+    "serving_size_conversion": {
       "num_cups": 1
     },
     "nutritional_data": {
@@ -3176,7 +3176,7 @@
           }
         }
       }
-    } 
+    }
   },
   {
     "name": "Birds Eye: Mixed Vegetables",
@@ -3309,7 +3309,7 @@
   },
   {
     "name": "White Rice, Generic",
-    "serving_size": 158, 
+    "serving_size": 158,
     "doc": "Cooked",
     "nutritional_data": {
       "calories": 205,
@@ -3482,7 +3482,7 @@
   },
   {
     "name": "Bistek Tagalog",
-    "serving_size": 231, 
+    "serving_size": 231,
     "nutritional_data": {
       "calories": 478,
       "protein": 36,
@@ -5210,6 +5210,100 @@
         "soluble_fiber": 0,
         "sugars": {
           "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Cocoa Pebbles",
+    "serving_size": 39,
+    "serving_size_conversion": {
+      "num_bowls": 1
+    },
+    "doc": "Number of bowls",
+    "nutritional_data": {
+      "calories": 154,
+      "protein": 1.9,
+      "fat": {
+        "total": 1.6,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.4,
+          "dv": 0.07
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0.1,
+        "dv": 0.2
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.23,
+        "dv": 0.01
+      },
+      "carbs": {
+        "total": 33,
+        "dv": 0.12,
+        "dietary_fiber": {
+          "total": 0.6,
+          "dv": 0.02
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 14,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Orgain Organic Protein, Vanilla Bean",
+    "serving_size": 46,
+    "serving_size_conversion": {
+      "num_scoops": 2
+    },
+    "doc": "Number of scoops",
+    "nutritional_data": {
+      "calories": 150,
+      "protein": 21,
+      "fat": {
+        "total": 3.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.5,
+          "dv": 0.03
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.39,
+        "dv": 0.05
+      },
+      "carbs": {
+        "total": 15,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
           "added_sugars": {
             "total": 0,
             "dv": 0
