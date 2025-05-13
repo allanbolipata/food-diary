@@ -83,27 +83,19 @@
     ]
   },
   {
-    "name": "Spinach and Peanut Butter Smoothie",
+    "name": "Smoothie",
     "foods": [
       {
-        "food": "Banana, Generic",
-        "weight": 0
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 76.9
       },
       {
-        "food": "Broccoli, Generic",
-        "weight": 0
+        "food": "Wyman's Triple Berry",
+        "weight": 42.8
       },
       {
-        "food": "Earthbound Farm Organic Baby Spinach",
-        "weight": 0
-      },
-      {
-        "food": "Planet Oat Oatmilk Original, Unsweetened",
-        "weight": 0
-      },
-      {
-        "food": "Naked PB",
-        "weight": 0
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 198.5
       }
     ]
   },
@@ -111,8 +103,8 @@
     "name": "Slop",
     "foods": [
       {
-        "food": "Naked PB",
-        "weight": 0
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 101.4
       },
       {
         "food": "Sugar Cube",
@@ -120,7 +112,7 @@
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 46
       }
     ]
   },

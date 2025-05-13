@@ -5311,5 +5311,52 @@
         }
       }
     }
+  },
+  {
+    "name": "Wyman's Triple Berry",
+    "serving_size": 140,
+    "serving_size_conversion": {
+      "num_cups": 1
+    },
+    "doc": "Number of cups",
+    "nutritional_data": {
+      "calories": 80,
+      "protein": 1,
+      "fat": {
+        "total": 0.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.01
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 19,
+        "dv": 0.07,
+        "dietary_fiber": {
+          "total": 7,
+          "dv": 0.26
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 10,
+          "added_sugars": {
+            "total": 0,
+            "dr": 0
+          }
+        }
+      }
+    }
   }
 ]
