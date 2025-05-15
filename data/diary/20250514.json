@@ -41,11 +41,11 @@
     "foods": [
       {
         "food": "Lean Cuisine: Chicken Parmesan",
-        "weight": 308
+        "weight": 0
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 150
+        "weight": 0
       }
     ]
   },
@@ -87,15 +87,15 @@
     "foods": [
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 76.9
+        "weight": 0
       },
       {
         "food": "Wyman's Triple Berry",
-        "weight": 42.8
+        "weight": 0
       },
       {
         "food": "Planet Oat Oatmilk Original",
-        "weight": 198.5
+        "weight": 0
       }
     ]
   },
@@ -104,7 +104,7 @@
     "foods": [
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 101.4
+        "weight": 0
       },
       {
         "food": "Sugar Cube",
@@ -112,7 +112,7 @@
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 46
+        "weight": 0
       }
     ]
   },
