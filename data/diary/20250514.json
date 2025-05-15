@@ -87,11 +87,11 @@
     "foods": [
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 0
+        "weight": 74
       },
       {
         "food": "Wyman's Triple Berry",
-        "weight": 0
+        "weight": 39
       },
       {
         "food": "Planet Oat Oatmilk Original",
@@ -141,8 +141,8 @@
     "name": "Miscellaneous",
     "foods": [
       {
-        "food": "Naked PB",
-        "weight": 0
+        "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
+        "weight": 226
       },
       {
         "food": "Naked PB",
