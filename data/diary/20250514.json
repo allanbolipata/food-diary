@@ -103,16 +103,16 @@
     "name": "Slop",
     "foods": [
       {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 0
+        "food": "Naked PB",
+        "weight": 33
       },
       {
         "food": "Sugar Cube",
-        "weight": 0
+        "weight": 7
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 0
+        "weight": 45.5
       }
     ]
   },
@@ -198,15 +198,15 @@
       },
       {
         "food": "protein",
-        "weight": 0
+        "weight": 20
       },
       {
         "food": "fat",
-        "weight": 0
+        "weight": 10
       },
       {
         "food": "carbs",
-        "weight": 0
+        "weight": 19
       }
     ]
   }
