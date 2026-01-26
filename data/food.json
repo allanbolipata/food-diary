@@ -5358,5 +5358,52 @@
         }
       }
     }
+  },
+  {
+    "name": "Tropicana Pure Premium Orange Juice, No Pulp",
+    "serving_size": 240,
+    "serving_size_conversion": {
+      "num_cups": 1
+    },
+    "doc": "Number of cups",
+    "nutritional_data": {
+      "calories": 110,
+      "protein": 2,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 26,
+        "dv": 0.09,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0.0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 22,
+          "added_sugars": {
+            "total": 0,
+            "dr": 0
+          }
+        }
+      }
+    }
   }
 ]
