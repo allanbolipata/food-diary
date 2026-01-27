@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Makeshift Breakfast",
+    "foods": [
+      {
+        "food": "Honey Nut Cheerios",
+        "weight": 37.1
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight":  111.9
+      },
+      {
+        "food": "Quest Protein Bar White Chocolate Raspberry",
+        "weight": 120
+      }
+    ]
+  },
+  {
+    "name": "Snacks",
+    "foods": [
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 50
+      }
+    ]
+  }
+]
