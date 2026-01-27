@@ -5353,7 +5353,7 @@
           "total": 10,
           "added_sugars": {
             "total": 0,
-            "dr": 0
+            "dv": 0
           }
         }
       }
@@ -5400,7 +5400,97 @@
           "total": 22,
           "added_sugars": {
             "total": 0,
-            "dr": 0
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Quest Chocolate Chip Cookie Dough Protein Bar",
+    "serving_size": 60,
+    "serving_size_conversion": {
+      "num_bars": 1
+    },
+    "doc": "Number of bars",
+    "nutritional_data": {
+      "calories": 190,
+      "protein": 21,
+      "fat": {
+        "total": 8,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3,
+          "dv": 0.15
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.12
+      },
+      "cholesterol": {
+        "total": 0.005,
+        "dv": 0.02
+      },
+      "sodium": {
+        "total": 0.22,
+        "dv": 0.1
+      },
+      "carbs": {
+        "total": 22,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 0.12,
+          "dv": 0.43
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli (new 2026)",
+    "serving_size": 283,
+    "nutritional_data": {
+      "calories": 260,
+      "protein": 19,
+      "fat": {
+        "total": 3.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.5,
+          "dv": 0.08
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 1,
+        "dv": 0.04
+      },
+      "cholesterol": {
+        "total": 0.035,
+        "dv": 0.12
+      },
+      "sodium": {
+        "total": 0.75,
+        "dv": 0.33
+      },
+      "carbs": {
+        "total": 39,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
           }
         }
       }

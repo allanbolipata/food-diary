@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Makeshift Breakfast",
+    "foods": [
+      {
+        "food": "Jif Reduced Fat Creamy Peanut Butter",
+        "weight": 21
+      },
+      {
+        "food": "Avocado Oil, Generic",
+        "weight": 16
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 51.1
+      },
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 56
+      },
+      {
+        "food": "Tropicana Pure Premium Orange Juice, No Pulp",
+        "weight": 240
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "name": "Lunch",
+    "foods": [
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 120
+      }
+    ] 
+  },
+  {
+    "name": "Snacks",
+    "foods": [
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 50
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 129.3
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 42.8
+      }
+    ]
+  },
+  {
+    "name": "Dinner",
+    "foods": [
+      {
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli (new 2026)",
+        "weight": 283
+      }
+    ]
+  }
+]
