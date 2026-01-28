@@ -21,7 +21,29 @@
     "foods": [
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 50
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "name": "Lunch",
+    "foods": [
+      {
+        "food": "Caulipower Uncured Pepperoni Pizza",
+        "weight": 320
+      }
+    ]
+  },
+  {
+    "name": "Dinner",
+    "foods": [
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 69
+      },
+      {
+        "food": "Quest Protein Bar White Chocolate Raspberry",
+        "weight": 60
       }
     ]
   }
