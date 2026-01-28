@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Makeshift Breakfast",
+    "foods": [
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Avocado Oil, Generic",
+        "weight": 15
+      },
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 56
+      },
+      {
+        "food": "Jif Reduced Fat Creamy Peanut Butter",
+        "weight": 26.1
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 49.2
+      }
+    ]
+  },
+  {
+    "name": "Snacks",
+    "foods": [
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Lunch",
+    "foods": [
+      {
+        "food": "Caulipower Uncured Pepperoni Pizza",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Dinner",
+    "foods": [
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 0
+      },
+      {
+        "food": "Quest Protein Bar White Chocolate Raspberry",
+        "weight": 0
+      }
+    ]
+  }
+]
