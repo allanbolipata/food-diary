@@ -21,6 +21,10 @@
       {
         "food": "Nature's Own Honey Wheat Bread",
         "weight": 49.2
+      },
+      {
+        "food": "Tropicana Pure Premium Orange Juice, No Pulp",
+        "weight": 252.6
       }
     ]
   },
@@ -28,8 +32,12 @@
     "name": "Snacks",
     "foods": [
       {
-        "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 0
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 84.4
+      },
+      {
+        "food": "Quest Protein Bar White Chocolate Raspberry",
+        "weight": 60
       }
     ]
   },
@@ -46,12 +54,12 @@
     "name": "Dinner",
     "foods": [
       {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 0
+        "food": "Factor_: Turkey Jus Lie & Creamy Wild Rice",
+        "weight": 323
       },
       {
         "food": "Quest Protein Bar White Chocolate Raspberry",
-        "weight": 0
+        "weight": 60
       }
     ]
   }

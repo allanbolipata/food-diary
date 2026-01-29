@@ -5495,5 +5495,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Turkey Jus Lie & Creamy Wild Rice",
+    "serving_size": 323,
+    "nutritional_data": {
+      "calories": 390,
+      "protein": 28,
+      "fat": {
+        "total": 13,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.23
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.17
+      },
+      "cholesterol": {
+        "total": 0.065,
+        "dv": 0.22
+      },
+      "sodium": {
+        "total": 0.81,
+        "dv": 0.35
+      },
+      "carbs": {
+        "total": 39,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
