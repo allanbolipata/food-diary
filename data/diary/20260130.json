@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Makeshift Breakfast",
+    "foods": [
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Honey Nut Cheerios",
+        "weight": 37.7
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 72.1
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 0
+      },
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 0
+      },
+      {
+        "food": "Tropicana Pure Premium Orange Juice, No Pulp",
+        "weight": 0
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Lunch",
+    "foods": [
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 0
+      },
+      {
+        "food": "Vegemite",
+        "weight": 0
+      },
+      {
+        "food": "Breakstone's Unsalted Butter",
+        "weight": 0
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Snacks",
+    "foods": [
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Dinner",
+    "foods": [
+      {
+        "food": "Factor_: Smokey Gouda Chicken",
+        "weight": 0
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 0
+      },
+      {
+        "food": "Naked PB",
+        "weight": 0
+      },
+      {
+        "food": "Organic Girl Essential Salads Baby Springs Mix",
+        "weight": 0
+      }
+    ]
+  }
+]

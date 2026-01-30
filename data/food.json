@@ -5515,6 +5515,17 @@
       },
       "cholesterol": {
         "total": 0.150,
+        "dv": 0.5
+      },
+      "sodium": {
+        "total": 0.88,
+        "dv": 0.38
+      },
+      "carbs": {
+        "total": 35,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 6,
           "dv": 0.21
         },
         "soluble_fiber": 0,
