@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Makeshift Breakfast",
+    "foods": [
+      {
+        "food": "Honey Nut Cheerios",
+        "weight": 37.1
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 104.5
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 0
+      },
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 0
+      },
+      {
+        "food": "Tropicana Pure Premium Orange Juice, No Pulp",
+        "weight": 0
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "name": "Lunch",
+    "foods": [
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Vegemite",
+        "weight": 3.75
+      },
+      {
+        "food": "Breakstone's Unsalted Butter",
+        "weight": 14
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 52
+      }
+    ]
+  },
+  {
+    "name": "Snacks",
+    "foods": [
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      }
+    ]
+  },
+  {
+    "name": "Dinner",
+    "foods": [
+      {
+        "food": "Factor_: Smokey Gouda Chicken",
+        "weight": 403
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Naked PB",
+        "weight": 48.9
+      },
+      {
+        "food": "Organic Girl Essential Salads Baby Springs Mix",
+        "weight": 20.9
+      }
+    ]
+  }
+]
