@@ -5753,5 +5753,51 @@
 	      }
 	    }
 	  }
+  },
+  {
+    "name": "Pop-Secret Movie Theater Butter (popped)",
+    "serving_size": 6,
+    "serving_size_conversion": {
+      "num_cups": 1
+    },
+    "nutritional_data": {
+      "calories": 30,
+      "protein": 0.46,
+      "fat": {
+        "total": 2,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0.5
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.065,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 3,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 0.46,
+          "dv": 0.0161
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
