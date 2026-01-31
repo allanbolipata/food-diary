@@ -59,6 +59,10 @@
       {
         "food": "Pop-Secret Movie Theater Butter (popped)",
         "weight": 75.8
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
       }
     ]
   },
@@ -66,20 +70,20 @@
     "name": "Dinner",
     "foods": [
       {
-        "food": "Factor_: Smokey Gouda Chicken",
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
         "weight": 0
       },
       {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
-        "weight": 0
+        "weight": 60
       },
       {
         "food": "Naked PB",
-        "weight": 0
+        "weight": 48.1
       },
       {
         "food": "Organic Girl Essential Salads Baby Springs Mix",
-        "weight": 0
+        "weight": 21
       }
     ]
   }
