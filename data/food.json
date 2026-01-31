@@ -5799,5 +5799,48 @@
         }
       }
     }
+  },
+  {
+    "name": "Minute Brown & White Rice",
+    "serving_size": 125,
+    "nutritional_data": {
+      "calories": 220,
+      "protein": 5,
+      "fat": {
+        "total": 3,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.04
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.12,
+        "dv": 0.05
+      },
+      "carbs": {
+        "total": 42,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
