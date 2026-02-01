@@ -5888,5 +5888,236 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Shredded Chicken Taco Bowl",
+    "serving_size": 1,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 550,
+      "protein": 36,
+      "fat": {
+        "total": 25,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.13,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.9,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 45,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Factor_ Garlic Herb Chicken",
+    "serving_size": 1,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 590,
+      "protein": 40,
+      "fat": {
+        "total": 26,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.155,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.76,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 42,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Lean Cuisine Signature: Meatloaf with Mashed Potatoes",
+    "serving_size": 265,
+    "nutritional_data": {
+      "calories": 270,
+      "protein": 19,
+      "fat": {
+        "total": 10,
+        "dv": 0.13,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.23
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 2.5
+      },
+      "cholesterol": {
+        "total": 0.045,
+        "dv": 0.15
+      },
+      "sodium": {
+        "total": 0.77,
+        "dv": 0.33
+      },
+      "carbs": {
+        "total": 25,
+        "dv": 0.09,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 1,
+            "dv": 0.02
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Halo Top: Sea Salt Caramel",
+    "serving_size": 87,
+    "serving_size_conversion": {
+      "num_cups": 0.67,
+      "num_pints": 0.33
+    },
+    "description": "pint weight - 261g",
+    "nutritional_data": {
+      "calories": 100,
+      "protein": 6,
+      "fat": {
+        "total": 2,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.15,
+        "dv": 0.07
+      },
+      "carbs": {
+        "total": 23,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 10,
+          "added_sugars": {
+            "total": 5,
+            "dv": 0.1
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Halo Top: Chocolate Vanilla Twist",
+    "serving_size": 85,
+    "serving_size_conversion": {
+      "num_cups": 0.67,
+      "num_pints": 0.33
+    },
+    "description": "pint weight - 255g",
+    "nutritional_data": {
+      "calories": 100,
+      "protein": 5,
+      "fat": {
+        "total": 2,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.105,
+        "dv": 0.05
+      },
+      "carbs": {
+        "total": 21,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
+          }
+        }
+      }
+    }
   }
 ]
