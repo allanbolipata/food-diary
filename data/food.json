@@ -5842,5 +5842,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Caramelized Onion Gournay Burger",
+    "serving_size": 1,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 570,
+      "protein": 32,
+      "fat": {
+        "total": 31,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.04
+      },
+      "cholesterol": {
+        "total": 0.13,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.9,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 40,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
