@@ -27,10 +27,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
-        "weight": 60
-      }
     ]
   },
   {
@@ -43,6 +39,10 @@
       {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
         "weight": 120
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
       },
       {
         "food": "Naked PB",
