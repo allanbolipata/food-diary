@@ -7,12 +7,21 @@
         "weight": 255
       },
       {
-        "food": "Lean Cuisine Signature: Meatloaf with Mashed Potatoes",
-        "weight": 265
-      },
-      {
         "food": "Factor_ Shredded Chicken Taco Bowl",
         "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "Eaten",
+    "foods": [ 
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Lean Cuisine Signature: Meatloaf with Mashed Potatoes",
+        "weight": 265
       },
       {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
@@ -21,16 +30,7 @@
       {
         "food": "Naked PB",
         "weight": 48
-      },
-      {
-        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
-        "weight": 60
       }
-    ]
-  },
-  {
-    "name": "Miscellaneous",
-    "foods": [ 
     ]
   }
 ]
