@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 9
+      },
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 56
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 52
+      }
+    ]
+  }
+]
