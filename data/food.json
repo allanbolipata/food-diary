@@ -6119,5 +6119,52 @@
         }
       }
     }
+  },
+  {
+    "name": "Quest S'mores Protein Bar",
+    "serving_size": 60,
+    "serving_size_conversion": {
+      "num_bars": 1
+    },
+    "doc": "Number of bars",
+    "nutritional_data": {
+      "calories": 180,
+      "protein": 21,
+      "fat": {
+        "total": 7,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2.5,
+          "dv": 0.13
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.09
+      },
+      "cholesterol": {
+        "total": 0.005,
+        "dv": 0.02
+      },
+      "sodium": {
+        "total": 0.21,
+        "dv": 0.09
+      },
+      "carbs": {
+        "total": 23,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 0.12,
+          "dv": 0.43
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

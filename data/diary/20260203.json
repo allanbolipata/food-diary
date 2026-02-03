@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Factor_ Garlic Herb Chicken",
+        "weight": 1
+      },
+      {
+        "food": "Naked PB",
+        "weight": 48
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Naked PB",
+        "weight": 24
+      }
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 56
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Nature's Own Honey Wheat Bread",
+        "weight": 52
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      }
+    ]
+  }
+]
