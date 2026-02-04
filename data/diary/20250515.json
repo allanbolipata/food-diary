@@ -4,11 +4,11 @@
     "foods": [
       {
         "food": "Planet Oat Oatmilk Original",
-        "weight": 134
+        "weight": 113
       },
       {
         "food": "Cocoa Pebbles",
-        "weight": 37
+        "weight": 36.5
       },
       {
         "food": "Skippy Reduced Fat Creamy Peanut Butter",
@@ -40,8 +40,8 @@
     "name": "Lunch",
     "foods": [
       {
-        "food": "Lean Cuisine: Chicken Parmesan",
-        "weight": 0
+        "food": "Lean Cuisine: Swedish Meatballs",
+        "weight": 1
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
@@ -87,11 +87,11 @@
     "foods": [
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 74
+        "weight": 75.6
       },
       {
         "food": "Wyman's Triple Berry",
-        "weight": 39
+        "weight": 44.6
       },
       {
         "food": "Planet Oat Oatmilk Original",
@@ -104,15 +104,15 @@
     "foods": [
       {
         "food": "Naked PB",
-        "weight": 33
+        "weight": 0
       },
       {
         "food": "Sugar Cube",
-        "weight": 7
+        "weight": 0
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 45.5
+        "weight": 0
       }
     ]
   },
@@ -142,7 +142,7 @@
     "foods": [
       {
         "food": "Lean Cuisine: Vermont White Cheddar Mac & Cheese",
-        "weight": 226
+        "weight": 0
       },
       {
         "food": "Naked PB",
@@ -178,7 +178,7 @@
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 150
+        "weight": 0
       },
       {
         "food": "Life Cuisine: Cauliflower Crust Pepperoni Pizza",
@@ -194,19 +194,19 @@
       },
       {
         "food": "Shake Shack Carolina BBQ Burger, Single",
-        "weight": 1
+        "weight": 0
       },
       {
         "food": "protein",
-        "weight": 20
+        "weight": 0
       },
       {
         "food": "fat",
-        "weight": 10
+        "weight": 0
       },
       {
         "food": "carbs",
-        "weight": 19
+        "weight": 0
       }
     ]
   }

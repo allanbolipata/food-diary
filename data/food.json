@@ -6166,5 +6166,49 @@
         }
       }
     }
+  },
+  {
+    "name": "Shake Shack Carolina BBQ Burger, Single",
+    "serving_size": 1,
+    "doc": "Number of burgers",
+    "nutritional_data": {
+      "calories": 690,
+      "protein": 36,
+      "fat": {
+        "total": 44,
+        "trans_fat": 1,
+        "saturated_fat": {
+          "total": 15,
+          "dv": 0.75
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.56
+      },
+      "cholesterol": {
+        "total": 0.120,
+        "dv": 0.40
+      },
+      "sodium": {
+        "total": 2,
+        "dv": 0.87
+      },
+      "carbs": {
+        "total": 36,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 11,
+          "added_sugars": {
+            "total": 0,
+            "dr": 0
+          }
+        }
+      }
+    }
   }
 ]
