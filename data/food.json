@@ -6210,5 +6210,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Smoky Gouda Macaroni & Shredded Beef",
+    "serving_size": 1,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 510,
+      "protein": 30,
+      "fat": {
+        "total": 27,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0.135,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.93,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 38,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
