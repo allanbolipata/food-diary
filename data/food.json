@@ -6348,5 +6348,54 @@
         }
       }
     }
+  },
+  {
+    "name": "Barebells Key Lime Pie",
+    "serving_size": 55,
+    "serving_size_conversion": {
+        "num_bars": 1
+    },
+    "nutritional_data": {
+      "calories": 200,
+      "protein": 20,
+      "fat": {
+        "total": 7,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3.5,
+          "dv": 0.18
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.09
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.140,
+        "dv": 0.06
+      },
+      "carbs": {
+        "total": 18,
+        "dv": 0.07,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 6
+        }
+      }
+    }
   }
 ]
