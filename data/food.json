@@ -6256,5 +6256,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Roasted Garlic Chicken",
+    "serving_size": 1,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 440,
+      "protein": 40,
+      "fat": {
+        "total": 18,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 5,
+          "dv": 0.25
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.23
+      },
+      "cholesterol": {
+        "total": 0.130,
+        "dv": 0.43
+      },
+      "sodium": {
+        "total": 0.77,
+        "dv": 0.33
+      },
+      "carbs": {
+        "total": 28,
+        "dv": 0.10,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
