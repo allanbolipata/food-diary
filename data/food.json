@@ -6302,5 +6302,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Skinny Pop Original Popcorn",
+    "serving_size": 18,
+    "serving_size_conversion": {
+        "num_bags": 1
+    },
+    "nutritional_data": {
+      "calories": 100,
+      "protein": 1,
+      "fat": {
+        "total": 7,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0.09
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.085,
+        "dv": 0.04
+      },
+      "carbs": {
+        "total": 10,
+        "dv": 0.04,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.04
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

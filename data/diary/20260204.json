@@ -2,6 +2,16 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Carry",
+    "foods": [ 
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
       {
         "food": "Factor_ Smoky Gouda Macaroni & Shredded Beef",
         "weight": 1
@@ -9,10 +19,6 @@
       {
         "food": "Quest S'mores Protein Bar",
         "weight": 60
-      },
-      {
-        "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 100
       },
       {
         "food": "Butterball Turkey Bacon",
@@ -23,22 +29,26 @@
         "weight": 125
       },
       {
-        "food": "Naked PB",
-        "weight": 48
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
       },
       {
         "food": "Naked PB",
-        "weight": 24 
+        "weight": 31.6
       },
+      {
+        "food": "Naked PB",
+        "weight": 48
+      }, 
       {
         "food": "Quest S'mores Protein Bar",
         "weight": 60
+      },
+      {
+        "food": "Skinny Pop Original Popcorn",
+        "weight": 18
       }
     ]
-  },
-  {
-    "name": "Miscellaneous",
-    "foods": [ 
-    ]
   }
+
 ]
