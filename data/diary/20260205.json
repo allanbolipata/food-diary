@@ -7,14 +7,6 @@
         "weight": 1
       },
       {
-        "food": "Cocoa Pebbles",
-        "weight": 39
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      },
-      {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
         "weight": 60
       },
@@ -43,6 +35,14 @@
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 120.4
+      }
     ]
   }
 ]
