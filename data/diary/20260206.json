@@ -28,10 +28,6 @@
     "name": "Uneaten Carry",
     "foods": [
       {
-        "food": "Naked PB",
-        "weight": 64
-      },
-      {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
         "weight": 60
       }
@@ -40,6 +36,10 @@
   {
     "name": "Miscellaneous",
     "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 64
+      },
       {
         "food": "Barebells Key Lime Pie",
         "weight": 55
