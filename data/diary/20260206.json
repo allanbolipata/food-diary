@@ -28,10 +28,6 @@
     "name": "Uneaten Carry",
     "foods": [
       {
-        "food": "Barebells Key Lime Pie",
-        "weight": 55
-      },
-      {
         "food": "Naked PB",
         "weight": 64
       },
@@ -43,7 +39,11 @@
   },
   {
     "name": "Miscellaneous",
-    "foods": [ 
+    "foods": [
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      },
       {
         "food": "Cocoa Pebbles",
         "weight": 39
