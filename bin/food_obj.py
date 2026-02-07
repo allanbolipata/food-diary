@@ -14,6 +14,8 @@ class Food:
         self.fat_total = self.fat["total"]
         self.carbs = self.nutr_data["carbs"] 
         self.carbs_total = self.carbs["total"]
+        self.sugar_alcohols = self.carbs.get("sugars", {}).get("sugar_alcohols", {}).get("total", 0)
+        self.carbs_net = self.carbs_total - self.sugar_alcohols
         self.sodium = self.nutr_data["sodium"]
         self.sodium_total = self.sodium["total"]
 
