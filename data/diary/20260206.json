@@ -2,40 +2,32 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Factor_: Potato Leek Mash & Grilled Chicken",
-        "weight": 340
-      },
+    ]
+  },
+  {
+    "name": "Uneaten Carry",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
         "weight": 44
       },
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 21
+        "weight": 21.6
       },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 78
-      },
-      {
-        "food": "Planet Oat Oatmilk Original, Unsweetened",
-        "weight": 240
-      }
-    ]
-  },
-  {
-    "name": "Uneaten Carry",
-    "foods": [
       {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
         "weight": 60
-      }
-    ]
-  },
-  {
-    "name": "Miscellaneous",
-    "foods": [
+      },
+      {
+        "food": "Factor_: Potato Leek Mash & Grilled Chicken",
+        "weight": 340
+      },
       {
         "food": "Naked PB",
         "weight": 64
@@ -51,6 +43,14 @@
       {
         "food": "Planet Oat Oatmilk Original, Unsweetened",
         "weight": 121.6
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 78.1
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 293.4
       }
     ]
   }
