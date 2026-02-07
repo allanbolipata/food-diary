@@ -6443,5 +6443,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Tex-Mex Burger Bowl",
+    "serving_size": 357,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 520,
+      "protein": 35,
+      "fat": {
+        "total": 29,
+        "trans_fat": 1,
+        "saturated_fat": {
+          "total": 11,
+          "dv": 0.55
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.27
+      },
+      "cholesterol": {
+        "total": 0.120,
+        "dv": 0.40
+      },
+      "sodium": {
+        "total": 0.89,
+        "dv": 0.39
+      },
+      "carbs": {
+        "total": 33,
+        "dv": 0.12,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 11,
+          "added_sugars": {
+            "total": 3,
+            "dv": 0.06
+          }
+        }
+      }
+    } 
   }
 ]
