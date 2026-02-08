@@ -2,21 +2,26 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
       {
         "food": "Factor_: Tex-Mex Burger Bowl",
         "weight": 357
       },
       {
-        "food": "Naked PB",
-        "weight": 64
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
       },
       {
-        "food": "Quest S'mores Protein Bar",
-        "weight": 60
+        "food": "Tropicana Pure Premium Orange Juice, No Pulp",
+        "weight": 447.4
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 60
+        "weight": 60.3
       },
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
@@ -24,21 +29,20 @@
       },
       {
         "food": "Cocoa Pebbles",
-        "weight": 80
+        "weight": 80.2
       },
       {
-        "food": "Planet Oat Oatmilk Original, Unsweetened",
-        "weight": 120
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 123.3
       },
       {
-        "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 100
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Naked PB",
+        "weight": 65.4
       }
-    ]
-  },
-  {
-    "name": "Miscellaneous",
-    "foods": [ 
     ]
   }
 ]
