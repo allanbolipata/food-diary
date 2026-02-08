@@ -9,7 +9,15 @@
       {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
         "weight": 60
-      },
+      }, 
+      {
+        "food": "Naked PB",
+        "weight": 60
+      }    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
       {
         "food": "Butterball Turkey Bacon",
         "weight": 28
@@ -23,16 +31,12 @@
         "weight": 100
       },
       {
-        "food": "Naked PB",
-        "weight": 60
-      },
-      {
         "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44
+        "weight": 44.1
       },
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 46
+        "weight": 47.8
       },
       {
         "food": "Cocoa Pebbles",
@@ -40,13 +44,9 @@
       },
       {
         "food": "Planet Oat Oatmilk Original",
-        "weight": 120
+        "weight": 120.3
       }
-    ]
-  },
-  {
-    "name": "Miscellaneous",
-    "foods": [ 
+
     ]
   }
 ]
