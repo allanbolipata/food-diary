@@ -6492,5 +6492,51 @@
         }
       }
     } 
+  },
+  {
+    "name": "Factor_: Sweet Potato Grits & Sage Chicken",
+    "serving_size": 340,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 570,
+      "protein": 42,
+      "fat": {
+        "total": 27,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 12,
+          "dv": 0.6
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.35
+      },
+      "cholesterol": {
+        "total": 0.165,
+        "dv": 0.55
+      },
+      "sodium": {
+        "total": 0.74,
+        "dv": 0.32
+      },
+      "carbs": {
+        "total": 39,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 15,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
+          }
+        }
+      }
+    }
   }
 ]
