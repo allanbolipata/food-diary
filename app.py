@@ -22,16 +22,20 @@ def load_recipes(data):
         recipes.append(current_recipe)
     return recipes
 
-if __name__ == '__main__':
-    running = dict(protein=0, fat=0, carbs=0, calories=0, sodium=0)
-    fname = sys.argv[1]
-    data_recipe = json.load(open(fname, 'r'))
-
-    recipes = load_recipes(data_recipe)
-   
+def process_recipes(recipes):
+    running = dict(protein=0, fat=0, carbs=0, calories=0, sodium=0)  
     for recipe in recipes:
         if recipe.prop_food:
             for key in recipe.prop_food:
                 running[key] += recipe.prop_food[key]
     
     pprint(running)
+    return running
+
+if __name__ == '__main__':
+    fname = sys.argv[1]
+    data_recipe = json.load(open(fname, 'r'))
+
+    recipes = load_recipes(data_recipe)
+
+    process_recipes(recipes)
