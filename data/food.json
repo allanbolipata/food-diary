@@ -6538,5 +6538,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Truffle Mushroom Pork Chop",
+    "serving_size": 343,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 550,
+      "protein": 42,
+      "fat": {
+        "total": 29,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 10,
+          "dv": 0.5
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.37
+      },
+      "cholesterol": {
+        "total": 0.130,
+        "dv": 0.43
+      },
+      "sodium": {
+        "total": 0.85,
+        "dv": 0.43
+      },
+      "carbs": {
+        "total": 27,
+        "dv": 0.1,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 15,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

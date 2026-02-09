@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Factor_: Truffle Mushroom Pork Chop",
+        "weight": 343
+      },
+      {
+        "food": "Naked PB",
+        "weight": 60
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 120
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      },
+      {
+        "food": "Tropicana Pure Premium Orange Juice, No Pulp",
+        "weight": 240
+      }
+    ]
+  },
+  {
+    "name": "Optional",
+    "foods": [
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      }
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+    ]
+  }
+]
