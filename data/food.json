@@ -6594,11 +6594,11 @@
       "protein": 32,
       "fat": {
         "total": 35,
-        "dv": 45,
+        "dv": 0.45,
         "trans_fat": 0,
         "saturated_fat": {
           "total": 6,
-          "dv": 30
+          "dv": 0.30
         },
         "polyunsaturated_fat": 8,
         "monounsaturated_fat": 18
@@ -6608,22 +6608,22 @@
         "dv": 32
       },
       "sodium": {
-        "total": 1200,
-        "dv": 52
+        "total": 1.2,
+        "dv": 0.52
       },
       "carbs": {
         "total": 52,
         "dv": 19,
         "dietary_fiber": {
           "total": 4,
-          "dv": 14
+          "dv": 0.14
         },
         "soluble_fiber": 1,
         "sugars": {
           "total": 6,
           "added_sugars": {
             "total": 4,
-            "dv": 8
+            "dv": 0.08
           }
         },
         "sugar_alcohols": {
