@@ -33,14 +33,6 @@
       {
         "food": "Quest S'mores Protein Bar",
         "weight": 60
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 39
       }
     ]
   },
@@ -52,6 +44,14 @@
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 122.2
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.2
+      }
     ]
   }
 ]
