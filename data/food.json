@@ -6604,8 +6604,8 @@
         "monounsaturated_fat": 18
       },
       "cholesterol": {
-        "total": 95,
-        "dv": 32
+        "total": 0.095,
+        "dv": 0.32
       },
       "sodium": {
         "total": 1.2,
@@ -6613,7 +6613,7 @@
       },
       "carbs": {
         "total": 52,
-        "dv": 19,
+        "dv": 0.19,
         "dietary_fiber": {
           "total": 4,
           "dv": 0.14
@@ -6624,6 +6624,55 @@
           "added_sugars": {
             "total": 4,
             "dv": 0.08
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      } 
+    }
+  },
+  {
+    "name": "Factor_: Tuscan Pesto Baked Salmon",
+    "serving_size": 371,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 630,
+      "protein": 37,
+      "fat": {
+        "total": 47,
+        "dv": 0.47,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 8,
+          "dv": 0.30
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.09,
+        "dv": 0.3
+      },
+      "sodium": {
+        "total": 0.085,
+        "dv": 0.37
+      },
+      "carbs": {
+        "total": 40,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 7,
+          "dv": 0.26
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
           }
         },
         "sugar_alcohols": {
