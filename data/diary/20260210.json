@@ -2,19 +2,15 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli (new 2026)",
-        "weight": 283
-      },
-      {
-        "food": "Naked PB",
-        "weight": 50
-      }
     ]
   },
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli (new 2026)",
+        "weight": 283
+      },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
         "weight": 44.4
@@ -42,6 +38,10 @@
       {
         "food": "Barebells Key Lime Pie",
         "weight": 55
+      },
+      {
+        "food": "Naked PB",
+        "weight": 33.1
       }
     ]
   }
