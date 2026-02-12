@@ -6680,5 +6680,54 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Parmesan & Sun-Dried Tomato Chicken Penne",
+    "serving_size": 315,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 550,
+      "protein": 34,
+      "fat": {
+        "total": 29,
+        "dv": 0.37,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 12,
+          "dv": 0.6
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.17,
+        "dv": 0.57
+      },
+      "sodium": {
+        "total": 0.870,
+        "dv": 0.38
+      },
+      "carbs": {
+        "total": 35,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 10,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
