@@ -2,39 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Factor_: Smoky Gouda Chicken",
-        "weight": 403
-      },
-      {
-        "food": "Naked PB",
-        "weight": 60
-      },
-      {
-        "food": "Barebells Key Lime Pie",
-        "weight": 55
-      },
-      {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 39
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 51
-      },
-      {
-        "food": "Quest S'mores Protein Bar",
-        "weight": 60
-      }
-    ]
   },
   {
     "name": "Uneaten Optional",
@@ -45,13 +12,46 @@
     "name": "Miscellaneous",
     "foods": [ 
       {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 121.1
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 40.1
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 51
+      },
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      },
+      {
         "food": "Planet Oat Oatmilk Original",
         "weight": 122.2
       },
       {
         "food": "Cocoa Pebbles",
         "weight": 39.2
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_: Smoky Gouda Chicken",
+        "weight": 403
+      },
+      {
+        "food": "Naked PB",
+        "weight": 60.2
       }
+    ]
     ]
   }
 ]
