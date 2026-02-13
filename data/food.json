@@ -6729,5 +6729,146 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Green Chile Chicken",
+    "serving_size": 343,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 480,
+      "protein": 42,
+      "fat": {
+        "total": 23,
+        "dv": 0.29,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 10,
+          "dv": 0.5
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.16,
+        "dv": 0.53
+      },
+      "sodium": {
+        "total": 0.860,
+        "dv": 0.37
+      },
+      "carbs": {
+        "total": 22,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 9,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Amtrak Smoked Turkey & Swiss Sandwich",
+    "serving_size": 262,
+    "nutritional_data": {
+      "calories": 575,
+      "protein": 38,
+      "fat": {
+        "total": 18,
+        "dv": 0.23,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 8,
+          "dv": 0.40
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.95,
+        "dv": 0.32
+      },
+      "sodium": {
+        "total": 0.1350,
+        "dv": 0.59
+      },
+      "carbs": {
+        "total": 60,
+        "dv": 0.22,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 11,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Amtrak Angus Beef Cheeseburger",
+    "serving_size": 174,
+    "nutritional_data": {
+      "calories": 510,
+      "protein": 26,
+      "fat": {
+        "total": 26,
+        "dv": 0.33,
+        "trans_fat": 1,
+        "saturated_fat": {
+          "total": 10,
+          "dv": 0.50
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.085,
+        "dv": 0.28
+      },
+      "sodium": {
+        "total": 0.860,
+        "dv": 0.37
+      },
+      "carbs": {
+        "total": 40,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.7
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 6,
+            "dv": 0.12
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
