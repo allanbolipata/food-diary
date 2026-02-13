@@ -2,46 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Factor_: Parmesan & Sun-Dried Tomato Chicken Penne",
-        "weight": 315
-      },
-      {
-        "food": "Honey Nut Cheerios",
-        "weight": 37
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      },
-      {
-        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
-        "weight": 60
-      },
-      {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 46
-      },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 39
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      },
-      {
-        "food": "Barebells Key Lime Pie",
-        "weight": 55
-      },
-      {
-        "food": "Naked PB",
-        "weight": 60
-      }
     ]
   },
   {
@@ -52,6 +12,46 @@
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.1
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.5
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.1
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 126.3
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      },
+      {
+        "food": "Honey Nut Cheerios",
+        "weight": 37.3
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 123.6
+      },
+      {
+        "food": "Naked PB",
+        "weight": 60.4
+      },
+      {
+        "food": "Factor_: Parmesan & Sun-Dried Tomato Chicken Penne",
+        "weight": 315
+      }
     ]
   }
 ]
