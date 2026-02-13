@@ -3,20 +3,12 @@
     "name": "Uneaten Miscellaneous",
     "foods": [
       {
-        "food": "Factor_: Green Chile Chicken",
-        "weight": 343
-      },
-      {
-        "food": "Barebells Key Lime Pie",
-        "weight": 55
-      },
-      {
         "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
         "weight": 60
       },
       {
-        "food": "Amtrak Angus Beef Cheeseburger",
-        "weight": 174
+        "food": "Amtrak Turkey & Asiago Sandwich",
+        "weight": 241
       }
     ]
   },
@@ -43,6 +35,14 @@
       {
         "food": "Planet Oat Oatmilk Original",
         "weight": 120
+      },
+      {
+        "food": "Factor_: Green Chile Chicken",
+        "weight": 343
+      },
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
       }
     ]
   }
