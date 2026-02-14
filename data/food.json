@@ -6916,5 +6916,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Bistek Tagalog (Beef with Soy-Calamansi Sauce)",
+    "serving_size": 100,
+    "nutritional_data": {
+      "calories": 195,
+      "protein": 22,
+      "fat": {
+        "total": 10.5,
+        "dv": 0.14,
+        "trans_fat": 0.1,
+        "saturated_fat": {
+          "total": 3.8,
+          "dv": 0.19
+        },
+        "polyunsaturated_fat": 0.6,
+        "monounsaturated_fat": 4.2
+      },
+      "cholesterol": {
+        "total": 65,
+        "dv": 0.22
+      },
+      "sodium": {
+        "total": 680,
+        "dv": 0.30
+      },
+      "carbs": {
+        "total": 4.5,
+        "dv": 0.02,
+        "dietary_fiber": {
+          "total": 0.8,
+          "dv": 0.03
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 2.1,
+          "added_sugars": {
+            "total": 0.5,
+            "dv": 0.01
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]

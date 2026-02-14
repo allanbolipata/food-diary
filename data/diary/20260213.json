@@ -2,14 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
-        "weight": 60
-      },
-      {
-        "food": "Amtrak Turkey & Asiago Sandwich",
-        "weight": 241
-      }
     ]
   },
   {
@@ -43,6 +35,18 @@
       {
         "food": "Barebells Key Lime Pie",
         "weight": 55
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Amtrak Turkey & Asiago Sandwich",
+        "weight": 241
+      },
+      {
+        "food": "Bistek Tagalog (Beef with Soy-Calamansi Sauce)",
+        "weight": 160
       }
     ]
   }
