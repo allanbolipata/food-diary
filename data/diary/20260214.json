@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Bistek Tagalog (Beef with Soy-Calamansi Sauce)",
+        "weight": 158.9
+      },
+      {
+        "food": "White Rice, Generic",
+        "weight": 102.1
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      },
+      {
+        "food": "Naked PB",
+        "weight": 15
+      }
+    ]
+  }
+]
