@@ -31,6 +31,10 @@
       {
         "food": "Naked PB",
         "weight": 15
+      },
+      {
+        "food": "Valentine's Party Feast (Lumpia, Brisket, Lechon, Spaghetti, Salmon, Rice, Cakes)",
+        "weight": 675
       }
     ]
   }
