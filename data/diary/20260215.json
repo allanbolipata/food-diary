@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Amtrak Turkey & Asiago Sandwich",
+        "weight": 241
+      },
+      {
+        "food": "Amtrak Fuel (Protein Bar & 2 Ferrero Rocher)",
+        "weight": 80
+      },
+      {
+        "food": "Naked PB",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+      "food": "Pre-Train Lunch (Pho Tai & 2 Ferrero Rocher)",
+      "weight": 725
+      }
+    ]
+  }
+]

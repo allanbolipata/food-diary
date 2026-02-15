@@ -7008,5 +7008,93 @@
         }
       }
     }
+  },
+  {
+    "name": "Pre-Train Lunch (Pho Tai & 2 Ferrero Rocher)",
+    "serving_size": 725,
+    "nutritional_data": {
+      "calories": 750,
+      "protein": 37.0,
+      "fat": {
+        "total": 22.0,
+        "dv": 0.28,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 8.0,
+          "dv": 0.40
+        },
+        "polyunsaturated_fat": 2.5,
+        "monounsaturated_fat": 9.2
+      },
+      "cholesterol": {
+        "total": 0.065,
+        "dv": 0.22
+      },
+      "sodium": {
+        "total": 1.83,
+        "dv": 0.80
+      },
+      "carbs": {
+        "total": 87.0,
+        "dv": 0.32,
+        "dietary_fiber": {
+          "total": 5.0,
+          "dv": 0.18
+        },
+        "soluble_fiber": 1.0,
+        "sugars": {
+          "total": 16.0,
+          "added_sugars": {
+            "total": 12.0,
+            "dv": 0.24
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Amtrak Fuel (Protein Bar & 2 Ferrero Rocher)",
+    "serving_size": 80,
+    "nutritional_data": {
+      "calories": 340,
+      "protein": 12.0,
+      "fat": {
+        "total": 22.0,
+        "dv": 0.28,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 9.0,
+          "dv": 0.45
+        },
+        "polyunsaturated_fat": 3.0,
+        "monounsaturated_fat": 10.0
+      },
+      "cholesterol": {
+        "total": 0.005,
+        "dv": 0.02
+      },
+      "sodium": {
+        "total": 0.190,
+        "dv": 0.08
+      },
+      "carbs": {
+        "total": 29.0,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 6.0,
+          "dv": 0.21
+        },
+        "sugars": {
+          "total": 18.0,
+          "added_sugars": {
+            "total": 14.0,
+            "dv": 0.28
+          }
+        }
+      }
+    }
   }
 ]
