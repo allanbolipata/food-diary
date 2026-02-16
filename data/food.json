@@ -7096,5 +7096,25 @@
         }
       }
     }
+  },
+  {
+    "name": "Amtrak Chicken Caesar Salad (Half Dressing)",
+    "serving_size": 280,
+    "nutritional_data": {
+      "calories": 360,
+      "protein": 28.0,
+      "fat": {
+        "total": 18.0,
+        "dv": 0.23,
+        "saturated_fat": { "total": 4.5, "dv": 0.23 }
+      },
+      "sodium": { "total": 0.980, "dv": 0.43 },
+      "carbs": {
+        "total": 14.0,
+        "dv": 0.05,
+        "dietary_fiber": { "total": 3.0, "dv": 0.11 },
+        "sugars": { "total": 3.0 }
+      }
+    }
   }
 ]
