@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Campbell's Chunky Creamy Chicken & Dumplings",
+        "weight": 522.353
+      },
+      {
+        "food": "Core Power Elite Chocolate",
+        "weight": 828
+      },
+      {
+        "food": "Nerds Gummy Clusters",
+        "weight": 165
+      },
+      {
+        "food": "Factor_: Smoky Gouda Chicken",
+        "weight": 403
+      },
+      {
+        "food": "Kitchen Basics Bone Broth, Chicken, Original",
+        "weight": 725.4
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Kitchen Basics Bone Broth, Chicken, Original",
+        "weight": 173.6
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Grekey Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Factor_: Tuscan Pesto Baked Salmon",
+        "weight": 371
+      },
+      {
+        "food": "Nerds Gummy Clusters",
+        "weight": 15
+      },
+      {
+        "food": "Halo Top: Sea Salt Caramel",
+        "weight": 261
+      },
+      {
+        "food": "Naked PB",
+        "weight": 75
+      },
+      {
+        "food": "Factor_: Green Chile Chicken",
+        "weight": 343
+      },
+      {
+        "food": "Nerds Gummy Clusters",
+        "weight": 28.125
+      }
+    ]
+  }
+]
