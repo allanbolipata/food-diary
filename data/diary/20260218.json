@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 40.7
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.1
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 120
+      },
+      {
+        "food": "Factor_: Roasted Garlic Chicken",
+        "weight": 1
+      },
+      {
+        "food": "Naked PB",
+        "weight": 60
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 40.7
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 120
+      }
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      }
+    ]
+  }
+]
