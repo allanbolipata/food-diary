@@ -3,42 +3,6 @@
     "name": "Uneaten Miscellaneous",
     "foods": [
       {
-        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
-        "weight": 150
-      },
-      {
-        "food": "Banana, Generic",
-        "weight": 125
-      },
-      {
-        "food": "Barebells Key Lime Pie",
-        "weight": 55
-      },
-      {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 46
-      },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 39
-      },
-      {
-        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
-        "weight": 60
-      },
-      {
-        "food": "Factor_ Shredded Chicken Taco Bowl",
-        "weight": 1
-      },
-      {
         "food": "Naked PB",
         "weight": 40
       }
@@ -52,6 +16,46 @@
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      },
+      {
+        "food": "Coke Zero",
+        "weight": 355
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 119.5
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 47.8
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_ Shredded Chicken Taco Bowl",
+        "weight": 1
+      }
     ]
   }
 ]
