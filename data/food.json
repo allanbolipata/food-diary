@@ -7341,5 +7341,95 @@
         }
       }
     }
-  } 
+  },
+  {
+    "name": "Gatorade Zero Lemon Lime",
+    "serving_size": 591,
+    "serving_size_conversion": {
+      "num_bottles": 1
+    },
+    "nutritional_data": {
+      "calories": 5,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.270,
+        "dv": 0.12
+      },
+      "carbs": {
+        "total": 2,
+        "dv": 0.01,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0.0
+        },
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Coke Zero",
+    "serving_size": 355,
+    "serving_size_conversion": {
+      "num_cans": 1
+    },
+    "nutritional_data": {
+      "calories": 0,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.040,
+        "dv": 0.02
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0.00,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0.0
+        },
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  }
 ]

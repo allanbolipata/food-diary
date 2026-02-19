@@ -2,43 +2,11 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 40.7
-      },
-      {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44.1
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 46
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      },
-      {
-        "food": "Factor_: Roasted Garlic Chicken",
-        "weight": 1
-      },
-      {
-        "food": "Naked PB",
-        "weight": 60
-      }
     ]
   },
   {
     "name": "Uneaten Optional",
     "foods": [
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 40.7
-      },
-      {
-        "food": "Planet Oat Oatmilk Original",
-        "weight": 120
-      }
     ]
   },
   {
@@ -55,6 +23,46 @@
       {
         "food": "Barebells Key Lime Pie",
         "weight": 55
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.4
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.6
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 123.5
+      },
+      {
+        "food": "Coke Zero",
+        "weight": 355
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 40.2
+      },
+      {
+        "food": "Planet Oat Oatmilk Original",
+        "weight": 121.8
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_: Roasted Garlic Chicken",
+        "weight": 1
+      },
+      {
+        "food": "Naked PB",
+        "weight": 30.2
       }
     ]
   }
