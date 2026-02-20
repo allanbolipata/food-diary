@@ -2,10 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Naked PB",
-        "weight": 40
-      }
     ]
   },
   {
@@ -55,6 +51,10 @@
       {
         "food": "Factor_ Shredded Chicken Taco Bowl",
         "weight": 1
+      },
+      {
+        "food": "Naked PB",
+        "weight": 40.1
       }
     ]
   }
