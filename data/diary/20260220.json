@@ -2,6 +2,10 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
+      {
+        "food": "Naked PB",
+        "weight": 50
+      }
     ]
   },
   {
@@ -21,8 +25,8 @@
         "weight": 125
       },
       {
-        "food": "Coke Zero",
-        "weight": 355
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
       },
       {
         "food": "Quaker Oats Organic: Quick 1-Minute",
@@ -30,11 +34,11 @@
       },
       {
         "food": "Planet Oat Oatmilk Original",
-        "weight": 119.5
+        "weight": 134.9
       },
       {
         "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 47.8
+        "weight": 47.7
       },
       {
         "food": "Cocoa Pebbles",
@@ -45,12 +49,8 @@
         "weight": 60
       },
       {
-        "food": "Factor_ Shredded Chicken Taco Bowl",
+        "food": "Factor_ Smoky Gouda Macaroni & Shredded Beef",
         "weight": 1
-      },
-      {
-        "food": "Naked PB",
-        "weight": 40.1
       }
     ]
   }
