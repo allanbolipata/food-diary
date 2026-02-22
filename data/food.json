@@ -7520,5 +7520,52 @@
         }
       }
     }
+  },
+  {
+    "name": "Isla & Co. Brunch: Kimchi Scramble + Avocado + Tim Tam",
+    "doc": "Combined brunch: 3 eggs, 1 thick sourdough, 1/2 avocado, kimchi, feta, chili crunch, and 1 Original Tim Tam. High potassium from avocado helps flush Saturday's sodium; high protein supports shoulder repair.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 785,
+      "protein": 34.5,
+      "fat": {
+        "total": 51.0,
+        "dv": 0.65,
+        "trans_fat": 0.1,
+        "saturated_fat": {
+          "total": 15.0,
+          "dv": 0.75
+        },
+        "polyunsaturated_fat": 5.0,
+        "monounsaturated_fat": 21.0
+      },
+      "cholesterol": {
+        "total": 0.58,
+        "dv": 1.0
+      },
+      "sodium": {
+        "total": 1.19,
+        "dv": 0.52
+      },
+      "carbs": {
+        "total": 49.3,
+        "dv": 0.18,
+        "dietary_fiber": {
+          "total": 11.0,
+          "dv": 0.39
+        },
+        "soluble_fiber": 3.0,
+        "sugars": {
+          "total": 14.2,
+          "added_sugars": {
+            "total": 8.2,
+            "dv": 0.16
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
