@@ -3846,7 +3846,7 @@
         "dv": 0
       },
       "sodium": {
-        "total": 0.001,
+        "total": 1,
         "dv": 0
       },
       "carbs": {
@@ -7479,33 +7479,33 @@
     "name": "DB Cooper's: 12oz NY Strip Steak Dinner",
     "serving_size": 1,
     "nutritional_data": {
-      "calories": 980,
+      "calories": 1050,
       "protein": 72.0,
       "fat": {
-        "total": 58.0,
-        "dv": 0.74,
+        "total": 62.0,
+        "dv": 0.79,
         "trans_fat": 1.5,
         "saturated_fat": {
-          "total": 22.0,
-          "dv": 1.10
+          "total": 24.0,
+          "dv": 1.2
         },
         "polyunsaturated_fat": 2.5,
-        "monounsaturated_fat": 24.0
+        "monounsaturated_fat": 26.0
       },
       "cholesterol": {
         "total": 0.21,
         "dv": 0.70
       },
       "sodium": {
-        "total": 1.45,
-        "dv": 0.63
+        "total": 1.80,
+        "dv": 0.78
       },
       "carbs": {
-        "total": 34.0,
-        "dv": 0.12,
+        "total": 50.0,
+        "dv": 0.18,
         "dietary_fiber": {
-          "total": 5.0,
-          "dv": 0.18
+          "total": 6.0,
+          "dv": 0.21
         },
         "soluble_fiber": 1.5,
         "sugars": {

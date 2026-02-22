@@ -38,12 +38,12 @@ if __name__ == '__main__':
         recipes_eaten = list()
         for meals in data:
             if "uneaten" not in meals["name"].lower():
+                print("--- %s" % meals["name"])
                 for meal_item in meals["foods"]:
                     weight = meal_item["weight"]
                     food = FOOD[meal_item["food"]]
                     if weight > 0:
-                        print("---")
-                        print(meal_item)
+                        pprint(meal_item)
                         recipe = Recipe()
                         recipe.add_food(weight,food)
                         recipes_eaten.append(recipe)
