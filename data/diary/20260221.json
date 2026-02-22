@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 120.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.0
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.2
+      },
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      },
+      {
+        "food": "DB Cooper's: 12oz NY Strip Steak Dinner",
+        "weight": 1
+      }
+    ]
+  },{
+  "name": "4 pieces chicken nachos with chicken and light cheese",
+  "doc": "Estimated for 4 chips with grilled chicken and a modest amount of cheese. Sodium is the main variable here due to restaurant seasoning.",
+  "foods": [
+    {
+      "food": "protein",
+      "weight": 6.0
+    },
+    {
+      "food": "carbs",
+      "weight": 16.0
+    },
+    {
+      "food": "fat",
+      "weight": 10.0
+    },
+    {
+      "food": "sodium",
+      "weight": 0.35
+    }
+  ]
+}
+]

@@ -3825,6 +3825,49 @@
     }
   },
   {
+    "name": "sodium",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 0,
+      "protein": 0,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.001,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
     "name": "Beef and Broccoli, Generic",
     "serving_size": 240,
     "nutritional_data": {
@@ -7428,6 +7471,52 @@
             "total": 0,
             "dv": 0
           }
+        }
+      }
+    }
+  },
+  {
+    "name": "DB Cooper's: 12oz NY Strip Steak Dinner",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 980,
+      "protein": 72.0,
+      "fat": {
+        "total": 58.0,
+        "dv": 0.74,
+        "trans_fat": 1.5,
+        "saturated_fat": {
+          "total": 22.0,
+          "dv": 1.10
+        },
+        "polyunsaturated_fat": 2.5,
+        "monounsaturated_fat": 24.0
+      },
+      "cholesterol": {
+        "total": 0.21,
+        "dv": 0.70
+      },
+      "sodium": {
+        "total": 1.45,
+        "dv": 0.63
+      },
+      "carbs": {
+        "total": 34.0,
+        "dv": 0.12,
+        "dietary_fiber": {
+          "total": 5.0,
+          "dv": 0.18
+        },
+        "soluble_fiber": 1.5,
+        "sugars": {
+          "total": 4.0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
         }
       }
     }
