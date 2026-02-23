@@ -1,0 +1,14 @@
+session_name: food-diary
+windows:
+  - window_name: dev-session
+    layout: main-horizontal
+    # This setting ensures the top pane gets enough room (60% of height)
+    options:
+      main-pane-height: 80%
+    panes:
+      - shell_command: 
+        - nvim .          # Pane 1: Top (Main)
+      - shell_command: 
+        - ls -la          # Pane 2: Bottom Left
+      - shell_command: 
+        - git status      # Pane 3: Bottom Right

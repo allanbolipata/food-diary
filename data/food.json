@@ -7567,5 +7567,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Honey Butter Chicken Breast",
+    "serving_size": 366,
+    "nutritional_data": {
+      "calories": 520,
+      "protein": 39,
+      "fat": {
+        "total": 26,
+        "dv": 0.33,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0.65
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.165,
+        "dv": 0.65
+      },
+      "sodium": {
+        "total": 0.91,
+        "dv": 0.40
+      },
+      "carbs": {
+        "total": 30,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 11,
+          "added_sugars": {
+            "total": 5,
+            "dv": 0.1
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]

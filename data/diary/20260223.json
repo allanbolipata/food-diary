@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 28
+      },
+      {
+        "food": "Minute Brown & Wild Rice",
+        "weight": 125
+      },
+      {
+        "food": "Barebells Key Lime Pie",
+        "weight": 55
+      },
+      {
+        "food": "Factor_: Honey Butter Chicken Breast",
+        "weight": 366
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 120.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.0
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.2
+      },
+      {
+        "food": "Naked PB",
+        "weight": 50
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+    ]
+  }
+]
