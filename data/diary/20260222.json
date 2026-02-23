@@ -12,7 +12,7 @@
       },
       {
         "food": "Naked PB",
-        "weight": 110
+        "weight": 40.2
       }
     ]
   },
@@ -43,6 +43,10 @@
       {
         "food": "Cocoa Pebbles",
         "weight": 39.9
+      },
+      {
+        "food": "Naked PB",
+        "weight": 69.8
       }
     ]
   }
