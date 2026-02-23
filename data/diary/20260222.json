@@ -2,18 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Banana, Generic",
-        "weight": 125
-      },
-      {
-        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
-        "weight": 150
-      },
-      {
-        "food": "Naked PB",
-        "weight": 40.2
-      }
     ]
   },
   {
@@ -47,6 +35,14 @@
       {
         "food": "Naked PB",
         "weight": 69.8
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Naked PB",
+        "weight": 40.2
       }
     ]
   }
