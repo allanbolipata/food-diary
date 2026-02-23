@@ -11,24 +11,8 @@
         "weight": 150
       },
       {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44
-      },
-      {
-        "food": "Planet Oat Oatmilk Original, Unsweetened",
-        "weight": 120.6
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 46.0
-      },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 39.2
-      },
-      {
         "food": "Naked PB",
-        "weight": 55
+        "weight": 110
       }
     ]
   },
@@ -45,8 +29,20 @@
         "weight": 1
       },
       {
-        "food": "Naked PB",
-        "weight": 55
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 120.2
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.0
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.9
       }
     ]
   }
