@@ -2,26 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Barebells Key Lime Pie",
-        "weight": 55
-      },
-      {
-        "food": "Factor_: Honey Butter Chicken Breast",
-        "weight": 366
-      },
-      {
-        "food": "Naked PB",
-        "weight": 30
-      },
-      {
-        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
-        "weight": 150
-      },
-      {
-        "food": "Banana, Generic",
-        "weight": 125
-      }
     ]
   },
   {
@@ -59,6 +39,22 @@
       {
         "food": "Cocoa Pebbles",
         "weight": 39.8
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Factor_: Honey Butter Chicken Breast",
+        "weight": 366
+      },
+      {
+        "food": "Naked PB",
+        "weight": 61.8
       }
     ]
   }
