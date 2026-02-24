@@ -2,6 +2,14 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
+      {
+        "food": "Factor_: Roasted Garlic Chicken",
+        "weight": 1
+      },
+      {
+        "food": "Halo Top: Chocolate Vanilla Twist",
+        "weight": 255
+      }
     ]
   },
   {
@@ -35,7 +43,15 @@
       {
         "food": "Cocoa Pebbles",
         "weight": 39.5
-      } 
+      }, 
+      {
+        "food": "Factor_: Potato Leek Mash & Grilled Chicken",
+        "weight": 340
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      }
     ]
   }
 ]
