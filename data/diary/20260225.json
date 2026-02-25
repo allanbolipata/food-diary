@@ -3,40 +3,16 @@
     "name": "Uneaten Miscellaneous",
     "foods": [
       {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
         "food": "Factor_: Smoky BBQ Chicken Breast",
         "weight": 391
-      },
-      {
-        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
-        "weight": 150
-      },
-      {
-        "food": "Banana, Generic",
-        "weight": 125
-      },
-      {
-        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
-        "weight": 150
-      },
-      {
-        "food": "Banana, Generic",
-        "weight": 125
-      },
-      {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44
-      },
-      {
-        "food": "Planet Oat Oatmilk Original, Unsweetened",
-        "weight": 120.1
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 49.5
-      },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 39.5
       },
       {
         "food": "Barebells Key Lime Pie",
@@ -45,10 +21,6 @@
       {
         "food": "Naked PB",
         "weight": 60
-      },
-      {
-        "food": "salt",
-        "weight": 2.3
       }
     ]
   },
@@ -60,6 +32,30 @@
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "salt",
+        "weight": 2.3
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 124.2
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.3
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 47.9
+      }
     ]
   }
 ]
