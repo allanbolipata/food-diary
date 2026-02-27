@@ -2,46 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Factor_: Browned Butter Grilled Chicken & Yukon Mash",
-        "weight": 383
-      }, 
-      {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44
-      },
-      {
-        "food": "Planet Oat Oatmilk Original, Unsweetened",
-        "weight": 120.1
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 49.5
-      },
-      {
-        "food": "Cocoa Pebbles",
-        "weight": 50
-      },
-      {
-        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
-        "weight": 150
-      },
-      {
-        "food": "Banana, Generic",
-        "weight": 125
-      },
-      {
-        "food": "Naked PB",
-        "weight": 60
-      },
-      {
-        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
-        "weight": 60
-      },
-      {
-        "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 100
-      }
     ]
   },
   {
@@ -52,6 +12,50 @@
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.4
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 120.1
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 55.3
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 40.9
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Barebells Cookies & Caramel Protein Bar",
+        "weight": 55
+      },
+      {
+        "food": "Naked PB",
+        "weight": 30
+      },
+      {
+        "food": "Factor_: Browned Butter Grilled Chicken & Yukon Mash",
+        "weight": 383
+      },
+      {
+        "food": "Halo Top: Sea Salt Caramel",
+        "weight": 261
+      }
     ]
   }
 ]
