@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 55.2
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 49.6
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 226.4
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 54.1
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 221.2
+      },
+      {
+        "food": "Factor_: Browned Butter Grilled Chicken & Yukon Mash",
+        "weight": 383
+      }
+    ]
+  }
+]
