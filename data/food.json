@@ -7978,5 +7978,50 @@
         }
       }
     }
+  },
+  {
+    "name": "Core Power Elite Vanilla",
+    "serving_size": 414,
+    "serving_size_conversion": {
+      "num_bottles": 1
+    },
+    "nutritional_data": {
+      "calories": 230,
+      "protein": 42,
+      "fat": {
+        "total": 3.5,
+        "dv": 0.04,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.035,
+        "dv": 0.12
+      },
+      "sodium": {
+        "total": 0.25,
+        "dv": 0.11
+      },
+      "carbs": {
+        "total": 8,
+        "dv": 0.03,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0.0
+        },
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
