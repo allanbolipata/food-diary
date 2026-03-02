@@ -22,8 +22,54 @@
       },
       {
         "food": "Amazon Fresh, Cage Free, Brown Eggs",
-        "weight": 100
+        "weight": 150
+      },
+      {
+        "food": "Arnold Country Style White Bread",
+        "weight": 90.5
+      },
+      {
+        "food": "Polly-O String Cheese",
+        "weight": 84
+      },
+      {
+        "food": "Snyder's of Hanover Rods Pretzels",
+        "weight": 72.2
+      },
+      {
+        "food": "Idahoan Butter & Herb Mashed Potatoes",
+        "weight": 193.3
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 50
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 139.2
       }
     ]
+  },
+  {
+    "name": "Factor Lemon Herb Grilled Chicken (Chicken Only)",
+    "foods": [
+      {
+        "food": "protein",
+        "weight": 34.0
+      },
+      {
+        "food": "carbs",
+        "weight": 4.0
+      },
+      {
+        "food": "fat",
+        "weight": 11.0
+      },
+      {
+        "food": "sodium",
+        "weight": 0.65
+      }
+    ],
+    "doc": "Macros for just the chicken breast and herb oil/sauce portion of the meal, with all side dishes removed."
   }
 ]
