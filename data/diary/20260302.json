@@ -1,0 +1,41 @@
+[
+  {
+    "name":  "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Idahoan Butter & Herb Mashed Potatoes",
+        "weight": 122
+      },
+      {
+        "food": "Core Power Elite Strawberry",
+        "weight": 414
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      },
+      {
+        "food": "Extra Virgin Olive Oil",
+        "weight": 11
+      },
+      {
+        "food": "Arnold Country Style White Bread",
+        "weight": 49
+      },
+      {
+        "food": "College Inn Bone Broth, Chicken, 35% Less Sodium",
+        "weight": 907
+      }
+    ]
+  }
+]

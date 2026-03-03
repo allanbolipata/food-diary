@@ -8203,5 +8203,95 @@
         }
       }
     }
+  },
+  {
+    "name": "Core Power Elite Strawberry",
+    "serving_size": 414,
+    "serving_size_conversion": {
+      "num_bottles": 1
+    },
+    "nutritional_data": {
+      "calories": 230,
+      "protein": 42,
+      "fat": {
+        "total": 3.5,
+        "dv": 0.04,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 2,
+          "dv": 0.1
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.035,
+        "dv": 0.12
+      },
+      "sodium": {
+        "total": 0.25,
+        "dv": 0.11
+      },
+      "carbs": {
+        "total": 8,
+        "dv": 0.03,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0.0
+        },
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "College Inn Bone Broth, Chicken, 35% Less Sodium",
+    "serving_size": 240,
+    "serving_size_conversion": {
+      "num_cups": 1
+    },
+    "nutritional_data": {
+      "calories": 45,
+      "protein": 8,
+      "fat": {
+        "total": 0.5,
+        "dv": 0.01,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.36,
+        "dv": 0.16
+      },
+      "carbs": {
+        "total": 1,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
