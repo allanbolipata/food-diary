@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Barebells Salty Peanuty",
+        "weight": 55
+      },
+      {
+        "food": "Factor_: Lemon Caper Chicken",
+        "weight": 349
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.2
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.7
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 122.1
+      },
+      {
+        "food": "Factor_: Lemon Caper Chicken",
+        "weight": 349
+      },
+      {
+        "food": "Polly-O String Cheese",
+        "weight": 28
+      }
+    ]
+  }
+]

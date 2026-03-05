@@ -8293,5 +8293,56 @@
         }
       }
     }
+  },
+  {
+    "name": "Halo Top: Mint Chip",
+    "serving_size": 86,
+    "serving_size_conversion": {
+      "num_cups": 0.67,
+      "num_pints": 0.33
+    },
+    "description": "pint weight - 255g",
+    "nutritional_data": {
+      "calories": 110,
+      "protein": 5,
+      "fat": {
+        "total": 2.5,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.5,
+          "dv": 0.08
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.095,
+        "dv": 0.04
+      },
+      "carbs": {
+        "total": 23,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 10,
+          "added_sugars": {
+            "total": 5,
+            "dv": 0.10
+          },
+          "sugar_alcohols": {
+          "total": 6
+          }
+        }
+      }
+    }
   }
 ]
