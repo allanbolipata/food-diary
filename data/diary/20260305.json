@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
+        "food": "Butterball Turkey Bacon",
+        "weight": 28
+      },
+      {
+        "food": "Arnold Country Style White Bread",
+        "weight": 98
+      },
+      {
+        "food": "Barebells Cookies & Cream",
+        "weight": 55
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.5
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 51.2
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 120.3
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Naked PB",
+        "weight": 35.9
+      },
+      {
+        "food": "Factor_ Smoky Gouda Macaroni & Shredded Beef",
+        "weight": 1
+      },
+      {
+        "food": "Naked PB",
+        "weight": 35.8
+      }
+    ]
+  }
+]
