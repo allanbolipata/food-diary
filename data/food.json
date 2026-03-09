@@ -8344,5 +8344,54 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Buffalo Ranch Burger",
+    "serving_size": 397,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 640,
+      "protein": 33,
+      "fat": {
+        "total": 37,
+        "dv": 0.47,
+        "trans_fat": 1.5,
+        "saturated_fat": {
+          "total": 14,
+          "dv": 0.7
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.13,
+        "dv": 0.43
+      },
+      "sodium": {
+        "total": 1.17,
+        "dv": 0.51
+      },
+      "carbs": {
+        "total": 45,
+        "dv": 0.16,
+        "dietary_fiber": {
+          "total": 7,
+          "dv": 0.26
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 11,
+          "added_sugars": {
+            "total": 1,
+            "dv": 0.02
+          },
+          "sugar_alcohols": {
+          "total": 0
+          }
+        }
+      }
+    }
   }
 ]
