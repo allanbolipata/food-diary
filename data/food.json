@@ -8442,5 +8442,52 @@
         }
       }
     }
+  },
+  {
+    "name": "NYC Deli Reuben Sandwich",
+    "doc": "Standard heavy NYC deli portion. High sodium from corned beef and sauerkraut will likely cause temporary water retention. Significant saturated fat content from Swiss cheese and grilled rye.",
+    "serving_size": 550,
+    "nutritional_data": {
+      "calories": 980,
+      "protein": 58,
+      "fat": {
+        "total": 62,
+        "dv": 0.8,
+        "trans_fat": 1.5,
+        "saturated_fat": {
+          "total": 26,
+          "dv": 1.3
+        },
+        "polyunsaturated_fat": 4.5,
+        "monounsaturated_fat": 22.0
+      },
+      "cholesterol": {
+        "total": 0.185,
+        "dv": 0.62
+      },
+      "sodium": {
+        "total": 3.8,
+        "dv": 1.65
+      },
+      "carbs": {
+        "total": 48,
+        "dv": 0.17,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 2.0,
+        "sugars": {
+          "total": 9,
+          "added_sugars": {
+            "total": 2,
+            "dv": 0.04
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
