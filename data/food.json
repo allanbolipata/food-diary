@@ -8393,5 +8393,54 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Truffle Butter Chicken & Mushroom Risotto",
+    "serving_size": 352,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 580,
+      "protein": 40,
+      "fat": {
+        "total": 33,
+        "dv": 0.42,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0.65
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.16,
+        "dv": 0.53
+      },
+      "sodium": {
+        "total": 0.83,
+        "dv": 0.36
+      },
+      "carbs": {
+        "total": 29,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+          "total": 0
+          }
+        }
+      }
+    }
   }
 ]
