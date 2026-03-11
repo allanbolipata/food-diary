@@ -12,6 +12,34 @@
   {
     "name": "Miscellaneous",
     "foods": [ 
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Polly-O String Cheese",
+        "weight": 28
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.5
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 52.9
+      },
+      {
+        "food": "Planet Oat Oatmilk Original, Unsweetened",
+        "weight": 165.3
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.2
+      },
+      {
+        "food": "Barebells Salty Peanut",
+        "weight": 55
+      }
     ]
   }
 ]
