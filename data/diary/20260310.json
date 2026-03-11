@@ -2,14 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Quest S'mores Protein Bar",
-        "weight": 60
-      },
-      {
-        "food": "Barebells Caramel Cashew",
-        "weight": 55
-      }
     ]
   },
   {
@@ -27,6 +19,22 @@
       {
         "food": "NYC Deli Reuben Sandwich",
         "weight": 550
+      },
+      {
+        "food": "Barebells Caramel Cashew",
+        "weight": 55
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Halo Top: Mint Chip",
+        "weight": 258
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
       }
     ]
   }
