@@ -39,6 +39,18 @@
       {
         "food": "Barebells Salty Peanut",
         "weight": 55
+      },
+      {
+        "food": "Factor_ Caramelized Onion Gournay Burger",
+        "weight": 1
+      },
+      {
+        "food": "Naked PB",
+        "weight": 60
+      },
+      {
+        "food": "Polly-O String Cheese",
+        "weight": 28
       }
     ]
   }
