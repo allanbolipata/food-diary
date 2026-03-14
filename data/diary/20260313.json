@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Barebells Salty Peanut",
+        "weight": 55
+      },
+      {
+        "food": "Factor_ Shredded Chicken Taco Bowl",
+        "weight": 1
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.8
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.2
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 43.4
+      },
+      {
+        "food": "Factor_: Browned Butter Grilled Chicken & Yukon Mash",
+        "weight": 383
+      },
+      {
+        "food": "Snyder's of Hanover Rods Pretzels",
+        "weight": 30
+      }
+    ]
+  }
+]
