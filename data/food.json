@@ -8489,5 +8489,56 @@
         }
       }
     }
+  },
+  {
+    "name": "Halo Top: Chocolate",
+    "serving_size": 85,
+    "serving_size_conversion": {
+      "num_cups": 0.67,
+      "num_pints": 0.33
+    },
+    "description": "pint weight - 255g",
+    "nutritional_data": {
+      "calories": 100,
+      "protein": 6,
+      "fat": {
+        "total": 2,
+        "dv": 0.03,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.5,
+          "dv": 0.08
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.095,
+        "dv": 0.04
+      },
+      "carbs": {
+        "total": 21,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
+          },
+          "sugar_alcohols": {
+          "total": 5
+          }
+        }
+      }
+    }
   }
 ]
