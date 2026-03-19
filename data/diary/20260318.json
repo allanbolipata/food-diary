@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Lennox Hill Deli Grilled Chicken Caesar Salad",
+        "weight": 1
+      },
+      {
+        "food": "Factor_: Browned Butter Grilled Chicken & Yukon Mash",
+        "weight": 383
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 60.8
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.4
+      }
+    ]
+  }
+]

@@ -8540,5 +8540,45 @@
         }
       }
     }
+  },
+  {
+    "name": "Lennox Hill Deli Grilled Chicken Caesar Salad",
+    "doc": "Estimated from image. Large portion of grilled chicken (approx 6oz). Well-dressed with croutons and parmesan. This is from Lennox Hill Deli.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 670,
+      "protein": 55,
+      "fat": {
+        "total": 38,
+        "dv": 0.49,
+        "saturated_fat": {
+          "total": 8,
+          "dv": 0.40
+        }
+      },
+      "cholesterol": {
+        "total": 0.185,
+        "dv": 0.62
+      },
+      "sodium": {
+        "total": 1.6,
+        "dv": 0.70
+      },
+      "carbs": {
+        "total": 25,
+        "dv": 0.09,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "sugars": {
+          "total": 3,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
