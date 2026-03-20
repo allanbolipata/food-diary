@@ -8580,5 +8580,55 @@
         }
       }
     }
+  },
+  {
+    "name": "Reese's Miniature Cups",
+    "serving_size": 26,
+    "serving_size_conversion": {
+      "num_pieces": 3
+    },
+    "description": "One piece is roughly 8.66667g",
+    "nutritional_data": {
+      "calories": 110,
+      "protein": 2,
+      "fat": {
+        "total": 8,
+        "dv": 0.10,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3.5,
+          "dv": 0.18
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.075,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 16,
+        "dv": 0.06,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+          "total": 12
+          }
+        }
+      }
+    }
   }
 ]

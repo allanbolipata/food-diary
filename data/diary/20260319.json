@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 43.9
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 55.8
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Caulipower Uncured Pepperoni Pizza",
+        "weight": 320
+      },
+      {
+        "food": "Reese's Miniature Cups",
+        "weight": 8.6667
+      },
+      {
+        "food": "Naked PB",
+        "weight": 80
+      }
+    ]
+  }
+]
