@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Lean Cuisine Signature: Meatloaf with Mashed Potatoes",
+        "weight": 265
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 88
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 93.4
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 79
+      },
+      {
+        "food": "Halo Top: Mint Chip",
+        "weight": 255
+      },
+      {
+        "food": "Naked PB",
+        "weight": 30.3
+      }
+    ]
+  }
+]
