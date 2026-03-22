@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Skinny Pop Dairy Free White Cheddar Popcorn",
+        "weight": 28
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 40.8
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.5
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli (new 2026)",
+        "weight": 283
+      },
+      {
+        "food": "Snyder's of Hanover Rods Pretzels",
+        "weight": 49.7
+      },
+      {
+        "food": "Caulipower Uncured Pepperoni Pizza",
+        "weight": 320
+      },
+      {
+        "food": "Naked PB",
+        "weight": 80
+      }
+    ]
+  }
+]
