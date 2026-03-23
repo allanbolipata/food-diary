@@ -8301,7 +8301,7 @@
       "num_cups": 0.67,
       "num_pints": 0.33
     },
-    "description": "pint weight - 255g",
+    "description": "pint weight - 258g",
     "nutritional_data": {
       "calories": 110,
       "protein": 5,
@@ -8669,6 +8669,52 @@
         "soluble_fiber": 0,
         "sugars": {
           "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Factor Mushroom Mozzarella Melt Burger",
+    "serving_size": 371,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 610,
+      "protein": 33,
+      "fat": {
+        "total": 36,
+        "trans_fat": 2,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0.66
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.46
+      },
+      "cholesterol": {
+        "total": 0.125,
+        "dv": 0.42
+      },
+      "sodium": {
+        "total": 0.78,
+        "dv": 0.34
+      },
+      "carbs": {
+        "total": 37,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 7,
           "added_sugars": {
             "total": 0,
             "dv": 0
