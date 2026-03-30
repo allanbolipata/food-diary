@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Barebells Chocolate Dough",
+        "weight": 55
+      },
+      {
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli (new 2026)",
+        "weight": 283
+      },
+      {
+        "food": "Snyder's of Hanover Rods Pretzels",
+        "weight": 30.1
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 46.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 49.6
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor Mushroom Mozzarella Melt Burger",
+        "weight": 340
+      }
+    ]
+  }
+]

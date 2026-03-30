@@ -8722,5 +8722,97 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor Mushroom Mozzarella Melt Burger",
+    "serving_size": 340,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 500,
+      "protein": 40,
+      "fat": {
+        "total": 20,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 9,
+          "dv": 0.26
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.45
+      },
+      "cholesterol": {
+        "total": 0.15,
+        "dv": 0.50
+      },
+      "sodium": {
+        "total": 0.56,
+        "dv": 0.24
+      },
+      "carbs": {
+        "total": 36,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Factor Tangy Southern Chicken",
+    "serving_size": 346,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 680,
+      "protein": 40,
+      "fat": {
+        "total": 40,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 9,
+          "dv": 0.45
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.51
+      },
+      "cholesterol": {
+        "total": 0.165,
+        "dv": 0.55
+      },
+      "sodium": {
+        "total": 0.78,
+        "dv": 0.34
+      },
+      "carbs": {
+        "total": 40,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 11,
+          "added_sugars": {
+            "total": 5,
+            "dv": 0.1
+          }
+        }
+      }
+    }
   }
 ]

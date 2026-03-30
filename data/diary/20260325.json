@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Barebells Salty Peanut",
+        "weight": 55
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 46.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 49.6
+      },
+      {
+        "food": "Factor Tangy Southern Chicken",
+        "weight": 346
+      }
+    ]
+  }
+]
