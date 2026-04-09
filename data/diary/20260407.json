@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Skinny Pop Dairy Free White Cheddar Popcorn",
+        "weight": 14
+      },
+      {
+        "food": "Caulipower Buffalo-Style Chicken Pizza",
+        "weight": 310
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest Cookies & Cream Protein Bar",
+        "weight": 120
+      },
+      {
+        "food": "Naked PB",
+        "weight": 80
+      }
+    ]
+  }
+]

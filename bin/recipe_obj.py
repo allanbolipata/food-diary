@@ -11,7 +11,7 @@ class Recipe:
         self._calc_total()
 
     def _calc_total(self):
-        self.prop_food = dict(protein=0, fat=0, calories=0, carbs = 0, sodium = 0)
+        self.prop_food = dict(protein=0, fat=0, calories=0, carbs = 0, sodium = 0, fiber = 0, sugar = 0, added_sugars = 0, cholesterol = 0)
         for food_data in self.foods:
             if food_data:
                 weight = food_data[0]

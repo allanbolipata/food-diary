@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "NYC Slice, Knots, & Marinara",
+        "weight": 1
+      },
+      {
+        "food": "Quest Cookies & Cream Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_ Country Herb Chicken & Potato Leek Mash",
+        "weight": 340 
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 250
+      },
+      {
+        "food": "Naked PB",
+        "weight": 61.3
+      }
+    ]
+  }
+]

@@ -8814,5 +8814,183 @@
         }
       }
     }
+  },
+  {
+    "name": "Caulipower Buffalo-Style Chicken Pizza",
+    "serving_size": 310,
+    "nutritional_data": {
+      "calories": 770,
+      "protein": 30,
+      "fat": {
+        "total": 35,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 9,
+          "dv": 0.45
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.45
+      },
+      "cholesterol": {
+        "total": 0.155,
+        "dv": 0.38
+      },
+      "sodium": {
+        "total": 1.45,
+        "dv": 0.63
+      },
+      "carbs": {
+        "total": 85,
+        "dv": 0.31,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 5,
+          "added_sugars": {
+            "total": 2,
+            "dv": 0.04
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Quest Cookies & Cream Protein Bar",
+    "serving_size": 60,
+    "serving_size_conversion": {
+      "num_bars": 1
+    },
+    "doc": "Number of bars",
+    "nutritional_data": {
+      "calories": 190,
+      "protein": 21,
+      "fat": {
+        "total": 7,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 2.5,
+          "dv": 0.13
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.09
+      },
+      "cholesterol": {
+        "total": 0.022,
+        "dv": 0.08
+      },
+      "sodium": {
+        "total": 0.3,
+        "dv": 0.13
+      },
+      "carbs": {
+        "total": 22,
+        "dv": 0.08,
+        "dietary_fiber": {
+          "total": 0.13,
+          "dv": 0.46
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+          "total": 5
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "NYC Slice, Knots, & Marinara",
+    "doc": "High sodium and saturated fat hit; likely to cause temporary water retention. Protein is decent due to meats/cheese.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 1075,
+      "protein": 35,
+      "fat": {
+        "total": 48,
+        "dv": 0.62,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 18,
+          "dv": 0.90
+        },
+        "polyunsaturated_fat": 4.5,
+        "monounsaturated_fat": 16
+      },
+      "cholesterol": {
+        "total": 0.095,
+        "dv": 0.32
+      },
+      "sodium": {
+        "total": 2.85,
+        "dv": 1.24
+      },
+      "carbs": {
+        "total": 125,
+        "dv": 0.45,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "sugars": {
+          "total": 12,
+          "added_sugars": {
+            "total": 8,
+            "dv": 0.16
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Factor_ Country Herb Chicken & Potato Leek Mash",
+    "serving_size": 340,
+    "nutritional_data": {
+      "calories": 500,
+      "protein": 40,
+      "fat": {
+        "total": 20,
+        "dv": 0.26,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 9,
+          "dv": 0.45
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.150,
+        "dv": 0.50
+      },
+      "sodium": {
+        "total": 0.56,
+        "dv": 0.24
+      },
+      "carbs": {
+        "total": 36,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0.14
+        },
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0.0
+          }
+        }
+      }
+    }
   }
 ]

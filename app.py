@@ -23,7 +23,7 @@ def load_recipes(data):
     return recipes
 
 def process_recipes(recipes):
-    running = dict(protein=0, fat=0, carbs=0, calories=0, sodium=0)  
+    running = dict(protein=0, fat=0, carbs=0, calories=0, sodium=0, fiber=0, sugar=0, added_sugars=0, cholesterol = 0)
     for recipe in recipes:
         if recipe.prop_food:
             for key in recipe.prop_food:
