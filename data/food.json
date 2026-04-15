@@ -5263,23 +5263,23 @@
   },
   {
     "name": "Cocoa Pebbles",
-    "serving_size": 39,
+    "serving_size": 36,
     "serving_size_conversion": {
       "num_bowls": 1
     },
     "doc": "Number of bowls",
     "nutritional_data": {
-      "calories": 154,
-      "protein": 1.9,
+      "calories": 140,
+      "protein": 2,
       "fat": {
-        "total": 1.6,
+        "total": 1.5,
         "trans_fat": 0,
         "saturated_fat": {
-          "total": 1.4,
-          "dv": 0.07
+          "total": 0,
+          "dv": 0
         },
         "polyunsaturated_fat": 0,
-        "monounsaturated_fat": 0.1,
+        "monounsaturated_fat": 0,
         "dv": 0.2
       },
       "cholesterol": {
@@ -5287,22 +5287,22 @@
         "dv": 0
       },
       "sodium": {
-        "total": 0.23,
-        "dv": 0.01
+        "total": 0.22,
+        "dv": 0.09
       },
       "carbs": {
-        "total": 33,
-        "dv": 0.12,
+        "total": 31,
+        "dv": 0.11,
         "dietary_fiber": {
           "total": 0.6,
           "dv": 0.02
         },
         "soluble_fiber": 0,
         "sugars": {
-          "total": 14,
+          "total": 12,
           "added_sugars": {
-            "total": 0,
-            "dv": 0
+            "total": 12,
+            "dv": 0.25
           }
         }
       }
@@ -5482,7 +5482,7 @@
         "total": 22,
         "dv": 0.08,
         "dietary_fiber": {
-          "total": 0.12,
+          "total": 12,
           "dv": 0.43
         },
         "soluble_fiber": 0,
@@ -8988,6 +8988,92 @@
           "added_sugars": {
             "total": 0,
             "dv": 0.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Fuji Apple, Large",
+    "doc": "High pectin content helps mitigate the 415mg cholesterol hit from the eggs. Natural sugars are buffered by 5g of fiber.",
+    "serving_size": 223,
+    "nutritional_data": {
+      "calories": 116,
+      "protein": 0.6,
+      "fat": {
+        "total": 0.4,
+        "dv": 0.01,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0.1,
+          "dv": 0.01
+        },
+        "polyunsaturated_fat": 0.1,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.002,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 31,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 5.4,
+          "dv": 0.19
+        },
+        "sugars": {
+          "total": 25,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  }, 
+  {
+    "name": "Factor Ginger Teriyaki Salmon with Forbidden Rice & Sesame Green Beans",
+    "doc": "High potassium (1.04g) helps offset current sodium levels. High Omega-3 content is ideal for LDL goals. Note the 10g of added sugar in the glaze.",
+    "serving_size": 403,
+    "nutritional_data": {
+      "calories": 620,
+      "protein": 36,
+      "fat": {
+        "total": 26,
+        "dv": 0.33,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.22
+        },
+        "polyunsaturated_fat": 6.5,
+        "monounsaturated_fat": 15
+      },
+      "cholesterol": {
+        "total": 0.08,
+        "dv": 0.27
+      },
+      "sodium": {
+        "total": 0.87,
+        "dv": 0.38
+      },
+      "carbs": {
+        "total": 61,
+        "dv": 0.22,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "sugars": {
+          "total": 18,
+          "added_sugars": {
+            "total": 10,
+            "dv": 0.20
           }
         }
       }

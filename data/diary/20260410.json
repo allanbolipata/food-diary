@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Lean Cuisine Signature: Meatloaf with Mashed Potatoes",
+        "weight": 265
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Caulipower Uncured Pepperoni Pizza",
+        "weight": 320
+      },
+      {
+        "food": "Halo Top: Sea Salt Caramel",
+        "weight": 261
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      }
+    ]
+  }
+]

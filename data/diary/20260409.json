@@ -31,6 +31,22 @@
       {
         "food": "Skinny Pop Dairy Free White Cheddar Popcorn",
         "weight": 14
+      },
+      {
+        "food": "Fuji Apple, Large",
+        "weight": 125.5
+      },
+      {
+        "food": "Factor Ginger Teriyaki Salmon with Forbidden Rice & Sesame Green Beans",
+        "weight": 403
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Naked PB",
+        "weight": 37.8
       }
     ]
   }
