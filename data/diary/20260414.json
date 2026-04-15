@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Mamoun's Lamb Shawarma Plate (Salad Base, No Tomato)",
+        "weight": 400
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Fajita-Inspired Pork Tenderloin",
+        "weight": 380
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 36
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      }
+    ]
+  }
+]

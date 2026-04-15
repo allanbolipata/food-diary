@@ -9035,6 +9035,49 @@
         }
       }
     }
+  },
+  {
+    "name": "Mamoun's Lamb Shawarma Plate (Salad Base, No Tomato)",
+    "doc": "Optimized for LDL and fiber. Salad base replaces rice to lower carbs. No tomato is a personal preference swap. High protein for bicep recovery.",
+    "serving_size": 400,
+    "nutritional_data": {
+      "calories": 580,
+      "protein": 38,
+      "fat": {
+        "total": 42,
+        "dv": 0.54,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 12,
+          "dv": 0.60
+        },
+        "polyunsaturated_fat": 7,
+        "monounsaturated_fat": 20
+      },
+      "cholesterol": {
+        "total": 0.11,
+        "dv": 0.36
+      },
+      "sodium": {
+        "total": 1.25,
+        "dv": 0.54
+      },
+      "carbs": {
+        "total": 12,
+        "dv": 0.04,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "sugars": {
+          "total": 3,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }, 
   {
     "name": "Factor Ginger Teriyaki Salmon with Forbidden Rice & Sesame Green Beans",
@@ -9074,6 +9117,48 @@
           "added_sugars": {
             "total": 10,
             "dv": 0.20
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Fajita-Inspired Pork Tenderloin",
+    "serving_size": 380,
+    "nutritional_data": {
+      "calories": 460,
+      "protein": 36,
+      "fat": {
+        "total": 19,
+        "dv": 0.24,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4,
+          "dv": 0.20
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.09,
+        "dv": 0.3
+      },
+      "sodium": {
+        "total": 0.78,
+        "dv": 0.34
+      },
+      "carbs": {
+        "total": 31,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 7,
+          "dv": 0.25
+        },
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
           }
         }
       }
