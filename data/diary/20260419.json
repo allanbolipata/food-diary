@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Factor_ Maple Gravy Chicken with Butternut Squash and Green Beans",
+        "weight": 343
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Halo Top: Mint Chip",
+        "weight": 258
+      },
+      {
+        "food": "Lean Cuisine Signature: Meatloaf with Mashed Potatoes",
+        "weight": 265
+      },
+      {
+        "food": "Pop-Secret Movie Theater Butter (popped)",
+        "weight": 75.8
+      }
+    ]
+  }
+]

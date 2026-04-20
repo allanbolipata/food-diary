@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 36.2
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46.2
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.6
+      },
+      {
+        "food": "Fuji Apple, Large",
+        "weight": 125
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_ Garlic-Parmesan Cream Shredded Beef",
+        "weight": 397
+      },
+      {
+        "food": "Naked PB",
+        "weight": 62.2
+      }
+    ]
+  }
+]
