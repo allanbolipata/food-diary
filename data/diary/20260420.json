@@ -31,6 +31,14 @@
       {
         "food": "Factor_ Smoky Gouda Macaroni & Shredded Beef",
         "weight": 1
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Skinny Pop Original Popcorn",
+        "weight": 14
       }
     ]
   }
