@@ -9356,5 +9356,103 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Chorizo & Black Bean Queso Fundido",
+    "serving_size": 386,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 630,
+      "protein": 34,
+      "fat": {
+        "total": 35,
+        "dv": 0.45,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 15,
+          "dv": 0.75
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.145,
+        "dv": 0.48
+      },
+      "sodium": {
+        "total": 0.9,
+        "dv": 0.39
+      },
+      "carbs": {
+        "total": 47,
+        "dv": 0.17,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 9,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Factor_ White Cheddar BBQ Burger",
+    "serving_size": 383,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 660,
+      "protein": 35,
+      "fat": {
+        "total": 37,
+        "dv": 0.47,
+        "trans_fat": 2,
+        "saturated_fat": {
+          "total": 16,
+          "dv": 0.80
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.140,
+        "dv": 0.47
+      },
+      "sodium": {
+        "total": 0.920,
+        "dv": 0.40
+      },
+      "carbs": {
+        "total": 46,
+        "dv": 0.17,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 19,
+          "added_sugars": {
+            "total": 5,
+            "dv": 0.1
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
