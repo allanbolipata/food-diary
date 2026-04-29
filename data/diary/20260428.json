@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 36
+      },
+      {
+        "food": "Oatly The Original Oatmilk",
+        "weight": 116.9
+      },
+      {
+        "food": "Lean Cuisine: Alfredo Pasta with Chicken & Broccoli (new 2026)",
+        "weight": 283
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Barebells Cookies & Caramel Protein Bar",
+        "weight": 55
+      },
+      {
+        "food": "Factor_: Balsamic Onion Portobello Burger",
+        "weight": 354
+      },
+      {
+        "food": "Naked PB",
+        "weight": 35
+      }
+    ]
+  }
+]

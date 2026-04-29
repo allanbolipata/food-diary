@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 41.6
+      },
+      {
+        "food": "Oatly The Original Oatmilk",
+        "weight": 100.2
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 48.2
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      },
+      {
+        "food": "Factor_ Homestyle Chicken & Gravy with Potato-Celeriac Mash, Mushrooms & Green Beans",
+        "weight": 374
+      },
+      {
+        "food": "Barebells Cookies & Caramel Protein Bar",
+        "weight": 55
+      },
+      {
+        "food": "Naked PB",
+        "weight": 45
+      }
+    ]
+  }
+]
