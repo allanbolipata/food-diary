@@ -45,8 +45,12 @@
         "weight": 354
       },
       {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 100
+      },
+      {
         "food": "Naked PB",
-        "weight": 35
+        "weight": 12
       }
     ]
   }
