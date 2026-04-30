@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest Chocolate Chip Cookie Dough Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 44.4
+      },
+      {
+        "food": "Oatly The Original Oatmilk",
+        "weight": 127.2
+      },
+      {
+        "food": "Factor_: Roasted Garlic Chicken",
+        "weight": 1
+      },
+      {
+        "food": "Pop-Secret Movie Theater Butter (popped)",
+        "weight": 75.8
+      },
+      {
+        "food": "Barebells Cookies & Caramel Protein Bar",
+        "weight": 55
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      }
+    ]
+  }
+]
