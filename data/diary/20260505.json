@@ -15,6 +15,34 @@
       {
         "food": "Quest S'mores Protein Bar",
         "weight": 60
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44.7
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 61
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 40
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Skinny Pop Original Popcorn",
+        "weight": 42
+      },
+      {
+        "food": "Barebells Chocolate Dough",
+        "weight": 55
+      },
+      {
+        "food": "Loaded Bacon Cheeseburger",
+        "weight": 403
       }
     ]
   }

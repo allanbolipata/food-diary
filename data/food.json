@@ -9732,5 +9732,50 @@
         }
       }
     }
+  },
+  {
+    "name": "Loaded Bacon Cheeseburger",
+    "serving_size": 403,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 660,
+      "protein": 36,
+      "fat": {
+        "total": 39,
+        "dv": 0.75,
+        "trans_fat": 2,
+        "saturated_fat": {
+          "total": 15,
+          "dv": 0.75
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.13,
+        "dv": 0.43
+      },
+      "sodium": {
+        "total": 0.91,
+        "dv": 0.4 
+      },
+      "carbs": {
+        "total": 40,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
