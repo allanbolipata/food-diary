@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 47.7
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 36
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "KPOT Korean BBQ (Shared Portion)",
+        "weight": 450
+      }
+    ]
+  }
+]

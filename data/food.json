@@ -6196,7 +6196,7 @@
         "total": 23,
         "dv": 0.08,
         "dietary_fiber": {
-          "total": 0.12,
+          "total": 12,
           "dv": 0.43
         },
         "soluble_fiber": 0,
@@ -9642,6 +9642,92 @@
           "added_sugars": {
             "total": 0.7,
             "dv": 0.2
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Factor_: Harvest Gravy Chicken & Wild Rice",
+    "serving_size": 422,
+    "nutritional_data": {
+      "calories": 610,
+      "protein": 44,
+      "fat": {
+        "total": 23,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 7,
+          "dv": 0.35
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.29
+      },
+      "cholesterol": {
+        "total": 0.145,
+        "dv": 0.48
+      },
+      "sodium": {
+        "total": 0.82,
+        "dv": 0.36
+      },
+      "carbs": {
+        "total": 56,
+        "dv": 0.20,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 20,
+          "added_sugars": {
+            "total": 5,
+            "dv": 0.1
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "KPOT Korean BBQ (Shared Portion)",
+    "doc": "Estimated 10-12oz total meat (Brisket, Short Rib, Bulgogi). Includes shared sides like kimchi and a small serving of rice. High sodium and saturated fat content.",
+    "serving_size": 450,
+    "nutritional_data": {
+      "calories": 1150,
+      "protein": 78,
+      "fat": {
+        "total": 82,
+        "dv": 1.05,
+        "trans_fat": 1.5,
+        "saturated_fat": {
+          "total": 32,
+          "dv": 1.60
+        },
+        "polyunsaturated_fat": 6,
+        "monounsaturated_fat": 38
+      },
+      "cholesterol": {
+        "total": 0.245,
+        "dv": 0.82
+      },
+      "sodium": {
+        "total": 2.85,
+        "dv": 1.24
+      },
+      "carbs": {
+        "total": 42,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "sugars": {
+          "total": 18,
+          "added_sugars": {
+            "total": 14,
+            "dv": 0.28
           }
         }
       }
