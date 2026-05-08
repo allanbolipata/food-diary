@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "NYC Slice, Knots, & Marinara",
+        "weight": 1
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_: Pesto Chicken & Quinoa",
+        "weight": 397
+      },
+      {
+        "food": "Barebells Chocolate Dough",
+        "weight": 55
+      },
+      {
+        "food": "Naked PB",
+        "weight": 20
+      }
+    ]
+  }
+]

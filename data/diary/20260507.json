@@ -17,32 +17,36 @@
         "weight": 60
       },
       {
-        "food": "Quaker Oats Organic: Quick 1-Minute",
-        "weight": 44.7
-      },
-      {
-        "food": "Orgain Organic Protein, Vanilla Bean",
-        "weight": 61
+        "food": "Banana, Generic",
+        "weight": 125
       },
       {
         "food": "Cocoa Pebbles",
-        "weight": 40
+        "weight": 36
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      },
+      {
+        "food": "Factor_: Butternut Squash & Sage Chicken Macaroni with Green Beans & Apple Cranberry Crumble",
+        "weight": 371
       },
       {
         "food": "Oikos Triple Zero Strawberry Greek Yogurt",
         "weight": 150
       },
       {
-        "food": "Skinny Pop Original Popcorn",
-        "weight": 42
-      },
-      {
         "food": "Barebells Chocolate Dough",
         "weight": 55
       },
       {
-        "food": "Factor_: Loaded Bacon Cheeseburger",
-        "weight": 403
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 44
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 40
       }
     ]
   }
