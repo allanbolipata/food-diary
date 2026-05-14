@@ -9867,5 +9867,48 @@
         }
       }
     }
+  },
+  {
+    "name": "KPOT Hotpot Special (Shared Portion)",
+    "doc": "Moderate portion over 2 hours. Includes bone broth, beef/pork slices, 4 quail eggs, 4 fish balls, and 4 dumplings/shumai. High sodium and cholesterol.",
+    "serving_size": 500,
+    "nutritional_data": {
+      "calories": 875,
+      "protein": 68.5,
+      "fat": {
+        "total": 42.5,
+        "dv": 0.54,
+        "trans_fat": 0.8,
+        "saturated_fat": {
+          "total": 16.2,
+          "dv": 0.81
+        },
+        "polyunsaturated_fat": 4.5,
+        "monounsaturated_fat": 18.5
+      },
+      "cholesterol": {
+        "total": 0.42,
+        "dv": 1.40
+      },
+      "sodium": {
+        "total": 2.95,
+        "dv": 1.28
+      },
+      "carbs": {
+        "total": 54.0,
+        "dv": 0.20,
+        "dietary_fiber": {
+          "total": 4.5,
+          "dv": 0.16
+        },
+        "sugars": {
+          "total": 8.0,
+          "added_sugars": {
+            "total": 4.0,
+            "dv": 0.08
+          }
+        }
+      }
+    }
   }
 ]
