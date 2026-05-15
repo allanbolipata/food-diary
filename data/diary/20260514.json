@@ -15,6 +15,22 @@
       {
         "food": "KPOT Hotpot Special (Shared Portion)",
         "weight": 500
+      },
+      {
+        "food": "Charred Corn & Shredded Chicken Cavatappi with Garlic Cream Sauce & Broccoli",
+        "weight": 369
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 300
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 46
+      },
+      {
+        "food": "Fuji Apple, Large",
+        "weight": 223
       }
     ]
   }

@@ -9910,5 +9910,47 @@
         }
       }
     }
+  },
+  {
+    "name": "Charred Corn & Shredded Chicken Cavatappi with Garlic Cream Sauce & Broccoli",
+    "serving_size": 500,
+    "nutritional_data": {
+      "calories": 650,
+      "protein": 33,
+      "fat": {
+        "total": 39,
+        "dv": 0.44,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0.65
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.175,
+        "dv": 0.58
+      },
+      "sodium": {
+        "total": 0.82,
+        "dv": 0.36
+      },
+      "carbs": {
+        "total": 57,
+        "dv": 0.21,
+        "dietary_fiber": {
+          "total": 9,
+          "dv": 0.32
+        },
+        "sugars": {
+          "total": 12,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
