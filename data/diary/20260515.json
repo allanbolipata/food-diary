@@ -35,5 +35,11 @@
       {
         "food": "Lean Cuisine: Swedish Meatballs",
         "weight": 1
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
       }
     ]
+  }
+]
