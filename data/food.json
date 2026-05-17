@@ -3742,8 +3742,8 @@
     "name": "fat",
     "serving_size": 1,
     "nutritional_data": {
-      "calories": 4,
-      "protein": 1,
+      "calories": 9,
+      "protein": 0,
       "fat": {
         "total": 1,
         "trans_fat": 0,
@@ -9945,6 +9945,51 @@
         },
         "sugars": {
           "total": 12,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Factor_: Creamy Lemon Pepper Chicken",
+    "serving_size": 354,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 550,
+      "protein": 42,
+      "fat": {
+        "total": 25,
+        "dv": 0.32,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 12,
+          "dv": 0.60
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.175,
+        "dv": 0.58
+      },
+      "sodium": {
+        "total": 0.62,
+        "dv": 0.27
+      },
+      "carbs": {
+        "total": 35,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "sugars": {
+          "total": 7,
           "added_sugars": {
             "total": 0,
             "dv": 0

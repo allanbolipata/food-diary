@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 62.5
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 56.9
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      },
+      {
+        "food": "Factor_: Creamy Lemon Pepper Chicken",
+        "weight": 354
+      }
+    ]
+  },
+  {
+    "name": "NYC Street Vendor Chili Cheese Dog with Ketchup and Mustard",
+    "foods": [
+      { "food": "protein", "weight": 16.5 },
+      { "food": "carbs", "weight": 32.0 },
+      { "food": "fat", "weight": 24.0 },
+      { "food": "sodium", "weight": 1.34 }
+    ]
+  },
+  {
+    "name": "NYC Street Vendor Soft Pretzel with Salt",
+    "foods": [
+      { "food": "protein", "weight": 9.0 },
+      { "food": "carbs", "weight": 68.0 },
+      { "food": "fat", "weight": 2.5 },
+      { "food": "sodium", "weight": 1.20 }
+    ]
+  }
+]
