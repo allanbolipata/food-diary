@@ -23,6 +23,10 @@
       {
         "food": "Quest S'mores Protein Bar",
         "weight": 60
+      },
+      {
+        "food": "Factor_: Smoky Gouda Chicken",
+        "weight": 369
       }
     ]
   },
@@ -33,6 +37,15 @@
       { "food": "carbs", "weight": 32.0 },
       { "food": "fat", "weight": 16.0 },
       { "food": "sodium", "weight": 0.35 }
+    ]
+  },
+  {
+  "name": "Scruffy Duffy's 8 Traditional Wings (Buffalo Sauce on Side)",
+  "foods": [
+      { "food": "protein", "weight": 42.0 },
+      { "food": "carbs", "weight": 1.0 },
+      { "food": "fat", "weight": 28.0 },
+      { "food": "sodium", "weight": 0.85 }
     ]
   }
 ]
