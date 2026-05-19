@@ -23,6 +23,22 @@
       {
         "food": "Banana, Generic",
         "weight": 62.5
+      },
+      {
+        "food": "Factor_: Cavatappi & Meatballs with Marinara Sauce & Garlic Broccoli",
+        "weight": 340
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Cocoa Pebbles",
+       "weight": 50.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 61.2
       }
     ]
   },
