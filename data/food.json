@@ -10042,5 +10042,146 @@
         }
       }
     }
+  },
+  {
+    "name": "Gregory's Coffee Peanut Pleaser Smoothie",
+    "doc": "Simple blend of peanut butter, banana, and oat milk.",
+    "serving_size": 368,
+    "nutritional_data": {
+      "calories": 530,
+      "protein": 30.0,
+      "fat": {
+        "total": 29.0,
+        "dv": 0.37,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 7.0,
+          "dv": 0.35
+        },
+        "polyunsaturated_fat": 6.5,
+        "monounsaturated_fat": 13.5
+      },
+      "cholesterol": {
+        "total": 0.0,
+        "dv": 0.0
+      },
+      "sodium": {
+        "total": 0.41,
+        "dv": 0.18
+      },
+      "carbs": {
+        "total": 42.0,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 5.0,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 16.0,
+          "added_sugars": {
+            "total": 6.0,
+            "dv": 0.12
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "MOKAFÉ 16oz Iced Pistachio Latte (Decaf + Oat Milk)",
+    "doc": "16oz iced latte with oat milk and pistachio flavoring syrup.",
+    "serving_size": 453,
+    "nutritional_data": {
+      "calories": 270,
+      "protein": 4.0,
+      "fat": {
+        "total": 7.0,
+        "dv": 0.09,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 1.0,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 1.5,
+        "monounsaturated_fat": 4.0
+      },
+      "cholesterol": {
+        "total": 0.0,
+        "dv": 0.0
+      },
+      "sodium": {
+        "total": 0.23,
+        "dv": 0.10
+      },
+      "carbs": {
+        "total": 49.0,
+        "dv": 0.18,
+        "dietary_fiber": {
+          "total": 2.0,
+          "dv": 0.07
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 35.0,
+          "added_sugars": {
+            "total": 26.0,
+            "dv": 0.52
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "MOKAFÉ Pastrami Reuben Croissant (Modified - Half Pastry, All Meat)",
+    "doc": "Ate 100% of the pastrami beef; left 50% of the croissant shell, cheese, and slaw dressing.",
+    "serving_size": 185,
+    "nutritional_data": {
+      "calories": 440,
+      "protein": 26.0,
+      "fat": {
+        "total": 24.0,
+        "dv": 0.31,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 10.5,
+          "dv": 0.53
+        },
+        "polyunsaturated_fat": 1.5,
+        "monounsaturated_fat": 8.0
+      },
+      "cholesterol": {
+        "total": 0.085,
+        "dv": 0.28
+      },
+      "sodium": {
+        "total": 1.45,
+        "dv": 0.63
+      },
+      "carbs": {
+        "total": 28.0,
+        "dv": 0.10,
+        "dietary_fiber": {
+          "total": 1.5,
+          "dv": 0.05
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 4.0,
+          "added_sugars": {
+            "total": 1.0,
+            "dv": 0.02
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
   }
 ]

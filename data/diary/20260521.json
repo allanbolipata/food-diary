@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Factor_ Truffle Butter Chicken & Mushroom Risotto",
+        "weight": 352
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "MOKAFÉ 16oz Iced Pistachio Latte (Decaf + Oat Milk)",
+        "weight": 453
+      },
+      {
+        "food": "MOKAFÉ Pastrami Reuben Croissant (Modified - Half Pastry, All Meat)",
+        "weight": 185
+      },
+      {
+        "food": "Barebells Cookies & Caramel Protein Bar",
+        "weight": 55
+      }
+    ]
+  }
+]
