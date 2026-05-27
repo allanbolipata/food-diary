@@ -27,6 +27,14 @@
       {
         "food": "Factor_ Buffalo Ranch Burger",
         "weight": 408
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 55.1
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 75.4
       }
     ]
   }
