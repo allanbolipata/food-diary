@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 56
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 26
+      },
+      {
+        "food": "Factor_: Aji Verde Salmon with Bell Pepper Quinoa, Zucchini & Corn",
+        "weight": 411
+      },
+      {
+        "food": "Barebells Creamy Crisp",
+        "weight": 55
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 300
+      }
+    ]
+  }
+]
