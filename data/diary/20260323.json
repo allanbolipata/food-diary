@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [ 
+      {
+        "food": "Barebells Cookies & Cream",
+        "weight": 55
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quaker Oats Organic: Quick 1-Minute",
+        "weight": 45.7
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 47.4
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 39.5
+      },
+      {
+        "food": "Factor_ Smoky Gouda Macaroni & Shredded Beef",
+        "weight": 1
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 98.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 47.7
+      },
+      {
+        "food": "Naked PB",
+        "weight": 40
+      }
+    ]
+  }
+]
