@@ -10275,5 +10275,53 @@
         }
       }
     }
+  },
+  {
+    "name": "Dig Custom Bowl (Double Chicken, Mac & Cheese, Carrots, Broccoli)",
+    "doc": "Custom build: Two portions of charred chicken thigh, Jasper Hill mac & cheese base, sheet-pan carrots, and charred broccoli.",
+    "serving_size": 650,
+    "nutritional_data": {
+      "calories": 1050,
+      "protein": 77.0,
+      "fat": {
+        "total": 49.0,
+        "dv": 0.63,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 15.5,
+          "dv": 0.78
+        },
+        "polyunsaturated_fat": 6.0,
+        "monounsaturated_fat": 20.0
+      },
+      "cholesterol": {
+        "total": 0.355,
+        "dv": 1.18
+      },
+      "sodium": {
+        "total": 2.41,
+        "dv": 1.05
+      },
+      "carbs": {
+        "total": 78.0,
+        "dv": 0.28,
+        "dietary_fiber": {
+          "total": 13.0,
+          "dv": 0.46
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 15.0,
+          "added_sugars": {
+            "total": 0.0,
+            "dv": 0.0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
   }
+
 ]
