@@ -10322,6 +10322,193 @@
         }
       }
     }
+  },
+  {
+    "name": "DD's Dumplings Steamed Pork Soup Dumplings (6 pieces)",
+    "doc": "Six pieces of classic pork XLB. Thin flour wrappers stuffed with seasoned ground pork and savory gelatinized bone broth.",
+    "serving_size": 150,
+    "nutritional_data": {
+      "calories": 360,
+      "protein": 18.0,
+      "fat": {
+        "total": 16.0,
+        "dv": 0.21,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 6.0,
+          "dv": 0.30
+        },
+        "polyunsaturated_fat": 1.5,
+        "monounsaturated_fat": 7.0
+      },
+      "cholesterol": {
+        "total": 0.045,
+        "dv": 0.15
+      },
+      "sodium": {
+        "total": 0.68,
+        "dv": 0.30
+      },
+      "carbs": {
+        "total": 34.0,
+        "dv": 0.12,
+        "dietary_fiber": {
+          "total": 1.5,
+          "dv": 0.05
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 2.0,
+          "added_sugars": {
+            "total": 0.5,
+            "dv": 0.01
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "DD's Dumplings Steamed Pork & Crab Soup Dumplings (6 pieces)",
+    "doc": "Six pieces of pork and blue crab meat XLB. Wrapped in thin dough with rich, savory seafood and pork broth.",
+    "serving_size": 150,
+    "nutritional_data": {
+      "calories": 340,
+      "protein": 20.0,
+      "fat": {
+        "total": 14.0,
+        "dv": 0.18,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 5.0,
+          "dv": 0.25
+        },
+        "polyunsaturated_fat": 1.2,
+        "monounsaturated_fat": 6.0
+      },
+      "cholesterol": {
+        "total": 0.065,
+        "dv": 0.22
+      },
+      "sodium": {
+        "total": 0.72,
+        "dv": 0.31
+      },
+      "carbs": {
+        "total": 33.0,
+        "dv": 0.12,
+        "dietary_fiber": {
+          "total": 1.5,
+          "dv": 0.05
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 1.5,
+          "added_sugars": {
+            "total": 0.0,
+            "dv": 0.0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Square Pizza Hot Honey Pepperoni Sicilian Slice (1 slice)",
+    "doc": "Thick, airy, square pan-baked Sicilian crust topped with mozzarella, cupped pepperoni, pizza sauce, and a heavy drizzle of Mike's Hot Honey.",
+    "serving_size": 180,
+    "nutritional_data": {
+      "calories": 520,
+      "protein": 22.0,
+      "fat": {
+        "total": 24.0,
+        "dv": 0.31,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 11.0,
+          "dv": 0.55
+        },
+        "polyunsaturated_fat": 2.0,
+        "monounsaturated_fat": 9.0
+      },
+      "cholesterol": {
+        "total": 0.055,
+        "dv": 0.18
+      },
+      "sodium": {
+        "total": 1.15,
+        "dv": 0.50
+      },
+      "carbs": {
+        "total": 54.0,
+        "dv": 0.20,
+        "dietary_fiber": {
+          "total": 2.5,
+          "dv": 0.09
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 11.0,
+          "added_sugars": {
+            "total": 8.0,
+            "dv": 0.16
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Square Pizza Garlic Knots (6 pieces)",
+    "doc": "Six baked pizza dough knots tossed generously in olive oil, minced garlic, parsley, and parmesan cheese.",
+    "serving_size": 210,
+    "nutritional_data": {
+      "calories": 660,
+      "protein": 16.0,
+      "fat": {
+        "total": 26.0,
+        "dv": 0.33,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.23
+        },
+        "polyunsaturated_fat": 3.5,
+        "monounsaturated_fat": 16.0
+      },
+      "cholesterol": {
+        "total": 0.005,
+        "dv": 0.02
+      },
+      "sodium": {
+        "total": 1.32,
+        "dv": 0.57
+      },
+      "carbs": {
+        "total": 90.0,
+        "dv": 0.33,
+        "dietary_fiber": {
+          "total": 4.0,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 3.0,
+          "added_sugars": {
+            "total": 1.0,
+            "dv": 0.02
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
   }
-
 ]
