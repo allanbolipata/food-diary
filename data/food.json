@@ -10510,5 +10510,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Pepper Jack Guacamole Burger",
+    "serving_size": 366,
+    "nutritional_data": {
+      "calories": 650,
+      "protein": 34,
+      "fat": {
+        "total": 35,
+        "dv": 0.5,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 15,
+          "dv": 0.75
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.125,
+        "dv": 0.42
+      },
+      "sodium": {
+        "total": 0.88,
+        "dv": 0.38
+      },
+      "carbs": {
+        "total": 37.0,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 7.0,
+          "dv": 0.25
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 5.0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0.0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
   }
 ]
