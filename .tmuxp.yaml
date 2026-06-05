@@ -4,7 +4,7 @@ windows:
     layout: main-horizontal
     # This setting ensures the top pane gets enough room (60% of height)
     options:
-      main-pane-height: 80%
+      main-pane-height: 60%
     panes:
       - shell_command: 
         - nvim .          # Pane 1: Top (Main)
