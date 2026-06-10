@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Factor_: Butternut Squash & Sage Chicken Macaroni with Root Vegetables & Cran-Apple Crumble",
+        "weight": 371
+      },
+      {
+        "food": "Factor_: Honey Butter Chicken Breast with Yukon Mash, Zucchini, & Caramelized Onions",
+        "weight": 354
+      },
+      {
+        "food": "Halo Top: Sea Salt Caramel",
+        "weight": 261
+      }
+    ]
+  }
+]
