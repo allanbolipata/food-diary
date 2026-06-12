@@ -10647,5 +10647,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Caramelized Onion Gournay Burger with Spinach & Paprika Roasted Potatoes",
+    "serving_size": 320,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 590,
+      "protein": 31,
+      "fat": {
+        "total": 34,
+        "trans_fat": 2,
+        "saturated_fat": {
+          "total": 14,
+          "dv": 0.7
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.44
+      },
+      "cholesterol": {
+        "total": 0.13,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.71,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 37,
+        "dv": 0.13,
+        "dietary_fiber": {
+          "total": 4,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 6,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]

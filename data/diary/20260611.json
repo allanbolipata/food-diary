@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Barebells Creamy Crisp",
+        "weight": 55
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 200
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 36
+      },
+      {
+        "food": "Oatly The Original Oatmilk",
+        "weight": 149.8
+      },
+      {
+        "food": "Factor_ Caramelized Onion Gournay Burger with Spinach & Paprika Roasted Potatoes",
+        "weight": 320
+      }
+    ]
+  }
+]
