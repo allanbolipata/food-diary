@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Factor_: Smoky Gouda Chicken",
+        "weight": 369
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Factor_: Parmesan & Sun-Dried Tomato Chicken Penne",
+        "weight": 329
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Barebells Creamy Crisp",
+        "weight": 55
+      },
+      {
+        "food": "Honey Nut Cheerios",
+        "weight": 60.1
+      },
+      {
+        "food": "Oatly The Original Oatmilk",
+        "weight": 151.1
+      }
+    ]
+  }
+]
