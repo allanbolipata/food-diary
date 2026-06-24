@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "NYC Deli Reuben Sandwich",
+        "weight": 550
+      },
+      {
+        "food": "Deli Fresh Orange Juice (12oz)",
+        "weight": 340
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 120
+      }
+    ]
+  }
+]

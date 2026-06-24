@@ -10690,6 +10690,56 @@
             "total": 0,
             "dv": 0
           }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Deli Fresh Orange Juice (12oz)",
+    "doc": "Standard 12oz pour of deli-style sweet orange juice, typical of a complimentary breakfast or combo drink side.",
+    "serving_size": 340,
+    "nutritional_data": {
+      "calories": 160,
+      "protein": 3.0,
+      "fat": {
+        "total": 0.5,
+        "dv": 0.01,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 0.0,
+          "dv": 0.0
+        },
+        "polyunsaturated_fat": 0.0,
+        "monounsaturated_fat": 0.0
+      },
+      "cholesterol": {
+        "total": 0.0,
+        "dv": 0.0
+      },
+      "sodium": {
+        "total": 0.0,
+        "dv": 0.0
+      },
+      "carbs": {
+        "total": 39.0,
+        "dv": 0.14,
+        "dietary_fiber": {
+          "total": 0.5,
+          "dv": 0.02
+        },
+        "soluble_fiber": 0.0,
+        "sugars": {
+          "total": 33.0,
+          "added_sugars": {
+            "total": 0.0,
+            "dv": 0.0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0.0
         }
       }
     }
