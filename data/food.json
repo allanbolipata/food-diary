@@ -10743,5 +10743,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_ Pimento Cheeseburger",
+    "serving_size": 408,
+    "serving_size_conversion": {
+        "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 680,
+      "protein": 35,
+      "fat": {
+        "total": 38,
+        "trans_fat": 2,
+        "saturated_fat": {
+          "total": 15,
+          "dv": 0.75
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.49
+      },
+      "cholesterol": {
+        "total": 0.13,
+        "dv": 0.43
+      },
+      "sodium": {
+        "total": 0.91,
+        "dv": 0.4
+      },
+      "carbs": {
+        "total": 48,
+        "dv": 0.17,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
