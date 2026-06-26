@@ -13,12 +13,8 @@
     "name": "Miscellaneous",
     "foods": [
       {
-        "food": "DD's Dumplings Steamed Pork & Crab Soup Dumplings (6 pieces)",
-        "weight": 150
-      },
-      {
-        "food": "DD's Dumplings Steamed Pork Soup Dumplings (6 pieces)",
-        "weight": 150
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
       },
       {
         "food": "Square Pizza Hot Honey Pepperoni Sicilian Slice (1 slice)",
@@ -26,15 +22,15 @@
       },
       {
         "food": "Square Pizza Garlic Knots",
-        "weight": 210
+        "weight": 140
       },
       {
-        "food": "Naked PB",
-        "weight": 60
+        "food": "Factor_: Creamy Lemon Pepper Chicken",
+        "weight": 354
       },
       {
-        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
-        "weight": 150
+        "food": "Barebells Creamy Crisp",
+        "weight": 55
       }
     ]
   }

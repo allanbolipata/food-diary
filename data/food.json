@@ -10465,9 +10465,12 @@
     }
   },
   {
-    "name": "Square Pizza Garlic Knots (6 pieces)",
+    "name": "Square Pizza Garlic Knots",
     "doc": "Six baked pizza dough knots tossed generously in olive oil, minced garlic, parsley, and parmesan cheese.",
     "serving_size": 210,
+    "serving_size_conversion": {
+      "num_knots": 6
+    },
     "nutritional_data": {
       "calories": 660,
       "protein": 16.0,
