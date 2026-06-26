@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Square Pizza Hot Honey Pepperoni Sicilian Slice (1 slice)",
+        "weight": 180
+      },
+      {
+        "food": "Square Pizza Garlic Knots",
+        "weight": 140
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_ Shredded Chicken Taco Bowl",
+        "weight": 1
+      },
+      {
+        "food": "Barebells Creamy Crisp",
+        "weight": 55
+      }
+    ]
+  }
+]
