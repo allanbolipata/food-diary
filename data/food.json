@@ -10882,5 +10882,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Roasted Garlic Chicken with Gravy, Chive-Yukon Mash & Green Beans",
+    "serving_size": 329,
+    "serving_size_conversion": {
+      "num_trays": 1
+    },
+    "nutritional_data": {
+      "calories": 370,
+      "protein": 40,
+      "fat": {
+        "total": 11,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3,
+          "dv": 0.15
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.14
+      },
+      "cholesterol": {
+        "total": 0.125,
+        "dv": 0.42
+      },
+      "sodium": {
+        "total": 0.56,
+        "dv": 0.24
+      },
+      "carbs": {
+        "total": 26,
+        "dv": 0.09,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 5,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   }
 ]
