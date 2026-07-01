@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Core Power Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Factor_: Creamy Lemon Pepper Chicken",
+        "weight": 354
+      },
+      {
+        "food": "Factor_: Pepper Jack Guacamole Burger",
+        "weight": 366
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 60
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 125
+      }
+    ]
+  }
+]
