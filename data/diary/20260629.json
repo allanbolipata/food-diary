@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Core Power Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 60.2
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 142.3
+      },
+      {
+        "food": "Wendy's Chili",
+        "weight": 307.5
+      },
+      {
+        "food": "Factor_ Country Herb Chicken & Potato Leek Mash",
+        "weight": 340
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 60.2
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 100
+      },
+      {
+        "food": "Skinny Pop Original Popcorn",
+        "weight": 18
+      }
+    ]
+  }
+]
