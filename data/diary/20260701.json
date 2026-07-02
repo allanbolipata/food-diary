@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Core Power Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 62.4
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 125.9
+      },
+      {
+        "food": "Sweetgreen Caramelized Garlic Steak Bowl (Light Tomatoes, Light Sauce)",
+        "weight": 450
+      }
+    ]
+  }
+]

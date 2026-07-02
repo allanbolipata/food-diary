@@ -11023,5 +11023,52 @@
         }
       }
     }
+  },
+  {
+    "name": "Sweetgreen Caramelized Garlic Steak Bowl (Light Tomatoes, Light Sauce)",
+    "doc": "Customized calculation: Baseline plate (770 kcal, 32g fat, 1.7g sodium) scaled down to account for light pesto vinaigrette and light tomatoes.",
+    "serving_size": 450,
+    "nutritional_data": {
+      "calories": 690,
+      "protein": 34,
+      "fat": {
+        "total": 24,
+        "dv": 0.31,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 4,
+          "dv": 0.2
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.07,
+        "dv": 0.23
+      },
+      "sodium": {
+        "total": 1.5,
+        "dv": 0.65
+      },
+      "carbs": {
+        "total": 80,
+        "dv": 0.29,
+        "dietary_fiber": {
+          "total": 8,
+          "dv": 0.29
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 3,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
