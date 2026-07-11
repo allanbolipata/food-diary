@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Factor_: Smoky Onion Burget with Cheddar Sauce & Garlic-Chive Potatoes",
+        "weight": 380
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Cocoa Pebbles",
+        "weight": 60.1
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 160
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 70
+      },
+      {
+        "food": "Core Power Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Barebells Cookies & Caramel Protein Bar",
+        "weight": 55
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      }
+    ]
+  }
+]

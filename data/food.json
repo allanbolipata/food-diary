@@ -11070,5 +11070,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: Smoky Onion Burget with Cheddar Sauce & Garlic-Chive Potatoes",
+    "serving_size": 380,
+    "nutritional_data": {
+      "calories": 620,
+      "protein": 31,
+      "fat": {
+        "total": 34,
+        "dv": 0.44,
+        "trans_fat": 2,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0.65
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.125,
+        "dv": 0.42
+      },
+      "sodium": {
+        "total": 0.69,
+        "dv": 0.30
+      },
+      "carbs": {
+        "total": 45,
+        "dv": 0.16,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.18
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 7,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
