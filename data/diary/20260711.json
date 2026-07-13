@@ -19,6 +19,26 @@
       {
         "food": "Califia Farms Oatmilk Barista Blend",
         "weight": 120
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Factor_: Santa Fe-StyleGreen Chile Beef Skillet with Rice & Jalapenjo Creamed Corn",
+        "weight": 369
+      },
+      {
+        "food": "Core Power Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
       }
     ]
   }
