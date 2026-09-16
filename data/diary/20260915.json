@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Daily Total - Nerds, Hal's Chips, Frosted Flakes, Califia Oat Milk, Oikos Yogurt, Quest Bar, Mason Jar NYC Brisket, Beans, & Brussels Sprouts",
+        "weight": 1
+      }
+    ]
+  }
+]

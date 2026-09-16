@@ -11162,5 +11162,286 @@
         }
       }
     }
+  },
+  {
+    "name": "Daily Intake - Frosted Flakes, Oat Milk, Chicken Thighs, Jasper Hill Mac & Cheese, Roasted Sweet Potatoes, Broccoli, Ben & Jerry's Dough, Oikos Greek Yogurt",
+    "doc": "Full daily log featuring balanced protein anchors alongside higher-carbing/sodium comfort staples.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 1785,
+      "protein": 112,
+      "fat": {
+        "total": 62,
+        "dv": 0.79,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 23,
+          "dv": 1.15
+        },
+        "polyunsaturated_fat": 8,
+        "monounsaturated_fat": 24
+      },
+      "cholesterol": {
+        "total": 0.31,
+        "dv": 1.03
+      },
+      "sodium": {
+        "total": 2.18,
+        "dv": 0.95
+      },
+      "carbs": {
+        "total": 198,
+        "dv": 0.72,
+        "dietary_fiber": {
+          "total": 16,
+          "dv": 0.57
+        },
+        "soluble_fiber": 2,
+        "sugars": {
+          "total": 78,
+          "added_sugars": {
+            "total": 49,
+            "dv": 0.98
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Kellog's Frosted Flakes",
+    "serving_size": 37,
+    "nutritional_data": {
+      "calories": 130,
+      "protein": 2,
+      "fat": {
+        "total": 0,
+        "dv": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.19,
+        "dv": 0.08
+      },
+      "carbs": {
+        "total": 0.33,
+        "dv": 0.12,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.04
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 12,
+            "dv": 0.24
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Hal's New York Kettle Chips - Sea Salt & Vinegar",
+    "doc": "Single 1 oz (28g) serving. Sodium is around 0.33g (330mg), so be sure to balance with extra water intake.",
+    "serving_size": 28,
+    "nutritional_data": {
+      "calories": 150,
+      "protein": 2,
+      "fat": {
+        "total": 8,
+        "dv": 0.10,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.33,
+        "dv": 0.14
+      },
+      "carbs": {
+        "total": 16,
+        "dv": 0.06,
+        "dietary_fiber": {
+          "total": 1,
+          "dv": 0.04
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  }, 
+  {
+    "name": "Dinner - Oikos Greek Yogurt, 2 Boiled Eggs, Dig Inn Broccoli, Mac & Cheese, Roasted Sweet Potatoes",
+    "doc": "Individual meal log for evening dinner items.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 730,
+      "protein": 48,
+      "fat": {
+        "total": 32,
+        "dv": 0.41,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 13,
+          "dv": 0.65
+        },
+        "polyunsaturated_fat": 2,
+        "monounsaturated_fat": 9
+      },
+      "cholesterol": {
+        "total": 0.38,
+        "dv": 1.27
+      },
+      "sodium": {
+        "total": 0.85,
+        "dv": 0.37
+      },
+      "carbs": {
+        "total": 127,
+        "dv": 0.46,
+        "dietary_fiber": {
+          "total": 10,
+          "dv": 0.36
+        },
+        "soluble_fiber": 1,
+        "sugars": {
+          "total": 15,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Lunch at Gibney's NYC - Double Cheeseburger, Fries, Stella Artois 0.0",
+    "doc": "Post-clinic celebration lunch. Non-alcoholic beer (Stella 0.0) contributes carbs and calories without alcohol.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 1150,
+      "protein": 52,
+      "fat": {
+        "total": 58,
+        "dv": 0.74,
+        "trans_fat": 1.5,
+        "saturated_fat": {
+          "total": 24,
+          "dv": 1.20
+        },
+        "polyunsaturated_fat": 4,
+        "monounsaturated_fat": 22
+      },
+      "cholesterol": {
+        "total": 0.16,
+        "dv": 0.53
+      },
+      "sodium": {
+        "total": 1.65,
+        "dv": 0.72
+      },
+      "carbs": {
+        "total": 102,
+        "dv": 0.37,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 1,
+        "sugars": {
+          "total": 12,
+          "added_sugars": {
+            "total": 4,
+            "dv": 0.08
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "Daily Total - Nerds, Hal's Chips, Frosted Flakes, Califia Oat Milk, Oikos Yogurt, Quest Bar, Mason Jar NYC Brisket, Beans, & Brussels Sprouts",
+    "doc": "Daily intake log including sweets, snacks, and Mason Jar NYC lunch platter items.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 2421,
+      "protein": 106.3,
+      "fat": {
+        "total": 80.1,
+        "dv": 1.03,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 24.5,
+          "dv": 1.23
+        },
+        "polyunsaturated_fat": 4.5,
+        "monounsaturated_fat": 28.0
+      },
+      "cholesterol": {
+        "total": 0.18,
+        "dv": 0.60
+      },
+      "sodium": {
+        "total": 3.39,
+        "dv": 1.47
+      },
+      "carbs": {
+        "total": 320.8,
+        "dv": 1.17,
+        "dietary_fiber": {
+          "total": 29.8,
+          "dv": 1.06
+        },
+        "soluble_fiber": 2.0,
+        "sugars": {
+          "total": 179.2,
+          "added_sugars": {
+            "total": 161.5,
+            "dv": 3.23
+          }
+        },
+        "sugar_alcohols": {
+          "total": 5.0
+        }
+      }
+    }
   }
 ]
