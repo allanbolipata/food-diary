@@ -11443,5 +11443,52 @@
         }
       }
     }
+  },
+  {
+    "name": "Dig Inn Steak & Mash Bowl with Herb Roasted Chicken Side & 1/2 Baked Beans",
+    "doc": "Dig Inn Steak & Mash bowl (880 kcal) combined with Dig Inn Herb Roasted Chicken side (170 kcal) and remaining 1/2 serving of baked beans.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 1180,
+      "protein": 88,
+      "fat": {
+        "total": 48,
+        "dv": 0.62,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 16,
+          "dv": 0.80
+        },
+        "polyunsaturated_fat": 5,
+        "monounsaturated_fat": 20
+      },
+      "cholesterol": {
+        "total": 0.21,
+        "dv": 0.70
+      },
+      "sodium": {
+        "total": 1.72,
+        "dv": 0.75
+      },
+      "carbs": {
+        "total": 98,
+        "dv": 0.36,
+        "dietary_fiber": {
+          "total": 15,
+          "dv": 0.54
+        },
+        "soluble_fiber": 3,
+        "sugars": {
+          "total": 21,
+          "added_sugars": {
+            "total": 6,
+            "dv": 0.12
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
