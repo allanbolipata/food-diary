@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Lunch at Gibney's NYC - Double Cheeseburger, Fries, Stella Artois 0.0",
+        "weight": 1
+      },
+      {
+        "food": "Kellog's Frosted Flakes",
+        "weight": 68.3
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 108.3
+      } 
+    ]
+  }
+]

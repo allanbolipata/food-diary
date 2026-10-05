@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Daily Intake - Frosted Flakes, Oat Milk, Chicken Thighs, Jasper Hill Mac & Cheese, Roasted Sweet Potatoes, Broccoli, Ben & Jerry's Dough, Oikos Greek Yogurt",
+        "weight": 1
+      }
+    ]
+  }
+]

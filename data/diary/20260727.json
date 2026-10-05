@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Core Power Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      },
+      {
+        "food": "Barebells Cookies & Caramel Protein Bar",
+        "weight": 55
+      }
+    ]
+  }
+]

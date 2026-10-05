@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Amazon Fresh, Cage Free, Brown Eggs",
+        "weight": 150
+      },
+      {
+        "food": "Core Power Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Kellog's Frosted Flakes",
+        "weight": 74
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 130.4
+      },
+      {
+        "food": "Hal's New York Kettle Chips - Sea Salt & Vinegar",
+        "weight": 69.8
+      },
+      {
+        "food": "Dinner - Oikos Greek Yogurt, 2 Boiled Eggs, Dig Inn Broccoli, Mac & Cheese, Roasted Sweet Potatoes",
+        "weight": 1
+      }
+    ]
+  }
+]

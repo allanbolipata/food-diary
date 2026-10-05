@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Dig Inn Steak & Mash Bowl with Herb Roasted Chicken Side & 1/2 Baked Beans",
+        "weight": 1
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Oikos Triple Zero Strawberry Greek Yogurt",
+        "weight": 150
+      },
+      {
+        "food": "Kellog's Frosted Flakes",
+        "weight": 78.9
+      },
+      {
+        "food": "Califia Farms Oatmilk Barista Blend",
+        "weight": 142.8
+      }
+    ]
+  }
+]
