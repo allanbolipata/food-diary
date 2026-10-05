@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Diner Omelet Platter with Bacon (Ate 3-egg omelet, bacon & 1 slice buttered toast; left ~75% french fries & 1 slice toast)",
+        "weight": 1
+      },
+      {
+        "food": "20oz Peanut Butter, Banana, Vanilla Yogurt & Oat Milk Smoothie",
+        "weight": 1
+      },
+      {
+        "food": "David Protein Bar - Blueberry Pie (62g)",
+        "weight": 62
+      },
+      {
+        "food": "Taco Bell Beefy 5-Layer Burrito",
+        "weight": 1
+      }
+    ]
+  }
+]

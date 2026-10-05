@@ -11536,5 +11536,146 @@
         }
       }
     }
+  },
+  {
+    "name": "Diner Omelet Platter with Bacon (Ate 3-egg omelet, bacon & 1 slice buttered toast; left ~75% french fries & 1 slice toast)",
+    "doc": "Updated estimate reflecting full consumption of 3-egg omelet, bacon, and 1 slice of buttered toast, while leaving behind ~75% of the french fries and 1 slice of toast.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 615,
+      "protein": 44,
+      "fat": {
+        "total": 41,
+        "dv": 0.53,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 16,
+          "dv": 0.80
+        },
+        "polyunsaturated_fat": 5,
+        "monounsaturated_fat": 17
+      },
+      "cholesterol": {
+        "total": 0.63,
+        "dv": 2.10
+      },
+      "sodium": {
+        "total": 1.13,
+        "dv": 0.49
+      },
+      "carbs": {
+        "total": 24,
+        "dv": 0.09,
+        "dietary_fiber": {
+          "total": 3,
+          "dv": 0.11
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4,
+          "added_sugars": {
+            "total": 1,
+            "dv": 0.02
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "20oz Peanut Butter, Banana, Vanilla Yogurt & Oat Milk Smoothie",
+    "doc": "20oz smoothie made with peanut butter, banana, vanilla yogurt, and oat milk base.",
+    "serving_size": 1,
+    "nutritional_data": {
+      "calories": 580,
+      "protein": 18,
+      "fat": {
+        "total": 22,
+        "dv": 0.28,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.23
+        },
+        "polyunsaturated_fat": 5,
+        "monounsaturated_fat": 11
+      },
+      "cholesterol": {
+        "total": 0.01,
+        "dv": 0.03
+      },
+      "sodium": {
+        "total": 0.28,
+        "dv": 0.12
+      },
+      "carbs": {
+        "total": 82,
+        "dv": 0.30,
+        "dietary_fiber": {
+          "total": 8,
+          "dv": 0.29
+        },
+        "soluble_fiber": 3,
+        "sugars": {
+          "total": 48,
+          "added_sugars": {
+            "total": 18,
+            "dv": 0.36
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "David Protein Bar - Blueberry Pie (62g)",
+    "doc": "David Protein Bar in Blueberry Pie flavor (62g bar).",
+    "serving_size": 62,
+    "nutritional_data": {
+      "calories": 150,
+      "protein": 28,
+      "fat": {
+        "total": 2.5,
+        "dv": 0.03,
+        "trans_fat": 0.0,
+        "saturated_fat": {
+          "total": 1.0,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 0.5,
+        "monounsaturated_fat": 1.0
+      },
+      "cholesterol": {
+        "total": 0.00,
+        "dv": 0.00
+      },
+      "sodium": {
+        "total": 0.14,
+        "dv": 0.06
+      },
+      "carbs": {
+        "total": 13,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0.00
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0.00
+          }
+        },
+        "sugar_alcohols": {
+          "total": 10
+        }
+      }
+    }
   }
 ]
