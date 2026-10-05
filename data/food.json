@@ -11162,5 +11162,51 @@
         }
       }
     }
+  },
+  {
+    "name": "Factor_: White Cheddar Truffle & Leek Burger",
+    "serving_size": 391,
+    "nutritional_data": {
+      "calories": 640,
+      "protein": 31,
+      "fat": {
+        "total": 38,
+        "dv": 0.49,
+        "trans_fat": 2.0,
+        "saturated_fat": {
+          "total": 14,
+          "dv": 0.70
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0
+      },
+      "cholesterol": {
+        "total": 0.130,
+        "dv": 0.43
+      },
+      "sodium": {
+        "total": 1.06,
+        "dv": 0.46
+      },
+      "carbs": {
+        "total": 40,
+        "dv": 0.15,
+        "dietary_fiber": {
+          "total": 6,
+          "dv": 0.21
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 8,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        },
+        "sugar_alcohols": {
+          "total": 0
+        }
+      }
+    }
   }
 ]
