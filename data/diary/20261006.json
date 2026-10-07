@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Core Power Elite Chocolate",
+        "weight": 414
+      },
+      {
+        "food": "Quest Crispy Protein Bar Chocolate Peanut Butter",
+        "weight": 54
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 51.4
+      },
+      {
+        "food": "Taco Bell Beefy 5-Layer Burrito",
+        "weight": 1
+      },
+      {
+        "food": "Chicken and Roasted Veggie Sheet Pan",
+        "weight": 636
+      }
+    ]
+  }
+]

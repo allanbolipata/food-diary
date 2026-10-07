@@ -11677,5 +11677,105 @@
         }
       }
     }
+  },
+  {
+    "name": "Quest Crispy Protein Bar Chocolate Peanut Butter",
+    "serving_size": 54,
+    "serving_size_conversion": {
+      "num_bars": 1
+    },
+    "doc": "Number of bars",
+    "nutritional_data": {
+      "calories": 200,
+      "protein": 18,
+      "fat": {
+        "total": 12,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 8,
+          "dv": 0.4
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.15
+      },
+      "cholesterol": {
+        "total": 0.005,
+        "dv": 0.02
+      },
+      "sodium": {
+        "total": 0.23,
+        "dv": 0.10
+      },
+      "carbs": {
+        "total": 19,
+        "dv": 0.07,
+        "dietary_fiber": {
+          "total": 5,
+          "dv": 0.14
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+          "total": 5
+          }
+        }
+      }
+    }
+  },
+  {
+  "name": "Chicken and Roasted Veggie Sheet Pan",
+    "serving_size": 759.4,
+    "serving_size_conversion": {
+      "num_meals": 1
+    },
+    "doc": "Number of meals",
+    "nutritional_data": {
+      "calories": 417,
+      "protein": 60.1,
+      "fat": {
+        "total": 7.7,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.2,
+          "dv": 0.06
+        },
+        "polyunsaturated_fat": 1.8,
+        "monounsaturated_fat": 3.7,
+        "dv": 0.10
+      },
+      "cholesterol": {
+        "total": 0.198,
+        "dv": 0.66
+      },
+      "sodium": {
+        "total": 0.38,
+        "dv": 0.17
+      },
+      "carbs": {
+        "total": 29.8,
+        "dv": 0.11,
+        "dietary_fiber": {
+          "total": 8.7,
+          "dv": 0.31
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 12.1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+            "total": 0
+          }
+        }
+      }
+    }
   }
 ]
