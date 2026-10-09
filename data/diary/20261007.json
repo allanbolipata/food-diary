@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Blueberries (Raw, Generic)",
+        "weight": 54.4
+      },
+      {
+        "food": "Quaker Quick 3-Minute Steel Cut Oats",
+        "weight": 75.9
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 109.2
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 26
+      }
+    ]
+  }
+]

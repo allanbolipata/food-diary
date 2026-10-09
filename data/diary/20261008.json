@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Blueberries (Raw, Generic)",
+        "weight": 58.4
+      },
+      {
+        "food": "Quaker Quick 3-Minute Steel Cut Oats",
+        "weight": 76.3
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 115.6
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 36.6
+      },
+      {
+        "food": "Salmon Garlic Teriyaki with Brown Rice & Steamed Veggies",
+        "weight": 1 
+      },
+      {
+        "food": "Spicy Tonkotsu Ramen (Noodles & Ingredients, Broth Left)",
+        "weight": 1
+      }
+    ]
+  }
+]

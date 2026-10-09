@@ -11729,7 +11729,7 @@
     }
   },
   {
-  "name": "Chicken and Roasted Veggie Sheet Pan",
+    "name": "Chicken and Roasted Veggie Sheet Pan",
     "serving_size": 759.4,
     "serving_size_conversion": {
       "num_meals": 1
@@ -11767,6 +11767,206 @@
         "soluble_fiber": 0,
         "sugars": {
           "total": 12.1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+            "total": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Quaker Quick 3-Minute Steel Cut Oats",
+    "serving_size": 76,
+    "serving_size_conversion": {
+      "grams": 76
+    },
+    "doc": "Dry weight in grams",
+    "nutritional_data": {
+      "calories": 280,
+      "protein": 10.0,
+      "fat": {
+        "total": 5.0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 1.0,
+          "dv": 0.05
+        },
+        "polyunsaturated_fat": 1.5,
+        "monounsaturated_fat": 1.5,
+        "dv": 0.06
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.0,
+        "dv": 0.00
+      },
+      "carbs": {
+        "total": 48.0,
+        "dv": 0.17,
+        "dietary_fiber": {
+          "total": 8.0,
+          "dv": 0.29
+        },
+        "soluble_fiber": 3.0,
+        "sugars": {
+          "total": 2.0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+            "total": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Blueberries (Raw, Generic)",
+    "serving_size": 100,
+    "serving_size_conversion": {
+      "grams": 100
+    },
+    "doc": "Weight in grams",
+    "nutritional_data": {
+      "calories": 57,
+      "protein": 0.7,
+      "fat": {
+        "total": 0.3,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0.1,
+        "monounsaturated_fat": 0,
+        "dv": 0.00
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.001,
+        "dv": 0.00
+      },
+      "carbs": {
+        "total": 14.5,
+        "dv": 0.05,
+        "dietary_fiber": {
+          "total": 2.4,
+          "dv": 0.09
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 9.9,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          },
+          "sugar_alcohols": {
+            "total": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Salmon Garlic Teriyaki with Brown Rice & Steamed Veggies",
+    "serving_size": 1,
+    "serving_size_conversion": {
+      "num_meals": 1
+    },
+    "doc": "Pan-glazed garlic teriyaki salmon fillet served over brown rice with steamed broccoli, carrots, squash, and cauliflower",
+    "nutritional_data": {
+      "calories": 610,
+      "protein": 38.0,
+      "fat": {
+        "total": 19.5,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 3.8,
+          "dv": 0.19
+        },
+        "polyunsaturated_fat": 5.8,
+        "monounsaturated_fat": 7.6,
+        "dv": 0.25
+      },
+      "cholesterol": {
+        "total": 0.095,
+        "dv": 0.32
+      },
+      "sodium": {
+        "total": 0.78,
+        "dv": 0.34
+      },
+      "carbs": {
+        "total": 70.0,
+        "dv": 0.25,
+        "dietary_fiber": {
+          "total": 5.5,
+          "dv": 0.20
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 12.0,
+          "added_sugars": {
+            "total": 9.0,
+            "dv": 0.18
+          },
+          "sugar_alcohols": {
+            "total": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Spicy Tonkotsu Ramen (Noodles & Ingredients, Broth Left)",
+    "serving_size": 1,
+    "serving_size_conversion": {
+      "num_meals": 1
+    },
+    "doc": "Tonkotsu ramen eating noodles, chashu/chicken, egg, and toppings; broth largely unconsumed",
+    "nutritional_data": {
+      "calories": 520,
+      "protein": 28.0,
+      "fat": {
+        "total": 18.0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 6.0,
+          "dv": 0.30
+        },
+        "polyunsaturated_fat": 2.5,
+        "monounsaturated_fat": 7.5,
+        "dv": 0.23
+      },
+      "cholesterol": {
+        "total": 0.185,
+        "dv": 0.62
+      },
+      "sodium": {
+        "total": 1.15,
+        "dv": 0.50
+      },
+      "carbs": {
+        "total": 62.0,
+        "dv": 0.23,
+        "dietary_fiber": {
+          "total": 3.5,
+          "dv": 0.13
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 4.0,
           "added_sugars": {
             "total": 0,
             "dv": 0
