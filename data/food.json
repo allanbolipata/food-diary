@@ -11977,5 +11977,55 @@
         }
       }
     }
+  },
+  {
+    "name": "Combined Intake (Oats, Orgain Protein, Banana, Chipotle Steak Bowl, Quest Bar)",
+    "serving_size": 1,
+    "serving_size_conversion": {
+      "num_meals": 1
+    },
+    "doc": "Accurate cumulative breakdown for Quaker Steel Cut Oats (76.3g), Orgain Vanilla Protein Powder (64.2g), Banana (121.2g), Chipotle Steak Bowl (brown rice, black beans, lettuce, cheese, corn, mild salsa), and Quest S'mores Bar (60g)",
+    "nutritional_data": {
+      "calories": 1585,
+      "protein": 114.5,
+      "fat": {
+        "total": 39.2,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 13.5,
+          "dv": 0.68
+        },
+        "polyunsaturated_fat": 6.2,
+        "monounsaturated_fat": 12.5,
+        "dv": 0.43
+      },
+      "cholesterol": {
+        "total": 0.115,
+        "dv": 0.38
+      },
+      "sodium": {
+        "total": 1.48,
+        "dv": 0.64
+      },
+      "carbs": {
+        "total": 195.0,
+        "dv": 0.71,
+        "dietary_fiber": {
+          "total": 31.5,
+          "dv": 1.13
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 32.0,
+          "added_sugars": {
+            "total": 2.0,
+            "dv": 0.04
+          },
+          "sugar_alcohols": {
+            "total": 7.0
+          }
+        }
+      }
+    }
   }
 ]

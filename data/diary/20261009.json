@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Combined Intake (Oats, Orgain Protein, Banana, Chipotle Steak Bowl, Quest Bar)",
+        "weight": 1
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 125
+      }
+    ]
+  }
+]
