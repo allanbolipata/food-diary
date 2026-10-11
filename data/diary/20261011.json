@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+      {
+        "food": "Quaker Quick 3-Minute Steel Cut Oats",
+        "weight": 60
+      },
+      {
+        "food": "Banana, Generic",
+        "weight": 110.3
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 51
+      },
+      {
+        "food": "Quest S'mores Protein Bar",
+        "weight": 60
+      },
+      {
+        "food": "Dig Inn Plate (Eaten Portion - Mixed ~621g)",
+        "weight": 1
+      }
+    ]
+  }
+]

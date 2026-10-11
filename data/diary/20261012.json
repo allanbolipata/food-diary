@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Uneaten Miscellaneous",
+    "foods": [
+      {
+        "food": "Dig Inn Leftovers (Mixed ~307g)",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "Uneaten Optional",
+    "foods": [
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "foods": [
+    ]
+  }
+]
