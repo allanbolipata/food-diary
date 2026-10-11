@@ -12027,5 +12027,55 @@
         }
       }
     }
+  },
+  {
+    "name": "Dig Inn Plate (Charred Chicken 287.4g, Kale Caesar 107.3g, Jasper Mac and Cheese 211.7g, Roasted Sweet Potatoes 301g)",
+    "serving_size": 1,
+    "serving_size_conversion": {
+      "num_meals": 1
+    },
+    "doc": "Updated nutritional data reflecting ~1,414 calories based on specific measured weights for Dig Inn items: Charred Chicken (287.4g), Kale Caesar (107.3g), Jasper Mac and Cheese (211.7g), and Roasted Sweet Potatoes (301g).",
+    "nutritional_data": {
+      "calories": 1414,
+      "protein": 98.0,
+      "fat": {
+        "total": 62.0,
+        "trans_fat": 0.5,
+        "saturated_fat": {
+          "total": 21.0,
+          "dv": 1.05
+        },
+        "polyunsaturated_fat": 9.0,
+        "monounsaturated_fat": 24.0,
+        "dv": 0.82
+      },
+      "cholesterol": {
+        "total": 0.310,
+        "dv": 1.03
+      },
+      "sodium": {
+        "total": 2.35,
+        "dv": 1.02
+      },
+      "carbs": {
+        "total": 115.0,
+        "dv": 0.42,
+        "dietary_fiber": {
+          "total": 14.0,
+          "dv": 0.50
+        },
+        "soluble_fiber": 4.0,
+        "sugars": {
+          "total": 20.0,
+          "added_sugars": {
+            "total": 5.0,
+            "dv": 0.10
+          },
+          "sugar_alcohols": {
+            "total": 0.0
+          }
+        }
+      }
+    }
   }
 ]
