@@ -1,46 +1,12 @@
-import json
-from collections import defaultdict
+from bin.db import daily_totals, get_connection
 
-# Load nutritional data (food.json)
-with open("data/food.json", "r") as food_file:
-    food_data = json.load(food_file)
+conn = get_connection()
+daily_nutrition, missing = daily_totals(conn)
 
-# Create a dictionary for quick lookup of nutritional values
-nutrition_lookup = {item['name']: item for item in food_data}
-
-# Function to calculate daily nutritional totals
-def calculate_daily_totals(data):
-    daily_totals = defaultdict(lambda: {"protein": 0, "fat": 0, "carbs": 0, "calories": 0})
-    
-    for entry in data:
-        date = entry["date"]
-        for meal in entry["meals"]:
-            for food_item in meal["foods"]:
-                food_name = food_item["food"]
-                weight = food_item["weight"]
-                
-                # Skip foods with zero weight
-                if weight == 0:
-                    continue
-                
-                # Look up the nutritional values for the food
-                if food_name in nutrition_lookup:
-                    nutrition = nutrition_lookup[food_name]
-                    daily_totals[date]["protein"] += ( nutrition["nutritional_data"]["protein"] / nutrition["serving_size"]) * weight
-                    daily_totals[date]["fat"] += ( nutrition["nutritional_data"]["fat"]["total"] / nutrition["serving_size"]) * weight
-                    daily_totals[date]["carbs"] += ( nutrition["nutritional_data"]["carbs"]["total"] / nutrition["serving_size"]) * weight
-                    daily_totals[date]["calories"] += ( nutrition["nutritional_data"]["calories"] / nutrition["serving_size"]) * weight
-                else:
-                    print(f"Warning: Nutritional data for '{food_name}' not found.")
-
-    return daily_totals
-
-# Load meal data (combined JSON chunks)
-with open("data/meals.json", "r") as meals_file:
-    meals_data = json.load(meals_file)
-
-# Calculate daily totals
-daily_nutrition = calculate_daily_totals(meals_data)
+# Foods referenced in the diary but lacking nutritional data.
+for name, count in missing:
+    for _ in range(count):
+        print(f"Warning: Nutritional data for '{name}' not found.")
 
 # Display the results
 print("Date-wise Nutritional Totals:")

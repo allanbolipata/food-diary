@@ -1,27 +1,22 @@
-import json
+import os
 import sys
 from pprint import pprint
 
+from bin.db import get_connection, load_day, load_foods
 from bin.food_obj import Food
 from bin.recipe_obj import Recipe
 
 fname = sys.argv[1]
 
-DB = json.load(open("data/food.json", "r"))
+conn = get_connection()
 FOOD = dict()
-for i in DB:
-    FOOD[i["name"]] = Food(i)
+for name, data in load_foods(conn).items():
+    FOOD[name] = Food(data)
 
-def load_recipes(data):
-    recipes = list()
-    for i in data:
-        current_recipe = Recipe()
-        for j in i["foods"]:
-            food_name = j["food"]
-            weight = j["weight"]
-            current_recipe.add_food(weight, FOOD[food_name])
-        recipes.append(current_recipe)
-    return recipes
+date = os.path.basename(fname).removesuffix(".json")
+meals = load_day(conn, date)
+if not meals:
+    sys.exit(f"No diary entries found for date '{date}' in the database.")
 
 def process_recipes(recipes):
     running = dict(protein=0, fat=0, carbs=0, calories=0, sodium=0, fiber=0, sugar=0, added_sugars=0, cholesterol = 0)
@@ -30,24 +25,26 @@ def process_recipes(recipes):
             for key in recipe.prop_food:
                 running[key] += recipe.prop_food[key]
     pprint(running)
-    return running 
+    return running
 
 if __name__ == '__main__':
-    with open(fname, "r") as f:
-        data = json.load(f)
-        recipes_eaten = list()
-        for meals in data:
-            if "uneaten" not in meals["name"].lower():
-                print("--- %s" % meals["name"])
-                for meal_item in meals["foods"]:
-                    weight = meal_item["weight"]
-                    food = FOOD[meal_item["food"]]
-                    if weight > 0:
-                        pprint(meal_item)
-                        recipe = Recipe()
-                        recipe.add_food(weight,food)
-                        recipes_eaten.append(recipe)
-                        print(recipe)
-                        print()
-        print("--- Macros for eaten so far ---")
-        process_recipes(recipes_eaten)
+    recipes_eaten = list()
+    for meal in meals:
+        if "uneaten" not in meal["name"].lower():
+            print("--- %s" % meal["name"])
+            for meal_item in meal["foods"]:
+                weight = meal_item["weight"]
+                food_name = meal_item["food"]
+                if weight > 0:
+                    if food_name not in FOOD:
+                        print(f"Warning: Nutritional data for '{food_name}' not found.")
+                        continue
+                    food = FOOD[food_name]
+                    pprint(meal_item)
+                    recipe = Recipe()
+                    recipe.add_food(weight, food)
+                    recipes_eaten.append(recipe)
+                    print(recipe)
+                    print()
+    print("--- Macros for eaten so far ---")
+    process_recipes(recipes_eaten)
