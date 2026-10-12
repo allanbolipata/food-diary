@@ -15,6 +15,7 @@ bin.Food / bin.Recipe objects keep working unchanged.
 """
 
 import json
+import re
 import sqlite3
 from pathlib import Path
 
@@ -119,6 +120,48 @@ def load_day(conn: sqlite3.Connection, date: str) -> list:
     for meal in meals:
         del meal["_id"]
     return meals
+
+
+def ensure_meal(conn: sqlite3.Connection, date: str, name: str) -> int:
+    """Return the id of the named meal for ``date``, creating it if needed
+    (with the next free sort_order)."""
+    row = conn.execute("SELECT id FROM meals WHERE date = ? AND name = ?", (date, name)).fetchone()
+    if row:
+        return row["id"]
+    nxt = conn.execute(
+        "SELECT COALESCE(MAX(sort_order), -1) + 1 FROM meals WHERE date = ?", (date,)
+    ).fetchone()[0]
+    new_id = conn.execute(
+        "INSERT INTO meals (date, name, sort_order) VALUES (?, ?, ?)", (date, name, nxt)
+    ).lastrowid
+    assert new_id is not None
+    return new_id
+
+
+def add_meal_item(conn: sqlite3.Connection, date: str, meal_name: str, food_name: str, weight: float) -> None:
+    """Insert one diary item. Raises ``LookupError`` if the food is not in
+    the catalog (no nutritional data)."""
+    row = conn.execute("SELECT id FROM foods WHERE name = ?", (food_name,)).fetchone()
+    if row is None:
+        raise LookupError(food_name)
+    meal_id = ensure_meal(conn, date, meal_name)
+    conn.execute(
+        "INSERT INTO meal_items (meal_id, food_id, weight) VALUES (?, ?, ?)",
+        (meal_id, row["id"], weight),
+    )
+    conn.commit()
+
+
+def export_day_json(conn: sqlite3.Connection, date: str, path: Path) -> str:
+    """Write the day's diary JSON file (original shape) from the database.
+    Returns the text that was written."""
+    meals = load_day(conn, date)
+    text = json.dumps(meals, indent=2)
+    # Match the hand-edited files' style for empty food lists: "foods": [ / ]
+    text = re.sub(r'"foods": \[\s*\]', '"foods": [\n    ]', text)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text + "\n")
+    return text + "\n"
 
 
 def daily_totals(conn: sqlite3.Connection) -> tuple:

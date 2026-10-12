@@ -2,10 +2,6 @@
   {
     "name": "Uneaten Miscellaneous",
     "foods": [
-      {
-        "food": "Dig Inn Leftovers (Mixed ~307g)",
-        "weight": 1
-      }
     ]
   },
   {
@@ -16,6 +12,19 @@
   {
     "name": "Miscellaneous",
     "foods": [
+      {
+        "food": "Dig Inn Leftovers (Mixed ~307g)",
+        "weight": 1
+      },
+      {
+        "food": "Quaker Quick 3-Minute Steel Cut Oats",
+        "weight": 76.1
+      },
+      {
+        "food": "Orgain Organic Protein, Vanilla Bean",
+        "weight": 57.9
+      }
     ]
   }
 ]
+
