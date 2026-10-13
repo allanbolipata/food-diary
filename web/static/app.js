@@ -521,6 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#day-date").addEventListener("change", () => {
     const v = inputToStamp($("#day-date").value);
     if (/^\d{8}$/.test(v)) loadDay(v).catch(onLoadError);
+    else toast("Pick a valid date (YYYY-MM-DD).", true);
   });
   $("#day-today").addEventListener("click", () => loadDay(todayStamp()).catch(onLoadError));
   $("#log-form").addEventListener("submit", onLogSubmit);
