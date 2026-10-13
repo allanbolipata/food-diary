@@ -490,14 +490,14 @@ function drawLineChart(days, seriesList, minSpan = 1, targets = []) {
   // x/y axis lines
   svg += `<line x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + ih}" class="axis"/>`;
   svg += `<line x1="${padL}" y1="${padT + ih}" x2="${W - padR}" y2="${padT + ih}" class="axis"/>`;
-  // dotted horizontal target lines
-  for (const t of targets) {
-    if (t > 0) {
-      const yy = y(t);
-      svg += `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" class="target" stroke-dasharray="7 5"/>`;
-      svg += `<text x="${W - padR - 6}" y="${(yy - 5).toFixed(1)}" text-anchor="end" class="target-label">${t}</text>`;
-    }
-  }
+  // dotted horizontal target lines (lower target gets a calmer color)
+  const shown = targets.filter((t) => t > 0).sort((a, b) => a - b);
+  shown.forEach((t, idx) => {
+    const yy = y(t);
+    const cls = idx === 0 ? "target low" : "target";
+    svg += `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" class="${cls}" stroke-dasharray="7 5"/>`;
+    svg += `<text x="${W - padR - 6}" y="${(yy - 5).toFixed(1)}" text-anchor="end" class="${idx === 0 ? "target-label low" : "target-label"}">${t}</text>`;
+  });
   const step = Math.max(1, Math.ceil(days.length / 7));
   for (let i = 0; i < days.length; i += step) {
     const d = days[i].date;

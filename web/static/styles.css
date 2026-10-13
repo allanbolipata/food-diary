@@ -389,7 +389,9 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
 .chart .tick { font-size: 11px; fill: var(--muted); }
 .chart .axis { stroke: var(--ink); stroke-width: 1.5; }
 .chart .target { stroke: var(--danger); stroke-width: 1.5; }
+.chart .target.low { stroke: #7d9bbd; }
 .chart .target-label { font-size: 11px; fill: var(--danger); font-weight: 650; }
+.chart .target-label.low { fill: #7d9bbd; }
 .targets {
   display: inline-flex;
   align-items: center;
