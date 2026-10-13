@@ -113,9 +113,15 @@ def _row(conn, name: str):
 @app.get("/api/foods")
 def list_foods(
     q: str | None = Query(default=None, max_length=100),
+    name: str | None = Query(
+        default=None,
+        max_length=100,
+        description="Alias for q — use either one, not both (q wins if both are given).",
+    ),
     limit: int = Query(default=500, ge=1, le=5000),
 ):
     """All catalog entries, name-ordered; optional case-insensitive substring filter."""
+    term = q if (q and q.strip()) else name
     conn = get_connection()
     try:
         sql = (
@@ -123,9 +129,9 @@ def list_foods(
             "WHERE raw_json IS NOT NULL"
         )
         params: list = []
-        if q and q.strip():
+        if term and term.strip():
             sql += " AND name LIKE ?"
-            params.append(f"%{q.strip()}%")
+            params.append(f"%{term.strip()}%")
         sql += " ORDER BY name COLLATE NOCASE LIMIT ?"
         params.append(limit)
         return [dict(r) for r in conn.execute(sql, params)]
