@@ -7,6 +7,7 @@ Run locally:   .venv/bin/uvicorn web.app:app --port 8877
 In the container:  uvicorn web.app:app --host 0.0.0.0 --port 8000
 """
 
+import json
 import re
 from pathlib import Path
 
@@ -328,6 +329,54 @@ def trends(
             if date_from <= d <= date_to
         ]
         return {"days": days}
+    finally:
+        conn.close()
+
+
+class TrendTargetsIn(BaseModel):
+    trend_targets: list[float] = Field(default_factory=list, max_length=2)
+
+
+def _ensure_settings_table(conn):
+    conn.execute(
+        "CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT NOT NULL)"
+    )
+
+
+@app.get("/api/settings")
+def get_settings():
+    """Saved dashboard settings as a key→JSON-value map ({} if none saved)."""
+    conn = get_connection()
+    try:
+        _ensure_settings_table(conn)
+        out = {}
+        for row in conn.execute("SELECT key, value FROM settings"):
+            try:
+                out[row["key"]] = json.loads(row["value"])
+            except (ValueError, TypeError):
+                out[row["key"]] = row["value"]
+        return out
+    finally:
+        conn.close()
+
+
+@app.put("/api/settings")
+def put_settings(p: TrendTargetsIn):
+    """Upsert dashboard settings; returns the full settings map."""
+    for v in p.trend_targets:
+        if v < 0:
+            raise HTTPException(status_code=422, detail="targets must be non-negative")
+    payload = json.dumps([round(float(v), 1) for v in p.trend_targets])
+    conn = get_connection()
+    try:
+        _ensure_settings_table(conn)
+        conn.execute(
+            "INSERT INTO settings(key, value) VALUES('trend_targets', ?) "
+            "ON CONFLICT(key) DO UPDATE SET value=excluded.value",
+            (payload,),
+        )
+        conn.commit()
+        return get_settings()
     finally:
         conn.close()
 

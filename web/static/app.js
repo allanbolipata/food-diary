@@ -394,6 +394,8 @@ function updateServings() {
 // ---------- trends ----------
 
 let trendsLoaded = false;
+let trendDays = [];
+let trendTargets = [1800, 2000];
 
 const SERIES = {
   cal: [{ key: "calories", label: "Calories", color: "#2f9e55" }],
@@ -428,18 +430,54 @@ async function loadTrends() {
     $("#chart-macro").innerHTML = "";
     return;
   }
-  const r = await fetch(`/api/trends?from=${from}&to=${to}`);
+  const [r, s] = await Promise.all([
+    fetch(`/api/trends?from=${from}&to=${to}`),
+    fetch("/api/settings").catch(() => null),
+  ]);
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  if (s && s.ok) {
+    const saved = await s.json();
+    const t = Array.isArray(saved.trend_targets) ? saved.trend_targets.map(Number) : null;
+    trendTargets = t && t.length ? t : [1800, 2000];
+    syncTargetInputs();
+  }
   const data = await r.json();
-  drawTrends(data.days);
+  trendDays = data.days;
+  drawTrends(trendDays);
 }
 
-function drawLineChart(days, seriesList, minSpan = 1) {
+function syncTargetInputs() {
+  $("#trend-target-1").value = trendTargets[0] ?? "";
+  $("#trend-target-2").value = trendTargets[1] ?? "";
+}
+
+async function saveTrendTargets() {
+  const vals = [$("#trend-target-1").value, $("#trend-target-2").value]
+    .map((v) => parseFloat(v))
+    .filter((v) => Number.isFinite(v) && v >= 0);
+  trendTargets = vals;
+  drawTrends(trendDays);
+  try {
+    const r = await fetch("/api/settings", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ trend_targets: vals }),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  } catch (e) {
+    toast(`Saving targets failed: ${e.message}`, true);
+  }
+}
+
+function drawLineChart(days, seriesList, minSpan = 1, targets = []) {
   const W = 940, H = 300;
   const padL = 52, padR = 18, padT = 14, padB = 38;
   const iw = W - padL - padR, ih = H - padT - padB;
-  const maxV = Math.max(...days.map((d) =>
-    Math.max(...seriesList.map((s) => d[s.key]))), minSpan) * 1.1;
+  const maxV = Math.max(
+    ...days.map((d) => Math.max(...seriesList.map((s) => d[s.key]))),
+    ...targets,
+    minSpan,
+  ) * 1.1;
   const x = (i) => padL + (days.length === 1 ? iw / 2 : (i * iw) / (days.length - 1));
   const y = (v) => padT + ih * (1 - v / maxV);
 
@@ -448,6 +486,17 @@ function drawLineChart(days, seriesList, minSpan = 1) {
     const v = (maxV / 4) * g, yy = y(v);
     svg += `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" class="grid"/>`;
     svg += `<text x="${padL - 8}" y="${(yy + 4).toFixed(1)}" text-anchor="end" class="tick">${Math.round(v)}</text>`;
+  }
+  // x/y axis lines
+  svg += `<line x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + ih}" class="axis"/>`;
+  svg += `<line x1="${padL}" y1="${padT + ih}" x2="${W - padR}" y2="${padT + ih}" class="axis"/>`;
+  // dotted horizontal target lines
+  for (const t of targets) {
+    if (t > 0) {
+      const yy = y(t);
+      svg += `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" class="target" stroke-dasharray="7 5"/>`;
+      svg += `<text x="${W - padR - 6}" y="${(yy - 5).toFixed(1)}" text-anchor="end" class="target-label">${t}</text>`;
+    }
   }
   const step = Math.max(1, Math.ceil(days.length / 7));
   for (let i = 0; i < days.length; i += step) {
@@ -480,7 +529,7 @@ function drawTrends(days) {
     $("#chart-note").textContent = "No logged days in this range.";
     return;
   }
-  $("#chart-cal").innerHTML = drawLineChart(days, SERIES.cal);
+  $("#chart-cal").innerHTML = drawLineChart(days, SERIES.cal, 1, trendTargets);
   $("#chart-macro").innerHTML = drawLineChart(days, SERIES.macro, 50);
   $("#chart-note").textContent =
     `${days.length} logged day(s). Days with no meals are omitted.`;
@@ -534,7 +583,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // trends
-  setTrendRange(30, true);
+  setTrendRange(7, true);
+  for (const id of ["#trend-target-1", "#trend-target-2"]) {
+    $(id).addEventListener("change", saveTrendTargets);
+  }
   $("#trend-apply").addEventListener("click", () => {
     $$(".presets .btn").forEach((b) => b.classList.remove("active"));
     loadTrends().catch(onLoadError);

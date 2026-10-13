@@ -384,9 +384,19 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
   vertical-align: -1px;
 }
 
-#chart svg { width: 100%; height: auto; display: block; }
-#chart .grid { stroke: var(--line); stroke-width: 1; }
-#chart .tick { font-size: 11px; fill: var(--muted); }
+.chart svg { width: 100%; height: auto; display: block; }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .tick { font-size: 11px; fill: var(--muted); }
+.chart .axis { stroke: var(--ink); stroke-width: 1.5; }
+.chart .target { stroke: var(--danger); stroke-width: 1.5; }
+.chart .target-label { font-size: 11px; fill: var(--danger); font-weight: 650; }
+.targets {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.targets label { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.targets input { width: 86px; padding: 7px 10px; font-size: 13.5px; }
 .note { margin: 8px 0 0; font-size: 12.5px; }
 
 /* ---------- footer ---------- */
