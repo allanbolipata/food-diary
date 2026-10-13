@@ -38,6 +38,24 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+@app.middleware("http")
+async def log_rejected_api_requests(request, call_next):
+    """Log the body of rejected /api writes so client bugs (e.g. the
+    iPhone shortcut) can be diagnosed from `podman logs food-dashboard`."""
+    body = b""
+    if request.method in ("POST", "PUT", "PATCH"):
+        body = await request.body()
+    response = await call_next(request)
+    if request.url.path.startswith("/api/") and response.status_code >= 400 and body:
+        print(
+            f"[api-reject] {request.method} {request.url.path} "
+            f"-> {response.status_code}\n"
+            f"  body: {body.decode('utf-8', 'replace')[:800]}",
+            flush=True,
+        )
+    return response
+
 DISPLAY_FIELDS = (
     "name",
     "serving_size",
