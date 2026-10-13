@@ -11,6 +11,7 @@ import re
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -26,6 +27,16 @@ from bin.db import (
 )
 
 app = FastAPI(title="Food Diary API", version="1.1")
+
+# Single-user, local service: allow any origin so the Swagger UI (and any
+# page opened under a different hostname — Tailscale name, localhost, or
+# the tailnet IP) can call the API without the browser aborting it.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 DISPLAY_FIELDS = (
     "name",
