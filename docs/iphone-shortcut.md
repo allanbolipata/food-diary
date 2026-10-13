@@ -8,6 +8,36 @@ weight.
 Base URL: `http://cachyos-horus:8877` (or `http://100.127.136.124:8877`
 if the Tailscale name doesn't resolve from the phone).
 
+## Status: work in progress (2026-10-13)
+
+Not yet a clean end-to-end run. Observed in testing:
+
+**Working:**
+- Food creation when exactly one item dict is POSTed per request (201)
+  — "Spicy Beef Hunan Style" and "White Rice" were created this way.
+- Item logging when the item has a numeric `weight` (201).
+
+**Failing:**
+1. The shortcut POSTed **two food objects in one request**
+   (`{...}, {...}` concatenated) → 422. Food creation must stay inside
+   the per-item loop: one item dictionary per `POST /api/foods`, never
+   the whole `items` array or two items joined.
+2. An item whose `weight` the AI **omitted** (the 20oz smoothie — the
+   AI saw "20oz" in the name and left weight out) was logged with
+   `weight: ""` → 422. The `Text Contains ""` guard catches empty
+   strings but **not a missing key**. Add, after extracting `weight`:
+   **If** `weight` is empty → **Show Notification** "No weight for
+   {{name}} — check the AI output" and skip that item's POST.
+   Also strengthen the prompt: weight is mandatory on every item; for
+   whole items the weight is the count (1 for one smoothie).
+3. (Earlier run) the model emitted `""` for every number and
+   `Get JSON Value` `0.name` errored on an empty search array. The
+   guard and `Get Length` steps above address this, but the full flow
+   still needs a clean re-test.
+
+**Data safety note:** a 422 writes nothing — the diary and catalog
+stayed intact through every failed run.
+
 ## 1. AI prompt (paste into the "Get AI Response" action's instructions)
 
 ```
@@ -101,6 +131,8 @@ Rules:
         extra `weight` key is ignored). A 409 response is fine.
       - Set `food_name` = `name`.
    7. **Get JSON Value** item, `weight` → `weight` (stays a number).
+      **If** `weight` is empty → **Show Notification** "No weight for
+      {{name}} — check the AI output" and skip this item's POST (step 9).
    8. **Construct JSON Dictionary**: `food` = `food_name`,
       `weight` = `weight`, `meal` = `meal_name`.
    9. **Send HTTP Request** POST
