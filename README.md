@@ -95,12 +95,21 @@ and writes the same `data/food_diary.db` as the CLI tools, so the two never
 disagree. No authentication — it is a single-user, local service.
 
 Features:
-- table of all catalog entries (name, serving size, calories, protein, fat,
-  carbs, fiber, sugar, sodium) with sortable columns
-- live search (client-side instant + debounced server-side `q=` filter)
-- "Add food" modal — validates required fields and rejects duplicates
-  (409), mirroring the `log.py food-add` rules
-- header stats: catalog size and days logged
+- **Catalog tab** — table of all catalog entries (name, serving size, calories,
+  protein, fat, carbs, fiber, sugar, sodium) with sortable columns, live
+  search (client-side instant + debounced server-side `q=` filter), and an
+  "Add food" modal that validates required fields and rejects duplicates
+  (409), mirroring the `log.py food-add` rules.
+- **Day log tab** — view a day's meals (date picker, default today) with
+  per-item weight/servings/macros and day totals; log foods into the day
+  with a search-as-you-type autocomplete over the catalog (the food must
+  already exist — it is looked up in the database; one serving is
+  pre-filled, matching `log.py add`); remove logged entries with the ✕ on
+  each row.
+- **Trends tab** — the same per-day numbers `trend.py` plots, drawn as two
+  charts (calories; protein/fat/carbs in grams) with date-range picker and
+  30/90-day/all presets; days with no meals are omitted.
+- Header stats: catalog size and days logged.
 
 Run locally (project venv):
 

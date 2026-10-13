@@ -7,6 +7,7 @@ Run locally:   .venv/bin/uvicorn web.app:app --port 8877
 In the container:  uvicorn web.app:app --host 0.0.0.0 --port 8000
 """
 
+import re
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
@@ -14,9 +15,17 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from bin.db import add_food_entry, get_connection
+from bin.db import (
+    add_food_entry,
+    add_meal_item,
+    daily_totals,
+    get_connection,
+    load_day,
+    load_foods,
+    remove_item,
+)
 
-app = FastAPI(title="Food Diary API", version="1.0")
+app = FastAPI(title="Food Diary API", version="1.1")
 
 DISPLAY_FIELDS = (
     "name",
@@ -33,6 +42,8 @@ DISPLAY_FIELDS = (
     "sugar_alcohols_total",
     "cholesterol",
 )
+
+DATE_RE = re.compile(r"^\d{8}$")
 
 
 class FoodIn(BaseModel):
@@ -89,23 +100,24 @@ def _row(conn, name: str):
 
 
 @app.get("/api/foods")
-def list_foods(q: str | None = Query(default=None, max_length=100)):
+def list_foods(
+    q: str | None = Query(default=None, max_length=100),
+    limit: int = Query(default=500, ge=1, le=5000),
+):
     """All catalog entries, name-ordered; optional case-insensitive substring filter."""
     conn = get_connection()
     try:
+        sql = (
+            f"SELECT {', '.join(DISPLAY_FIELDS)} FROM foods "
+            "WHERE raw_json IS NOT NULL"
+        )
+        params: list = []
         if q and q.strip():
-            rows = conn.execute(
-                f"SELECT {', '.join(DISPLAY_FIELDS)} FROM foods "
-                "WHERE raw_json IS NOT NULL AND name LIKE ? "
-                "ORDER BY name COLLATE NOCASE",
-                (f"%{q.strip()}%",),
-            )
-        else:
-            rows = conn.execute(
-                f"SELECT {', '.join(DISPLAY_FIELDS)} FROM foods "
-                "WHERE raw_json IS NOT NULL ORDER BY name COLLATE NOCASE"
-            )
-        return [dict(r) for r in rows]
+            sql += " AND name LIKE ?"
+            params.append(f"%{q.strip()}%")
+        sql += " ORDER BY name COLLATE NOCASE LIMIT ?"
+        params.append(limit)
+        return [dict(r) for r in conn.execute(sql, params)]
     finally:
         conn.close()
 
@@ -147,6 +159,140 @@ def stats():
         eaten = conn.execute(
             "SELECT COUNT(*) FROM meal_items WHERE weight > 0").fetchone()[0]
         return {"foods": foods, "days": days, "eaten_items": eaten}
+    finally:
+        conn.close()
+
+
+def _check_date(date: str) -> None:
+    if not DATE_RE.match(date):
+        raise HTTPException(status_code=400, detail="Date must be YYYYMMDD.")
+
+
+def _macros_for(entry: dict, weight: float) -> dict:
+    """Per-serving nutrition scaled to the logged weight."""
+    ss = float(entry["serving_size"])
+    scale = weight / ss
+    nd = entry["nutritional_data"]
+    r = lambda v: round(v * scale, 1)
+    return {
+        "calories": r(nd["calories"]),
+        "protein": r(nd["protein"]),
+        "fat": r(nd["fat"]["total"]),
+        "carbs": r(nd["carbs"]["total"]),
+        "fiber": r(nd["carbs"]["dietary_fiber"]["total"]),
+        "sodium": r(nd["sodium"]["total"]),
+    }
+
+
+@app.get("/api/days/{date}")
+def get_day(date: str):
+    """One day's meals with per-item macros and day totals (empty meals omitted)."""
+    _check_date(date)
+    conn = get_connection()
+    try:
+        meals = load_day(conn, date)
+        foods = load_foods(conn)
+        totals = {"calories": 0.0, "protein": 0.0, "fat": 0.0, "carbs": 0.0}
+        out_meals = []
+        for meal in meals:
+            items = []
+            for f in meal["foods"]:
+                entry = foods.get(f["food"])
+                if entry is None:
+                    items.append(
+                        {"food": f["food"], "weight": f["weight"],
+                         "serving_size": None, "macros": None, "stub": True}
+                    )
+                    continue
+                macros = _macros_for(entry, f["weight"])
+                for k in totals:
+                    totals[k] += macros[k]
+                items.append(
+                    {"food": f["food"], "weight": f["weight"],
+                     "serving_size": float(entry["serving_size"]),
+                     "macros": macros, "stub": False}
+                )
+            if items:
+                out_meals.append({"name": meal["name"], "items": items})
+        return {"date": date, "meals": out_meals,
+                "totals": {k: round(v, 1) for k, v in totals.items()}}
+    finally:
+        conn.close()
+
+
+class ItemIn(BaseModel):
+    food: str = Field(min_length=1)
+    weight: float = Field(ge=0)
+    meal: str = Field(min_length=1, default="Miscellaneous")
+
+
+@app.post("/api/days/{date}/items", status_code=201)
+def log_item(date: str, p: ItemIn):
+    """Log one food to a day's meal (weight is in the food's serving_size units)."""
+    _check_date(date)
+    conn = get_connection()
+    try:
+        row = conn.execute(
+            "SELECT serving_size FROM foods WHERE name = ? AND raw_json IS NOT NULL",
+            (p.food,),
+        ).fetchone()
+        if row is None:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Food '{p.food}' is not in the catalog. Pick one from the search list.",
+            )
+        add_meal_item(conn, date, p.meal, p.food, p.weight)
+        return {"food": p.food, "meal": p.meal, "weight": p.weight,
+                "serving_size": float(row["serving_size"])}
+    finally:
+        conn.close()
+
+
+class ItemRef(BaseModel):
+    food: str = Field(min_length=1)
+    meal: str = Field(min_length=1)
+    weight: float | None = None
+
+
+@app.delete("/api/days/{date}/items")
+def remove_log_item(date: str, p: ItemRef):
+    """Remove one logged item. If the food appears twice in the meal, 409 is
+    returned and the client must resend with `weight` to pick one."""
+    _check_date(date)
+    conn = get_connection()
+    try:
+        try:
+            n = remove_item(conn, date, p.meal, p.food, weight=p.weight)
+        except ValueError as e:
+            raise HTTPException(status_code=409, detail=str(e))
+        if n == 0:
+            raise HTTPException(status_code=404,
+                                detail=f"Item '{p.food}' not found in '{p.meal}'.")
+        return {"removed": n}
+    finally:
+        conn.close()
+
+
+@app.get("/api/trends")
+def trends(
+    date_from: str = Query(..., alias="from"),
+    date_to: str = Query(..., alias="to"),
+):
+    """Per-day macro totals over a date range (days with no meals are absent),
+    the same numbers trend.py plots."""
+    _check_date(date_from)
+    _check_date(date_to)
+    conn = get_connection()
+    try:
+        totals, _missing = daily_totals(conn)
+        days = [
+            {"date": d, "calories": round(v["calories"], 1),
+             "protein": round(v["protein"], 1), "fat": round(v["fat"], 1),
+             "carbs": round(v["carbs"], 1)}
+            for d, v in sorted(totals.items())
+            if date_from <= d <= date_to
+        ]
+        return {"days": days}
     finally:
         conn.close()
 
