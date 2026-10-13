@@ -9,16 +9,22 @@ a prioritized backlog. Items reference the code they touch.
 
 ### Data integrity (the important ones)
 
-1. **No referential integrity between `meal_items` and `foods`** (high).
-   `meal_items.food` is a `TEXT` name, not a foreign key to `foods.name`,
-   and `food-remove` does not check for diary references. Remove a food
-   that appears in the diary and every historical total that includes it
-   silently drops (the calorie math can no longer find its macros). The
-   catalog even contains multi-food entries ("Combined Intake (Oats,
-   Orgain Protein, ...)") that double as diary references.
-   Fix: refuse removal when `meal_items` references the food (or store the
-   macros denormalized in `meal_items` so history survives), ideally a real
-   integer `food_id` FK.
+1. **Stub entries and near-duplicate food names** (medium, largely historical).
+   Referential integrity is actually in place: `meal_items.food_id` is a
+   real `REFERENCES foods(id)` FK (enforced — `bin.db.get_connection`
+   sets `PRAGMA foreign_keys = ON`), and `db.remove_food` refuses to
+   delete a food still used by diary items. The real historical problem
+   is that sparse entries could be created before write-time validation
+   existed: e.g. a data-less stub "Taco Bell: Steak Quesadilla"
+   (colon) coexisted with the real "Taco Bell Steak Quesadilla", and a
+   diary item pointed at the stub, so its calories silently dropped from
+   that day's totals (warning only). Fixed 2026-10-13 by repointing the
+   item and removing the stub. Residual exposure: any remaining
+   data-less stubs still referenced by diary items — check with
+   `SELECT f.name FROM foods f JOIN meal_items mi ON mi.food_id = f.id
+   WHERE f.raw_json IS NULL` (currently empty). The catalog also contains
+   multi-food entries ("Combined Intake (Oats, Orgain Protein, ...)")
+   that double as diary references — a data-model quirk, not a bug.
 
 2. **No write concurrency protection** (medium, low probability for one
    user). The CLI and the container write the same file. SQLite serializes
@@ -91,8 +97,8 @@ a prioritized backlog. Items reference the code they touch.
 
 **P1 — data safety (do first, all small):**
 - WAL + `busy_timeout` in `bin.db.get_connection` (criticism 2).
-- Refuse `food-remove` when the food is referenced by any `meal_item`
-  (criticism 1, cheap half-fix).
+- Sweep for any remaining data-less stub entries and merge/remove them
+  (criticism 1) — none are referenced as of 2026-10-13.
 - Daily automatic backup (systemd timer or compose sidecar, criticism 3).
 - API tests with `TestClient` (criticism 11).
 
@@ -123,6 +129,8 @@ a prioritized backlog. Items reference the code they touch.
 
 - Single source of truth: DB only; UI, CLI, and scripts share `bin.db`.
 - Catalog validation at write time (no sparse entries can corrupt totals).
+- Referential integrity: enforced `food_id` FK from `meal_items` to
+  `foods`, and `db.remove_food` refuses to delete foods in use.
 - Weight-unit conventions enforced (`serving_size` units, unit-aware output).
 - 22 passing unit tests on throwaway DBs; `backup_db()` online backups.
 - Verified round-trips: UI→DB and container→DB changes appear in the CLI.
