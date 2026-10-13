@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Diary</title>
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥗</text></svg>">
+</head>
+<body>
+<header>
+  <div class="title-wrap">
+    <h1>Food Diary</h1>
+    <p class="subtitle">Catalog · <span id="stat-foods">…</span> foods · <span id="stat-days">…</span> days logged</p>
+  </div>
+  <button id="add-btn" class="btn primary">+ Add food</button>
+</header>
+
+<main>
+  <div class="toolbar">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path>
+      </svg>
+      <input id="search" type="search" placeholder="Search foods…" autocomplete="off" spellcheck="false">
+      <button id="clear-search" class="icon-btn" title="Clear" hidden>✕</button>
+    </div>
+    <span id="result-count" class="muted"></span>
+  </div>
+
+  <div class="table-wrap">
+    <table id="food-table">
+      <thead>
+        <tr>
+          <th data-key="name" class="sortable">Name</th>
+          <th data-key="serving_size" class="sortable num">Serving</th>
+          <th data-key="calories" class="sortable num">Cal</th>
+          <th data-key="protein" class="sortable num">Protein</th>
+          <th data-key="fat_total" class="sortable num">Fat</th>
+          <th data-key="carbs_total" class="sortable num">Carbs</th>
+          <th data-key="fiber_total" class="sortable num">Fiber</th>
+          <th data-key="sugars_total" class="sortable num">Sugar</th>
+          <th data-key="sodium" class="sortable num">Sodium</th>
+        </tr>
+      </thead>
+      <tbody id="food-body"></tbody>
+    </table>
+    <p id="empty" class="empty" hidden>No foods match. Try a different search, or add one.</p>
+  </div>
+</main>
+
+<footer>
+  Data: <code>data/food_diary.db</code> · single source of truth with the CLI tools
+</footer>
+
+<!-- Add-food modal -->
+<div id="modal-backdrop" class="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <h2 id="modal-title">Add food</h2>
+      <button id="modal-close" class="icon-btn" title="Close">✕</button>
+    </div>
+    <form id="food-form">
+      <div class="field wide">
+        <label for="f-name">Name <span class="req">*</span></label>
+        <input id="f-name" name="name" required autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="f-serving">Serving size (g) <span class="req">*</span></label>
+        <input id="f-serving" name="serving_size" type="number" step="any" min="0.001" required>
+      </div>
+      <div class="field">
+        <label for="f-calories">Calories <span class="req">*</span></label>
+        <input id="f-calories" name="calories" type="number" step="any" required>
+      </div>
+      <div class="field">
+        <label for="f-protein">Protein (g)</label>
+        <input id="f-protein" name="protein" type="number" step="any" min="0" value="0">
+      </div>
+      <div class="field">
+        <label for="f-fat">Fat (g)</label>
+        <input id="f-fat" name="fat_total" type="number" step="any" min="0" value="0">
+      </div>
+      <div class="field">
+        <label for="f-carbs">Carbs (g)</label>
+        <input id="f-carbs" name="carbs_total" type="number" step="any" min="0" value="0">
+      </div>
+      <div class="field">
+        <label for="f-fiber">Fiber (g)</label>
+        <input id="f-fiber" name="fiber_total" type="number" step="any" min="0" value="0">
+      </div>
+      <div class="field">
+        <label for="f-sugars">Sugar (g)</label>
+        <input id="f-sugars" name="sugars_total" type="number" step="any" min="0" value="0">
+      </div>
+      <div class="field">
+        <label for="f-sodium">Sodium (mg)</label>
+        <input id="f-sodium" name="sodium" type="number" step="any" min="0" value="0">
+      </div>
+      <p id="form-error" class="form-error" hidden></p>
+      <div class="modal-actions">
+        <button type="button" id="modal-cancel" class="btn">Cancel</button>
+        <button type="submit" class="btn primary">Save food</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

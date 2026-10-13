@@ -24,6 +24,11 @@ is the single source of truth. Use `log.py export` to produce JSON of any day
   `recipe_obj.py`, `helpers.py`.
 - **`tests/`** — unit tests for the database layer; run from the repo root
   with `python -m unittest discover` (no third-party dependencies).
+- **`web/`** — the dashboard: `app.py` (FastAPI backend over `bin.db`),
+  `static/` (vanilla HTML/CSS/JS frontend), `requirements.txt`
+  (fastapi + uvicorn). See "Web dashboard" below.
+- **`Dockerfile`** / **`compose.yaml`** — container build and podman compose
+  deployment for the dashboard.
 - **`data/food_diary.db`** — the database:
   - `foods` — the catalog. Nutritional values are flattened into columns for
     SQL aggregation, and the original JSON document is kept in `raw_json`, so
@@ -83,6 +88,41 @@ database and removes items the database has that are no longer in the file,
 per meal name. Foods in the file but not in the catalog become stub rows.
 It never writes the file.
 
+## Web dashboard
+
+A small single-user web UI for browsing and adding catalog foods. It reads
+and writes the same `data/food_diary.db` as the CLI tools, so the two never
+disagree. No authentication — it is a single-user, local service.
+
+Features:
+- table of all catalog entries (name, serving size, calories, protein, fat,
+  carbs, fiber, sugar, sodium) with sortable columns
+- live search (client-side instant + debounced server-side `q=` filter)
+- "Add food" modal — validates required fields and rejects duplicates
+  (409), mirroring the `log.py food-add` rules
+- header stats: catalog size and days logged
+
+Run locally (project venv):
+
+```bash
+.venv/bin/pip install -r web/requirements.txt
+.venv/bin/uvicorn web.app:app --port 8877    # then open http://localhost:8877
+```
+
+Deploy with podman compose (builds the image, runs the container with
+`./data` mounted, port 8877):
+
+```bash
+podman compose up -d --build
+podman compose logs -f food-dashboard   # follow logs
+podman compose down                     # stop
+```
+
+The container and the host CLI share the live database through the `./data`
+volume; avoid running both at once against it (single-user use, no
+concurrency handling). To bind only to the Tailscale interface, change the
+port mapping in `compose.yaml` to `100.127.136.124:8877:8000`.
+
 ## Notes
 
 - Conventions: a diary item's `weight` is in the catalog's `serving_size`
@@ -106,7 +146,11 @@ It never writes the file.
   Mushroom Mozzarella Melt Burger" (371 g) and "Factor Mushroom Mozzarella
   Melt Burger (340 g)" — they are distinct products, so the names must not be
   de-duplicated.
-- `requirements.txt` lists the only third-party dependency: `matplotlib`
-  (needed by `trend.py`); it lives in the project venv (`.venv`).
+- Dependencies: `requirements.txt` lists `matplotlib` (needed by
+  `trend.py`); `web/requirements.txt` lists `fastapi` and `uvicorn`
+  (needed by the dashboard). Both live in the project venv (`.venv`).
+- `data/food_diary.db` is git-ignored: it stays on disk as the single source
+  of truth but is never committed or pushed. Restore points come from
+  `log.py backup` (see next).
 - Backups: `log.py backup` writes an online copy to `data/backups/`
-  (git-ignored); git commits of the database are also restore points.
+  (git-ignored).

@@ -1,0 +1,6 @@
+.git
+.venv
+data
+hermes.log
+__pycache__
+**/__pycache__

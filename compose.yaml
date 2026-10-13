@@ -1,0 +1,13 @@
+services:
+  food-dashboard:
+    build: .
+    image: food-dashboard:latest
+    container_name: food-dashboard
+    ports:
+      # host:container — change the host part (e.g. 100.127.136.124:8877:8000)
+      # to bind only to the Tailscale interface.
+      - "8877:8000"
+    volumes:
+      # The dashboard reads and writes the same database as the CLI tools.
+      - ./data:/app/data
+    restart: unless-stopped
