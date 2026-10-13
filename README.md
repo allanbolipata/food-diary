@@ -1,54 +1,92 @@
 # Food Diary
 
-A collection of Python scripts for tracking food intake and analyzing nutritional data.
+A small personal food-tracking project. Everything — the food catalog and the
+diary — lives in one SQLite database: **`data/food_diary.db`**. The old
+`data/food.json` and `data/diary/YYYYMMDD.json` files are gone; the database
+is the single source of truth. Use `log.py export` to produce JSON of any day
+(if you ever want a file copy).
 
-## Main Scripts
+## Files
 
-### `app.py`
-Reads a diary file (`data/diary/YYYYMMDD.json`) and prints the total macros for that day, rounded to one decimal. Foods not in the catalog are skipped with a warning.
+- **`app.py YYYYMMDD`** — prints the total macros for a diary day, rounded to
+  one decimal. A legacy `data/diary/YYYYMMDD.json` path is also accepted
+  (the date is taken from the filename; the file itself is not read). Foods
+  not in the catalog are skipped with a warning.
+- **`eaten.py [YYYYMMDD]`** — prints per-meal detail plus day totals.
+  Mealtimes whose name contains "uneaten" are skipped (e.g. "Uneaten
+  Lunch").
+- **`trend.py`** — plots daily calorie/protein trends from the database.
+  `--from` / `--to` limit the range, `--save FILE.png` writes a headless PNG.
+- **`log.py`** — the maintenance CLI (below).
+- **`bin/`** — Python helpers: `db.py` (the SQLite layer), `food_obj.py`,
+  `recipe_obj.py`, `helpers.py`.
+- **`data/food_diary.db`** — the database:
+  - `foods` — the catalog. Nutritional values are flattened into columns for
+    SQL aggregation, and the original JSON document is kept in `raw_json`, so
+    the data is lossless. Rows without `raw_json` are "stub" entries (name
+    only, no nutrition data).
+  - `meals` — one row per meal per day.
+  - `meal_items` — one row per food entry in a meal (`weight` is in grams).
+- **`scripts/check_calories.py`** / **`scripts/check_diary_calories.py`** —
+  verify that stored calories match the macros (4/4/9 cal per gram, plus
+  2.5 for sugar alcohols). Default tolerance 40 cal; alcohol-containing
+  drinks are expected to deviate.
 
-### `eaten.py`
-Reads a diary date from the **database** (`data/food_diary.db`) and prints per-meal detail plus day totals. Mealtimes whose name contains "uneaten" are skipped (e.g. "Uneaten Lunch").
+## Using log.py
 
-### `trend.py`
-Plots daily protein/fat/carbs/calorie trends from the database. Totals include uneaten meals.
+From the repo root:
 
-    python trend.py                     # all days, shown with matplotlib
-    python trend.py --from 20260101 --to 20260630
-    python trend.py --save /tmp/plots   # write PNGs instead of showing (headless)
+```bash
+# Record / fix a day (weights are in the catalog's `serving_size` units:
+# grams for foods measured by weight, one unit for whole-portion entries;
+# default meal is "Miscellaneous"; default date is today)
+python log.py add "Oikos Triple Zero Strawberry Greek Yogurt" 150 --meal Breakfast
+python log.py set-weight "Oikos ..." --weight 200 --was 150
+python log.py remove "Oikos ..." --weight 150
+python log.py move "Oikos ..." --to Lunch
+python log.py remove-meal Lunch
+python log.py clear --date 20261012 --yes
 
-### `merge.py`
-Writes `data/meals.json`: all diary days in one file, read from the **database** (the source of truth), so it always matches what `eaten.py`/`trend.py` report. Re-run after any change to the database.
+# When a food appears more than once in a meal, commands that could match
+# several rows refuse and list the matches; pass --weight N to pick one,
+# or --all to take every.
 
-### `log.py`
-Add diary entries to the database:
+# Show / export
+python log.py day 20261012
+python log.py export --date 20261012            # prints JSON to stdout
+python log.py export --all --out /tmp/diary_export   # one <date>.json per day
 
-    python log.py add "Food Name" [weight] [--date YYYYMMDD] [--meal NAME]
-    python log.py day [date]
+# Catalog maintenance
+python log.py food-add --name "New Food" --data '{"name": "New Food", "serving_size": 100, "nutritional_data": {"calories": 100, "protein": 10, "fat": {"total": 2}, "carbs": {"total": 5}}}'
+python log.py food-update --name "New Food" --data '...'
+python log.py food-remove "New Food"     # refuses if the food is used in the diary
+python log.py food-search yogurt
+```
 
-Weight is in the same units as the catalog's `serving_size` (grams); the default of 1 means "one serving".
-
-`add` also **reconciles** `data/diary/<date>.json` with the database, so the database ends up containing exactly the items the file lists, per meal name:
-
-- items in the file but not in the DB are imported,
-- items in the DB but no longer in the file are removed,
-- items in both are left untouched.
-
-So a hand-edited weight change in the file replaces the old weight, and an item moved between meals ends up in the new meal. Unknown foods in the file are imported as stub rows (no nutritional data). The file is then rewritten from the database, so `app.py` and `eaten.py`/`trend.py` always agree. Safety: if the file lists no items at all but the database still has items for that day, nothing is removed (an empty/corrupt file must not wipe the DB).
-
-### `scripts/migrate_to_sqlite.py`
-One-shot migration from `data/food.json` + `data/diary/*.json` into `data/food_diary.db`. Not needed again — `log.py` now writes the DB directly.
-
-## Data
-
-- `data/food.json` — nutritional data per food.
-- `data/diary/YYYYMMDD.json` — daily diary files. `app.py` reads these directly.
-- `data/food_diary.db` — the SQLite database used by `eaten.py`, `trend.py` and `log.py`. Keep it in sync with the diary files (running `log.py add` for a date re-syncs it automatically).
-- `data/meals.json` — merged view of the diary (regenerated by `merge.py`).
+`python log.py import FILE` is a one-shot reconciliation tool for legacy diary
+JSON files: it imports items the file lists that are missing from the
+database and removes items the database has that are no longer in the file,
+per meal name. Foods in the file but not in the catalog become stub rows.
+It never writes the file.
 
 ## Notes
 
-- `bin/db.py` exposes the database helpers (`daily_totals`, `load_day`, `day_items`, `add_meal_item`, `export_day_json`, `get_connection`).
-- The catalog contains two Factor_ items with the same base name: "Factor Mushroom Mozzarella Melt Burger" (371 g) and "Factor Mushroom Mozzarella Melt Burger (340 g)" — they are distinct products, so the names must not be de-duplicated.
-- `scripts/check_calories.py` / `scripts/check_diary_calories.py` verify that stored calories match the macros (4/4/9 + 2.5 for sugar alcohols). Default tolerance is 40 cal; alcohol-containing drinks are expected to deviate.
-- `requirements.txt` lists the only third-party dependency: `matplotlib`.
+- Conventions: a diary item's `weight` is in the catalog's `serving_size`
+  units — grams for foods measured by weight, one unit for whole-portion
+  entries (`serving_size` 1, e.g. a full restaurant plate). A catalog entry
+  has `serving_size` (grams or units per serving) and `calories` (per
+  serving); macros scale as `weight / serving_size * per-serving value`.
+- Meals whose name contains "uneaten" are skipped by `eaten.py` but counted
+  by `app.py` and `trend.py` (they contribute zero anyway, since their items
+  have weight 0).
+- `bin/db.py` exposes the database helpers (`daily_totals`, `load_day`,
+  `day_items`, `load_foods`, `add_meal_item`, `item_weights`,
+  `set_item_weight`, `remove_item`, `remove_meal`, `clear_day`,
+  `day_json_text`, `export_day_json`, `catalog_entries`,
+  `add_food_entry`, `update_food_entry`, `remove_food`, `get_connection`).
+- The catalog contains two Factor_ items with the same base name: "Factor
+  Mushroom Mozzarella Melt Burger" (371 g) and "Factor Mushroom Mozzarella
+  Melt Burger (340 g)" — they are distinct products, so the names must not be
+  de-duplicated.
+- `requirements.txt` lists the only third-party dependency: `matplotlib`
+  (needed by `trend.py`).

@@ -2,9 +2,9 @@
 """
 scripts/check_calories.py
 
-Checks that the calorie value stored in data/food.json matches the
-calories implied by the macro values, using the factors nutrition labels
-use: 4 cal/g protein & carbs, 9 cal/g fat, 2.5 cal/g sugar alcohols.
+Checks that the calorie value stored in the food catalog (data/food_diary.db)
+matches the calories implied by the macro values, using the factors nutrition
+labels use: 4 cal/g protein & carbs, 9 cal/g fat, 2.5 cal/g sugar alcohols.
 
 The default tolerance is 40 cal: label macros are rounded to the gram, so
 small gaps are expected noise. Entries that exceed it are worth a manual
@@ -16,8 +16,12 @@ Usage:
 """
 
 import argparse
-import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from bin.db import catalog_entries, get_connection
 
 
 def calc_label_calories(nd: dict) -> float:
@@ -53,16 +57,18 @@ def find_mismatches(foods: list, tolerance: float) -> list:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Check calorie consistency for all foods in data/food.json."
+        description="Check calorie consistency for all foods in the catalog "
+                    "(data/food_diary.db)."
     )
     parser.add_argument("--tolerance", type=float, default=40.0,
                         help="maximum allowed difference in calories")
     args = parser.parse_args()
 
-    repo_root = Path(__file__).resolve().parents[1]
-    food_path = repo_root / "data" / "food.json"
-    with open(food_path, "r", encoding="utf-8") as f:
-        foods = json.load(f)
+    conn = get_connection()
+    try:
+        foods = catalog_entries(conn)
+    finally:
+        conn.close()
 
     mismatches = find_mismatches(foods, args.tolerance)
 

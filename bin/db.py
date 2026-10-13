@@ -238,7 +238,7 @@ def update_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
                sugars_total = :sugars_total, added_sugars_total = :added_sugars_total,
                sugar_alcohols_total = :sugar_alcohols_total,
                cholesterol = :cholesterol, raw_json = :raw_json
-        WHERE id = ?
+        WHERE id = :id
         """,
         {**flatten_food(entry), "raw_json": json.dumps(entry), "id": row["id"]},
     )
@@ -292,6 +292,11 @@ def _shown(w) -> int | float:
     """Normalise a stored weight so 1.0 and 1 compare equal."""
     w = float(w)
     return int(w) if w.is_integer() else w
+
+
+def item_weights(conn: sqlite3.Connection, date: str, meal_name: str, food_name: str) -> list:
+    """Return the list of weights of all (date, meal, food) item rows."""
+    return [r["weight"] for r in _day_item_rows(conn, date, meal_name, food_name)]
 
 
 def set_item_weight(conn: sqlite3.Connection, date: str, meal_name: str,

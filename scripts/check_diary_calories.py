@@ -2,22 +2,41 @@
 """
 scripts/check_diary_calories.py
 
-Checks calorie consistency only for foods listed in a diary file.
+Checks calorie consistency only for the foods listed in one diary day.
+The argument is a date (YYYYMMDD, read from data/food_diary.db) or a
+legacy diary JSON path (read from the file).
+
 Usage:
+    python scripts/check_diary_calories.py 20260207 [--tolerance 40]
     python scripts/check_diary_calories.py path/to/diary.json [--tolerance 40]
 """
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from bin.db import catalog_entries, get_connection, load_day
 from check_calories import calc_label_calories
 
 
-def load_diary(diary_path: Path) -> set:
-    """Return a set of food names that appear in the diary."""
-    with open(diary_path, "r", encoding="utf-8") as f:
+def load_names_from_db(day: str) -> set:
+    conn = get_connection()
+    try:
+        names = set()
+        for meal in load_day(conn, day):
+            for item in meal["foods"]:
+                names.add(item["food"])
+        return names
+    finally:
+        conn.close()
+
+
+def load_names_from_file(path: Path) -> set:
+    with open(path, "r", encoding="utf-8") as f:
         diary = json.load(f)
     names = set()
     for entry in diary:
@@ -28,24 +47,30 @@ def load_diary(diary_path: Path) -> set:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Check calorie consistency for foods listed in a diary JSON."
+        description="Check calorie consistency for the foods listed in one diary day."
     )
-    parser.add_argument("diary_path",
-                        help="Path to the diary JSON file (e.g., data/diary/20260207.json)")
+    parser.add_argument("target",
+                        help="a date (YYYYMMDD) or a path to a diary JSON file")
     parser.add_argument("--tolerance", type=float, default=40.0,
                         help="Maximum allowed difference in calories")
     args = parser.parse_args()
 
-    diary_file = Path(args.diary_path).expanduser().resolve()
-    if not diary_file.is_file():
-        print(f"File not found: {diary_file}")
-        sys.exit(1)
+    if re.fullmatch(r"\d{8}", args.target):
+        names = load_names_from_db(args.target)
+    else:
+        diary_file = Path(args.target).expanduser().resolve()
+        if not diary_file.is_file():
+            print(f"File not found: {diary_file}")
+            sys.exit(1)
+        names = load_names_from_file(diary_file)
 
-    repo_root = Path(__file__).resolve().parents[1]
-    with open(repo_root / "data" / "food.json", "r", encoding="utf-8") as f:
-        foods = {food["name"]: food.get("nutritional_data", {}) for food in json.load(f)}
+    conn = get_connection()
+    try:
+        foods = {food["name"]: food.get("nutritional_data", {})
+                 for food in catalog_entries(conn)}
+    finally:
+        conn.close()
 
-    names = load_diary(diary_file)
     mismatches = []
     for name in sorted(names):
         nd = foods.get(name)
