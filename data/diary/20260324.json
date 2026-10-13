@@ -1,17 +1,15 @@
 [
   {
     "name": "Uneaten Miscellaneous",
-    "foods": [
-    ]
+    "foods": []
   },
   {
     "name": "Uneaten Optional",
-    "foods": [
-    ]
+    "foods": []
   },
   {
     "name": "Miscellaneous",
-    "foods": [ 
+    "foods": [
       {
         "food": "Barebells Chocolate Dough",
         "weight": 55
@@ -37,7 +35,7 @@
         "weight": 60
       },
       {
-        "food": "Factor Mushroom Mozzarella Melt Burger",
+        "food": "Factor Mushroom Mozzarella Melt Burger (340g)",
         "weight": 340
       }
     ]

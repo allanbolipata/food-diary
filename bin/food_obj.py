@@ -24,6 +24,8 @@ class Food:
         self.cholesterol = self.nutr_data.get("cholesterol", {}).get("total", 0)
 
     def _calc_prop(self):
+        if not self.serving_size:
+            raise ValueError(f"Food '{self.name}' has no serving_size; cannot compute per-serving values.")
         self.prop_protein = float(self.protein / self.serving_size)
         self.prop_fat = float(self.fat_total / self.serving_size)
         self.prop_carbs = float(self.carbs_total / self.serving_size)

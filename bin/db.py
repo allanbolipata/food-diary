@@ -1,13 +1,13 @@
 """SQLite storage layer for the food diary.
 
-The database lives at data/food_diary.db and holds:
+The database lives at data/food_diary.db and is the single source of truth
+for the whole project (the former data/food.json and data/diary/*.json
+files are import/export formats only):
 
-  foods       the food catalog (formerly data/food.json). Nutritional
-              values are flattened into columns for SQL aggregation, and
-              the original JSON document is kept in ``raw_json`` so the
-              data is lossless.
-  meals       one row per meal per diary day (formerly one
-              data/diary/YYYYMMDD.json file per day).
+  foods       the food catalog. Nutritional values are flattened into
+              columns for SQL aggregation, and the original JSON document
+              is kept in ``raw_json`` so the data is lossless.
+  meals       one row per meal per diary day.
   meal_items  one row per food entry within a meal.
 
 The loaders reconstruct the legacy JSON shapes, so the existing
@@ -122,6 +122,27 @@ def load_day(conn: sqlite3.Connection, date: str) -> list:
     return meals
 
 
+def day_items(conn: sqlite3.Connection, date: str) -> list:
+    """Return the raw item rows for one day:
+    ``[{"id", "meal_id", "meal_name", "food_id", "food_name", "weight"}, ...]``.
+    Used by log.py to reconcile the database with a diary file."""
+    return [
+        dict(row)
+        for row in conn.execute(
+            """
+            SELECT i.id AS id, m.id AS meal_id, m.name AS meal_name,
+                   f.id AS food_id, f.name AS food_name, i.weight
+            FROM meal_items i
+            JOIN meals m ON m.id = i.meal_id
+            JOIN foods f ON f.id = i.food_id
+            WHERE m.date = ?
+            ORDER BY m.sort_order, i.rowid
+            """,
+            (date,),
+        )
+    ]
+
+
 def ensure_meal(conn: sqlite3.Connection, date: str, name: str) -> int:
     """Return the id of the named meal for ``date``, creating it if needed
     (with the next free sort_order)."""
@@ -152,16 +173,230 @@ def add_meal_item(conn: sqlite3.Connection, date: str, meal_name: str, food_name
     conn.commit()
 
 
-def export_day_json(conn: sqlite3.Connection, date: str, path: Path) -> str:
-    """Write the day's diary JSON file (original shape) from the database.
-    Returns the text that was written."""
+def flatten_food(entry: dict) -> dict:
+    """Extract the flattened column values for one food.json entry.
+    Same extraction as the one-time migration script."""
+    nutr = entry.get("nutritional_data", {})
+    fat = nutr.get("fat", {})
+    carbs = nutr.get("carbs", {})
+    return {
+        "serving_size": entry.get("serving_size"),
+        "calories": nutr.get("calories"),
+        "protein": nutr.get("protein"),
+        "fat_total": fat.get("total"),
+        "fat_saturated": fat.get("saturated_fat", {}).get("total"),
+        "sodium": nutr.get("sodium", {}).get("total"),
+        "carbs_total": carbs.get("total"),
+        "fiber_total": carbs.get("dietary_fiber", {}).get("total"),
+        "sugars_total": carbs.get("sugars", {}).get("total"),
+        "added_sugars_total": carbs.get("sugars", {}).get("added_sugars", {}).get("total"),
+        "sugar_alcohols_total": carbs.get("sugars", {}).get("sugar_alcohols", {}).get("total"),
+        "cholesterol": nutr.get("cholesterol", {}).get("total"),
+    }
+
+
+def add_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
+    """Insert one catalog entry (original food.json shape).
+    Raises ``ValueError`` if the name is already in the catalog
+    (use :func:`update_food_entry`)."""
+    name = entry.get("name")
+    if not name:
+        raise ValueError("Entry has no 'name'.")
+    if conn.execute("SELECT 1 FROM foods WHERE name = ?", (name,)).fetchone():
+        raise ValueError(f"Food '{name}' is already in the catalog (use food-update).")
+    conn.execute(
+        """
+        INSERT INTO foods (name, serving_size, calories, protein, fat_total,
+                          fat_saturated, sodium, carbs_total, fiber_total,
+                          sugars_total, added_sugars_total,
+                          sugar_alcohols_total, cholesterol, raw_json)
+        VALUES (:name, :serving_size, :calories, :protein, :fat_total,
+                :fat_saturated, :sodium, :carbs_total, :fiber_total,
+                :sugars_total, :added_sugars_total, :sugar_alcohols_total,
+                :cholesterol, :raw_json)
+        """,
+        {"name": name, **flatten_food(entry), "raw_json": json.dumps(entry)},
+    )
+    conn.commit()
+
+
+def update_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
+    """Replace the catalog entry with this name (original food.json shape).
+    Raises ``LookupError`` if the name is not in the catalog."""
+    name = entry.get("name")
+    if not name:
+        raise ValueError("Entry has no 'name'.")
+    row = conn.execute("SELECT id FROM foods WHERE name = ?", (name,)).fetchone()
+    if row is None:
+        raise LookupError(name)
+    conn.execute(
+        """
+        UPDATE foods SET serving_size = :serving_size, calories = :calories,
+               protein = :protein, fat_total = :fat_total,
+               fat_saturated = :fat_saturated, sodium = :sodium,
+               carbs_total = :carbs_total, fiber_total = :fiber_total,
+               sugars_total = :sugars_total, added_sugars_total = :added_sugars_total,
+               sugar_alcohols_total = :sugar_alcohols_total,
+               cholesterol = :cholesterol, raw_json = :raw_json
+        WHERE id = ?
+        """,
+        {**flatten_food(entry), "raw_json": json.dumps(entry), "id": row["id"]},
+    )
+    conn.commit()
+
+
+def remove_food(conn: sqlite3.Connection, name: str) -> None:
+    """Remove a catalog entry.
+    Raises ``LookupError`` if the name is unknown, ``ValueError`` if the
+    food is referenced by diary items (remove those first)."""
+    row = conn.execute("SELECT id FROM foods WHERE name = ?", (name,)).fetchone()
+    if row is None:
+        raise LookupError(name)
+    n = conn.execute(
+        "SELECT COUNT(*) FROM meal_items WHERE food_id = ?", (row["id"],)
+    ).fetchone()[0]
+    if n:
+        raise ValueError(f"'{name}' is used in {n} diary item(s); remove those first.")
+    conn.execute("DELETE FROM foods WHERE id = ?", (row["id"],))
+    conn.commit()
+
+
+def catalog_entries(conn: sqlite3.Connection) -> list:
+    """Return the catalog in the original food.json list-of-dicts shape,
+    in insertion order. Stub entries (no nutritional data, ``raw_json``
+    NULL) are omitted, matching :func:`load_foods`."""
+    return [
+        json.loads(row["raw_json"])
+        for row in conn.execute(
+            "SELECT raw_json FROM foods WHERE raw_json IS NOT NULL ORDER BY id"
+        )
+    ]
+
+
+def _day_item_rows(conn: sqlite3.Connection, date: str, meal_name: str, food_name: str) -> list:
+    """All item rows for one (day, meal, food) combination."""
+    return conn.execute(
+        """
+        SELECT i.id AS id, i.weight
+        FROM meal_items i
+        JOIN meals m ON m.id = i.meal_id
+        JOIN foods f ON f.id = i.food_id
+        WHERE m.date = ? AND m.name = ? AND f.name = ?
+        ORDER BY i.rowid
+        """,
+        (date, meal_name, food_name),
+    ).fetchall()
+
+
+def _shown(w) -> int | float:
+    """Normalise a stored weight so 1.0 and 1 compare equal."""
+    w = float(w)
+    return int(w) if w.is_integer() else w
+
+
+def set_item_weight(conn: sqlite3.Connection, date: str, meal_name: str,
+                    food_name: str, weight: float, existing_weight=None) -> int:
+    """Change the weight of a diary item in place.
+
+    Matches (day, meal, food). If more than one row matches, ``existing_weight``
+    must be given to pick one; otherwise ``ValueError`` lists the matches.
+    Returns the number of rows updated (1).
+    """
+    rows = _day_item_rows(conn, date, meal_name, food_name)
+    if not rows:
+        raise LookupError(f"No item for {food_name!r} in {meal_name!r} on {date}.")
+    if len(rows) > 1 and existing_weight is None:
+        weights = [f"{_shown(r['weight'])} serving(s)" for r in rows]
+        raise ValueError(
+            f"Ambiguous: {food_name!r} appears {len(rows)} times in {meal_name!r} on {date} "
+            f"({', '.join(weights)}). Pass --weight or use remove --all."
+        )
+    if existing_weight is not None:
+        rows = [r for r in rows if _shown(r["weight"]) == _shown(existing_weight)]
+        if not rows:
+            raise LookupError(
+                f"No {food_name!r} in {meal_name!r} on {date} with weight {existing_weight:g}.")
+        # With an explicit weight, take one matching row (duplicates are
+        # indistinguishable, so any of them works).
+        rows = rows[:1]
+    conn.execute("UPDATE meal_items SET weight = ? WHERE id = ?", (weight, rows[0]["id"]))
+    conn.commit()
+    return 1
+
+
+def remove_item(conn: sqlite3.Connection, date: str, meal_name: str,
+                food_name: str, weight=None, all: bool = False) -> int:
+    """Remove diary item(s) for (day, meal, food).
+
+    Without ``weight``/``all``: exactly one matching row must exist,
+    otherwise ``ValueError`` lists the matches. With ``weight``: one row
+    matching (food, weight) is removed. With ``all``: every matching row
+    is removed. Returns the number of rows removed.
+    """
+    rows = _day_item_rows(conn, date, meal_name, food_name)
+    if not rows:
+        raise LookupError(f"No item for {food_name!r} in {meal_name!r} on {date}.")
+    if weight is not None:
+        rows = [r for r in rows if _shown(r["weight"]) == _shown(weight)]
+        if not rows:
+            raise LookupError(
+                f"No {food_name!r} in {meal_name!r} on {date} with weight {weight:g}.")
+        rows = rows[:1]
+    elif not all and len(rows) > 1:
+        weights = [f"{_shown(r['weight'])} serving(s)" for r in rows]
+        raise ValueError(
+            f"Ambiguous: {food_name!r} appears {len(rows)} times in {meal_name!r} on {date} "
+            f"({', '.join(weights)}). Pass --weight or --all."
+        )
+    for r in rows:
+        conn.execute("DELETE FROM meal_items WHERE id = ?", (r["id"],))
+    conn.commit()
+    return len(rows)
+
+
+def remove_meal(conn: sqlite3.Connection, date: str, meal_name: str) -> int:
+    """Remove a whole meal (its items cascade). Returns the number of meals
+    removed (1). Raises ``LookupError`` if the meal does not exist."""
+    row = conn.execute(
+        "SELECT id, (SELECT COUNT(*) FROM meal_items WHERE meal_id = meals.id) AS n "
+        "FROM meals WHERE date = ? AND name = ?", (date, meal_name)
+    ).fetchone()
+    if row is None:
+        raise LookupError(f"No meal {meal_name!r} on {date}.")
+    conn.execute("DELETE FROM meals WHERE id = ?", (row["id"],))
+    conn.commit()
+    return 1
+
+
+def clear_day(conn: sqlite3.Connection, date: str) -> tuple:
+    """Remove every meal for one day. Returns (meals_removed, items_removed)."""
+    meals = conn.execute("SELECT id FROM meals WHERE date = ?", (date,)).fetchall()
+    items = conn.execute(
+        "SELECT COUNT(*) FROM meal_items i JOIN meals m ON m.id = i.meal_id WHERE m.date = ?",
+        (date,),
+    ).fetchone()[0]
+    conn.execute("DELETE FROM meals WHERE date = ?", (date,))
+    conn.commit()
+    return len(meals), items
+
+
+def day_json_text(conn: sqlite3.Connection, date: str) -> str:
+    """Return the day's diary as JSON text in the original file shape
+    (what :func:`export_day_json` would write, minus the trailing newline)."""
     meals = load_day(conn, date)
     text = json.dumps(meals, indent=2)
     # Match the hand-edited files' style for empty food lists: "foods": [ / ]
     text = re.sub(r'"foods": \[\s*\]', '"foods": [\n    ]', text)
+    return text
+
+
+def export_day_json(conn: sqlite3.Connection, date: str, path: Path) -> str:
+    """Write the day's diary JSON file (original shape) from the database.
+    Returns the text that was written."""
+    text = day_json_text(conn, date) + "\n"
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text + "\n")
-    return text + "\n"
+    path.write_text(text)
+    return text
 
 
 def daily_totals(conn: sqlite3.Connection) -> tuple:

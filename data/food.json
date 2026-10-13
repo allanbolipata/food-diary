@@ -93,7 +93,7 @@
         "dv": 0.01
       },
       "sodium": {
-        "total": 0.10,
+        "total": 0.1,
         "dv": 0.04
       },
       "carbs": {
@@ -108,7 +108,7 @@
           "total": 0,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           }
         }
       }
@@ -1382,7 +1382,7 @@
         "dv": 0.04
       },
       "sodium": {
-        "total": 0.110,
+        "total": 0.11,
         "dv": 0.05
       },
       "carbs": {
@@ -1737,7 +1737,7 @@
       },
       "carbs": {
         "total": 109,
-        "dv": 0.40,
+        "dv": 0.4,
         "dietary_fiber": {
           "total": 5.6,
           "dv": 0.2
@@ -2033,7 +2033,7 @@
         "dv": 0
       },
       "sodium": {
-        "total": 0.230,
+        "total": 0.23,
         "dv": 0.08
       },
       "carbs": {
@@ -2942,7 +2942,7 @@
         "dv": 0.05
       },
       "sodium": {
-        "total": 0.150,
+        "total": 0.15,
         "dv": 0.07
       },
       "carbs": {
@@ -2957,7 +2957,7 @@
           "total": 1,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           }
         }
       }
@@ -2985,7 +2985,7 @@
         "dv": 0.02
       },
       "sodium": {
-        "total": 0.240,
+        "total": 0.24,
         "dv": 0.1
       },
       "carbs": {
@@ -3000,7 +3000,7 @@
           "total": 1,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           }
         }
       }
@@ -5557,7 +5557,7 @@
         "dv": 0.37
       },
       "cholesterol": {
-        "total": 0.150,
+        "total": 0.15,
         "dv": 0.5
       },
       "sodium": {
@@ -5600,7 +5600,7 @@
         "dv": 0.36
       },
       "cholesterol": {
-        "total": 0.150,
+        "total": 0.15,
         "dv": 0.5
       },
       "sodium": {
@@ -5668,134 +5668,134 @@
       }
     }
   },
-	{
-	  "name": "Vegemite",
-	  "serving_size": 100,
-	  "nutritional_data": {
-	    "calories": 225,
-	    "protein": 26,
-	    "fat": {
-	      "total": 1,
-	      "trans_fat": 0,
-	      "saturated_fat": {
-	        "total": 0,
-	        "dv": 0
-	      },
-	      "polyunsaturated_fat": 0,
-	      "monounsaturated_fat": 0,
-	      "dv": 0
-	    },
-	    "cholesterol": {
-	      "total": 0,
-	      "dv": 0
-	    },
-	    "sodium": {
-	      "total": 3.3,
-	      "dv": 143
-	    },
-	    "carbs": {
-	      "total": 17,
-	      "dv": 6,
-	      "dietary_fiber": {
-	        "total": 0,
-	        "dv": 0
-	      },
-	      "soluble_fiber": 0,
-	      "sugars": {
-	        "total": 2,
-	        "added_sugars": {
-	          "total": 0,
-	          "dv": 0
-	        }
-	      }
-	    }
-	  }
-	},
-	{
-	  "name": "Breakstone's Unsalted Butter",
-	  "serving_size": 14,
-  	"nutritional_data": {
-	    "calories": 100,
-	    "protein": 0,
-	    "fat": {
-	      "total": 11,
-	      "trans_fat": 0,
-	      "saturated_fat": {
-	        "total": 7,
-	        "dv": 0.35
-	      },
-	      "polyunsaturated_fat": 0,
-	      "monounsaturated_fat": 0,
-	      "dv": 0.14
-	    },
-	    "cholesterol": {
-	      "total": 0.03,
-	      "dv": 0.1
-	    },
-	    "sodium": {
-	      "total": 0,
-	      "dv": 0
-	    },
-	    "carbs": {
-	      "total": 0,
-	      "dv": 0,
-	      "dietary_fiber": {
-	        "total": 0,
-	        "dv": 0
-	      },
-	      "soluble_fiber": 0,
-	      "sugars": {
-	        "total": 0,
-	        "added_sugars": {
-	          "total": 0,
-	          "dv": 0
-	        }
-	      }
-	    }
-	  }
-	},
-	{
-	  "name": "Organic Girl Essential Salads Baby Springs Mix",
-	  "serving_size": 85,
-  	"nutritional_data": {
-	    "calories": 15,
-	    "protein": 2,
-	    "fat": {
-	      "total": 0,
-	      "trans_fat": 0,
-	      "saturated_fat": {
-	        "total": 0,
-	        "dv": 0
-	      },
-	      "polyunsaturated_fat": 0,
-	      "monounsaturated_fat": 0,
-	      "dv": 0
-	    },
-	    "cholesterol": {
-	      "total": 0,
-	      "dv": 0
-	    },
-	    "sodium": {
-	      "total": 0.07,
-	      "dv": 0.03
-	    },
-	    "carbs": {
-	      "total": 3,
-	      "dv": 0,
-	      "dietary_fiber": {
-	        "total": 2,
-	        "dv": 0
-	      },
-	      "soluble_fiber": 0,
-	      "sugars": {
-	        "total": 1,
-	        "added_sugars": {
-	          "total": 0,
-	          "dv": 0
-	        }
-	      }
-	    }
-	  }
+  {
+    "name": "Vegemite",
+    "serving_size": 100,
+    "nutritional_data": {
+      "calories": 225,
+      "protein": 26,
+      "fat": {
+        "total": 1,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 3.3,
+        "dv": 143
+      },
+      "carbs": {
+        "total": 17,
+        "dv": 6,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 2,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Breakstone's Unsalted Butter",
+    "serving_size": 14,
+    "nutritional_data": {
+      "calories": 100,
+      "protein": 0,
+      "fat": {
+        "total": 11,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 7,
+          "dv": 0.35
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0.14
+      },
+      "cholesterol": {
+        "total": 0.03,
+        "dv": 0.1
+      },
+      "sodium": {
+        "total": 0,
+        "dv": 0
+      },
+      "carbs": {
+        "total": 0,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 0,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 0,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Organic Girl Essential Salads Baby Springs Mix",
+    "serving_size": 85,
+    "nutritional_data": {
+      "calories": 15,
+      "protein": 2,
+      "fat": {
+        "total": 0,
+        "trans_fat": 0,
+        "saturated_fat": {
+          "total": 0,
+          "dv": 0
+        },
+        "polyunsaturated_fat": 0,
+        "monounsaturated_fat": 0,
+        "dv": 0
+      },
+      "cholesterol": {
+        "total": 0,
+        "dv": 0
+      },
+      "sodium": {
+        "total": 0.07,
+        "dv": 0.03
+      },
+      "carbs": {
+        "total": 3,
+        "dv": 0,
+        "dietary_fiber": {
+          "total": 2,
+          "dv": 0
+        },
+        "soluble_fiber": 0,
+        "sugars": {
+          "total": 1,
+          "added_sugars": {
+            "total": 0,
+            "dv": 0
+          }
+        }
+      }
+    }
   },
   {
     "name": "Pop-Secret Movie Theater Butter (popped)",
@@ -5890,7 +5890,7 @@
     "name": "Factor_ Caramelized Onion Gournay Burger",
     "serving_size": 1,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 570,
@@ -5936,7 +5936,7 @@
     "name": "Factor_ Shredded Chicken Taco Bowl",
     "serving_size": 1,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 550,
@@ -5982,7 +5982,7 @@
     "name": "Factor_ Garlic Herb Chicken",
     "serving_size": 1,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 590,
@@ -6207,7 +6207,7 @@
             "dv": 0
           },
           "sugar_alcohols": {
-          "total": 7
+            "total": 7
           }
         }
       }
@@ -6232,8 +6232,8 @@
         "dv": 0.56
       },
       "cholesterol": {
-        "total": 0.120,
-        "dv": 0.40
+        "total": 0.12,
+        "dv": 0.4
       },
       "sodium": {
         "total": 2,
@@ -6261,7 +6261,7 @@
     "name": "Factor_ Smoky Gouda Macaroni & Shredded Beef",
     "serving_size": 1,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 510,
@@ -6324,7 +6324,7 @@
         "dv": 0.23
       },
       "cholesterol": {
-        "total": 0.130,
+        "total": 0.13,
         "dv": 0.43
       },
       "sodium": {
@@ -6333,7 +6333,7 @@
       },
       "carbs": {
         "total": 28,
-        "dv": 0.10,
+        "dv": 0.1,
         "dietary_fiber": {
           "total": 5,
           "dv": 0.18
@@ -6353,7 +6353,7 @@
     "name": "Skinny Pop Original Popcorn",
     "serving_size": 18,
     "serving_size_conversion": {
-        "num_bags": 1
+      "num_bags": 1
     },
     "nutritional_data": {
       "calories": 100,
@@ -6399,7 +6399,7 @@
     "name": "Barebells Key Lime Pie",
     "serving_size": 55,
     "serving_size_conversion": {
-        "num_bars": 1
+      "num_bars": 1
     },
     "nutritional_data": {
       "calories": 200,
@@ -6420,7 +6420,7 @@
         "dv": 0.03
       },
       "sodium": {
-        "total": 0.140,
+        "total": 0.14,
         "dv": 0.06
       },
       "carbs": {
@@ -6465,7 +6465,7 @@
         "dv": 0.29
       },
       "cholesterol": {
-        "total": 0.160,
+        "total": 0.16,
         "dv": 0.53
       },
       "sodium": {
@@ -6511,8 +6511,8 @@
         "dv": 0.27
       },
       "cholesterol": {
-        "total": 0.120,
-        "dv": 0.40
+        "total": 0.12,
+        "dv": 0.4
       },
       "sodium": {
         "total": 0.89,
@@ -6534,13 +6534,13 @@
           }
         }
       }
-    } 
+    }
   },
   {
     "name": "Factor_: Sweet Potato Grits & Sage Chicken",
     "serving_size": 340,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 570,
@@ -6586,7 +6586,7 @@
     "name": "Factor_: Truffle Mushroom Pork Chop",
     "serving_size": 343,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 550,
@@ -6603,7 +6603,7 @@
         "dv": 0.37
       },
       "cholesterol": {
-        "total": 0.130,
+        "total": 0.13,
         "dv": 0.43
       },
       "sodium": {
@@ -6641,7 +6641,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 6,
-          "dv": 0.30
+          "dv": 0.3
         },
         "polyunsaturated_fat": 8,
         "monounsaturated_fat": 18
@@ -6672,7 +6672,7 @@
         "sugar_alcohols": {
           "total": 0
         }
-      } 
+      }
     }
   },
   {
@@ -6690,7 +6690,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 8,
-          "dv": 0.30
+          "dv": 0.3
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -6749,7 +6749,7 @@
         "dv": 0.57
       },
       "sodium": {
-        "total": 0.870,
+        "total": 0.87,
         "dv": 0.38
       },
       "carbs": {
@@ -6798,7 +6798,7 @@
         "dv": 0.53
       },
       "sodium": {
-        "total": 0.860,
+        "total": 0.86,
         "dv": 0.37
       },
       "carbs": {
@@ -6834,7 +6834,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 8,
-          "dv": 0.40
+          "dv": 0.4
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -6844,7 +6844,7 @@
         "dv": 0.32
       },
       "sodium": {
-        "total": 0.1350,
+        "total": 0.135,
         "dv": 0.59
       },
       "carbs": {
@@ -6880,7 +6880,7 @@
         "trans_fat": 1,
         "saturated_fat": {
           "total": 10,
-          "dv": 0.50
+          "dv": 0.5
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -6890,7 +6890,7 @@
         "dv": 0.28
       },
       "sodium": {
-        "total": 0.860,
+        "total": 0.86,
         "dv": 0.37
       },
       "carbs": {
@@ -6926,7 +6926,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 8,
-          "dv": 0.40
+          "dv": 0.4
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -6936,7 +6936,7 @@
         "dv": 0.17
       },
       "sodium": {
-        "total": 1.530,
+        "total": 1.53,
         "dv": 0.67
       },
       "carbs": {
@@ -6982,8 +6982,8 @@
         "dv": 0.22
       },
       "sodium": {
-        "total": 0.680,
-        "dv": 0.30
+        "total": 0.68,
+        "dv": 0.3
       },
       "carbs": {
         "total": 4.5,
@@ -7043,7 +7043,7 @@
           "total": 48.0,
           "added_sugars": {
             "total": 35.0,
-            "dv": 0.70
+            "dv": 0.7
           }
         },
         "sugar_alcohols": {
@@ -7064,7 +7064,7 @@
         "trans_fat": 0.0,
         "saturated_fat": {
           "total": 8.0,
-          "dv": 0.40
+          "dv": 0.4
         },
         "polyunsaturated_fat": 2.5,
         "monounsaturated_fat": 9.2
@@ -7075,7 +7075,7 @@
       },
       "sodium": {
         "total": 1.83,
-        "dv": 0.80
+        "dv": 0.8
       },
       "carbs": {
         "total": 87.0,
@@ -7120,7 +7120,7 @@
         "dv": 0.02
       },
       "sodium": {
-        "total": 0.190,
+        "total": 0.19,
         "dv": 0.08
       },
       "carbs": {
@@ -7149,14 +7149,25 @@
       "fat": {
         "total": 18.0,
         "dv": 0.23,
-        "saturated_fat": { "total": 4.5, "dv": 0.23 }
+        "saturated_fat": {
+          "total": 4.5,
+          "dv": 0.23
+        }
       },
-      "sodium": { "total": 0.980, "dv": 0.43 },
+      "sodium": {
+        "total": 0.98,
+        "dv": 0.43
+      },
       "carbs": {
         "total": 14.0,
         "dv": 0.05,
-        "dietary_fiber": { "total": 3.0, "dv": 0.11 },
-        "sugars": { "total": 3.0 }
+        "dietary_fiber": {
+          "total": 3.0,
+          "dv": 0.11
+        },
+        "sugars": {
+          "total": 3.0
+        }
       }
     }
   },
@@ -7339,7 +7350,7 @@
         }
       }
     }
-  }, 
+  },
   {
     "name": "Oikos Triple Zero Strawberry Greek Yogurt",
     "serving_size": 150,
@@ -7410,7 +7421,7 @@
         "dv": 0
       },
       "sodium": {
-        "total": 0.270,
+        "total": 0.27,
         "dv": 0.12
       },
       "carbs": {
@@ -7455,12 +7466,12 @@
         "dv": 0
       },
       "sodium": {
-        "total": 0.040,
+        "total": 0.04,
         "dv": 0.02
       },
       "carbs": {
         "total": 0,
-        "dv": 0.00,
+        "dv": 0.0,
         "dietary_fiber": {
           "total": 0,
           "dv": 0.0
@@ -7494,10 +7505,10 @@
       },
       "cholesterol": {
         "total": 0.21,
-        "dv": 0.70
+        "dv": 0.7
       },
       "sodium": {
-        "total": 1.80,
+        "total": 1.8,
         "dv": 0.78
       },
       "carbs": {
@@ -7591,7 +7602,7 @@
       },
       "sodium": {
         "total": 0.91,
-        "dv": 0.40
+        "dv": 0.4
       },
       "carbs": {
         "total": 30,
@@ -7636,7 +7647,7 @@
         "dv": 0.65
       },
       "sodium": {
-        "total": 0.80,
+        "total": 0.8,
         "dv": 0.35
       },
       "carbs": {
@@ -7652,52 +7663,6 @@
           "added_sugars": {
             "total": 5,
             "dv": 0.1
-          }
-        },
-        "sugar_alcohols": {
-          "total": 0
-        }
-      }
-    }
-  },
-  {
-    "name": "Factor_: Browned Butter Grilled Chicken & Yukon Mash",
-    "serving_size": 335,
-    "nutritional_data": {
-      "calories": 500,
-      "protein": 40,
-      "fat": {
-        "total": 25,
-        "dv": 0.32,
-        "trans_fat": 0.5,
-        "saturated_fat": {
-          "total": 10,
-          "dv": 0.50
-        },
-        "polyunsaturated_fat": 0,
-        "monounsaturated_fat": 0
-      },
-      "cholesterol": {
-        "total": 0.150,
-        "dv": 0.50
-      },
-      "sodium": {
-        "total": 0.84,
-        "dv": 0.37
-      },
-      "carbs": {
-        "total": 27,
-        "dv": 0.10,
-        "dietary_fiber": {
-          "total": 5,
-          "dv": 0.18
-        },
-        "soluble_fiber": 0,
-        "sugars": {
-          "total": 6,
-          "added_sugars": {
-            "total": 0,
-            "dv": 0.0
           }
         },
         "sugar_alcohols": {
@@ -7724,7 +7689,7 @@
         "monounsaturated_fat": 0
       },
       "cholesterol": {
-        "total": 0.190,
+        "total": 0.19,
         "dv": 0.63
       },
       "sodium": {
@@ -7832,10 +7797,10 @@
           "total": 1,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           },
           "sugar_alcohols": {
-          "total": 5
+            "total": 5
           }
         }
       }
@@ -7863,7 +7828,7 @@
         "dv": 0.03
       },
       "sodium": {
-        "total": 0.150,
+        "total": 0.15,
         "dv": 0.07
       },
       "carbs": {
@@ -7878,10 +7843,10 @@
           "total": 1,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           },
           "sugar_alcohols": {
-          "total": 6
+            "total": 6
           }
         }
       }
@@ -7924,10 +7889,10 @@
           "total": 1,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           },
           "sugar_alcohols": {
-          "total": 5
+            "total": 5
           }
         }
       }
@@ -7970,10 +7935,10 @@
           "total": 1,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           },
           "sugar_alcohols": {
-          "total": 5
+            "total": 5
           }
         }
       }
@@ -8050,7 +8015,7 @@
       },
       "sodium": {
         "total": 0.23,
-        "dv": 0.10
+        "dv": 0.1
       },
       "carbs": {
         "total": 22,
@@ -8336,10 +8301,10 @@
           "total": 10,
           "added_sugars": {
             "total": 5,
-            "dv": 0.10
+            "dv": 0.1
           },
           "sugar_alcohols": {
-          "total": 6
+            "total": 6
           }
         }
       }
@@ -8388,7 +8353,7 @@
             "dv": 0.02
           },
           "sugar_alcohols": {
-          "total": 0
+            "total": 0
           }
         }
       }
@@ -8437,7 +8402,7 @@
             "dv": 0
           },
           "sugar_alcohols": {
-          "total": 0
+            "total": 0
           }
         }
       }
@@ -8535,7 +8500,7 @@
             "dv": 0.08
           },
           "sugar_alcohols": {
-          "total": 5
+            "total": 5
           }
         }
       }
@@ -8553,7 +8518,7 @@
         "dv": 0.49,
         "saturated_fat": {
           "total": 8,
-          "dv": 0.40
+          "dv": 0.4
         }
       },
       "cholesterol": {
@@ -8562,7 +8527,7 @@
       },
       "sodium": {
         "total": 1.6,
-        "dv": 0.70
+        "dv": 0.7
       },
       "carbs": {
         "total": 25,
@@ -8593,7 +8558,7 @@
       "protein": 2,
       "fat": {
         "total": 8,
-        "dv": 0.10,
+        "dv": 0.1,
         "trans_fat": 0,
         "saturated_fat": {
           "total": 3.5,
@@ -8625,7 +8590,7 @@
             "dv": 0
           },
           "sugar_alcohols": {
-          "total": 12
+            "total": 12
           }
         }
       }
@@ -8635,7 +8600,7 @@
     "name": "Skinny Pop Dairy Free White Cheddar Popcorn",
     "serving_size": 14,
     "serving_size_conversion": {
-        "num_bags": 1
+      "num_bags": 1
     },
     "nutritional_data": {
       "calories": 80,
@@ -8681,7 +8646,7 @@
     "name": "Factor Mushroom Mozzarella Melt Burger",
     "serving_size": 371,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 610,
@@ -8724,10 +8689,10 @@
     }
   },
   {
-    "name": "Factor Mushroom Mozzarella Melt Burger",
+    "name": "Factor Mushroom Mozzarella Melt Burger (340g)",
     "serving_size": 340,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 500,
@@ -8745,7 +8710,7 @@
       },
       "cholesterol": {
         "total": 0.15,
-        "dv": 0.50
+        "dv": 0.5
       },
       "sodium": {
         "total": 0.56,
@@ -8773,7 +8738,7 @@
     "name": "Factor Tangy Southern Chicken",
     "serving_size": 346,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 680,
@@ -8902,7 +8867,7 @@
             "dv": 0
           },
           "sugar_alcohols": {
-          "total": 5
+            "total": 5
           }
         }
       }
@@ -8921,7 +8886,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 18,
-          "dv": 0.90
+          "dv": 0.9
         },
         "polyunsaturated_fat": 4.5,
         "monounsaturated_fat": 16
@@ -8969,8 +8934,8 @@
         "monounsaturated_fat": 0
       },
       "cholesterol": {
-        "total": 0.150,
-        "dv": 0.50
+        "total": 0.15,
+        "dv": 0.5
       },
       "sodium": {
         "total": 0.56,
@@ -9049,7 +9014,7 @@
         "trans_fat": 0.5,
         "saturated_fat": {
           "total": 12,
-          "dv": 0.60
+          "dv": 0.6
         },
         "polyunsaturated_fat": 7,
         "monounsaturated_fat": 20
@@ -9078,7 +9043,7 @@
         }
       }
     }
-  }, 
+  },
   {
     "name": "Factor Ginger Teriyaki Salmon with Forbidden Rice & Sesame Green Beans",
     "doc": "High potassium (1.04g) helps offset current sodium levels. High Omega-3 content is ideal for LDL goals. Note the 10g of added sugar in the glaze.",
@@ -9116,7 +9081,7 @@
           "total": 18,
           "added_sugars": {
             "total": 10,
-            "dv": 0.20
+            "dv": 0.2
           }
         }
       }
@@ -9134,7 +9099,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 4,
-          "dv": 0.20
+          "dv": 0.2
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -9176,7 +9141,7 @@
         "trans_fat": 2.0,
         "saturated_fat": {
           "total": 16,
-          "dv": 0.80
+          "dv": 0.8
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -9274,7 +9239,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 10,
-          "dv": 0.50
+          "dv": 0.5
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -9421,18 +9386,18 @@
         "trans_fat": 2,
         "saturated_fat": {
           "total": 16,
-          "dv": 0.80
+          "dv": 0.8
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
       },
       "cholesterol": {
-        "total": 0.140,
+        "total": 0.14,
         "dv": 0.47
       },
       "sodium": {
-        "total": 0.920,
-        "dv": 0.40
+        "total": 0.92,
+        "dv": 0.4
       },
       "carbs": {
         "total": 46,
@@ -9480,7 +9445,7 @@
         "dv": 0
       },
       "sodium": {
-        "total": 0.100,
+        "total": 0.1,
         "dv": 0.04
       },
       "carbs": {
@@ -9519,7 +9484,7 @@
         "trans_fat": 0.5,
         "saturated_fat": {
           "total": 10,
-          "dv": 0.50
+          "dv": 0.5
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -9529,7 +9494,7 @@
         "dv": 0.52
       },
       "sodium": {
-        "total": 0.820,
+        "total": 0.82,
         "dv": 0.36
       },
       "carbs": {
@@ -9622,8 +9587,8 @@
         "dv": 0.46
       },
       "cholesterol": {
-        "total": 0.120,
-        "dv": 0.40
+        "total": 0.12,
+        "dv": 0.4
       },
       "sodium": {
         "total": 0.78,
@@ -9674,7 +9639,7 @@
       },
       "carbs": {
         "total": 56,
-        "dv": 0.20,
+        "dv": 0.2,
         "dietary_fiber": {
           "total": 5,
           "dv": 0.18
@@ -9703,7 +9668,7 @@
         "trans_fat": 1.5,
         "saturated_fat": {
           "total": 32,
-          "dv": 1.60
+          "dv": 1.6
         },
         "polyunsaturated_fat": 6,
         "monounsaturated_fat": 38
@@ -9759,7 +9724,7 @@
       },
       "sodium": {
         "total": 0.91,
-        "dv": 0.4 
+        "dv": 0.4
       },
       "carbs": {
         "total": 40,
@@ -9834,7 +9799,7 @@
       "protein": 33,
       "fat": {
         "total": 39,
-        "dv": 0.50,
+        "dv": 0.5,
         "trans_fat": 0,
         "saturated_fat": {
           "total": 15,
@@ -9888,7 +9853,7 @@
       },
       "cholesterol": {
         "total": 0.42,
-        "dv": 1.40
+        "dv": 1.4
       },
       "sodium": {
         "total": 2.95,
@@ -9896,7 +9861,7 @@
       },
       "carbs": {
         "total": 54.0,
-        "dv": 0.20,
+        "dv": 0.2,
         "dietary_fiber": {
           "total": 4.5,
           "dv": 0.16
@@ -9968,7 +9933,7 @@
         "trans_fat": 0.5,
         "saturated_fat": {
           "total": 12,
-          "dv": 0.60
+          "dv": 0.6
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
@@ -10091,7 +10056,7 @@
     }
   },
   {
-    "name": "MOKAFÉ 16oz Iced Pistachio Latte (Decaf + Oat Milk)",
+    "name": "MOKAF\u00c9 16oz Iced Pistachio Latte (Decaf + Oat Milk)",
     "doc": "16oz iced latte with oat milk and pistachio flavoring syrup.",
     "serving_size": 453,
     "nutritional_data": {
@@ -10114,7 +10079,7 @@
       },
       "sodium": {
         "total": 0.23,
-        "dv": 0.10
+        "dv": 0.1
       },
       "carbs": {
         "total": 49.0,
@@ -10138,7 +10103,7 @@
     }
   },
   {
-    "name": "MOKAFÉ Pastrami Reuben Croissant (Modified - Half Pastry, All Meat)",
+    "name": "MOKAF\u00c9 Pastrami Reuben Croissant (Modified - Half Pastry, All Meat)",
     "doc": "Ate 100% of the pastrami beef; left 50% of the croissant shell, cheese, and slaw dressing.",
     "serving_size": 185,
     "nutritional_data": {
@@ -10165,7 +10130,7 @@
       },
       "carbs": {
         "total": 28.0,
-        "dv": 0.10,
+        "dv": 0.1,
         "dietary_fiber": {
           "total": 1.5,
           "dv": 0.05
@@ -10202,12 +10167,12 @@
         "monounsaturated_fat": 0
       },
       "cholesterol": {
-        "total": 0.090,
-        "dv": 0.30
+        "total": 0.09,
+        "dv": 0.3
       },
       "sodium": {
-        "total": 0.70,
-        "dv": 0.30
+        "total": 0.7,
+        "dv": 0.3
       },
       "carbs": {
         "total": 39.0,
@@ -10238,7 +10203,7 @@
       "protein": 20,
       "fat": {
         "total": 8,
-        "dv": 0.10,
+        "dv": 0.1,
         "trans_fat": 0.0,
         "saturated_fat": {
           "total": 3.5,
@@ -10248,11 +10213,11 @@
         "monounsaturated_fat": 0
       },
       "cholesterol": {
-        "total": 0.010,
+        "total": 0.01,
         "dv": 0.03
       },
       "sodium": {
-        "total": 0.120,
+        "total": 0.12,
         "dv": 0.05
       },
       "carbs": {
@@ -10336,7 +10301,7 @@
         "trans_fat": 0.0,
         "saturated_fat": {
           "total": 6.0,
-          "dv": 0.30
+          "dv": 0.3
         },
         "polyunsaturated_fat": 1.5,
         "monounsaturated_fat": 7.0
@@ -10347,7 +10312,7 @@
       },
       "sodium": {
         "total": 0.68,
-        "dv": 0.30
+        "dv": 0.3
       },
       "carbs": {
         "total": 34.0,
@@ -10441,11 +10406,11 @@
       },
       "sodium": {
         "total": 1.15,
-        "dv": 0.50
+        "dv": 0.5
       },
       "carbs": {
         "total": 54.0,
-        "dv": 0.20,
+        "dv": 0.2,
         "dietary_fiber": {
           "total": 2.5,
           "dv": 0.09
@@ -10571,7 +10536,7 @@
       "protein": 32,
       "fat": {
         "total": 39,
-        "dv": 0.50,
+        "dv": 0.5,
         "trans_fat": 1,
         "saturated_fat": {
           "total": 15,
@@ -10655,7 +10620,7 @@
     "name": "Factor_ Caramelized Onion Gournay Burger with Spinach & Paprika Roasted Potatoes",
     "serving_size": 320,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 590,
@@ -10751,7 +10716,7 @@
     "name": "Factor_ Pimento Cheeseburger",
     "serving_size": 408,
     "serving_size_conversion": {
-        "num_trays": 1
+      "num_trays": 1
     },
     "nutritional_data": {
       "calories": 680,
@@ -10849,7 +10814,7 @@
       "protein": 32,
       "fat": {
         "total": 39,
-        "dv": 0.50,
+        "dv": 0.5,
         "trans_fat": 1,
         "saturated_fat": {
           "total": 15,
@@ -11005,7 +10970,7 @@
       },
       "carbs": {
         "total": 28,
-        "dv": 0.10,
+        "dv": 0.1,
         "dietary_fiber": {
           "total": 4,
           "dv": 0.14
@@ -11094,7 +11059,7 @@
       },
       "sodium": {
         "total": 0.69,
-        "dv": 0.30
+        "dv": 0.3
       },
       "carbs": {
         "total": 45,
@@ -11129,13 +11094,13 @@
         "trans_fat": 1.5,
         "saturated_fat": {
           "total": 16,
-          "dv": 0.80
+          "dv": 0.8
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
       },
       "cholesterol": {
-        "total": 0.130,
+        "total": 0.13,
         "dv": 0.43
       },
       "sodium": {
@@ -11210,7 +11175,7 @@
       }
     }
   },
-  { 
+  {
     "name": "Factor_: White Cheddar Truffle & Leek Burger",
     "serving_size": 391,
     "nutritional_data": {
@@ -11222,13 +11187,13 @@
         "trans_fat": 2.0,
         "saturated_fat": {
           "total": 14,
-          "dv": 0.70
+          "dv": 0.7
         },
         "polyunsaturated_fat": 0,
         "monounsaturated_fat": 0
       },
       "cholesterol": {
-        "total": 0.130,
+        "total": 0.13,
         "dv": 0.43
       },
       "sodium": {
@@ -11265,7 +11230,7 @@
       "protein": 2,
       "fat": {
         "total": 8,
-        "dv": 0.10,
+        "dv": 0.1,
         "trans_fat": 0,
         "saturated_fat": {
           "total": 1,
@@ -11302,7 +11267,7 @@
         }
       }
     }
-  }, 
+  },
   {
     "name": "Dinner - Oikos Greek Yogurt, 2 Boiled Eggs, Dig Inn Broccoli, Mac & Cheese, Roasted Sweet Potatoes",
     "doc": "Individual meal log for evening dinner items.",
@@ -11363,7 +11328,7 @@
         "trans_fat": 1.5,
         "saturated_fat": {
           "total": 24,
-          "dv": 1.20
+          "dv": 1.2
         },
         "polyunsaturated_fat": 4,
         "monounsaturated_fat": 22
@@ -11417,7 +11382,7 @@
       },
       "cholesterol": {
         "total": 0.18,
-        "dv": 0.60
+        "dv": 0.6
       },
       "sodium": {
         "total": 3.39,
@@ -11457,14 +11422,14 @@
         "trans_fat": 0.5,
         "saturated_fat": {
           "total": 16,
-          "dv": 0.80
+          "dv": 0.8
         },
         "polyunsaturated_fat": 5,
         "monounsaturated_fat": 20
       },
       "cholesterol": {
         "total": 0.21,
-        "dv": 0.70
+        "dv": 0.7
       },
       "sodium": {
         "total": 1.72,
@@ -11550,14 +11515,14 @@
         "trans_fat": 0.0,
         "saturated_fat": {
           "total": 16,
-          "dv": 0.80
+          "dv": 0.8
         },
         "polyunsaturated_fat": 5,
         "monounsaturated_fat": 17
       },
       "cholesterol": {
         "total": 0.63,
-        "dv": 2.10
+        "dv": 2.1
       },
       "sodium": {
         "total": 1.13,
@@ -11612,7 +11577,7 @@
       },
       "carbs": {
         "total": 82,
-        "dv": 0.30,
+        "dv": 0.3,
         "dietary_fiber": {
           "total": 8,
           "dv": 0.29
@@ -11650,8 +11615,8 @@
         "monounsaturated_fat": 1.0
       },
       "cholesterol": {
-        "total": 0.00,
-        "dv": 0.00
+        "total": 0.0,
+        "dv": 0.0
       },
       "sodium": {
         "total": 0.14,
@@ -11662,14 +11627,14 @@
         "dv": 0.05,
         "dietary_fiber": {
           "total": 0,
-          "dv": 0.00
+          "dv": 0.0
         },
         "soluble_fiber": 0,
         "sugars": {
           "total": 0,
           "added_sugars": {
             "total": 0,
-            "dv": 0.00
+            "dv": 0.0
           }
         },
         "sugar_alcohols": {
@@ -11705,7 +11670,7 @@
       },
       "sodium": {
         "total": 0.23,
-        "dv": 0.10
+        "dv": 0.1
       },
       "carbs": {
         "total": 19,
@@ -11722,7 +11687,7 @@
             "dv": 0
           },
           "sugar_alcohols": {
-          "total": 5
+            "total": 5
           }
         }
       }
@@ -11747,7 +11712,7 @@
         },
         "polyunsaturated_fat": 1.8,
         "monounsaturated_fat": 3.7,
-        "dv": 0.10
+        "dv": 0.1
       },
       "cholesterol": {
         "total": 0.198,
@@ -11805,7 +11770,7 @@
       },
       "sodium": {
         "total": 0.0,
-        "dv": 0.00
+        "dv": 0.0
       },
       "carbs": {
         "total": 48.0,
@@ -11847,7 +11812,7 @@
         },
         "polyunsaturated_fat": 0.1,
         "monounsaturated_fat": 0,
-        "dv": 0.00
+        "dv": 0.0
       },
       "cholesterol": {
         "total": 0,
@@ -11855,7 +11820,7 @@
       },
       "sodium": {
         "total": 0.001,
-        "dv": 0.00
+        "dv": 0.0
       },
       "carbs": {
         "total": 14.5,
@@ -11912,7 +11877,7 @@
         "dv": 0.25,
         "dietary_fiber": {
           "total": 5.5,
-          "dv": 0.20
+          "dv": 0.2
         },
         "soluble_fiber": 0,
         "sugars": {
@@ -11943,7 +11908,7 @@
         "trans_fat": 0,
         "saturated_fat": {
           "total": 6.0,
-          "dv": 0.30
+          "dv": 0.3
         },
         "polyunsaturated_fat": 2.5,
         "monounsaturated_fat": 7.5,
@@ -11955,7 +11920,7 @@
       },
       "sodium": {
         "total": 1.15,
-        "dv": 0.50
+        "dv": 0.5
       },
       "carbs": {
         "total": 62.0,
@@ -12050,7 +12015,7 @@
         "dv": 0.82
       },
       "cholesterol": {
-        "total": 0.310,
+        "total": 0.31,
         "dv": 1.03
       },
       "sodium": {
@@ -12062,14 +12027,14 @@
         "dv": 0.42,
         "dietary_fiber": {
           "total": 14.0,
-          "dv": 0.50
+          "dv": 0.5
         },
         "soluble_fiber": 4.0,
         "sugars": {
           "total": 20.0,
           "added_sugars": {
             "total": 5.0,
-            "dv": 0.10
+            "dv": 0.1
           },
           "sugar_alcohols": {
             "total": 0.0

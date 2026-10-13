@@ -1,34 +1,33 @@
-###
-# Combines json files in data/diary into one large JSON
-###
+#!/usr/bin/env python3
+"""Write data/meals.json: all diary days in one file.
 
-import os, sys, json
+Reads from data/food_diary.db (the source of truth), so the merged file
+always matches what eaten.py / trend.py report. Re-run after any change
+to the database.
+"""
 
-directory = "data/diary"
-all_files = [file for file in os.listdir(directory) if os.path.isfile(os.path.join(directory, file))]
-for i,v in enumerate(all_files):
-    all_files[i] = os.path.join(directory,v)
+import json
+from pathlib import Path
 
-print(all_files)
+from bin.db import get_connection, load_day
 
-json_combined = list()
+REPO_ROOT = Path(__file__).resolve().parent
 
-for jsonfile in all_files:
-    with open(jsonfile, "r") as file:
-        data = json.load(file)
-        d = dict()
-        d["date"] = jsonfile.strip(".json").strip(directory)
-        d["meals"] = data
-        json_combined.append(d)
 
-## Create a chunk of jsons based on chunk_size
-# 
-#chunk_size=30
-#for i in range(0,len(json_combined),chunk_size):
-#    chunk = json_combined[i:i+chunk_size]
-#    with open(f"chunk_{i//chunk_size + 1}.json", "w") as output_file:
-#        json.dump(chunk, output_file, indent=4)
+def main():
+    conn = get_connection()
+    try:
+        dates = [r[0] for r in conn.execute("SELECT DISTINCT date FROM meals ORDER BY date")]
+        combined = [{"date": d, "meals": load_day(conn, d)} for d in dates]
+    finally:
+        conn.close()
 
-## Create a json with merged data from directory
-with open("data/meals.json", "w") as file:
-    json.dump(json_combined, file, indent=4)
+    out = REPO_ROOT / "data" / "meals.json"
+    with open(out, "w") as f:
+        json.dump(combined, f, indent=4)
+        f.write("\n")
+    print(f"Wrote {len(combined)} days to {out}")
+
+
+if __name__ == "__main__":
+    main()

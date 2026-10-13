@@ -7,12 +7,23 @@ Usage (from the repo root):
 
 Behaviour of ``add``:
   - Writes to data/food_diary.db (the source used by eaten.py/trend.py).
-  - Keeps data/diary/<date>.json in sync: any item present in the JSON
-    file but missing from the database is imported into the database,
-    and the JSON file is rewritten from the database if the two had
-    diverged. So app.py (JSON) and eaten.py/trend.py (DB) always agree.
+  - Reconciles data/diary/<date>.json against the database, so that the
+    database ends up containing exactly the items the file lists, per
+    meal name:
+      * items in the JSON file but not in the DB are imported,
+      * items in the DB but no longer in the JSON file are removed,
+      * items present in both are left untouched.
+    A weight changed by hand in the file therefore replaces the old
+    weight, and an item moved between meals ends up in the new meal.
+  - Foods that are in the file but not in the catalog are imported as
+    stub rows (no nutritional data), keeping the diary intact.
+  - The JSON file is rewritten from the database afterwards, so app.py
+    (JSON) and eaten.py/trend.py (DB) always agree.
   - Weight is in the same units as the catalog's serving_size (grams);
     the default of 1 means "one serving".
+  - Safety: if the file lists no items at all but the database still has
+    items for that day, nothing is removed — an empty (corrupt) file must
+    not wipe the database.
 
 Foods must exist in the catalog; if a name is not found, close matches
 from the catalog are suggested.
@@ -21,14 +32,14 @@ from the catalog are suggested.
 import argparse
 import difflib
 import json
-import re
 import sys
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 from bin.db import (
     add_meal_item,
     daily_totals,
+    day_items,
     export_day_json,
     get_connection,
     load_day,
@@ -40,43 +51,95 @@ DIARY_DIR = REPO_ROOT / "data" / "diary"
 
 def parse_date(s: str | None, default: str) -> str:
     s = s or default
-    if not re.fullmatch(r"\d{8}", s):
+    try:
+        return datetime.strptime(s, "%Y%m%d").strftime("%Y%m%d")
+    except ValueError:
         raise SystemExit(f"Invalid date '{s}' (expected YYYYMMDD).")
-    return s
 
 
-def sync_day(conn, day: str, path: Path) -> list:
-    """Import items that exist in the JSON file but not in the DB, then
-    rewrite the JSON file from the DB if the two had diverged. Returns
-    the list of food names imported (possibly empty)."""
-    db_meals = load_day(conn, day)
-    imported = []
-    if path.exists():
-        file_meals = json.loads(path.read_text())
-        for meal in file_meals:
-            db_items = {
-                (it["food"], it["weight"])
-                for m in db_meals
-                if m["name"] == meal["name"]
-                for it in m["foods"]
-            }
-            for item in meal["foods"]:
-                if (item["food"], item["weight"]) in db_items:
-                    continue
+def _shown(w) -> int | float:
+    """Normalise a stored weight so 1.0 and 1 compare equal."""
+    w = float(w)
+    return int(w) if w.is_integer() else w
+
+
+def sync_day(conn, day: str, path: Path) -> dict:
+    """Reconcile the database with the diary JSON file.
+
+    After this function the database contains exactly the (food, weight)
+    items the file lists, per meal name: items only in the file are
+    imported (unknown foods become stub catalog rows), items only in the
+    database are removed, and items in both are untouched. The file is
+    then rewritten from the database.
+
+    Returns ``{"added": [...], "removed": [...], "skipped": bool}``.
+    """
+    db_items = day_items(conn, day)
+    file_meals = json.loads(path.read_text()) if path.exists() else []
+
+    # Multiset of (food, weight) per meal name, for the DB and the file.
+    db_counts = {}
+    for it in db_items:
+        key = (it["food_name"], _shown(it["weight"]))
+        c = db_counts.setdefault(it["meal_name"], {})
+        c[key] = c.get(key, 0) + 1
+
+    file_counts = {}
+    n_file_items = 0
+    for m in file_meals:
+        for item in m["foods"]:
+            key = (item["food"], _shown(item["weight"]))
+            c = file_counts.setdefault(m["name"], {})
+            c[key] = c.get(key, 0) + 1
+            n_file_items += 1
+
+    # Safety: an empty file must not wipe a day that still has items.
+    if path.exists() and n_file_items == 0 and db_items:
+        print(f"Warning: {path.name} lists no items but the database has "
+              f"{len(db_items)} for {day}; nothing was removed. Fix the "
+              f"file and re-run to sync.")
+        return {"added": [], "removed": [], "skipped": True}
+
+    added, removed = [], []
+
+    # Import items the file lists beyond what the database has.
+    for m in file_meals:
+        db_c = db_counts.get(m["name"], {})
+        for item in m["foods"]:
+            key = (item["food"], _shown(item["weight"]))
+            for _ in range(max(file_counts[m["name"]][key] - db_c.get(key, 0), 0)):
                 try:
-                    add_meal_item(conn, day, meal["name"], item["food"], item["weight"])
+                    add_meal_item(conn, day, m["name"], item["food"], item["weight"])
                 except LookupError:
-                    # Food not in the catalog: create a stub row so the diary
-                    # stays intact (same behaviour as migrate_to_sqlite.py).
+                    # Food not in the catalog: create a stub row so the
+                    # diary stays intact (same behaviour as
+                    # migrate_to_sqlite.py).
                     conn.execute("INSERT INTO foods (name) VALUES (?)", (item["food"],))
                     conn.commit()
-                    add_meal_item(conn, day, meal["name"], item["food"], item["weight"])
+                    add_meal_item(conn, day, m["name"], item["food"], item["weight"])
                     print(f"Note: '{item['food']}' was added to the catalog without nutritional data.")
-                imported.append(item["food"])
-    # The DB just gained at least one item (or the file had extras imported
-    # above), so rewrite the file from the DB to keep both views in sync.
+                added.append(item["food"])
+
+    # Remove items the database has beyond what the file lists.
+    remaining = {m: dict(c) for m, c in db_counts.items()}
+    for it in db_items:
+        key = (it["food_name"], _shown(it["weight"]))
+        if remaining[it["meal_name"]].get(key, 0) <= file_counts.get(it["meal_name"], {}).get(key, 0):
+            continue
+        remaining[it["meal_name"]][key] -= 1
+        conn.execute("DELETE FROM meal_items WHERE id = ?", (it["id"],))
+        removed.append(it["food_name"])
+
+    # Drop meals that exist in the database but not in the file
+    # (their items were already removed above).
+    file_meal_names = {m["name"] for m in file_meals}
+    for mname in db_counts.keys():
+        if mname not in file_meal_names:
+            conn.execute("DELETE FROM meals WHERE date = ? AND name = ?", (day, mname))
+
+    conn.commit()
     export_day_json(conn, day, path)
-    return imported
+    return {"added": added, "removed": removed, "skipped": False}
 
 
 def cmd_add(conn, args) -> None:
@@ -100,10 +163,12 @@ def cmd_add(conn, args) -> None:
                 print(f"  {n}")
         sys.exit(1)
 
-    imported = sync_day(conn, day, DIARY_DIR / f"{day}.json")
+    report = sync_day(conn, day, DIARY_DIR / f"{day}.json")
     print(f"Added {args.food!r} ({args.weight:g} serving(s)) to {args.meal!r} on {day}.")
-    if imported:
-        print(f"Imported from the diary JSON (was in the file but not the DB): {', '.join(imported)}")
+    if report["added"]:
+        print(f"Imported from the diary JSON (in the file, not in the DB): {', '.join(report['added'])}")
+    if report["removed"]:
+        print(f"Removed from the database (no longer in the diary file): {', '.join(report['removed'])}")
     totals, _ = daily_totals(conn)
     t = totals.get(day)
     if t:
