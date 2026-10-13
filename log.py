@@ -3,14 +3,18 @@
 
 Usage (from the repo root):
     python log.py add FOOD [weight] [--date YYYYMMDD] [--meal NAME]
+    python log.py meal NAME "FOOD [weight]" "FOOD [weight]" ... [--date D]
     python log.py set-weight FOOD --weight N [--date D] [--meal M] [--was OLD]
     python log.py remove FOOD [--date D] [--meal M] [--weight N] [--all]
     python log.py move FOOD --to MEAL [--date D] [--meal M] [--weight N]
+    python log.py rename-meal FROM TO [--date D]
     python log.py remove-meal MEAL [--date D]
     python log.py clear --date D --yes
     python log.py import FILE [--date D]
     python log.py export [--date D | --all] [--out DIR]
     python log.py day [DATE]
+    python log.py week [START_DATE]
+    python log.py backup [--keep N]
     python log.py food-add --name NAME --data JSON_OR_FILE
     python log.py food-update --name NAME --data JSON_OR_FILE
     python log.py food-remove NAME
@@ -18,8 +22,8 @@ Usage (from the repo root):
 
 Notes:
   - Weights are in the catalog's `serving_size` units (grams for foods
-    measured by weight, one unit for whole-portion entries); default
-    1 = one serving.
+    measured by weight, one unit for whole-portion entries). Omit the
+    weight to log one serving (the food's serving_size).
   - When a food appears more than once in a meal (e.g. two servings with
     different weights), commands that could match several rows refuse and
     list the matches; pass --weight N to pick one, or --all to take every.
@@ -37,12 +41,13 @@ import difflib
 import json
 import re
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from bin.db import (
     add_food_entry,
     add_meal_item,
+    backup_db,
     clear_day,
     daily_totals,
     day_items,
@@ -51,6 +56,7 @@ from bin.db import (
     get_connection,
     item_weights,
     load_day,
+    rename_meal,
     remove_food,
     remove_item,
     remove_meal,
@@ -60,6 +66,7 @@ from bin.db import (
 
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_MEAL = "Miscellaneous"
+BACKUP_DIR = REPO_ROOT / "data" / "backups"
 
 
 def parse_date(s: str | None) -> str:
@@ -74,6 +81,34 @@ def _shown(w) -> int | float:
     """Normalise a stored weight so 1.0 and 1 compare equal."""
     w = float(w)
     return int(w) if w.is_integer() else w
+
+
+def _serving_size_of(conn, food_name: str) -> float | None:
+    """The catalog serving_size for a food (None if uncatalogued or a stub)."""
+    row = conn.execute("SELECT serving_size FROM foods WHERE name = ?",
+                       (food_name,)).fetchone()
+    return row["serving_size"] if row else None
+
+
+def _fmt_weight(w, serving_size) -> str:
+    """Human-readable weight: grams for gram-measured foods, serving
+    counts for whole-portion entries (serving_size 1)."""
+    shown = _shown(w)
+    if serving_size is None:
+        return f"{shown} (no nutrition data yet)"
+    if serving_size == 1:
+        return f"{shown} serving(s)"
+    return f"{shown} g ({w / serving_size:g} serving(s))"
+
+
+def _default_weight(conn, food_name: str, weight) -> float:
+    """Resolve a possibly-missing weight: one serving's worth."""
+    if weight is not None:
+        if weight < 0:
+            raise SystemExit("Weight must be >= 0.")
+        return weight
+    size = _serving_size_of(conn, food_name)
+    return float(size) if size is not None else 1.0
 
 
 def _suggest_close(conn, name: str) -> None:
@@ -103,13 +138,35 @@ def _day_totals_line(conn, day: str) -> None:
 
 def cmd_add(conn, args) -> None:
     day = parse_date(args.date)
-    if args.weight < 0:
-        raise SystemExit("Weight must be >= 0.")
     try:
-        add_meal_item(conn, day, args.meal, args.food, args.weight)
+        weight = _default_weight(conn, args.food, args.weight)
+        add_meal_item(conn, day, args.meal, args.food, weight)
     except LookupError:
         _suggest_close(conn, args.food)
-    print(f"Added {args.food!r} ({args.weight:g} serving(s)) to {args.meal!r} on {day}.")
+    print(f"Added {args.food!r} "
+          f"({_fmt_weight(weight, _serving_size_of(conn, args.food))}) "
+          f"to {args.meal!r} on {day}.")
+    _day_totals_line(conn, day)
+
+
+def cmd_meal(conn, args) -> None:
+    day = parse_date(args.date)
+    added = 0
+    for spec in args.items:
+        parts = spec.split()
+        if not parts:
+            continue
+        if len(parts) > 1 and re.fullmatch(r"\d+(\.\d+)?", parts[-1]):
+            food, weight = " ".join(parts[:-1]), float(parts[-1])
+        else:
+            food, weight = " ".join(parts), None
+        try:
+            w = _default_weight(conn, food, weight)
+            add_meal_item(conn, day, args.meal_name, food, w)
+            added += 1
+        except LookupError:
+            _suggest_close(conn, food)
+    print(f"Logged {added} item(s) to {args.meal_name!r} on {day}.")
     _day_totals_line(conn, day)
 
 
@@ -151,6 +208,16 @@ def cmd_move(conn, args) -> None:
         add_meal_item(conn, day, args.to, args.food, w)
     print(f"Moved {args.food!r} from {args.meal!r} to {args.to!r} on {day} "
           f"({', '.join(f'{_shown(w)}' for w in weights)}).")
+
+
+def cmd_rename_meal(conn, args) -> None:
+    try:
+        n = rename_meal(conn, args.date, args.name_from, args.name_to)
+    except LookupError as e:
+        raise SystemExit(str(e))
+    scope = f" on {args.date}" if args.date else " (all days)"
+    print(f"Renamed meal {args.name_from!r} to {args.name_to!r}{scope}: "
+          f"{n} item(s) affected.")
 
 
 def cmd_remove_meal(conn, args) -> None:
@@ -279,11 +346,54 @@ def cmd_day(conn, args) -> None:
     if not meals:
         print(f"No diary entries for {day}.")
         return
+    sizes = {r["name"]: r["serving_size"]
+             for r in conn.execute("SELECT name, serving_size FROM foods")}
     for m in meals:
         print(f"--- {m['name']}")
         for it in m["foods"]:
-            print(f"  {it['food']}  ({_shown(it['weight'])} serving(s))")
+            print(f"  {it['food']}  "
+                  f"({_fmt_weight(it['weight'], sizes.get(it['food']))})")
     _day_totals_line(conn, day)
+
+
+def cmd_week(conn, args) -> None:
+    start = parse_date(args.date)
+    d0 = datetime.strptime(start, "%Y%m%d").date()
+    totals, missing = daily_totals(conn)
+    print(f"Week of {start}:")
+    print(f"  {'date':<10}{'kcal':>9}{'protein':>9}{'fat':>8}{'carbs':>8}")
+    week = dict(calories=0.0, protein=0.0, fat=0.0, carbs=0.0)
+    logged = 0
+    for i in range(7):
+        d = (d0 + timedelta(days=i)).strftime("%Y%m%d")
+        t = totals.get(d)
+        if t:
+            logged += 1
+            for k in week:
+                week[k] += t[k]
+            print(f"  {d:<10}{t['calories']:9.1f}{t['protein']:9.1f}"
+                  f"{t['fat']:8.1f}{t['carbs']:8.1f}")
+        else:
+            print(f"  {d:<10}{'—':>9}{'—':>9}{'—':>8}{'—':>8}")
+    if logged:
+        print(f"  Week total: {week['calories']:.1f} kcal, "
+              f"{week['protein']:.1f}g protein, {week['fat']:.1f}g fat, "
+              f"{week['carbs']:.1f}g carbs")
+        print(f"  Average per logged day ({logged}/7): "
+              f"{week['calories'] / logged:.1f} kcal")
+    else:
+        print("  No logged days in this week.")
+    for name, n in missing:
+        print(f"Warning: no nutritional data for '{name}' (x{n})")
+
+
+def cmd_backup(conn, args) -> None:
+    dest = BACKUP_DIR / f"food_diary-{datetime.now():%Y%m%d-%H%M%S}.db"
+    backup_db(conn, dest)
+    kept = sorted(BACKUP_DIR.glob("food_diary-*.db"))
+    for old in kept[:-args.keep]:
+        old.unlink()
+    print(f"Backed up to {dest} ({len(kept)} backup(s) kept).")
 
 
 def _load_food_data(s: str) -> dict:
@@ -351,11 +461,18 @@ def main() -> None:
 
     p_add = sub.add_parser("add", help="add a food to a diary day")
     p_add.add_argument("food", help="exact food name from the catalog")
-    p_add.add_argument("weight", nargs="?", type=float, default=1.0,
-                       help="amount in serving units (default 1)")
+    p_add.add_argument("weight", nargs="?", type=float, default=None,
+                       help="amount in the catalog's serving_size units "
+                            "(default: one serving)")
     p_add.add_argument("--date", help="YYYYMMDD (default: today)")
     p_add.add_argument("--meal", default=DEFAULT_MEAL,
                        help=f"meal name (default: {DEFAULT_MEAL})")
+
+    p_meal = sub.add_parser("meal", help="log a whole meal in one call")
+    p_meal.add_argument("meal_name", help="meal name")
+    p_meal.add_argument("items", nargs="+",
+                        help='one or more "FOOD [weight]" specs, e.g. "Bulgogi 80"')
+    p_meal.add_argument("--date", help="YYYYMMDD (default: today)")
 
     p_sw = sub.add_parser("set-weight", help="change an item's weight")
     p_sw.add_argument("food", help="food name in the meal")
@@ -382,6 +499,12 @@ def main() -> None:
     p_mv.add_argument("--date", help="YYYYMMDD (default: today)")
     p_mv.add_argument("--meal", default=DEFAULT_MEAL, help="source meal name")
 
+    p_rn = sub.add_parser("rename-meal",
+                          help="rename a meal (merges if the target exists)")
+    p_rn.add_argument("name_from", help="current meal name")
+    p_rn.add_argument("name_to", help="new meal name")
+    p_rn.add_argument("--date", help="YYYYMMDD; omit to rename on every day")
+
     p_rmmeal = sub.add_parser("remove-meal", help="remove a whole meal")
     p_rmmeal.add_argument("meal", help="meal name")
     p_rmmeal.add_argument("--date", help="YYYYMMDD (default: today)")
@@ -402,6 +525,14 @@ def main() -> None:
 
     p_day = sub.add_parser("day", help="show a diary day from the database")
     p_day.add_argument("date", nargs="?", help="YYYYMMDD (default: today)")
+
+    p_week = sub.add_parser("week", help="show a 7-day window of daily totals")
+    p_week.add_argument("date", nargs="?",
+                        help="first day of the window YYYYMMDD (default: today)")
+
+    p_bk = sub.add_parser("backup", help="write an online backup of the database")
+    p_bk.add_argument("--keep", type=int, default=20,
+                      help="number of backups to keep (default 20)")
 
     p_fadd = sub.add_parser("food-add", help="add a food to the catalog")
     p_fadd.add_argument("--name", required=True)
@@ -424,14 +555,18 @@ def main() -> None:
     try:
         {
             "add": cmd_add,
+            "meal": cmd_meal,
             "set-weight": cmd_set_weight,
             "remove": cmd_remove,
             "move": cmd_move,
+            "rename-meal": cmd_rename_meal,
             "remove-meal": cmd_remove_meal,
             "clear": cmd_clear,
             "import": cmd_import,
             "export": cmd_export,
             "day": cmd_day,
+            "week": cmd_week,
+            "backup": cmd_backup,
             "food-add": cmd_food_add,
             "food-update": cmd_food_update,
             "food-remove": cmd_food_remove,

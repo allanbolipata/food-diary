@@ -6,7 +6,9 @@ Usage (from the repo root):
 
 Without --save the charts are shown with matplotlib; with --save they are
 written as PNG files into DIR (useful on machines without a display).
-Totals include uneaten meals (same semantics as daily_totals).
+Totals include uneaten meals (same semantics as daily_totals). Each chart
+also shows a dashed 7-day rolling average taken over the last seven
+*logged* days, so gap days are not treated as zero.
 """
 
 import argparse
@@ -15,6 +17,14 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 from bin.db import daily_totals, get_connection
+
+
+def moving_avg(values: list, window: int = 7) -> list:
+    """Trailing moving average; early points average over what exists."""
+    return [
+        sum(values[max(0, i - window + 1):i + 1]) / min(i + 1, window)
+        for i in range(len(values))
+    ]
 
 
 def main() -> None:
@@ -65,6 +75,13 @@ def main() -> None:
     ax1.plot(sorted_dates, protein, label="Protein (g)", marker="o", color="blue")
     ax1.plot(sorted_dates, fat, label="Fat (g)", marker="o", color="red")
     ax1.plot(sorted_dates, carbs, label="Carbs (g)", marker="o", color="green")
+    for values, color, label in (
+        (moving_avg(protein), "blue", "Protein 7-day avg"),
+        (moving_avg(fat), "red", "Fat 7-day avg"),
+        (moving_avg(carbs), "green", "Carbs 7-day avg"),
+    ):
+        ax1.plot(sorted_dates, values, label=label, linestyle="--",
+                 alpha=0.7, color=color)
     ax1.set_title("Daily Nutritional Trends: Protein, Fat, and Carbs", fontsize=16)
     ax1.set_xlabel("Date (YYYYMMDD)", fontsize=14)
     ax1.set_ylabel("Grams", fontsize=14)
@@ -76,6 +93,8 @@ def main() -> None:
 
     fig2, ax2 = plt.subplots(figsize=(10, 6))
     ax2.plot(sorted_dates, calories, label="Calories", marker="o", color="orange")
+    ax2.plot(sorted_dates, moving_avg(calories), label="Calories 7-day avg",
+             linestyle="--", alpha=0.7, color="orange")
     ax2.set_title("Daily Calorie Trends", fontsize=16)
     ax2.set_xlabel("Date (YYYYMMDD)", fontsize=14)
     ax2.set_ylabel("Calories", fontsize=14)

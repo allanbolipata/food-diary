@@ -195,13 +195,39 @@ def flatten_food(entry: dict) -> dict:
     }
 
 
+REQUIRED_MACRO_PATHS = (
+    ("calories",),
+    ("protein",),
+    ("fat", "total"),
+    ("carbs", "total"),
+    ("carbs", "dietary_fiber", "total"),
+    ("sodium", "total"),
+)
+
+
+def _validate_food_entry(entry: dict) -> None:
+    """Raise ``ValueError`` if the entry lacks data the readers require
+    (``bin.Food`` indexes these keys strictly)."""
+    name = entry.get("name") or "<unnamed>"
+    size = entry.get("serving_size")
+    if not size:
+        raise ValueError(f"'{name}': serving_size is required and must be > 0.")
+    nd = entry.get("nutritional_data") or {}
+    for path in REQUIRED_MACRO_PATHS:
+        cur = nd
+        for key in path:
+            if not isinstance(cur, dict) or cur.get(key) is None:
+                raise ValueError(
+                    f"'{name}': nutritional_data is missing {'.'.join(path)}.")
+            cur = cur[key]
+
+
 def add_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
     """Insert one catalog entry (original food.json shape).
     Raises ``ValueError`` if the name is already in the catalog
-    (use :func:`update_food_entry`)."""
-    name = entry.get("name")
-    if not name:
-        raise ValueError("Entry has no 'name'.")
+    (use :func:`update_food_entry`) or the entry lacks required data."""
+    _validate_food_entry(entry)
+    name = entry["name"]
     if conn.execute("SELECT 1 FROM foods WHERE name = ?", (name,)).fetchone():
         raise ValueError(f"Food '{name}' is already in the catalog (use food-update).")
     conn.execute(
@@ -212,8 +238,8 @@ def add_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
                           sugar_alcohols_total, cholesterol, raw_json)
         VALUES (:name, :serving_size, :calories, :protein, :fat_total,
                 :fat_saturated, :sodium, :carbs_total, :fiber_total,
-                :sugars_total, :added_sugars_total, :sugar_alcohols_total,
-                :cholesterol, :raw_json)
+                :sugars_total, :added_sugars_total,
+                :sugar_alcohols_total, :cholesterol, :raw_json)
         """,
         {"name": name, **flatten_food(entry), "raw_json": json.dumps(entry)},
     )
@@ -222,10 +248,10 @@ def add_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
 
 def update_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
     """Replace the catalog entry with this name (original food.json shape).
-    Raises ``LookupError`` if the name is not in the catalog."""
-    name = entry.get("name")
-    if not name:
-        raise ValueError("Entry has no 'name'.")
+    Raises ``ValueError`` if the entry lacks required data and
+    ``LookupError`` if the name is not in the catalog."""
+    _validate_food_entry(entry)
+    name = entry["name"]
     row = conn.execute("SELECT id FROM foods WHERE name = ?", (name,)).fetchone()
     if row is None:
         raise LookupError(name)
@@ -235,7 +261,8 @@ def update_food_entry(conn: sqlite3.Connection, entry: dict) -> None:
                protein = :protein, fat_total = :fat_total,
                fat_saturated = :fat_saturated, sodium = :sodium,
                carbs_total = :carbs_total, fiber_total = :fiber_total,
-               sugars_total = :sugars_total, added_sugars_total = :added_sugars_total,
+               sugars_total = :sugars_total,
+               added_sugars_total = :added_sugars_total,
                sugar_alcohols_total = :sugar_alcohols_total,
                cholesterol = :cholesterol, raw_json = :raw_json
         WHERE id = :id
@@ -373,6 +400,46 @@ def remove_meal(conn: sqlite3.Connection, date: str, meal_name: str) -> int:
     return 1
 
 
+def rename_meal(conn: sqlite3.Connection, date, from_name: str, to_name: str) -> int:
+    """Rename meal(s) called ``from_name`` to ``to_name``.
+
+    With ``date``: one day. Without: every day. If a meal already exists
+    with the target name on that day, the source meal's items are merged
+    into it and the source row is deleted. Returns the number of items
+    affected. Raises ``LookupError`` if no such meal exists.
+    """
+    if from_name == to_name:
+        return 0
+    if date is None:
+        src = conn.execute(
+            "SELECT id, date FROM meals WHERE name = ?", (from_name,)).fetchall()
+    else:
+        src = conn.execute(
+            "SELECT id, date FROM meals WHERE date = ? AND name = ?",
+            (date, from_name)).fetchall()
+    if not src:
+        where = f" on {date}" if date else ""
+        raise LookupError(f"No meal {from_name!r}{where}.")
+    moved = 0
+    for m in src:
+        tgt = conn.execute(
+            "SELECT id FROM meals WHERE date = ? AND name = ?",
+            (m["date"], to_name)).fetchone()
+        if tgt:
+            n = conn.execute(
+                "UPDATE meal_items SET meal_id = ? WHERE meal_id = ?",
+                (tgt["id"], m["id"])).rowcount
+            conn.execute("DELETE FROM meals WHERE id = ?", (m["id"],))
+        else:
+            conn.execute("UPDATE meals SET name = ? WHERE id = ?", (to_name, m["id"]))
+            n = conn.execute(
+                "SELECT COUNT(*) FROM meal_items WHERE meal_id = ?",
+                (m["id"],)).fetchone()[0]
+        moved += n
+    conn.commit()
+    return moved
+
+
 def clear_day(conn: sqlite3.Connection, date: str) -> tuple:
     """Remove every meal for one day. Returns (meals_removed, items_removed)."""
     meals = conn.execute("SELECT id FROM meals WHERE date = ?", (date,)).fetchall()
@@ -450,3 +517,15 @@ def daily_totals(conn: sqlite3.Connection) -> tuple:
         )
     ]
     return totals, missing
+
+
+def backup_db(conn: sqlite3.Connection, dest: Path) -> Path:
+    """Write an online backup of the database to ``dest`` (a regular
+    SQLite file). Creates parent directories. Returns ``dest``."""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dst = sqlite3.connect(dest)
+    try:
+        conn.backup(dst)
+    finally:
+        dst.close()
+    return dest

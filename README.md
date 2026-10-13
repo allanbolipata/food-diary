@@ -15,18 +15,24 @@ is the single source of truth. Use `log.py export` to produce JSON of any day
 - **`eaten.py [YYYYMMDD]`** — prints per-meal detail plus day totals.
   Mealtimes whose name contains "uneaten" are skipped (e.g. "Uneaten
   Lunch").
-- **`trend.py`** — plots daily calorie/protein trends from the database.
-  `--from` / `--to` limit the range, `--save FILE.png` writes a headless PNG.
+- **`trend.py`** — plots daily macro trends from the database (run with the
+  project venv: `.venv/bin/python trend.py`). `--from` / `--to` limit the
+  range, `--save DIR` writes headless PNGs (`macros.png`, `calories.png`);
+  each chart includes a 7-day rolling average.
 - **`log.py`** — the maintenance CLI (below).
 - **`bin/`** — Python helpers: `db.py` (the SQLite layer), `food_obj.py`,
   `recipe_obj.py`, `helpers.py`.
+- **`tests/`** — unit tests for the database layer; run from the repo root
+  with `python -m unittest discover` (no third-party dependencies).
 - **`data/food_diary.db`** — the database:
   - `foods` — the catalog. Nutritional values are flattened into columns for
     SQL aggregation, and the original JSON document is kept in `raw_json`, so
     the data is lossless. Rows without `raw_json` are "stub" entries (name
     only, no nutrition data).
   - `meals` — one row per meal per day.
-  - `meal_items` — one row per food entry in a meal (`weight` is in grams).
+  - `meal_items` — one row per food entry in a meal (`weight` is in the
+    food's `serving_size` units).
+- **`data/backups/`** — online backups made by `log.py backup` (git-ignored).
 - **`scripts/check_calories.py`** / **`scripts/check_diary_calories.py`** —
   verify that stored calories match the macros (4/4/9 cal per gram, plus
   2.5 for sugar alcohols). Default tolerance 40 cal; alcohol-containing
@@ -39,11 +45,15 @@ From the repo root:
 ```bash
 # Record / fix a day (weights are in the catalog's `serving_size` units:
 # grams for foods measured by weight, one unit for whole-portion entries;
-# default meal is "Miscellaneous"; default date is today)
+# omit the weight to log one serving; default meal is "Miscellaneous";
+# default date is today)
 python log.py add "Oikos Triple Zero Strawberry Greek Yogurt" 150 --meal Breakfast
+python log.py meal "Korean BBQ" "Bulgogi 80" "White Rice 180" "Blue Ribbon Orange Popsicle"
 python log.py set-weight "Oikos ..." --weight 200 --was 150
 python log.py remove "Oikos ..." --weight 150
 python log.py move "Oikos ..." --to Lunch
+python log.py rename-meal "Makeshift Sanwich" "Makeshift Sandwich"   # all days
+python log.py rename-meal Lunch Dinner --date 20261012               # one day
 python log.py remove-meal Lunch
 python log.py clear --date 20261012 --yes
 
@@ -51,14 +61,18 @@ python log.py clear --date 20261012 --yes
 # several rows refuse and list the matches; pass --weight N to pick one,
 # or --all to take every.
 
-# Show / export
+# Show / export / backup
 python log.py day 20261012
-python log.py export --date 20261012            # prints JSON to stdout
+python log.py week 20261006                    # 7-day window + weekly totals
+python log.py export --date 20261012           # prints JSON to stdout
 python log.py export --all --out /tmp/diary_export   # one <date>.json per day
+python log.py backup [--keep 20]               # data/backups/food_diary-<ts>.db
 
-# Catalog maintenance
-python log.py food-add --name "New Food" --data '{"name": "New Food", "serving_size": 100, "nutritional_data": {"calories": 100, "protein": 10, "fat": {"total": 2}, "carbs": {"total": 5}}}'
-python log.py food-update --name "New Food" --data '...'
+# Catalog maintenance (a full entry shape is data/template_food.json;
+# entries missing serving_size, calories, protein, fat, carbs, fiber or
+# sodium are rejected)
+python log.py food-add --name "New Food" --data @data/template_food.json
+python log.py food-update --name "New Food" --data @data/template_food.json
 python log.py food-remove "New Food"     # refuses if the food is used in the diary
 python log.py food-search yogurt
 ```
@@ -79,14 +93,20 @@ It never writes the file.
 - Meals whose name contains "uneaten" are skipped by `eaten.py` but counted
   by `app.py` and `trend.py` (they contribute zero anyway, since their items
   have weight 0).
+- Zero-weight items are how a regular meal is logged on a day you don't eat
+  it (e.g. "Meal Prep Rice" at 0 g); item counts therefore overstate intake,
+  so filter on `weight > 0` when analysing frequency.
 - `bin/db.py` exposes the database helpers (`daily_totals`, `load_day`,
   `day_items`, `load_foods`, `add_meal_item`, `item_weights`,
-  `set_item_weight`, `remove_item`, `remove_meal`, `clear_day`,
-  `day_json_text`, `export_day_json`, `catalog_entries`,
-  `add_food_entry`, `update_food_entry`, `remove_food`, `get_connection`).
+  `set_item_weight`, `remove_item`, `remove_meal`, `rename_meal`,
+  `clear_day`, `day_json_text`, `export_day_json`, `catalog_entries`,
+  `add_food_entry`, `update_food_entry`, `remove_food`, `backup_db`,
+  `get_connection`).
 - The catalog contains two Factor_ items with the same base name: "Factor
   Mushroom Mozzarella Melt Burger" (371 g) and "Factor Mushroom Mozzarella
   Melt Burger (340 g)" — they are distinct products, so the names must not be
   de-duplicated.
 - `requirements.txt` lists the only third-party dependency: `matplotlib`
-  (needed by `trend.py`).
+  (needed by `trend.py`); it lives in the project venv (`.venv`).
+- Backups: `log.py backup` writes an online copy to `data/backups/`
+  (git-ignored); git commits of the database are also restore points.
