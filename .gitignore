@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 hermes.log
 data/backups/
+data/food_diary.db
