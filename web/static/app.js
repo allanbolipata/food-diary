@@ -469,7 +469,7 @@ async function saveTrendTargets() {
   }
 }
 
-function drawLineChart(days, seriesList, minSpan = 1, targets = []) {
+function drawLineChart(days, seriesList, minSpan = 1, targets = [], unit = "") {
   const W = 940, H = 300;
   const padL = 52, padR = 18, padT = 14, padB = 38;
   const iw = W - padL - padR, ih = H - padT - padB;
@@ -508,7 +508,8 @@ function drawLineChart(days, seriesList, minSpan = 1, targets = []) {
     svg += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
     if (days.length <= 120) {
       svg += days.map((d, i) =>
-        `<circle cx="${x(i).toFixed(1)}" cy="${y(d[s.key]).toFixed(1)}" r="2.5" fill="${s.color}"/>`).join("");
+        `<circle cx="${x(i).toFixed(1)}" cy="${y(d[s.key]).toFixed(1)}" r="2.5" fill="${s.color}" ` +
+        `data-date="${d.date}" data-label="${s.label}" data-value="${d[s.key]} ${unit}"/>`).join("");
     }
   }
   svg += "</svg>";
@@ -529,8 +530,8 @@ function drawTrends(days) {
     $("#chart-note").textContent = "No logged days in this range.";
     return;
   }
-  $("#chart-cal").innerHTML = drawLineChart(days, SERIES.cal, 1, trendTargets);
-  $("#chart-macro").innerHTML = drawLineChart(days, SERIES.macro, 50);
+  $("#chart-cal").innerHTML = drawLineChart(days, SERIES.cal, 1, trendTargets, "cal");
+  $("#chart-macro").innerHTML = drawLineChart(days, SERIES.macro, 50, [], "g");
   $("#chart-note").textContent =
     `${days.length} logged day(s). Days with no meals are omitted.`;
 }
@@ -584,6 +585,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // trends
   setTrendRange(7, true);
+
+  // chart hover tooltips (delegated — survives chart redraws)
+  const tip = document.createElement("div");
+  tip.className = "chart-tip";
+  tip.hidden = true;
+  document.body.appendChild(tip);
+  const moveTip = (e) => {
+    tip.hidden = false;
+    tip.style.left = `${e.clientX + 14}px`;
+    tip.style.top = `${e.clientY + 14}px`;
+  };
+  document.addEventListener("mouseover", (e) => {
+    const c = e.target.closest && e.target.closest("circle[data-value]");
+    if (c) {
+      const d = c.dataset.date;
+      tip.textContent = `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)} · ${c.dataset.label}: ${c.dataset.value}`;
+      moveTip(e);
+    } else if (!tip.hidden) {
+      tip.hidden = true;
+    }
+  });
+  document.addEventListener("mousemove", (e) => {
+    if (!tip.hidden) moveTip(e);
+  });
+  window.addEventListener("scroll", () => { tip.hidden = true; });
+
   for (const id of ["#trend-target-1", "#trend-target-2"]) {
     $(id).addEventListener("change", saveTrendTargets);
   }

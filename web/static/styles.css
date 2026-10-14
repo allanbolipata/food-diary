@@ -392,6 +392,21 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
 .chart .target.low { stroke: #7d9bbd; }
 .chart .target-label { font-size: 11px; fill: var(--danger); font-weight: 650; }
 .chart .target-label.low { fill: #7d9bbd; }
+.chart circle { cursor: crosshair; }
+.chart circle:hover { r: 5; }
+
+.chart-tip {
+  position: fixed;
+  background: var(--ink);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: var(--shadow);
+  z-index: 300;
+}
 .targets {
   display: inline-flex;
   align-items: center;
