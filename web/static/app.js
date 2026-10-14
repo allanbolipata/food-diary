@@ -25,6 +25,11 @@ const todayStamp = () => {
 };
 const stampToInput = (s) => `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
 const inputToStamp = (v) => v.replace(/-/g, "");
+const shiftDate = (s, delta) => {
+  const d = new Date(+s.slice(0, 4), +s.slice(4, 6) - 1, +s.slice(6, 8));
+  d.setDate(d.getDate() + delta);
+  return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
+};
 
 let toastTimer = null;
 function toast(msg, isError = false) {
@@ -574,6 +579,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // day log
+  const bumpDay = (delta) => {
+    const v = inputToStamp($("#day-date").value);
+    if (/^\d{8}$/.test(v)) loadDay(shiftDate(v, delta)).catch(onLoadError);
+  };
+  $("#day-prev").addEventListener("click", () => bumpDay(-1));
+  $("#day-next").addEventListener("click", () => bumpDay(1));
   $("#day-date").addEventListener("change", () => {
     const v = inputToStamp($("#day-date").value);
     if (/^\d{8}$/.test(v)) loadDay(v).catch(onLoadError);

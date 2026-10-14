@@ -197,6 +197,20 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
   margin-bottom: 18px;
   flex-wrap: wrap;
 }
+.day-nav {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 30px;
+  line-height: 1;
+  padding: 3px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.day-nav:hover {
+  color: var(--ink);
+  background: var(--card);
+}
 
 #day-date {
   padding: 9px 12px;
