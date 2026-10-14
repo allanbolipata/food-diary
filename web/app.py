@@ -335,6 +335,7 @@ def trends(
 
 class TrendTargetsIn(BaseModel):
     trend_targets: list[float] = Field(default_factory=list, max_length=2)
+    protein_target: float | None = None
 
 
 def _ensure_settings_table(conn):
@@ -366,15 +367,24 @@ def put_settings(p: TrendTargetsIn):
     for v in p.trend_targets:
         if v < 0:
             raise HTTPException(status_code=422, detail="targets must be non-negative")
-    payload = json.dumps([round(float(v), 1) for v in p.trend_targets])
+    if p.protein_target is not None and p.protein_target < 0:
+        raise HTTPException(status_code=422, detail="protein_target must be non-negative")
     conn = get_connection()
     try:
         _ensure_settings_table(conn)
         conn.execute(
             "INSERT INTO settings(key, value) VALUES('trend_targets', ?) "
             "ON CONFLICT(key) DO UPDATE SET value=excluded.value",
-            (payload,),
+            (json.dumps([round(float(v), 1) for v in p.trend_targets]),),
         )
+        if p.protein_target is not None:
+            conn.execute(
+                "INSERT INTO settings(key, value) VALUES('protein_target', ?) "
+                "ON CONFLICT(key) DO UPDATE SET value=excluded.value",
+                (json.dumps(round(float(p.protein_target), 1)),),
+            )
+        else:
+            conn.execute("DELETE FROM settings WHERE key='protein_target'")
         conn.commit()
         return get_settings()
     finally:

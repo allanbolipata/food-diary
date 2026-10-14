@@ -396,6 +396,7 @@ function updateServings() {
 let trendsLoaded = false;
 let trendDays = [];
 let trendTargets = [1800, 2000];
+let proteinTarget = 100;
 
 const SERIES = {
   cal: [{ key: "calories", label: "Calories", color: "#2f9e55" }],
@@ -440,6 +441,8 @@ async function loadTrends() {
     const t = Array.isArray(saved.trend_targets) ? saved.trend_targets.map(Number) : null;
     trendTargets = t && t.length ? t : [1800, 2000];
     syncTargetInputs();
+    proteinTarget = typeof saved.protein_target === "number" ? saved.protein_target : 100;
+    $("#trend-protein-target").value = proteinTarget;
   }
   const data = await r.json();
   trendDays = data.days;
@@ -455,13 +458,16 @@ async function saveTrendTargets() {
   const vals = [$("#trend-target-1").value, $("#trend-target-2").value]
     .map((v) => parseFloat(v))
     .filter((v) => Number.isFinite(v) && v >= 0);
+  const pt = parseFloat($("#trend-protein-target").value);
+  const protein = Number.isFinite(pt) && pt >= 0 ? pt : null;
   trendTargets = vals;
+  proteinTarget = protein ?? 0;
   drawTrends(trendDays);
   try {
     const r = await fetch("/api/settings", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ trend_targets: vals }),
+      body: JSON.stringify({ trend_targets: vals, protein_target: protein }),
     });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
   } catch (e) {
@@ -531,7 +537,7 @@ function drawTrends(days) {
     return;
   }
   $("#chart-cal").innerHTML = drawLineChart(days, SERIES.cal, 1, trendTargets, "cal");
-  $("#chart-macro").innerHTML = drawLineChart(days, SERIES.macro, 50, [], "g");
+  $("#chart-macro").innerHTML = drawLineChart(days, SERIES.macro, 50, proteinTarget > 0 ? [proteinTarget] : [], "g");
   $("#chart-note").textContent =
     `${days.length} logged day(s). Days with no meals are omitted.`;
 }
@@ -611,7 +617,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   window.addEventListener("scroll", () => { tip.hidden = true; });
 
-  for (const id of ["#trend-target-1", "#trend-target-2"]) {
+  for (const id of ["#trend-target-1", "#trend-target-2", "#trend-protein-target"]) {
     $(id).addEventListener("change", saveTrendTargets);
   }
   $("#trend-apply").addEventListener("click", () => {
