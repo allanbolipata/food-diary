@@ -26,6 +26,7 @@ from bin.db import (
     load_foods,
     remove_item,
 )
+from web.reject_log import append_reject
 
 app = FastAPI(title="Food Diary API", version="1.1")
 
@@ -43,7 +44,8 @@ app.add_middleware(
 @app.middleware("http")
 async def log_rejected_api_requests(request, call_next):
     """Log the body of rejected /api writes so client bugs (e.g. the
-    iPhone shortcut) can be diagnosed from `podman logs food-dashboard`."""
+    iPhone shortcut) can be diagnosed from `podman logs food-dashboard`
+    or from data/api_reject.log (survives without container access)."""
     body = b""
     if request.method in ("POST", "PUT", "PATCH"):
         body = await request.body()
@@ -55,6 +57,7 @@ async def log_rejected_api_requests(request, call_next):
             f"  body: {body.decode('utf-8', 'replace')[:800]}",
             flush=True,
         )
+        append_reject(request.method, request.url.path, response.status_code, body)
     return response
 
 DISPLAY_FIELDS = (

@@ -4,3 +4,4 @@ __pycache__/
 hermes.log
 data/backups/
 data/food_diary.db
+data/api_reject.log
