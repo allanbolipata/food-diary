@@ -363,7 +363,15 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
 }
 .plan-foot { margin-top: 10px; }
 .plan-foot .day-totals { margin-left: 0; }
-#plan-adhoc-toggle { margin: 2px 0 6px; }
+.adhoc-details { margin: 2px 0 6px; }
+.adhoc-details > summary {
+  cursor: pointer; font-size: 13px; font-weight: 600; color: var(--muted);
+  padding: 4px 0; list-style: none;   /* own marker below */
+}
+.adhoc-details > summary::before { content: "+ "; }
+.adhoc-details[open] > summary::before { content: "\2013 "; }
+.adhoc-details[open] > summary { color: var(--ink); }
+.adhoc-form { margin-top: 6px; }
 .adhoc-form { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; margin-top: 4px; }
 .adhoc-form .field { display: flex; flex-direction: column; gap: 4px; min-width: 84px; }
 .adhoc-form .field.grow { flex: 1 1 220px; }

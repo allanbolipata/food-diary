@@ -488,6 +488,7 @@ async function onAdhocAdd(ev) {
   hint.textContent = "";
   hint.classList.remove("error");
   for (const id of ["#adhoc-name", "#adhoc-cal", "#adhoc-weight"]) $(id).value = "";
+  $("#adhoc-details").open = false;  // collapsed again; basket keeps the estimate
   await refreshPlanTally();
 }
 
@@ -880,10 +881,8 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#plan-form").addEventListener("submit", onPlanAdd);
   $("#plan-food").addEventListener("input", onPlanFoodInput);
   $("#plan-food").addEventListener("blur", () => setTimeout(hidePlanAC, 150));
-  $("#plan-adhoc-toggle").addEventListener("click", () => {
-    const f = $("#adhoc-form");
-    f.hidden = !f.hidden;
-    if (!f.hidden) $("#adhoc-name").focus();
+  $("#adhoc-details").addEventListener("toggle", () => {
+    if ($("#adhoc-details").open) $("#adhoc-name").focus();
   });
   $("#adhoc-form").addEventListener("submit", onAdhocAdd);
   $("#plan-log-all").addEventListener("click", planLogAll);
