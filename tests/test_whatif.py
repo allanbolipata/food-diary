@@ -209,6 +209,37 @@ class TempDbWhatIfTest(unittest.TestCase):
         self.assertFalse(item["ad_hoc"])
         self.assertEqual(item["macros"], logged)
 
+    def test_day_view_has_meal_totals_and_supplementary(self):
+        """GET /api/days carries per-meal {calories,protein,fat,carbs}
+        totals and a day-level supplementary block (fiber, sodium, sat fat,
+        cholesterol, sugars, added sugars)."""
+        for food, w, meal in (("Basket A", 200.0, "Lunch"),
+                              ("Basket B", 50.0, "Lunch"),
+                              ("Basket A", 100.0, "Snack")):
+            r = self.client.post("/api/days/20261111/items",
+                                 json={"food": food, "weight": w, "meal": meal})
+            self.assertEqual(r.status_code, 201)
+        day = self.client.get("/api/days/20261111").json()
+
+        by_name = {m["name"]: m for m in day["meals"]}
+        self.assertEqual(by_name["Lunch"]["totals"],
+                         {"calories": 440.0, "protein": 40.0, "fat": 18.0, "carbs": 50.0})
+        self.assertEqual(by_name["Snack"]["totals"],
+                         {"calories": 120.0, "protein": 10.0, "fat": 5.0, "carbs": 10.0})
+        # day totals == sum of meal totals
+        self.assertEqual(day["totals"]["calories"], 560.0)
+        self.assertTrue(all(i["macros"] for m in day["meals"] for i in m["items"]))
+
+        # 4 servings total (A 200g=2, B 50g=1, A 100g=1). full_entry()
+        # carries per serving: sat fat 0.5, sugars 2.0, added 0, cholesterol 10.
+        s = day["supplementary"]
+        self.assertEqual(s["fiber"], 5.0)        # 2x1 + 2 + 1
+        self.assertEqual(s["sodium"], 1000.0)    # 3x200 + 400
+        self.assertEqual(s["saturated_fat"], 2.0)
+        self.assertEqual(s["sugars"], 8.0)
+        self.assertEqual(s["added_sugars"], 0.0)
+        self.assertEqual(s["cholesterol"], 40.0)
+
 
 if __name__ == "__main__":
     unittest.main()

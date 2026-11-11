@@ -231,6 +231,18 @@ function renderDay(day) {
   $("#tot-fat").textContent = fmt(day.totals.fat);
   $("#tot-carbs").textContent = fmt(day.totals.carbs);
 
+  // supplementary day totals (collapsed panel; brief peek in the summary)
+  const supp = day.supplementary || {};
+  const suppSet = (id, key) => { $(id).textContent = fmt(supp[key] ?? 0); };
+  suppSet("#tot-fiber", "fiber");
+  suppSet("#tot-sodium", "sodium");
+  suppSet("#tot-satfat", "saturated_fat");
+  suppSet("#tot-chol", "cholesterol");
+  suppSet("#tot-sugars", "sugars");
+  suppSet("#tot-addsugar", "added_sugars");
+  $("#supp-brief").textContent =
+    `\u2014 fiber ${fmt(supp.fiber ?? 0)} g \u00b7 sodium ${fmt(supp.sodium ?? 0)} mg`;
+
   // meal name suggestions for the log form
   const dl = $("#meal-names");
   dl.innerHTML = "";
@@ -243,8 +255,10 @@ function renderDay(day) {
   const wrap = $("#day-meals");
   wrap.innerHTML = "";
   for (const meal of day.meals) {
-    const mealCal = meal.items
-      .reduce((s, i) => s + (i.macros ? i.macros.calories : 0), 0);
+    const mt = meal.totals || {
+      calories: meal.items.reduce((s, i) => s + (i.macros ? i.macros.calories : 0), 0),
+      protein: 0, fat: 0, carbs: 0,
+    };
     const card = document.createElement("div");
     card.className = "meal-card";
     let rows = "";
@@ -266,11 +280,18 @@ function renderDay(day) {
                   data-food="${escapeHtml(item.food)}" data-meal="${escapeHtml(meal.name)}"
                   data-weight="${item.weight}">✕</button>
         </div>`;
+      if (item.macros) {  // per-item macro contribution line
+        const m = item.macros;
+        rows += `
+        <div class="item-contrib">${fmt(m.protein)}P · ${fmt(m.fat)}F · ${fmt(m.carbs)}C
+          · ${fmt(m.fiber)} fiber · ${fmt(m.sodium)} mg Na</div>`;
+      }
     }
     card.innerHTML = `
       <div class="meal-head">
         <span>${escapeHtml(meal.name)}</span>
-        <span class="meal-cal">${fmt(mealCal)} cal</span>
+        <span class="meal-cal">${fmt(mt.calories)} cal
+          <span class="meal-macros">${fmt(mt.protein)}P · ${fmt(mt.fat)}F · ${fmt(mt.carbs)}C</span></span>
       </div>
       ${rows}`;
     wrap.appendChild(card);

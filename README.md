@@ -100,12 +100,15 @@ Features:
   search (client-side instant + debounced server-side `q=` filter), and an
   "Add food" modal that validates required fields and rejects duplicates
   (409), mirroring the `log.py food-add` rules.
-- **Day log tab** — view a day's meals (date picker, default today) with
-  per-item weight/servings/macros and day totals; log foods into the day
-  with a search-as-you-type autocomplete over the catalog (the food must
-  already exist — it is looked up in the database; one serving is
-  pre-filled, matching `log.py add`); remove logged entries with the ✕ on
-  each row.
+- **Day log tab** — view a day's meals (date picker, default today): each
+  meal header shows its totals (calories + protein/fat/carbs), each entry
+  lists its macro contribution below the row, and day totals show as chips;
+  a collapsed "Supplementary" panel (click to open) adds fiber, sodium,
+  saturated fat, cholesterol, sugars and added sugars for the day. Log
+  foods into the day with a search-as-you-type autocomplete over the
+  catalog (the food must already exist — it is looked up in the database;
+  one serving is pre-filled, matching `log.py add`); remove logged entries
+  with the ✕ on each row.
 - **What-if basket** (Day log tab) — stage foods with weights and see
   per-item macros plus basket totals (cal/protein/fat/carbs/sodium) and a
   "this day so far → if logged" projection, tallied server-side by

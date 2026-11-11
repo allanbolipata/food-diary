@@ -223,6 +223,41 @@ def _macros_for(entry: dict, weight: float) -> dict:
     }
 
 
+def _opt_num(entry: dict, *paths: tuple) -> float:
+    """First nutritional_data value found among the candidate paths, else 0.
+
+    Catalog entries differ in shape (raw USDA JSON puts cholesterol under
+    "fat", entries built by this dashboard put it under "fat" too, older
+    test/CLI entries may put it top-level), so try each path in order.
+    """
+    nd = entry.get("nutritional_data") or {}
+    for path in paths:
+        cur = nd
+        for key in path:
+            if not isinstance(cur, dict) or cur.get(key) is None:
+                cur = None
+                break
+            cur = cur[key]
+        if isinstance(cur, (int, float)):
+            return float(cur)
+    return 0.0
+
+
+def _supp_for(entry: dict, weight: float) -> dict:
+    """Supplementary macros (sat fat / cholesterol / sugars / added sugars)
+    scaled the same way as _macros_for. Missing fields contribute 0."""
+    ss = float(entry["serving_size"])
+    scale = weight / ss
+    r = lambda v: round(v * scale, 1)
+    return {
+        "saturated_fat": r(_opt_num(entry, ("fat", "saturated_fat", "total"))),
+        "cholesterol": r(_opt_num(entry, ("fat", "cholesterol", "total"),
+                                  ("cholesterol", "total"), ("cholesterol",))),
+        "sugars": r(_opt_num(entry, ("carbs", "sugars", "total"))),
+        "added_sugars": r(_opt_num(entry, ("carbs", "sugars", "added_sugars", "total"))),
+    }
+
+
 @app.get("/api/days/{date}")
 def get_day(date: str):
     """One day's meals with per-item macros and day totals (empty meals omitted)."""
@@ -232,9 +267,12 @@ def get_day(date: str):
         meals = load_day(conn, date)
         foods = load_foods(conn)
         totals = {"calories": 0.0, "protein": 0.0, "fat": 0.0, "carbs": 0.0}
+        supp = {"fiber": 0.0, "sodium": 0.0, "saturated_fat": 0.0,
+                "cholesterol": 0.0, "sugars": 0.0, "added_sugars": 0.0}
         out_meals = []
         for meal in meals:
             items = []
+            meal_totals = {"calories": 0.0, "protein": 0.0, "fat": 0.0, "carbs": 0.0}
             for f in meal["foods"]:
                 entry = foods.get(f["food"])
                 if entry is None:
@@ -246,15 +284,23 @@ def get_day(date: str):
                 macros = _macros_for(entry, f["weight"])
                 for k in totals:
                     totals[k] += macros[k]
+                    meal_totals[k] += macros[k]
+                supp["fiber"] += macros["fiber"]
+                supp["sodium"] += macros["sodium"]
+                item_supp = _supp_for(entry, f["weight"])
+                for k in ("saturated_fat", "cholesterol", "sugars", "added_sugars"):
+                    supp[k] += item_supp[k]
                 items.append(
                     {"food": f["food"], "weight": f["weight"],
                      "serving_size": float(entry["serving_size"]),
                      "macros": macros, "stub": False}
                 )
             if items:
-                out_meals.append({"name": meal["name"], "items": items})
+                out_meals.append({"name": meal["name"], "items": items,
+                                  "totals": {k: round(v, 1) for k, v in meal_totals.items()}})
         return {"date": date, "meals": out_meals,
-                "totals": {k: round(v, 1) for k, v in totals.items()}}
+                "totals": {k: round(v, 1) for k, v in totals.items()},
+                "supplementary": {k: round(v, 1) for k, v in supp.items()}}
     finally:
         conn.close()
 

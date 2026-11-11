@@ -314,6 +314,13 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
   font-size: 14.5px;
 }
 .meal-head .meal-cal { font-weight: 500; color: var(--muted); font-size: 13px; }
+.meal-head .meal-macros { margin-left: 10px; font-weight: 400; }
+
+.day-supp { margin: 4px 0 10px; }
+.day-supp > summary { cursor: pointer; font-size: 12.5px; font-weight: 600; color: var(--muted); padding: 4px 0; }
+.day-supp[open] > summary { color: var(--ink); }
+.supp-brief { font-weight: 400; color: var(--muted); }
+.day-supp .supp-chips { margin: 8px 0 0; }
 
 .item-row {
   display: flex;
@@ -324,6 +331,16 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
   font-size: 14px;
 }
 .item-row:last-child { border-bottom: none; }
+/* when an item is followed by its contribution line, the divider moves below it */
+.item-row:has(+ .item-contrib) { border-bottom: none; padding-bottom: 3px; }
+.item-contrib {
+  padding: 0 16px 9px;
+  font-size: 12.5px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  border-bottom: 1px solid var(--line);
+}
+.item-contrib:last-child { border-bottom: none; }
 .item-row .item-name { flex: 1; font-weight: 550; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .item-row .item-weight { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .item-row .item-cal { white-space: nowrap; font-variant-numeric: tabular-nums; min-width: 74px; text-align: right; }
