@@ -92,7 +92,12 @@ class FoodIn(BaseModel):
     sugars_total: float = Field(default=0.0, ge=0)
     added_sugars_total: float = Field(default=0.0, ge=0)
     sugar_alcohols_total: float = Field(default=0.0, ge=0)
-    sodium: float = Field(default=0.0, ge=0, description="milligrams")
+    sodium: float = Field(
+        default=0.0,
+        ge=0,
+        description="grams — the catalog's canonical sodium unit (USDA data); "
+                    "the dashboard forms accept mg and convert before POSTing",
+    )
     fat_saturated: float = Field(default=0.0, ge=0)
     cholesterol: float = Field(default=0.0, ge=0)
 
