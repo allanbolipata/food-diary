@@ -340,6 +340,36 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
 }
 .remove-btn:hover { background: #f6e8e6; color: var(--danger); }
 
+/* ---------- what-if basket (Day tab) ---------- */
+
+.plan-card {
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px 16px 14px;
+  margin-bottom: 14px;
+}
+.plan-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.plan-title { font-weight: 650; font-size: 14.5px; }
+.plan-sub { color: var(--muted); font-size: 12.5px; }
+/* the basket's own log-form loses its card chrome inside the plan card */
+.plan-card .log-form { border: none; box-shadow: none; padding: 0 0 4px; background: none; margin-bottom: 0; }
+#plan-rows { display: flex; flex-direction: column; }
+#plan-rows .item-row { border-bottom: 1px solid var(--line); }
+.plan-item-row .plan-macros {
+  color: var(--muted); font-size: 12.5px; white-space: nowrap;
+  font-variant-numeric: tabular-nums; min-width: 158px; text-align: right;
+}
+.plan-foot { margin-top: 10px; }
+.plan-foot .day-totals { margin-left: 0; }
+.plan-actions { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+#plan-meal {
+  font: inherit; font-size: 14px; color: var(--ink);
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 8px 10px; min-width: 180px; background: var(--surface);
+}
+
 /* ---------- trends ---------- */
 
 .trends-controls {

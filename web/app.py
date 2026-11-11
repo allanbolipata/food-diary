@@ -287,6 +287,51 @@ def log_item(date: str, p: ItemIn):
         conn.close()
 
 
+class WhatIfItem(BaseModel):
+    food: str = Field(min_length=1)
+    weight: float = Field(gt=0)
+
+
+class WhatIfIn(BaseModel):
+    items: list[WhatIfItem] = Field(min_length=1, max_length=100)
+
+
+@app.post("/api/what-if")
+def what_if(p: WhatIfIn):
+    """Macros for a basket of (food, weight) pairs WITHOUT logging anything.
+
+    The dashboard's what-if basket posts its staged items here to get the
+    tally: per-item macros scaled to weight, plus basket totals (calories,
+    protein, fat, carbs, fiber, sodium). Same scaling math as the day view
+    (`_macros_for`), so basket numbers equal post-log day numbers. Foods not
+    in the catalog come back as stubs (macros None) and are excluded from
+    the totals. Nothing is written: logging a basket item is a normal
+    POST /api/days/{date}/items.
+    """
+    conn = get_connection()
+    try:
+        foods = load_foods(conn)
+        items = []
+        totals = {"calories": 0.0, "protein": 0.0, "fat": 0.0,
+                  "carbs": 0.0, "fiber": 0.0, "sodium": 0.0}
+        for it in p.items:
+            entry = foods.get(it.food)
+            if entry is None:
+                items.append({"food": it.food, "weight": it.weight,
+                              "serving_size": None, "macros": None, "stub": True})
+                continue
+            macros = _macros_for(entry, it.weight)
+            for k in totals:
+                totals[k] += macros[k]
+            items.append({"food": it.food, "weight": it.weight,
+                          "serving_size": float(entry["serving_size"]),
+                          "macros": macros, "stub": False})
+        return {"items": items,
+                "totals": {k: round(v, 1) for k, v in totals.items()}}
+    finally:
+        conn.close()
+
+
 class ItemRef(BaseModel):
     food: str = Field(min_length=1)
     meal: str = Field(min_length=1)

@@ -225,6 +225,7 @@ async function loadDay(stamp) {
 }
 
 function renderDay(day) {
+  dayTotalsCur = day.totals;
   $("#tot-cal").textContent = fmt(day.totals.calories);
   $("#tot-protein").textContent = fmt(day.totals.protein);
   $("#tot-fat").textContent = fmt(day.totals.fat);
@@ -275,6 +276,7 @@ function renderDay(day) {
     wrap.appendChild(card);
   }
   $("#day-empty").hidden = day.meals.length > 0;
+  renderPlan();
 }
 
 async function onLogSubmit(ev) {
@@ -335,6 +337,216 @@ async function onRemoveItem(btn) {
   } catch (e) {
     toast(`Remove failed: ${e.message}`, true);
   }
+}
+
+// ---------- what-if basket (Day tab) ----------
+// A staging area: items live in localStorage (never in the diary DB) and
+// the server tallies them via POST /api/what-if. An item enters the real
+// diary only when you press Log (normal POST /api/days/{date}/items).
+
+const PLAN_KEY = "food_di..._v1";
+let plan = loadPlan();       // [{food, weight}]
+let planTally = null;        // last /api/what-if response
+let dayTotalsCur = { calories: 0, protein: 0, fat: 0, carbs: 0 };
+
+function loadPlan() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(PLAN_KEY) || "[]");
+    return Array.isArray(raw)
+      ? raw.filter((p) => p && typeof p.food === "string" && p.food
+          && Number.isFinite(p.weight) && p.weight > 0)
+      : [];
+  } catch { return []; }
+}
+const savePlan = () => localStorage.setItem(PLAN_KEY, JSON.stringify(plan));
+
+async function refreshPlanTally() {
+  if (!plan.length) { planTally = null; renderPlan(); return; }
+  try {
+    const r = await fetch("/api/what-if", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ items: plan }),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    planTally = await r.json();
+  } catch (e) {
+    planTally = null;
+    toast(`Basket tally failed: ${e.message}`, true);
+  }
+  renderPlan();
+}
+
+function renderPlan() {
+  const rowsEl = $("#plan-rows");
+  const foot = $("#plan-foot");
+  if (!rowsEl) return;
+  rowsEl.innerHTML = "";
+  if (!plan.length) { foot.hidden = true; return; }
+  foot.hidden = false;
+  const tallied = planTally ? planTally.items : [];
+  plan.forEach((p, i) => {
+    const t = tallied[i];
+    let macrosTxt, cal;
+    if (!t || t.stub) {
+      macrosTxt = t && t.stub ? "not in catalog" : "…";
+      cal = "–";
+    } else {
+      const m = t.macros;
+      macrosTxt = `${fmt(m.protein)}P · ${fmt(m.fat)}F · ${fmt(m.carbs)}C` +
+        (m.sodium ? ` · ${fmt(m.sodium)}mg Na` : "");
+      cal = `${fmt(m.calories)} cal`;
+    }
+    const row = document.createElement("div");
+    row.className = "item-row plan-item-row";
+    row.innerHTML = `
+      <span class="item-name" title="${escapeHtml(p.food)}">${escapeHtml(p.food)}</span>
+      <span class="item-weight">${fmt(p.weight)}</span>
+      <span class="item-cal">${cal}</span>
+      <span class="plan-macros">${macrosTxt}</span>
+      <button class="btn small plan-log-btn" data-index="${i}" title="Log this item into the day">Log</button>
+      <button class="remove-btn" data-index="${i}" title="Drop from basket">✕</button>`;
+    rowsEl.appendChild(row);
+  });
+  const tot = planTally
+    ? planTally.totals
+    : { calories: 0, protein: 0, fat: 0, carbs: 0, sodium: 0 };
+  $("#plan-cal").textContent = fmt(tot.calories);
+  $("#plan-protein").textContent = fmt(tot.protein);
+  $("#plan-fat").textContent = fmt(tot.fat);
+  $("#plan-carbs").textContent = fmt(tot.carbs);
+  $("#plan-sodium").textContent = fmt(tot.sodium);
+  $("#plan-vs").textContent = planTally
+    ? `This day so far: ${fmt(dayTotalsCur.calories)} cal → ` +
+      `${fmt(dayTotalsCur.calories + tot.calories)} cal if the basket is logged.`
+    : "";
+}
+
+async function onPlanAdd(ev) {
+  ev.preventDefault();
+  const food = planPicked ? planPicked.name : $("#plan-food").value.trim();
+  const weight = parseFloat($("#plan-weight").value);
+  const hint = $("#plan-hint");
+  const err = (msg) => { hint.textContent = msg; hint.classList.add("error"); };
+  if (!food) return err("Pick a food from the search list.");
+  if (!isFinite(weight) || weight <= 0) return err("Enter a weight (one serving is pre-filled).");
+  hint.textContent = "";
+  hint.classList.remove("error");
+  plan.push({ food, weight });
+  savePlan();
+  $("#plan-food").value = "";
+  $("#plan-weight").value = "";
+  $("#plan-unit").textContent = "";
+  planPicked = null;
+  await refreshPlanTally();
+}
+
+async function planLogItem(index) {
+  const item = plan[index];
+  if (!item) return;
+  const meal = $("#plan-meal").value.trim() || "Miscellaneous";
+  try {
+    const r = await fetch(`/api/days/${dayStampCur}/items`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ food: item.food, weight: item.weight, meal }),
+    });
+    if (!r.ok) {
+      const d = await r.json().catch(() => null);
+      toast(d?.detail || `HTTP ${r.status}`, true);
+      return;
+    }
+    plan.splice(index, 1);
+    savePlan();
+    toast(`Logged ${fmt(item.weight)} of “${item.food}” in ${meal}`);
+    await refreshPlanTally();
+    await loadDay(dayStampCur);
+    await loadStats();
+  } catch (e) {
+    toast(`Log failed: ${e.message}`, true);
+  }
+}
+
+async function planLogAll() {
+  const meal = $("#plan-meal").value.trim() || "Miscellaneous";
+  let ok = 0;
+  const failed = [];
+  for (const item of [...plan]) {
+    let success = false;
+    try {
+      const r = await fetch(`/api/days/${dayStampCur}/items`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ food: item.food, weight: item.weight, meal }),
+      });
+      if (r.ok) success = true;
+      else {
+        const d = await r.json().catch(() => null);
+        failed.push(`${item.food} (${d?.detail || `HTTP ${r.status}`})`);
+      }
+    } catch (e) {
+      failed.push(`${item.food} (${e.message})`);
+    }
+    if (success) {
+      const i = plan.findIndex((p) => p.food === item.food && p.weight === item.weight);
+      if (i >= 0) plan.splice(i, 1);
+      ok++;
+    }
+  }
+  savePlan();
+  if (ok) toast(`Logged ${ok} basket item(s) into ${meal}`);
+  if (failed.length) toast(`Not logged: ${failed.join(", ")}`, true);
+  await refreshPlanTally();
+  if (ok) {
+    await loadDay(dayStampCur);
+    await loadStats();
+  }
+}
+
+// basket autocomplete — same catalog search as the log form
+let planACTimer = null;
+let planPicked = null;
+
+function hidePlanAC() { $("#plan-ac-list").hidden = true; }
+
+function onPlanFoodInput() {
+  planPicked = null;
+  hidePlanAC();
+  $("#plan-unit").textContent = "";
+  const q = $("#plan-food").value.trim();
+  if (!q) return;
+  clearTimeout(planACTimer);
+  planACTimer = setTimeout(async () => {
+    try {
+      const r = await fetch(`/api/foods?q=${encodeURIComponent(q)}&limit=12`);
+      if (!r.ok) return;
+      renderPlanAC(await r.json());
+    } catch { /* ignore */ }
+  }, 200);
+}
+
+function renderPlanAC(rows) {
+  const list = $("#plan-ac-list");
+  if (!rows.length) { hidePlanAC(); return; }
+  list.innerHTML = "";
+  for (const row of rows) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "ac-item";
+    b.innerHTML = `${escapeHtml(row.name)}<span class="ac-cal">${fmt(row.calories)} cal / ${servingLabel(row)}</span>`;
+    b.addEventListener("click", () => pickPlanFood(row.name, Number(row.serving_size)));
+    list.appendChild(b);
+  }
+  list.hidden = false;
+}
+
+function pickPlanFood(name, serving) {
+  planPicked = { name, serving };
+  $("#plan-food").value = name;
+  hidePlanAC();
+  $("#plan-weight").value = serving; // default: one serving, like log.py
+  $("#plan-unit").textContent = unitFor(serving);
+  $("#plan-weight").focus();
 }
 
 // food autocomplete in the log form (searches the catalog DB)
@@ -600,6 +812,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (b) onRemoveItem(b);
   });
 
+  // what-if basket
+  $("#plan-form").addEventListener("submit", onPlanAdd);
+  $("#plan-food").addEventListener("input", onPlanFoodInput);
+  $("#plan-food").addEventListener("blur", () => setTimeout(hidePlanAC, 150));
+  $("#plan-log-all").addEventListener("click", planLogAll);
+  $("#plan-clear").addEventListener("click", async () => {
+    plan = [];
+    savePlan();
+    await refreshPlanTally();
+  });
+  $("#plan-rows").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-index]");
+    if (!b) return;
+    const i = Number(b.dataset.index);
+    if (b.classList.contains("plan-log-btn")) planLogItem(i);
+    else { plan.splice(i, 1); savePlan(); refreshPlanTally(); }
+  });
+
   // trends
   setTrendRange(7, true);
 
@@ -642,4 +872,5 @@ document.addEventListener("DOMContentLoaded", () => {
   const h = location.hash.slice(1);
   showTab(["day", "trends"].includes(h) ? h : "catalog", false);
   loadFoods().catch(onLoadError);
+  refreshPlanTally();  // rehydrate the saved basket (no-op when empty)
 });

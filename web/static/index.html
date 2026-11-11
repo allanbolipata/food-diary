@@ -92,6 +92,43 @@
     </form>
     <p id="log-hint" class="hint"></p>
 
+    <div class="plan-card">
+      <div class="plan-head">
+        <span class="plan-title">What-if basket</span>
+        <span class="plan-sub">Tally first — nothing is logged until you press Log.</span>
+      </div>
+      <form id="plan-form" class="log-form">
+        <div class="field grow ac-wrap">
+          <label for="plan-food">Food <span class="req">*</span></label>
+          <input id="plan-food" spellcheck="false" autocomplete="off" placeholder="Search the catalog…">
+          <div id="plan-ac-list" class="ac-list" hidden></div>
+        </div>
+        <div class="field">
+          <label for="plan-weight">Weight <span class="req">*</span></label>
+          <input id="plan-weight" type="number" step="any" min="0">
+          <span class="unit-hint" id="plan-unit"></span>
+        </div>
+        <button type="submit" class="btn">Add to basket</button>
+      </form>
+      <p id="plan-hint" class="hint"></p>
+      <div id="plan-rows"></div>
+      <div id="plan-foot" class="plan-foot" hidden>
+        <div class="day-totals">
+          <span class="chip">Basket cal <b id="plan-cal">0</b></span>
+          <span class="chip">Protein <b id="plan-protein">0</b> g</span>
+          <span class="chip">Fat <b id="plan-fat">0</b> g</span>
+          <span class="chip">Carbs <b id="plan-carbs">0</b> g</span>
+          <span class="chip">Sodium <b id="plan-sodium">0</b> mg</span>
+        </div>
+        <p id="plan-vs" class="hint"></p>
+        <div class="plan-actions">
+          <input id="plan-meal" list="meal-names" value="Miscellaneous" spellcheck="false" aria-label="Meal to log basket items into">
+          <button id="plan-log-all" type="button" class="btn primary">Log all to this day</button>
+          <button id="plan-clear" type="button" class="btn">Empty basket</button>
+        </div>
+      </div>
+    </div>
+
     <div id="day-meals"></div>
     <p id="day-empty" class="empty" hidden>Nothing logged on this day yet — use the form above.</p>
   </section>
