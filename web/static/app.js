@@ -14,9 +14,9 @@ const fmt = (v) => {
   return n < 10 ? n.toFixed(1) : String(Math.round(n * 10) / 10);
 };
 
-// Catalog sodium is stored in grams (USDA). All "mg" labels are grams*1000;
-// all mg inputs are divided by 1000 before POST.
-const mgNa = (g) => fmt(Math.round((Number(g) || 0) * 1000));
+// Sodium + cholesterol are stored in grams (USDA). Every "mg" label renders
+// grams*1000 via toMg(); every mg input is divided by 1000 before POST.
+const toMg = (g) => fmt(Math.round((Number(g) || 0) * 1000));
 
 const escapeHtml = (s) =>
   String(s).replace(/[&<>"']/g, (c) =>
@@ -120,7 +120,7 @@ function renderCatalog() {
       <td class="num">${fmt(f.carbs_total)}</td>
       <td class="num">${fmt(f.fiber_total)}</td>
       <td class="num">${fmt(f.sugars_total)}</td>
-      <td class="num">${mgNa(f.sodium)}</td>`;
+      <td class="num">${toMg(f.sodium)}</td>`;
     body.appendChild(tr);
   }
   $("#empty").hidden = rows.length > 0;
@@ -239,13 +239,13 @@ function renderDay(day) {
   const supp = day.supplementary || {};
   const suppSet = (id, key) => { $(id).textContent = fmt(supp[key] ?? 0); };
   suppSet("#tot-fiber", "fiber");
-  $("#tot-sodium").textContent = mgNa(supp.sodium ?? 0);
+  $("#tot-sodium").textContent = toMg(supp.sodium ?? 0);
   suppSet("#tot-satfat", "saturated_fat");
-  suppSet("#tot-chol", "cholesterol");
+  $("#tot-chol").textContent = toMg(supp.cholesterol ?? 0);
   suppSet("#tot-sugars", "sugars");
   suppSet("#tot-addsugar", "added_sugars");
   $("#supp-brief").textContent =
-    `\u2014 fiber ${fmt(supp.fiber ?? 0)} g \u00b7 sodium ${mgNa(supp.sodium)} mg`;
+    `\u2014 fiber ${fmt(supp.fiber ?? 0)} g \u00b7 sodium ${toMg(supp.sodium)} mg`;
 
   // meal name suggestions for the log form
   const dl = $("#meal-names");
@@ -288,7 +288,7 @@ function renderDay(day) {
         const m = item.macros;
         rows += `
         <div class="item-contrib">${fmt(m.protein)}P · ${fmt(m.fat)}F · ${fmt(m.carbs)}C
-          · ${fmt(m.fiber)} fiber · ${mgNa(m.sodium)} mg Na</div>`;
+          · ${fmt(m.fiber)} fiber · ${toMg(m.sodium)} mg Na</div>`;
       }
     }
     card.innerHTML = `
@@ -419,7 +419,7 @@ function renderPlan() {
     } else {
       const m = t.macros;
       macrosTxt = `${fmt(m.protein)}P · ${fmt(m.fat)}F · ${fmt(m.carbs)}C` +
-        (m.sodium ? ` · ${mgNa(m.sodium)} mg Na` : "");
+        (m.sodium ? ` · ${toMg(m.sodium)} mg Na` : "");
       cal = `${fmt(m.calories)} cal`;
     }
     const tag = p.nutrition
@@ -443,7 +443,7 @@ function renderPlan() {
   $("#plan-protein").textContent = fmt(tot.protein);
   $("#plan-fat").textContent = fmt(tot.fat);
   $("#plan-carbs").textContent = fmt(tot.carbs);
-  $("#plan-sodium").textContent = mgNa(tot.sodium);
+  $("#plan-sodium").textContent = toMg(tot.sodium);
   $("#plan-vs").textContent = planTally
     ? `This day so far: ${fmt(dayTotalsCur.calories)} cal → ` +
       `${fmt(dayTotalsCur.calories + tot.calories)} cal if the basket is logged.`
