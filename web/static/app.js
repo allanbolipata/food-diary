@@ -397,10 +397,13 @@ function renderPlan() {
         (m.sodium ? ` · ${fmt(m.sodium)}mg Na` : "");
       cal = `${fmt(m.calories)} cal`;
     }
+    const tag = p.nutrition
+      ? ' <span class="adhoc-tag" title="rough estimate — not in the catalog yet">est.</span>'
+      : "";
     const row = document.createElement("div");
     row.className = "item-row plan-item-row";
     row.innerHTML = `
-      <span class="item-name" title="${escapeHtml(p.food)}">${escapeHtml(p.food)}</span>
+      <span class="item-name" title="${escapeHtml(p.food)}">${escapeHtml(p.food)}${tag}</span>
       <span class="item-weight">${fmt(p.weight)}</span>
       <span class="item-cal">${cal}</span>
       <span class="plan-macros">${macrosTxt}</span>
@@ -441,24 +444,97 @@ async function onPlanAdd(ev) {
   await refreshPlanTally();
 }
 
+// ad-hoc estimates: rough per-serving macros typed in for a food that is
+// NOT yet in the catalog. Tallying stays a pure what-if — the estimate is
+// visible first, and nothing is stored until (and unless) it is logged.
+function adhocPayload() {
+  const num = (id) => {
+    const v = parseFloat($(id).value);
+    return Number.isFinite(v) && v >= 0 ? v : 0;
+  };
+  return {
+    name: $("#adhoc-name").value.trim(),
+    serving_size: parseFloat($("#adhoc-serving").value),
+    calories: parseFloat($("#adhoc-cal").value),
+    protein: num("#adhoc-protein"),
+    fat_total: num("#adhoc-fat"),
+    carbs_total: num("#adhoc-carbs"),
+    fiber_total: num("#adhoc-fiber"),
+    sodium: num("#adhoc-sodium"),
+  };
+}
+
+async function onAdhocAdd(ev) {
+  ev.preventDefault();
+  const hint = $("#adhoc-hint");
+  const err = (msg) => { hint.textContent = msg; hint.classList.add("error"); };
+  const p = adhocPayload();
+  const weight = parseFloat($("#adhoc-weight").value);
+  if (!p.name) return err("Give the estimate a name.");
+  if (!isFinite(p.serving_size) || p.serving_size <= 0) return err("Serving size must be more than 0 g.");
+  if (!isFinite(p.calories) || p.calories < 0) return err("Enter calories per serving (0 is allowed).");
+  if (!isFinite(weight) || weight <= 0) return err("Enter an amount in grams.");
+  try {
+    const r = await fetch(`/api/foods?q=${encodeURIComponent(p.name)}&limit=50`);
+    if (r.ok) {
+      const rows = await r.json();
+      if (rows.some((row) => row.name === p.name)) {
+        return err(`“${p.name}” is already in the catalog — add it from the catalog search instead.`);
+      }
+    }
+  } catch { /* offline: proceed, the Log step will surface the error */ }
+  plan.push({ food: p.name, weight, nutrition: p });
+  savePlan();
+  hint.textContent = "";
+  hint.classList.remove("error");
+  for (const id of ["#adhoc-name", "#adhoc-cal", "#adhoc-weight"]) $(id).value = "";
+  await refreshPlanTally();
+}
+
+// Shared log path: an ad-hoc item first creates its catalog entry (the
+// moment rough macros become real data), then logs like any other item.
+async function logBasketItem(item) {
+  const meal = $("#plan-meal").value.trim() || "Miscellaneous";
+  let alreadyInCatalog = false;
+  if (item.nutrition) {
+    const rF = await fetch("/api/foods", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(item.nutrition),
+    });
+    if (rF.status === 409) alreadyInCatalog = true;  // catalog copy wins
+    else if (!rF.ok) {
+      const d = await rF.json().catch(() => null);
+      return { ok: false, detail: d?.detail || `HTTP ${rF.status}` };
+    }
+  }
+  const r = await fetch(`/api/days/${dayStampCur}/items`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ food: item.food, weight: item.weight, meal }),
+  });
+  if (!r.ok) {
+    const d = await r.json().catch(() => null);
+    return { ok: false, detail: d?.detail || `HTTP ${r.status}` };
+  }
+  return { ok: true, meal, alreadyInCatalog };
+}
+
 async function planLogItem(index) {
   const item = plan[index];
   if (!item) return;
-  const meal = $("#plan-meal").value.trim() || "Miscellaneous";
   try {
-    const r = await fetch(`/api/days/${dayStampCur}/items`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ food: item.food, weight: item.weight, meal }),
-    });
-    if (!r.ok) {
-      const d = await r.json().catch(() => null);
-      toast(d?.detail || `HTTP ${r.status}`, true);
-      return;
-    }
+    const res = await logBasketItem(item);
+    if (!res.ok) return toast(res.detail || "Log failed", true);
     plan.splice(index, 1);
     savePlan();
-    toast(`Logged ${fmt(item.weight)} of “${item.food}” in ${meal}`);
+    let note = "";
+    if (item.nutrition) {
+      note = res.alreadyInCatalog
+        ? " (already in catalog — day shows its values, not your estimate)"
+        : " (estimate saved to catalog)";
+    }
+    toast(`Logged ${fmt(item.weight)} of “${item.food}” in ${res.meal}${note}`);
     await refreshPlanTally();
     await loadDay(dayStampCur);
     await loadStats();
@@ -468,33 +544,21 @@ async function planLogItem(index) {
 }
 
 async function planLogAll() {
-  const meal = $("#plan-meal").value.trim() || "Miscellaneous";
   let ok = 0;
   const failed = [];
   for (const item of [...plan]) {
-    let success = false;
-    try {
-      const r = await fetch(`/api/days/${dayStampCur}/items`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ food: item.food, weight: item.weight, meal }),
-      });
-      if (r.ok) success = true;
-      else {
-        const d = await r.json().catch(() => null);
-        failed.push(`${item.food} (${d?.detail || `HTTP ${r.status}`})`);
-      }
-    } catch (e) {
-      failed.push(`${item.food} (${e.message})`);
-    }
-    if (success) {
-      const i = plan.findIndex((p) => p.food === item.food && p.weight === item.weight);
+    let res;
+    try { res = await logBasketItem(item); } catch (e) { res = { ok: false, detail: e.message }; }
+    if (res.ok) {
+      const i = plan.indexOf(item);
       if (i >= 0) plan.splice(i, 1);
       ok++;
+    } else {
+      failed.push(`${item.food} (${res.detail})`);
     }
   }
   savePlan();
-  if (ok) toast(`Logged ${ok} basket item(s) into ${meal}`);
+  if (ok) toast(`Logged ${ok} basket item(s) into ${$("#plan-meal").value.trim() || "Miscellaneous"}`);
   if (failed.length) toast(`Not logged: ${failed.join(", ")}`, true);
   await refreshPlanTally();
   if (ok) {
@@ -816,6 +880,12 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#plan-form").addEventListener("submit", onPlanAdd);
   $("#plan-food").addEventListener("input", onPlanFoodInput);
   $("#plan-food").addEventListener("blur", () => setTimeout(hidePlanAC, 150));
+  $("#plan-adhoc-toggle").addEventListener("click", () => {
+    const f = $("#adhoc-form");
+    f.hidden = !f.hidden;
+    if (!f.hidden) $("#adhoc-name").focus();
+  });
+  $("#adhoc-form").addEventListener("submit", onAdhocAdd);
   $("#plan-log-all").addEventListener("click", planLogAll);
   $("#plan-clear").addEventListener("click", async () => {
     plan = [];

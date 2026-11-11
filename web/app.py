@@ -290,6 +290,15 @@ def log_item(date: str, p: ItemIn):
 class WhatIfItem(BaseModel):
     food: str = Field(min_length=1)
     weight: float = Field(gt=0)
+    nutrition: FoodIn | None = Field(
+        default=None,
+        description=(
+            "Flattened per-serving macros for a food NOT yet in the catalog: "
+            "lets the what-if basket estimate rough macros before anything is "
+            "logged. Ignored when `food` is already in the catalog — the "
+            "catalog is the source of truth."
+        ),
+    )
 
 
 class WhatIfIn(BaseModel):
@@ -303,10 +312,14 @@ def what_if(p: WhatIfIn):
     The dashboard's what-if basket posts its staged items here to get the
     tally: per-item macros scaled to weight, plus basket totals (calories,
     protein, fat, carbs, fiber, sodium). Same scaling math as the day view
-    (`_macros_for`), so basket numbers equal post-log day numbers. Foods not
-    in the catalog come back as stubs (macros None) and are excluded from
-    the totals. Nothing is written: logging a basket item is a normal
-    POST /api/days/{date}/items.
+    (`_macros_for`), so basket numbers equal post-log day numbers. An item
+    that is not in the catalog may carry a `nutrition` block (flattened
+    per-serving macros) — it is then estimated from those rough macros and
+    flagged `ad_hoc` (still nothing is stored). Without `nutrition`, unknown
+    foods come back as stubs (macros None) and are excluded from the
+    totals. When a food IS in the catalog the catalog wins and `nutrition`
+    is ignored. Nothing is written: logging a basket item is a normal
+    POST /api/days/{date}/items (plus POST /api/foods for ad-hoc ones).
     """
     conn = get_connection()
     try:
@@ -316,16 +329,24 @@ def what_if(p: WhatIfIn):
                   "carbs": 0.0, "fiber": 0.0, "sodium": 0.0}
         for it in p.items:
             entry = foods.get(it.food)
+            ad_hoc = False
+            if entry is None and it.nutrition is not None:
+                # Rough estimate for a food not in the catalog yet: compute
+                # from the caller-supplied macros, store nothing.
+                entry = _entry_from_payload(it.nutrition)
+                entry["name"] = it.food
+                ad_hoc = True
             if entry is None:
                 items.append({"food": it.food, "weight": it.weight,
-                              "serving_size": None, "macros": None, "stub": True})
+                              "serving_size": None, "macros": None,
+                              "stub": True, "ad_hoc": False})
                 continue
             macros = _macros_for(entry, it.weight)
             for k in totals:
                 totals[k] += macros[k]
             items.append({"food": it.food, "weight": it.weight,
                           "serving_size": float(entry["serving_size"]),
-                          "macros": macros, "stub": False})
+                          "macros": macros, "stub": False, "ad_hoc": ad_hoc})
         return {"items": items,
                 "totals": {k: round(v, 1) for k, v in totals.items()}}
     finally:

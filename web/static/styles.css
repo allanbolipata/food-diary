@@ -363,6 +363,14 @@ td.name { font-weight: 550; max-width: 340px; overflow: hidden; text-overflow: e
 }
 .plan-foot { margin-top: 10px; }
 .plan-foot .day-totals { margin-left: 0; }
+#plan-adhoc-toggle { margin: 2px 0 6px; }
+.adhoc-form { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; margin-top: 4px; }
+.adhoc-form .field { display: flex; flex-direction: column; gap: 4px; min-width: 84px; }
+.adhoc-form .field.grow { flex: 1 1 220px; }
+.adhoc-form label { font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.adhoc-form input { font: inherit; font-size: 14px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; }
+.adhoc-tag { display: inline-block; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0 7px; margin-left: 6px; font-size: 11px; vertical-align: 1px; }
+
 .plan-actions { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
 #plan-meal {
   font: inherit; font-size: 14px; color: var(--ink);

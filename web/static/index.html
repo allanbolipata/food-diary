@@ -111,6 +111,47 @@
         <button type="submit" class="btn">Add to basket</button>
       </form>
       <p id="plan-hint" class="hint"></p>
+      <button id="plan-adhoc-toggle" type="button" class="btn small">+ Estimate a food not in the catalog</button>
+      <form id="adhoc-form" class="adhoc-form" hidden>
+        <div class="field grow">
+          <label for="adhoc-name">Name <span class="req">*</span></label>
+          <input id="adhoc-name" spellcheck="false" autocomplete="off" placeholder="e.g. Cafe burrito — rough numbers">
+        </div>
+        <div class="field">
+          <label for="adhoc-serving">Serving g <span class="req">*</span></label>
+          <input id="adhoc-serving" type="number" step="any" min="1" value="100">
+        </div>
+        <div class="field">
+          <label for="adhoc-cal">Cal <span class="req">*</span></label>
+          <input id="adhoc-cal" type="number" step="any" min="0">
+        </div>
+        <div class="field">
+          <label for="adhoc-protein">Protein g</label>
+          <input id="adhoc-protein" type="number" step="any" min="0" value="0">
+        </div>
+        <div class="field">
+          <label for="adhoc-fat">Fat g</label>
+          <input id="adhoc-fat" type="number" step="any" min="0" value="0">
+        </div>
+        <div class="field">
+          <label for="adhoc-carbs">Carbs g</label>
+          <input id="adhoc-carbs" type="number" step="any" min="0" value="0">
+        </div>
+        <div class="field">
+          <label for="adhoc-fiber">Fiber g</label>
+          <input id="adhoc-fiber" type="number" step="any" min="0" value="0">
+        </div>
+        <div class="field">
+          <label for="adhoc-sodium">Sodium mg</label>
+          <input id="adhoc-sodium" type="number" step="any" min="0" value="0">
+        </div>
+        <div class="field">
+          <label for="adhoc-weight">Amount g <span class="req">*</span></label>
+          <input id="adhoc-weight" type="number" step="any" min="0">
+        </div>
+        <button type="submit" class="btn">Add estimate</button>
+      </form>
+      <p id="adhoc-hint" class="hint"></p>
       <div id="plan-rows"></div>
       <div id="plan-foot" class="plan-foot" hidden>
         <div class="day-totals">

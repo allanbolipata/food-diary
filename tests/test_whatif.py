@@ -142,6 +142,73 @@ class TempDbWhatIfTest(unittest.TestCase):
         self.assertEqual(basket["items"][0]["macros"], logged)
         self.assertEqual(basket["totals"]["calories"], day["totals"]["calories"])
 
+    # ---- ad-hoc rough macros (estimate a non-catalog food) ----
+
+    ADHOC = {"name": "Mystery Burrito", "serving_size": 250.0,
+             "calories": 600.0, "protein": 30.0, "fat_total": 20.0,
+             "carbs_total": 60.0, "fiber_total": 5.0, "sodium": 800.0}
+
+    def test_adhoc_estimation_before_log(self):
+        # Rough macros make an unknown food estimable — the point of the
+        # basket: see the numbers first, log only if you want.
+        r = self._whatif([{"food": "Mystery Burrito", "weight": 250,
+                           "nutrition": self.ADHOC}])
+        self.assertEqual(r.status_code, 200)
+        data = r.json()
+        item = data["items"][0]
+        self.assertTrue(item["ad_hoc"])
+        self.assertFalse(item["stub"])
+        self.assertEqual(item["serving_size"], 250.0)
+        self.assertEqual(item["macros"]["calories"], 600.0)
+        self.assertEqual(item["macros"]["protein"], 30.0)
+        self.assertEqual(data["totals"]["calories"], 600.0)
+        self.assertEqual(data["totals"]["fiber"], 5.0)
+        conn = db.get_connection(self.dbpath)
+        # ...and the estimate itself stored nothing anywhere.
+        self.assertEqual(conn.execute(
+            "SELECT COUNT(*) FROM foods").fetchone()[0], 2)
+        self.assertEqual(conn.execute(
+            "SELECT COUNT(*) FROM meals").fetchone()[0], 0)
+        conn.close()
+
+    def test_adhoc_scales_like_catalog(self):
+        # 150 g of a 250 g serving = 0.6x the per-serving estimate.
+        r = self._whatif([{"food": "Mystery Burrito", "weight": 150,
+                           "nutrition": self.ADHOC}])
+        self.assertEqual(r.json()["items"][0]["macros"]["calories"], 360.0)
+
+    def test_catalog_wins_over_supplied_nutrition(self):
+        r = self._whatif([{"food": "Basket A", "weight": 100,
+                           "nutrition": {"name": "Basket A",
+                                         "serving_size": 100.0,
+                                         "calories": 9999.0}}])
+        item = r.json()["items"][0]
+        self.assertFalse(item["ad_hoc"])
+        self.assertFalse(item["stub"])
+        self.assertEqual(item["macros"]["calories"], 120.0)  # catalog value
+
+    def test_estimate_then_log_then_catalog_tally_matches(self):
+        # The estimate-before invariant: what the basket projected equals
+        # exactly what the day view shows once logged (logging creates the
+        # catalog entry, as the dashboard does).
+        est = self._whatif([{"food": "Mystery Burrito", "weight": 250,
+                             "nutrition": self.ADHOC}]).json()
+        r = self.client.post("/api/foods", json=self.ADHOC)
+        self.assertEqual(r.status_code, 201)
+        r = self.client.post("/api/days/20261110/items",
+                             json={"food": "Mystery Burrito", "weight": 250,
+                                   "meal": "Dinner"})
+        self.assertEqual(r.status_code, 201)
+        day = self.client.get("/api/days/20261110").json()
+        logged = day["meals"][0]["items"][0]["macros"]
+        self.assertEqual(est["items"][0]["macros"], logged)
+        # After logging, a plain (nutrition-free) basket tally gives the
+        # same numbers from the catalog alone.
+        after = self._whatif([{"food": "Mystery Burrito", "weight": 250}])
+        item = after.json()["items"][0]
+        self.assertFalse(item["ad_hoc"])
+        self.assertEqual(item["macros"], logged)
+
 
 if __name__ == "__main__":
     unittest.main()

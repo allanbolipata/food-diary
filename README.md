@@ -106,14 +106,19 @@ Features:
   already exist — it is looked up in the database; one serving is
   pre-filled, matching `log.py add`); remove logged entries with the ✕ on
   each row.
-- **What-if basket** (Day log tab) — stage catalog foods with weights and
-  see per-item macros plus basket totals (cal/protein/fat/carbs/sodium)
-  and a "this day so far → if logged" projection, tallied server-side by
-  `POST /api/what-if`. Nothing touches the diary until you press **Log**
-  (per item) or **Log all to this day** (into the meal named in the box);
-  ✕ drops an item, "Empty basket" clears it. The basket lives in browser
-  localStorage only, so it survives reloads but is per-device and never
-  part of the database.
+- **What-if basket** (Day log tab) — stage foods with weights and see
+  per-item macros plus basket totals (cal/protein/fat/carbs/sodium) and a
+  "this day so far → if logged" projection, tallied server-side by
+  `POST /api/what-if`. Catalog foods come from the autocomplete; the
+  "+ Estimate a food not in the catalog" form takes rough per-serving
+  macros (cal/P/F/C, optional fiber/sodium) plus an amount and estimates
+  from them — the estimate is purely hypothetical until you log it
+  (logging such an item first creates the catalog entry with those
+  numbers). Nothing touches the diary until you press **Log** (per item)
+  or **Log all to this day** (into the meal named in the box); ✕ drops an
+  item, "Empty basket" clears it. The basket lives in browser localStorage
+  only, so it survives reloads but is per-device and never part of the
+  database.
 - **Trends tab** — the same per-day numbers `trend.py` plots, drawn as two
   charts (calories; protein/fat/carbs in grams) with date-range picker and
   30/90-day/all presets; days with no meals are omitted.
